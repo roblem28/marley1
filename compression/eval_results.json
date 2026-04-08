@@ -1,0 +1,72 @@
+[
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the electrical design requirements for DoD facilities?",
+    "compression_ratio": 20.1,
+    "answer": "Electrical design requirements for DoD facilities are stringent and include:\n\n1. **High Reliability and Redundancy**: To ensure continuous power supply, facilities often incorporate multiple power sources and backup generators.\n\n2. **Security and Protection**: Systems must be designed to protect against electromagnetic interference (EMI) and conductors must be shielded to prevent unauthorized access to sensitive information.\n\n3. **Compliance with Standards**: Must adhere to DoD-specific standards such as MIL-STD-461F, MIL-STD-461G, and MIL-STD-461H for electromagnetic interference.\n\n4. **Energy Efficiency**: Incorporates advanced power management systems and renewable energy sources to reduce energy consumption and carbon footprint.\n\n5. **Sustainability**: Includes features like solar panels, energy-efficient lighting, and water-saving fixtures to promote sustainability.\n\n6. **Accessibility and Compliance**: Must comply with ADA guidelines for accessibility and other relevant regulations.\n\n7. **Backup Power Systems**: Requires uninterruptible power supplies (UPS) and diesel generators to ensure power continuity during emergencies.\n\n8. **Communication Systems**: Includes robust communication infrastructure to support military operations and ensure secure data transmission.\n\nThese requirements ensure that DoD facilities are not only functional but also secure and sustainable.",
+    "scores": {
+      "factual_accuracy": 0.0,
+      "completeness": 0.0,
+      "coherence": 0.0,
+      "hallucination_risk": 0.0,
+      "verdict": "equivalent|acceptable|degraded|failed"
+    },
+    "latency": 14.67
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the structural design requirements for DoD buildings?",
+    "compression_ratio": 42.9,
+    "answer": "Structural design requirements for DoD buildings include:\n\n1. **Durability and Reliability**: Buildings must withstand extreme weather conditions, seismic activities, and potential hostile environments.\n2. **Security**: Enhanced security measures such as blast-resistant walls, reinforced concrete, and secure access points.\n3. **Life Safety**: Compliance with NFPA 50, ensuring adequate fire protection, emergency lighting, and evacuation routes.\n4. **Modularity and Flexibility**: Design for adaptability to changing mission requirements and potential future upgrades.\n5. **Environmental Sustainability**: Incorporation of green building practices, energy efficiency, and sustainable materials.\n6. **Seismic Design**: Compliance with ASCE 7 for seismic design, considering the building's location and the potential for earthquakes.\n7. **Accessibility**: Compliance with ADA standards for accessibility and usability.\n8. **Life Cycle Cost Analysis**: Consideration of long-term maintenance and operational costs.\n9. **Material Selection**: Use of durable, corrosion-resistant, and fire-resistant materials.\n10. **Regulatory Compliance**: Adherence to relevant federal, state, and local building codes and standards.\n\nThese requirements ensure the buildings are not only functional but also resilient and secure.",
+    "scores": {
+      "factual_accuracy": 0.0,
+      "completeness": 0.0,
+      "coherence": 0.0,
+      "hallucination_risk": 0.0,
+      "verdict": "failed"
+    },
+    "latency": 13.52
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the design requirements for installation microgrids?",
+    "compression_ratio": 14.4,
+    "answer": "Design requirements for installation microgrids in DoD facilities include:\n\n1. **Energy Independence**: To reduce reliance on the grid, especially in remote or disaster-prone areas.\n2. **Reliability**: Microgrids must ensure continuous power supply, even during grid failures.\n3. **Scalability**: They should be able to grow with the facility's power needs.\n4. **Flexibility**: Capable of operating in grid-connected or islanded mode.\n5. **Efficiency**: Utilize renewable energy sources and energy storage to minimize waste.\n6. **Safety**: Incorporate safety features to prevent grid failures and protect personnel.\n7. **Compliance**: Adhere to relevant codes and standards, including those for renewable energy and microgrids.\n8. **Cost-effectiveness**: Balance initial investment with long-term operational and maintenance costs.\n9. **Integration**: Seamlessly integrate with existing infrastructure and systems.\n10. **Testing and Validation**: Include rigorous testing to validate performance and reliability.\n\nThese requirements ensure that microgrids meet the specific needs of DoD facilities, enhancing energy security and resilience.",
+    "scores": {
+      "factual_accuracy": 0.0,
+      "completeness": 0.0,
+      "coherence": 0.0,
+      "hallucination_risk": 0.0,
+      "verdict": "failed"
+    },
+    "latency": 11.37
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the requirements for C5ISR facility design?",
+    "compression_ratio": 22.7,
+    "answer": "C5ISR (Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance) facility design requires specialized considerations to support the unique needs of these systems. Key requirements include:\n\n1. **High Security**: Due to the sensitive nature of C5ISR systems, facilities must meet stringent security protocols, including physical and electronic security measures.\n\n2. **Reliability and Resilience**: These facilities must be designed to withstand potential disruptions, ensuring continuous operation of critical systems.\n\n3. **Advanced Communication Capabilities**: Facilities should be equipped with robust communication infrastructure to support the rapid exchange of information and data.\n\n4. **Intelligence and Surveillance**: Integration of advanced surveillance and reconnaissance technologies, including radar, satellite imagery, and other sensors.\n\n5. **Computing and Data Processing**: High-performance computing capabilities and secure data processing environments to handle large volumes of data and support complex analytical tasks.\n\n6. **Command and Control**: Facilities must support centralized command and control operations, including command centers and control rooms.\n\n7. **Environmental Controls**: Temperature, humidity, and other environmental controls to maintain optimal conditions for sensitive electronic equipment.\n\n8. **Accessibility and Mobility**: Design should accommodate the needs of personnel, including accessibility features and the ability to move equipment and personnel quickly.\n\n9. **Compliance with Standards**: Adherence to relevant military standards and guidelines, such as MIL-STD and DoD directives.\n\n10. **Future-Proofing**: Design should consider future technological advancements and the need for scalability and flexibility in system integration.\n\nThese requirements ensure that C5ISR facilities are capable of supporting the operational needs of military and intelligence agencies effectively.",
+    "scores": {
+      "factual_accuracy": 0.0,
+      "completeness": 0.0,
+      "coherence": 0.0,
+      "hallucination_risk": 0.0,
+      "verdict": "failed"
+    },
+    "latency": 15.87
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the design standards for military unaccompanied housing?",
+    "compression_ratio": 3.0,
+    "answer": "Design standards for military unaccompanied housing typically include:\n\n1. **Accessibility**: Compliance with the Americans with Disabilities Act (ADA) to ensure accessibility for all service members, including those with disabilities.\n\n2. **Security**: Enhanced security measures to protect personnel, such as secure entry systems, perimeter fencing, and surveillance cameras.\n\n3. **Comfort and Amenities**: Modern amenities and comfortable living spaces to meet the needs of service members, including recreational facilities, laundry rooms, and dining areas.\n\n4. **Environmental Sustainability**: Incorporation of sustainable design practices to reduce energy consumption and water usage, aligning with DoD environmental policies.\n\n5. **Technology Integration**: Advanced technology integration, including high-speed internet, smart home systems, and secure communication channels.\n\n6. **Community and Social Spaces**: Designing spaces for social interaction and community building, such as common areas, lounges, and recreational facilities.\n\n7. **Climate and Weather Resilience**: Designing structures to withstand extreme weather conditions and climate changes, ensuring safety and comfort for residents.\n\nThese standards are tailored to meet the unique needs and challenges faced by military personnel, ensuring they have a comfortable and secure living environment.",
+    "scores": {
+      "factual_accuracy": 0.0,
+      "completeness": 0.0,
+      "coherence": 0.0,
+      "hallucination_risk": 0.0,
+      "verdict": "failed"
+    },
+    "latency": 11.99
+  }
+]

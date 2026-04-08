@@ -1,0 +1,770 @@
+[
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the testing and commissioning requirements for microgrids?",
+    "orig_tokens": 20319,
+    "comp_tokens": 1245,
+    "compression_ratio": 16.3,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 28.29,
+      "prompt_tokens": 1842
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 6.93
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the maintenance and operations requirements for microgrids?",
+    "orig_tokens": 20319,
+    "comp_tokens": 1128,
+    "compression_ratio": 18.0,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 27.0,
+      "prompt_tokens": 1714
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 10.48
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the design requirements for C5ISR facilities?",
+    "orig_tokens": 29067,
+    "comp_tokens": 842,
+    "compression_ratio": 34.5,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 26.4,
+      "prompt_tokens": 1296
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 6.93
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the telecommunications room requirements?",
+    "orig_tokens": 29067,
+    "comp_tokens": 658,
+    "compression_ratio": 44.2,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 19.9,
+      "prompt_tokens": 1086
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 4.16
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the equipment room cooling requirements?",
+    "orig_tokens": 29067,
+    "comp_tokens": 843,
+    "compression_ratio": 34.5,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 26.71,
+      "prompt_tokens": 1433
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 2.32
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the redundancy requirements for C5ISR systems?",
+    "orig_tokens": 29067,
+    "comp_tokens": 798,
+    "compression_ratio": 36.4,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 25.22,
+      "prompt_tokens": 1219
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 3.39
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the physical security requirements for C5ISR facilities?",
+    "orig_tokens": 29067,
+    "comp_tokens": 850,
+    "compression_ratio": 34.2,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 26.59,
+      "prompt_tokens": 1348
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 6.01
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the HVAC requirements for equipment rooms?",
+    "orig_tokens": 29067,
+    "comp_tokens": 776,
+    "compression_ratio": 37.5,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 26.31,
+      "prompt_tokens": 1250
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 4.64
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the power and grounding requirements for C5ISR systems?",
+    "orig_tokens": 29067,
+    "comp_tokens": 732,
+    "compression_ratio": 39.7,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 0.9,
+        "completeness": 0.8,
+        "coherence": 0.9,
+        "hallucination_risk": 0.1,
+        "verdict": "acceptable"
+      },
+      "latency": 26.33,
+      "prompt_tokens": 1192
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 11.56
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the cable plant and infrastructure requirements?",
+    "orig_tokens": 29067,
+    "comp_tokens": 502,
+    "compression_ratio": 57.9,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 24.48,
+      "prompt_tokens": 860
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 8.73
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the antenna and RF system requirements?",
+    "orig_tokens": 29067,
+    "comp_tokens": 933,
+    "compression_ratio": 31.2,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 26.42,
+      "prompt_tokens": 1648
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 5.73
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the testing and acceptance requirements for C5ISR facilities?",
+    "orig_tokens": 29067,
+    "comp_tokens": 833,
+    "compression_ratio": 34.9,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 23.67,
+      "prompt_tokens": 1308
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 7.57
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the design standards for military unaccompanied housing?",
+    "orig_tokens": 5836,
+    "comp_tokens": 982,
+    "compression_ratio": 5.9,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 27.42,
+      "prompt_tokens": 1945
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 3.0
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the room size and layout requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 729,
+    "compression_ratio": 8.0,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 22.19,
+      "prompt_tokens": 1223
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 0.9,
+        "completeness": 0.8,
+        "coherence": 0.9,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 7.22
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the bathroom and toilet facility requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 763,
+    "compression_ratio": 7.6,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 18.89,
+      "prompt_tokens": 1285
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 5.14
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the common area and amenity requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 653,
+    "compression_ratio": 8.9,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 22.14,
+      "prompt_tokens": 1131
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 9.02
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the kitchen and dining facility requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 776,
+    "compression_ratio": 7.5,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 21.36,
+      "prompt_tokens": 1298
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 7.39
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the HVAC and mechanical system requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 836,
+    "compression_ratio": 7.0,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 25.11,
+      "prompt_tokens": 1397
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 9.26
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the laundry facility requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 845,
+    "compression_ratio": 6.9,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 23.05,
+      "prompt_tokens": 1460
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 5.54
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the storage and closet space requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 703,
+    "compression_ratio": 8.3,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 17.21,
+      "prompt_tokens": 1205
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 6.71
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the accessibility and ADA compliance requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 960,
+    "compression_ratio": 6.1,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 18.03,
+      "prompt_tokens": 1750
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 0.8,
+        "coherence": 0.9,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 6.02
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the IT and communications infrastructure requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 550,
+    "compression_ratio": 10.6,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    },
+    "compressed": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 19.33,
+      "prompt_tokens": 976
+    },
+    "baseline": {
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 2.26
+    }
+  }
+]

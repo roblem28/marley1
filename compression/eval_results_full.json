@@ -1,0 +1,925 @@
+[
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the electrical design requirements for DoD facilities?",
+    "ratio": 12.0,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for emergency power systems in DoD facilities?",
+    "ratio": 11.7,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the grounding and bonding requirements?",
+    "ratio": 20.2,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 0.75,
+      "coherence": 0.9,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the lighting design standards for DoD facilities?",
+    "ratio": 12.0,
+    "comp": {
+      "factual_accuracy": 0.8,
+      "completeness": 0.7,
+      "coherence": 0.9,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for electrical distribution systems?",
+    "ratio": 14.8,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 0.8,
+      "coherence": 0.9,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the power quality requirements?",
+    "ratio": 17.8,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for electrical safety and protection systems?",
+    "ratio": 23.7,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the metering and monitoring requirements?",
+    "ratio": 18.0,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for renewable energy integration?",
+    "ratio": 17.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the electrical requirements for exterior and site lighting?",
+    "ratio": 14.5,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the structural design requirements for DoD buildings?",
+    "ratio": 25.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the seismic design requirements?",
+    "ratio": 38.7,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the wind load design requirements?",
+    "ratio": 21.5,
+    "comp": {
+      "factual_accuracy": 0.7,
+      "completeness": 0.5,
+      "coherence": 0.8,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the progressive collapse prevention requirements?",
+    "ratio": 21.1,
+    "comp": {
+      "factual_accuracy": 0.7,
+      "completeness": 0.6,
+      "coherence": 0.8,
+      "hallucination_risk": 0.3
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the foundation design requirements?",
+    "ratio": 41.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the requirements for structural steel design?",
+    "ratio": 38.2,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the concrete design and construction requirements?",
+    "ratio": 27.4,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the blast resistance requirements?",
+    "ratio": 23.0,
+    "comp": {
+      "factual_accuracy": 0.7,
+      "completeness": 0.5,
+      "coherence": 0.6,
+      "hallucination_risk": 0.3
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the requirements for roof structural systems?",
+    "ratio": 40.4,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the inspection and quality control requirements for structural work?",
+    "ratio": 32.5,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the design requirements for installation microgrids?",
+    "ratio": 9.8,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the islanding and grid disconnect requirements?",
+    "ratio": 8.2,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the energy storage requirements for microgrids?",
+    "ratio": 8.1,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the control and automation requirements for microgrids?",
+    "ratio": 8.0,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the requirements for distributed generation in microgrids?",
+    "ratio": 9.2,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the cybersecurity requirements for microgrid systems?",
+    "ratio": 9.5,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the testing and commissioning requirements for microgrids?",
+    "ratio": 8.7,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the resilience and reliability requirements?",
+    "ratio": 8.5,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the interconnection requirements with the utility grid?",
+    "ratio": 9.3,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the operations and maintenance requirements for microgrids?",
+    "ratio": 8.8,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the requirements for C5ISR facility design?",
+    "ratio": 18.4,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the electromagnetic interference shielding requirements?",
+    "ratio": 12.7,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 0.8,
+      "coherence": 0.9,
+      "hallucination_risk": 0.0,
+      "verdict": "degraded"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the TEMPEST requirements for C5ISR facilities?",
+    "ratio": 16.4,
+    "comp": {
+      "factual_accuracy": 0.9,
+      "completeness": 0.8,
+      "coherence": 0.9,
+      "hallucination_risk": 0.1,
+      "verdict": "degraded"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 0.75,
+      "coherence": 0.9,
+      "hallucination_risk": 0.0,
+      "verdict": "degraded"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the physical security requirements for C5ISR facilities?",
+    "ratio": 18.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the HVAC requirements for equipment rooms?",
+    "ratio": 20.6,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the power and grounding requirements for C5ISR systems?",
+    "ratio": 18.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the cable plant and infrastructure requirements?",
+    "ratio": 19.9,
+    "comp": {
+      "factual_accuracy": 0.9,
+      "completeness": 0.8,
+      "coherence": 0.7,
+      "hallucination_risk": 0.1,
+      "verdict": "degraded"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the antenna and RF system requirements?",
+    "ratio": 16.8,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the requirements for operations centers within C5ISR facilities?",
+    "ratio": 18.4,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the testing and acceptance requirements for C5ISR facilities?",
+    "ratio": 18.4,
+    "comp": {
+      "factual_accuracy": 0.8,
+      "completeness": 0.7,
+      "coherence": 0.9,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the design standards for military unaccompanied housing?",
+    "ratio": 3.6,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the room size and layout requirements?",
+    "ratio": 4.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the bathroom and toilet facility requirements?",
+    "ratio": 4.1,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the common area and amenity requirements?",
+    "ratio": 4.2,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the kitchen and dining facility requirements?",
+    "ratio": 3.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the HVAC and mechanical system requirements?",
+    "ratio": 3.5,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the laundry facility requirements?",
+    "ratio": 3.9,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the storage and closet space requirements?",
+    "ratio": 4.1,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 0.9,
+      "completeness": 0.8,
+      "coherence": 0.9,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the accessibility and ADA compliance requirements?",
+    "ratio": 4.2,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 0.0,
+      "coherence": 0.0,
+      "hallucination_risk": 1.0
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the IT and communications infrastructure requirements?",
+    "ratio": 4.2,
+    "comp": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0
+    },
+    "base": {
+      "factual_accuracy": 1.0,
+      "completeness": 1.0,
+      "coherence": 1.0,
+      "hallucination_risk": 0.0,
+      "verdict": "acceptable"
+    }
+  }
+]

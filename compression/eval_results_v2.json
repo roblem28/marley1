@@ -1,0 +1,325 @@
+[
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the testing and acceptance requirements for C5ISR facilities?",
+    "orig_tokens": 29067,
+    "comp_tokens": 1576,
+    "compression_ratio": 18.4,
+    "compressed": {
+      "answer": "Based on the provided context, the testing and acceptance requirements for C5ISR facilities are not explicitly detailed. However, we can infer several key points:\n\n1. **Grading Requirements**: C5ISR facilities must be at least Grade 3, and can be elevated to Grade 4 or lowered to Grade 2 based on mission requirements. The decision to design a facility for Grade 2 or 4 must be made during the planning phase.\n\n2. **Resilience and Redundancy**: Systems must be reliable and provide both Resilience and REDUN. Facilities must be designed to meet the Grading criteria defined in Table 1-1 and Appendix A-2.\n\n3. **Cybersecurity and Information Security**: All facility-related control systems must comply with UFC 4-010-06 and be planned, designed, acquired, executed, and maintained in accordance with individual Service Implementation Policy.\n\n4. **Design and Construction Standards**: Facilities must comply with UFC 1-200-01, DoD Building Code, and other referenced publications. The design must meet the Grading criteria and specific requirements for C5ISR facilities, including resilience, redundancy, and cybersecurity.\n\n5. **Testing and Acceptance**: While not explicitly detailed, testing and acceptance would typically involve:\n   - **System Testing**: Testing of all systems to ensure they meet the Grading criteria and redundancy requirements.\n   - **Functional Testing**: Testing to ensure the facility can operate as designed, including redundancy and resilience.\n   - **Acceptance Testing**: Final testing to ensure the facility meets all requirements and is ready for operation.\n   - **Review and Documentation**: Documentation of all testing and acceptance procedures, including any deviations from the Grading criteria.\n\nGiven the context, the specific testing and acceptance requirements would be detailed in the planning documents and would be validated during the planning phase. The testing and acceptance process would be a critical part of ensuring that the C5ISR facility meets all specified Grading criteria and is ready for operation.",
+      "scores": {
+        "factual_accuracy": 0.8,
+        "completeness": 0.7,
+        "coherence": 0.9,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 24.9,
+      "prompt_tokens": 2486
+    },
+    "baseline": {
+      "answer": "Testing and acceptance requirements for C5ISR (Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance) facilities are stringent and typically include:\n\n1. **Functional Testing**: Ensures all systems and components work as intended.\n2. **Performance Testing**: Evaluates the performance metrics such as reliability, capacity, and efficiency.\n3. **Compatibility Testing**: Ensures all systems and components work together seamlessly.\n4. **Security Testing**: Validates security protocols and measures.\n5. **Acceptance Criteria**: Defined by the DoD, including compliance with standards, safety, and environmental requirements.\n6. **User Acceptance Testing (UAT)**: Ensures the systems meet user requirements and expectations.\n7. **Documentation**: Comprehensive documentation of testing, results, and acceptance criteria.\n\nThese requirements are tailored to ensure the reliability, security, and functionality of C5ISR facilities.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 8.72
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the design standards for military unaccompanied housing?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1611,
+    "compression_ratio": 3.6,
+    "compressed": {
+      "answer": "Based on the provided context, the design standards for military unaccompanied housing (UH) are comprehensive and cover various aspects including building design, construction standards, and habitability requirements. Here are specific points related to unaccompanied housing design:\n\n1. **Building Design and Circulation:**\n   - Design buildings to make arrival and movement through them orderly and clearly understandable.\n   - Use circulation to organize and zone activities and promote physical security.\n   - Provide a single public entrance to the building and different functional areas within it.\n   - Provide a weather-protected entrance vestibule with two sets of doors. The first exterior door must not be secured, and the second door set must be capable of securing access to the building.\n   - Design interior corridors to emphasize each quarter\u2019s entrance and de-emphasize length or \"tunnel vision.\"\n   - Size corridors to provide a minimum clear width to accommodate two persons with suitcases, and a base minimum of 5 feet.\n   - Ensure exterior walkways have non-slip surfaces and drain away from the building.\n\n2. **Habitability Standards:**\n   - The standards set forth in Table A-1 INSP Parameters apply to all PP UH located on military installations under the Secretary\u2019s jurisdiction.\n   - Ensure structural soundness and operational conditions post-construction and after major renovations.\n   - Maintain temperature and humidity ranges in occupied units to ensure human comfort.\n   - Ensure facility and room are free from pungent/offensive odors.\n   - Use minimum efficiency reporting value (MERV) 11 filters for ventilation systems and MERV 8 filters if not designed for MERV 11 filters.\n   - Ensure bathroom exhaust fans are connected with humidity sensors and run continuously.\n   - Ensure fan noise adheres to ASHRAE guidelines.\n   - Ensure blackout curtains limit exterior light infiltration.\n   - Ensure alarms perform continuous monitoring for carbon monoxide, carbon dioxide, and carbon dioxide alarms.\n   - Ensure functional building emergency procedures and unblocked egress plans are posted in visible locations.\n   - Ensure fire detection and suppression systems are in place and functional.\n\n3. **Parking:**\n   - Provide standard parking spaces for 70% of the resident capacity.\n\nThese standards are designed to ensure that military unaccompanied housing facilities are safe, comfortable, and habitable for the service members who live there.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 27.53,
+      "prompt_tokens": 2807
+    },
+    "baseline": {
+      "answer": "Design standards for military unaccompanied housing typically include:\n\n1. Accessibility: Compliance with ADA standards for all areas.\n2. Security: Enhanced security measures, including restricted access areas.\n3. Amenities: Basic living facilities, recreational areas, and laundry facilities.\n4. Comfort: Comfortable living spaces, adequate insulation, and energy efficiency.\n5. Safety: Smoke detectors, carbon monoxide detectors, and fire suppression systems.\n6. Space: Adequate living space per person, including bedrooms, living areas, and kitchens.\n7. Privacy: Private sleeping quarters and appropriate separation between genders.\n8. Sustainability: Use of eco-friendly materials and energy-efficient technologies.\n9. Maintenance: Regular maintenance schedules to ensure the housing is in good condition.\n10. Flexibility: Design that can accommodate different types of military personnel and their needs.\n\nThese standards are set by the Department of Defense and may vary by specific installation.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 9.05
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the room size and layout requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1185,
+    "compression_ratio": 4.9,
+    "compressed": {
+      "answer": "Based on the provided context, the room size and layout requirements for MilDeps (Military Dependent Personnel) are as follows:\n\n### Room Size Requirements:\n- **Bedroom**: Minimum of 118 Net Square Feet (NSF) for Private units and 135 NSF for Shared units.\n- **Living Room**: Minimum of 70 NSF per resident for Private units and 140 NSF for Shared units.\n- **Kitchenette**: Minimum of 40 NSF for Private units and 45 NSF for Shared units.\n- **Laundry**: A community laundry area is provided, with 1 laundry unit for every 15 residents.\n- **Multipurpose Space**: A minimum of 8 NSF per resident.\n- **Kitchen**: A community kitchen is provided, with 1 kitchen unit for every 150 residents.\n\n### Layout Requirements:\n- **Private Units**: Include a living room, bedroom, kitchen, and bathroom.\n- **Shared Units**: Include a living room, private bedroom, bathroom, and kitchenette.\n- **Kitchenette**: Must have a microwave, refrigerator, countertop space, storage cabinets, sink with hot and cold water, and be separate from the bathroom.\n- **Laundry**: A community laundry area is provided, with 1 laundry unit for every 15 residents.\n- **Multipurpose Space**: This space is allowed to be located throughout the building, with a minimum of 8 NSF per resident.\n\n### Additional Requirements:\n- **Windows**: Placed to prevent illicit entry and to allow light to enter the room while maintaining privacy at eye level. Size glazed openings to approximately 30% window to wall ratio.\n- **Operable Windows**: Must have a functioning lock and be able to be opened by occupants.\n- **Corridors**: Designed to emphasize each quarter\u2019s entrance and to de-emphasize length or \"tunnel vision.\" Ensure a minimum clear width of 5 feet for two persons with suitcases.\n- **Parking**: 70% of total bed spaces should be provided.\n\nThese requirements are designed to ensure privacy, functionality, and comfort for MilDeps in their living and working spaces.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 24.59,
+      "prompt_tokens": 2071
+    },
+    "baseline": {
+      "answer": "Room size and layout requirements depend on the specific facility type (e.g., office, laboratory, classroom) and its intended use. General guidelines include:\n\n- Office spaces: Typically 10-12 square feet per person.\n- Laboratory spaces: Often larger, depending on equipment needs.\n- Classroom spaces: Size varies by grade level and activity, but generally 50-100 square feet per student.\n- Meeting rooms: 50-100 square feet per person, depending on the room's purpose.\n\nLayouts should facilitate the intended function, ensuring accessibility, safety, and efficiency. For example, laboratories may require specific safety features and equipment placement, while classrooms may need seating arrangements for optimal learning.",
+      "scores": {
+        "factual_accuracy": 0.9,
+        "completeness": 0.8,
+        "coherence": 0.9,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 7.29
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the bathroom and toilet facility requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1437,
+    "compression_ratio": 4.1,
+    "compressed": {
+      "answer": "Based on the provided context, the minimum bathroom and toilet facility requirements for MilDeps are as follows:\n\n1. **Bathroom Size**: The minimum size for a bathroom is 35 Net Square Feet (NSF).\n\n2. **Toilet**: The minimum configuration for a toilet facility is one unisex, accessible restroom at the main entry level. This restroom must be accessible and meet the accessibility standards specified in the context.\n\n3. **Toilet Design**: The toilet must have a minimum of a shower and a toilet. This ensures that the facility meets the minimum hygiene and privacy standards.\n\n4. **Toilet Accessibility**: The unisex restroom must be accessible, which aligns with the accessibility standards set forth in the context.\n\n5. **Toilet Location**: The unisex restroom must be located at the main entry level, ensuring easy access for all personnel.\n\nThese requirements are part of the broader context of facility design standards for MilDeps, ensuring that facilities meet minimum standards for privacy, hygiene, and accessibility.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 13.56,
+      "prompt_tokens": 2498
+    },
+    "baseline": {
+      "answer": "Bathroom and toilet facility requirements typically include:\n\n1. ADA compliance for accessibility.\n2. Sufficient space for maneuvering a wheelchair.\n3. Proper ventilation and lighting.\n4. Hand washing facilities with soap and running water.\n5. Adequate toilet stalls with proper height and clearances.\n6. Hygiene products such as toilet paper, hand towels, and soap.\n7. Storage for cleaning supplies and waste receptacles.\n8. Non-slip flooring and grab bars in stalls.\n9. Proper signage and instructions.\n\nThese requirements ensure accessibility, hygiene, and safety for all users.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 5.89
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the common area and amenity requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1379,
+    "compression_ratio": 4.2,
+    "compressed": {
+      "answer": "Based on the provided context, the common area and amenity requirements for MilDeps facilities include:\n\n1. **Building Common Areas**: These are spaces within the building that are not included within the service member's room module. Examples include entrance, laundry, bulk storage, utility space, circulation space, multipurpose space, vending areas, public toilets, supply storage rooms, recycling collection space, and administration area. The allowances for these areas vary depending on the building programming and configuration used.\n\n2. **Recreation and Community Areas**: These are outdoor activity areas. When providing sand volleyball courts and full basketball facilities, lighting for evening use is included. These areas should be sheltered or screened to temper wind and other climate elements. Other amenities like horseshoe pits, tables, benches, and appropriate lighting for evening recreational activities are also provided.\n\n3. **Accessibility**: The main building entrance on the ground level and at least one emergency egress must be designed in accordance with Architectural Barriers Act (ABA) requirements. Clearances and door accesses in the building main entry/vestibule are provided for visitors. ABA compliant drinking fountains and unisex, ABA accessible restrooms are also required. If a Charge of Quarters (CQ) Desk is part of the project, an ABA compliant counter for visitors is provided. For Air Force projects with Community Activity Space and/or Community Passive Space on the first floor, an ABA compliant door opening system is required.\n\n4. **Kitchen and Kitchenettes**: Kitchens and kitchenettes must meet specific requirements. For kitchens, a sink, refrigerator, oven and cooktop (or stove), storage cabinets, and countertop space are required. For kitchenettes, the requirements vary based on the building's construction date (2014 or later vs. prior to 2014).\n\n5. **Parking**: A minimum of 70% of total bed spaces should be provided for parking.\n\n6. **Habitation Standards**: The context mentions that the NDAA for Fiscal Year 2024 (FY24) has established uniform minimum habitability standards for covered military unaccompanied housing. These standards are to be implemented by the Military Departments.\n\nThese requirements ensure that MilDeps facilities are not only functional but also provide a comfortable and safe environment for service members.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 26.81,
+      "prompt_tokens": 2551
+    },
+    "baseline": {
+      "answer": "Common area and amenity requirements typically include:\n\n1. **Parking Facilities**: Secure parking for visitors and employees.\n2. **Restrooms**: Restrooms for both genders and possibly family restrooms.\n3. **Meeting Rooms**: Spaces for meetings, training, and conferences.\n4. **Gyms and Fitness Centers**: Facilities for physical activity and wellness.\n5. **Cafeterias and Food Service Areas**: Areas for dining and food preparation.\n6. **Playgrounds and Play Areas**: For children.\n7. **Mail Facilities**: Mailboxes and sorting areas.\n8. **Mailboxes**: Secure mail storage for employees.\n9. **Mail Service**: Mail pickup and delivery services.\n10. **Security and Safety**: Access control, surveillance, and emergency response facilities.\n\nThese areas and amenities are designed to enhance the quality of life and productivity of occupants.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 8.51
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the kitchen and dining facility requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1513,
+    "compression_ratio": 3.9,
+    "compressed": {
+      "answer": "Based on the provided context, the kitchen and dining facility requirements for MilDeps are as follows:\n\n1. **Kitchen Configuration:**\n   - **Minimum Configuration:** A kitchen or community kitchen must have at a minimum a sink, a refrigerator, an oven and cooktop (or stove), storage cabinet, and countertop space for food preparation.\n   - **Kitchenette Requirements:** \n     - For facilities built prior to 2014, a kitchenette must have a microwave, a refrigerator, and a sink located in the unit, separate from the bathroom.\n     - For facilities built in 2014 or later, a kitchenette must have a microwave, a refrigerator, a sink located in the unit, separate from the bathroom, storage cabinets, and countertop space.\n\n2. **Privacy Standards:**\n   - Kitchen and dining facilities must be designed to provide privacy, which is typically achieved through separate rooms or units.\n   - For party personnel, the kitchen and dining area must be private and not shared with other personnel.\n\n3. **Space Requirements:**\n   - The kitchen and dining area must be designed to accommodate the number of personnel in the unit. For example, a kitchenette must have a minimum of 40 NSF (Net Square Feet) for every 15 residents.\n\n4. **Accessibility:**\n   - Facilities must comply with Architectural Barriers Act (ABA) requirements, including providing ABA compliant sinks, restrooms, and drinking fountains.\n\n5. **Additional Facilities:**\n   - A community kitchen must be available if there is no sink in the member's unit.\n\nThese requirements ensure that kitchen and dining facilities are adequate, private, and meet the necessary standards for military personnel.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 20.97,
+      "prompt_tokens": 2761
+    },
+    "baseline": {
+      "answer": "Kitchen and dining facility requirements typically include:\n\n1. **Sanitation and Hygiene:** Proper handwashing stations, food preparation areas, and waste disposal.\n2. **Safety:** Fire suppression systems, smoke detectors, and emergency exits.\n3. **Capacity:** Sufficient seating and cooking areas based on the expected number of users.\n4. **Utilities:** Refrigeration, cooking equipment, and plumbing for food preparation and waste disposal.\n5. **Accessibility:** Compliance with ADA standards for wheelchair access and other accommodations.\n6. **Environmental Controls:** HVAC systems to maintain appropriate temperatures and humidity levels.\n7. **Storage:** Adequate storage space for food, supplies, and equipment.\n8. **Security:** Locking doors and secure storage for food and supplies.\n9. **Maintenance:** Regular cleaning and maintenance schedules to ensure food safety and hygiene.\n\nThese requirements ensure a safe, functional, and efficient dining environment.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 8.85
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the HVAC and mechanical system requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1657,
+    "compression_ratio": 3.5,
+    "compressed": {
+      "answer": "Based on the provided context, the HVAC and mechanical system requirements for UH facilities include:\n\n1. **Ceiling Fans**: Ceiling fans are required in bedrooms and living rooms for new construction. For major renovations, ceiling fans are encouraged where ceiling heights and existing conditions permit installation. \n\n2. **Power and Receptacles**: Provide electrical outlets adjacent to television, telephone, and computer data outlets. Also, provide duplex outlets in compact kitchens or service areas. A service panel is required within the unit or room.\n\n3. **Emergency Power (EMER-PWR)**: EMER-PWR is not authorized in UH facilities.\n\n4. **Information and Communications Service (ICS)**: Provide a conduit raceway system for future needs of telecommunication systems. A minimum of one data outlet is required for each bedroom and living room, located for flexibility and easy furniture access.\n\n5. **Cable Television (CATV)**: Refer to MilDep specific guidance.\n\n6. **Intrusion Detection/Monitoring System (IDS)**: Provide conduit systems with pull strings and boxes for future installation of IDS systems. An appropriate location for a \"stand-alone\" card station is provided.\n\n7. **Video Surveillance System (VSS)**: Provide conduit systems with pull strings and outlet boxes to accommodate later installation of a monitoring system. The system includes boxes, conduit with pull strings, cable trays, and cabinets that conform to applicable criteria.\n\n8. **Heating and Cooling Systems**: Maintain temperature and humidity ranges continuously in occupied units. The maximum background noise level for bedrooms is 35 decibels (dB). \n\n9. **Ventilation Systems**: Use MERV 11 filters in ventilation systems. If not designed for MERV 11 filters, use MERV 8 filters. Bathroom exhaust fans are connected with humidity sensors and run continuously or be automatically connected with a light switch.\n\n10. **Emergency Egress Plan**: Emergency egress plans are posted in a visible location for all residents, and unblocked egress is maintained.\n\n11. **Fire Detection and Suppression Systems**: Functional fire detection and suppression systems are required in rooms and facilities, in accordance with NFPA 72 and UFC 1-200-01 General Building Requirements.\n\nThese requirements ensure a safe, comfortable, and functional environment for residents, addressing both operational and emergency needs.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 27.73,
+      "prompt_tokens": 2821
+    },
+    "baseline": {
+      "answer": "HVAC and mechanical system requirements include:\n\n1. **Climate Control**: Meeting specific temperature, humidity, and air quality standards.\n2. **Energy Efficiency**: Utilizing technologies and practices to minimize energy consumption.\n3. **Ventilation**: Ensuring adequate fresh air and proper exhaust to maintain indoor air quality.\n4. **Fire Protection**: Incorporating fire suppression systems and smoke management.\n5. **Accessibility**: Compliance with accessibility standards for individuals with disabilities.\n6. **Noise Control**: Reducing noise levels to meet operational and comfort standards.\n7. **Modularity and Flexibility**: Designing systems to accommodate future changes in building use.\n8. **Maintenance and Operation**: Ensuring systems are easy to maintain and operate efficiently.\n\nThese requirements are tailored to meet specific facility needs and regulatory standards.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 7.83
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the laundry facility requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1496,
+    "compression_ratio": 3.9,
+    "compressed": {
+      "answer": "Based on the provided context, there are no specific laundry facility requirements listed. The context primarily focuses on minimum configuration and privacy standards for living quarters, as well as general space requirements for UH facilities. Laundry facilities are not detailed in the provided information. For specific laundry facility requirements, one would need to refer to additional DoD design standards or specific MilDep guidelines related to laundry spaces.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0
+      },
+      "latency": 7.44,
+      "prompt_tokens": 2631
+    },
+    "baseline": {
+      "answer": "Laundry facility requirements typically include:\n\n1. Adequate space for sorting, washing, drying, and storing clothes.\n2. Proper ventilation to prevent mold and mildew.\n3. Clean and safe water supply.\n4. Safe and effective cleaning agents.\n5. Proper drainage and waste management.\n6. Compliance with fire safety regulations.\n7. Accessibility for all users, including those with disabilities.\n8. Energy efficiency and sustainability measures.\n9. Compliance with local, state, and federal regulations.\n\nThese requirements ensure the facility is functional, safe, and meets the needs of its users.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 5.82
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the storage and closet space requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1437,
+    "compression_ratio": 4.1,
+    "compressed": {
+      "answer": "Based on the provided context, the storage and closet space requirements for MilDep facilities are as follows:\n\n- **Bedroom**: The minimum net square footage (NSF) for a bedroom is 118 NSF for personnel at or above E7 rank, and 135 NSF for personnel at or above E5 rank. For personnel at or above E1 rank, the minimum NSF is 90 NSF.\n- **Closet**: The minimum NSF for a closet is 12 NSF for all personnel ranks.\n\nThese requirements are part of the minimum configuration and privacy standards outlined in Table 2-1 of the context. The context also mentions that these standards apply to both new construction and major renovations for Junior Enlisted Permanent Party Services Members.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 10.85,
+      "prompt_tokens": 2498
+    },
+    "baseline": {
+      "answer": "Storage and closet space requirements depend on the specific facility type (e.g., office, laboratory, warehouse), personnel density, equipment size, and organizational needs. General guidelines include:\n\n- Office spaces: 1-2 sq ft per person for storage.\n- Laboratory spaces: More space per person for equipment and supplies.\n- Warehouse spaces: 10-20 sq ft per cubic foot of storage space needed.\n- Closets: Typically 1 sq ft per person for personal items.\n\nConsulting with a facilities planner or architect can provide more precise requirements tailored to the specific facility.",
+      "scores": {
+        "factual_accuracy": 0.9,
+        "completeness": 0.8,
+        "coherence": 0.9,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 5.88
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the accessibility and ADA compliance requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1390,
+    "compression_ratio": 4.2,
+    "compressed": {
+      "answer": "Based on the provided context, the accessibility and ADA compliance requirements for DoD facilities design include:\n\n1. **Main Building Entrance**: The main building entrance on the ground level and at least one emergency egress must be designed in accordance with Architectural Barriers Act (ABA) requirements. This includes clearances and door accesses in the building main entry/vestibule being used by visitors.\n\n2. **Handicapped Accessible Facilities**: Provide a handicapped accessible drinking fountain and at least one unisex, ABA accessible restroom. If a Charge of Quarters (CQ) Desk is part of the project, provide an ABA compliant counter for visitors.\n\n3. **Community Activity Spaces**: For Air Force projects that include a Community Activity Space and/or Community Passive Space on the first floor, provide an ABA compliant door opening system. No additional accommodations are necessary to comply with ABA for these spaces.\n\n4. **Additional Facilities**: If the project includes other facilities such as Community Activity Spaces or Community Passive Spaces, ensure they are also ADA compliant.\n\n5. **General Design Standards**: The design should accommodate accessibility for all users, including those with disabilities. This includes ensuring that all rooms, corridors, and facilities are accessible and usable by individuals with disabilities.\n\n6. **Specific Design Requirements**: For specific spaces like multi-purpose rooms, elevators, and circulation areas, ensure they meet ADA standards for accessibility and usability.\n\n7. **Habitation Standards**: The design must meet habitability standards as per the FY2024 NDAA, which includes ensuring that all facilities are accessible and usable by all residents, including those with disabilities.\n\nThese requirements are part of the broader set of standards for DoD facilities design, ensuring that all spaces and facilities are accessible and usable by all members of the community, including those with disabilities.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 21.91,
+      "prompt_tokens": 2578
+    },
+    "baseline": {
+      "answer": "Accessibility and ADA (Americans with Disabilities Act) compliance requirements in DoD facilities design include:\n\n1. Accessible routes and entrances\n2. Ramps and elevators for wheelchair access\n3. Ramps and elevators for service animals\n4. Accessible parking spaces\n5. Ramps and elevators for service animals\n6. Accessible restrooms and drinking fountains\n7. Ramps and elevators for service animals\n8. Accessible telecommunications devices\n9. Ramps and elevators for service animals\n10. Accessible public areas and amenities\n11. Ramps and elevators for service animals\n12. Accessible signage and wayfinding\n13. Ramps and elevators for service animals\n14. Accessible public restrooms and drinking fountains\n15. Ramps and elevators for service animals\n\nThese requirements ensure that facilities are usable by people with disabilities, promoting inclusivity and compliance with federal law.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 0.8,
+        "coherence": 0.9,
+        "hallucination_risk": 0.0,
+        "verdict": "degraded"
+      },
+      "latency": 9.78
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the IT and communications infrastructure requirements?",
+    "orig_tokens": 5836,
+    "comp_tokens": 1401,
+    "compression_ratio": 4.2,
+    "compressed": {
+      "answer": "Based on the provided context, the IT and communications infrastructure requirements for DoD facilities include:\n\n1. **Cybersecurity**: All facility-related control systems, including systems separate from a utility monitoring and control system, must be planned, designed, acquired, executed, and maintained in accordance with UFC 4-010-06 and as required by individual Service Implementation Policy.\n\n2. **Information and Communications Service (ICS)**: Each Unit/Room must have a permanently installed conduit raceway system supporting future needs of telecommunication systems. A minimum of one data outlet is required for each bedroom and one for each living room, located for flexibility and easy furniture access. Most UH facilities will receive wireless internet service from a service-wide contracted provider; ample EQUIP space must be provided to meet the needs of this service. Infrastructure for Wi-Fi wireless access points must be provided, including boxes, conduit with pull strings, cable trays, and cabinets that must conform to applicable criteria.\n\n3. **Cable Television (CATV)**: Refer to MilDep specific guidance.\n\n4. **Intrusion Detection/Monitoring System (IDS)**: Infrastructure including conduit with pull strings and boxes for future installation of Intrusion Detection/Monitoring (IDS) systems that can cover building entrances/exits, entrance/elevator lobbies and hallways, and appropriate locations for a \"stand-alone\" card station are provided.\n\n5. **Video Surveillance System (VSS)**: Conduit systems with pull strings and outlet boxes to accommodate later installation of a monitoring system as part of all new construction are provided, including all common areas such as hallways, lobbies, lounges, classrooms/special use rooms, common kitchens, game rooms, laundry rooms, vending areas, stairwells (interior and exterior), elevators, entrances and exits, building exterior, and additional areas/facilities adjacent to the UH facility.\n\nThese requirements emphasize the importance of robust IT and communications infrastructure to support modern operations and security needs in DoD facilities.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0
+      },
+      "latency": 23.5,
+      "prompt_tokens": 2409
+    },
+    "baseline": {
+      "answer": "IT and communications infrastructure requirements include network connectivity, data centers, servers, storage, cybersecurity measures, and communication devices. They also encompass VoIP systems, wireless networks, and satellite communications as needed.",
+      "scores": {
+        "factual_accuracy": 1.0,
+        "completeness": 1.0,
+        "coherence": 1.0,
+        "hallucination_risk": 0.0,
+        "verdict": "acceptable"
+      },
+      "latency": 2.12
+    }
+  }
+]

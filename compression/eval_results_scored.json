@@ -1,0 +1,229 @@
+[
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the electrical design requirements for DoD facilities?",
+    "orig_tokens": 22893,
+    "comp_tokens": 780,
+    "compression_ratio": 29.4,
+    "compressed": {
+      "answer": "Based on the provided context, the electrical design requirements for DoD facilities include:\n\n1. **Compliance with Industry and Technical Society Standards**: Electrical systems must conform to the latest published industry and technical society standards at the date of contract award. Underwriters Laboratories (UL) listing or third-party certification is required for all basic equipment.\n\n2. **Use of Manufacturer's Standard Catalog Products**: Design should use equipment that is the manufacturer's standard catalog products, unless otherwise specified.\n\n3. **Relay Coordination Study**: The DoD is responsible for contacting and obtaining all utility data required to complete the relay coordination study from the respective Base Electric Utility Department or Private Utility Company, including existing upstream protective device types and settings.\n\n4. **Service Point and Site ELEC Utilities**: The service point is defined as the building/similar support structure service equipment line-side connection. Site ELEC Utilities are the primary electric power distribution to the facilities and other ELEC loads, exterior lighting not attached to the building, and telecommunication services required by the Facilities.\n\n5. **Telecommunications Room**: An enclosed space for telecommunications equipment, terminations, and cross-connect wiring for horizontal cabling.\n\n6. **Tempest Protection**: Studies and investigations of compromising emanations (communications security) are conducted under the Tempest name.\n\n7. **Utilization Electric Supply Station**: Equipment such as pole or pad-mounted transformers or secondary unit substations that transforms the energy level (voltage) to a utilization voltage for consumer use.\n\n8. **Reliability and Resilience**: Design considerations for facility-scale renewable energy systems, facility energy system resilience and reliability, and stationary and mission batteries are included.\n\n9. **Lighting Systems**: Interior and exterior lighting systems are designed to meet specific requirements.\n\n10. **Microgrid Design**: Installation of microgrid design for exterior electrical power distribution.\n\n11. **Aircraft Point-of-Use Power Systems**: Aircraft-specific power systems are designed.\n\n12. **Maintenance and Safety**: O",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 21.7,
+      "prompt_tokens": 1648
+    },
+    "baseline": {
+      "answer": "Electrical design requirements for DoD facilities include:\n\n1. High reliability and redundancy to ensure continuous power supply.\n2. Compliance with DoD-specific standards and guidelines.\n3. Protection against electromagnetic interference (EMI) and radio frequency interference (RFI).\n4. Integration of renewable energy sources like solar and wind.\n5. Energy efficiency and conservation measures.\n6. Protection against power surges and voltage fluctuations.\n7. Compliance with National Electrical Code (NEC) and other relevant codes.\n8. Consideration of specialized equipment needs, such as those for radar and communications systems.\n9. Adequate space for future expansion and upgrades.\n10. Protection of critical infrastructure and sensitive data.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 6.79
+    },
+    "keyword_scores": {
+      "compressed": 0.3,
+      "compressed_hits": [
+        "underwriters",
+        "ups",
+        "voltage"
+      ],
+      "baseline": 0.3,
+      "baseline_hits": [
+        "redundan",
+        "electromagnetic",
+        "voltage"
+      ],
+      "delta": 0.0,
+      "winner": "TIE"
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the structural design requirements for DoD buildings?",
+    "orig_tokens": 65325,
+    "comp_tokens": 143,
+    "compression_ratio": 456.8,
+    "compressed": {
+      "answer": "Based on the provided context, the structural design requirements for DoD buildings include:\n\n1. **Seismic Design Requirements**: As per ASCE 7-22 and ASCE 7-16, DoD buildings must comply with seismic design requirements. This includes:\n   - Selection of structural systems (Section 12.2 of ASCE 7-22 and ASCE 7-16).\n   - Structural design basis (Section 12.1 of ASCE 7-22 and ASCE 7-16).\n\n2. **Military Criteria**: Specific military criteria may apply to certain types of DoD buildings, requiring additional requirements beyond those listed in this document.\n\n3. **General Building Requirements**: Comply with UFC 1-200-01, DoD Building Code, which outlines general building requirements.\n\n4. **Structural Design Requirements**: As per ASCE 7-22 and ASCE 7-16, these requirements include:\n   - Structural system selection (Section 12.2 of ASCE 7-22 and ASCE 7-16).\n   - Structural design basis (Section 12.1 of ASCE 7-22 and ASCE 7-16).\n\n5. **Nonbuilding Structures Similar to Buildings**: For nonbuilding structures similar to buildings, specific structural design requirements are outlined in ASCE 7-22 and ASCE 7-16 (Section 15.4 and Section 15.5).\n\nThese requirements ensure that DoD buildings are designed to withstand seismic events and meet military-specific criteria, providing a safe and secure environment.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 17.51,
+      "prompt_tokens": 371
+    },
+    "baseline": {
+      "answer": "Structural design requirements for DoD buildings include:\n\n1. Durability and resilience to withstand extreme weather conditions and potential hostile environments.\n2. Compliance with military-specific standards and guidelines, such as MIL-STD.\n3. High seismic resistance to protect against natural disasters.\n4. Protection against potential biological, chemical, and radiological (CBR) threats.\n5. Energy efficiency and sustainability, including use of green building practices.\n6. Accessibility for all personnel, including those with disabilities.\n7. Integration of modern technology and security systems.\n8. Flexibility to adapt to changing operational needs.\n9. Compliance with applicable building codes and regulations.\n10. Protection of critical infrastructure and sensitive information.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 6.78
+    },
+    "keyword_scores": {
+      "compressed": 0.2,
+      "compressed_hits": [
+        "asce",
+        "seismic"
+      ],
+      "baseline": 0.1,
+      "baseline_hits": [
+        "seismic"
+      ],
+      "delta": 0.1,
+      "winner": "COMPRESSED"
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the design requirements for installation microgrids?",
+    "orig_tokens": 20319,
+    "comp_tokens": 493,
+    "compression_ratio": 41.2,
+    "compressed": {
+      "answer": "Based on the provided context, the design requirements for installation microgrids include:\n\n1. **Grid Connected Support and Ancillary Services:**\n   - Capability for demand response and ancillary services such as frequency support, voltage management, and black start.\n\n2. **Redundancy:**\n   - At least two redundant grid forming assets.\n   - At least two redundant HMI Visualization Front-Ends.\n   - At least two redundant Independent Black Start Sources.\n\n3. **Load Shedding Capability:**\n   - The microgrid should be capable of load shedding to manage demand during grid failures or emergencies.\n\n4. **Re-synchronization and Transition:**\n   - The microgrid should be capable of re-synchronization and a seamless (soft) transition back to the external grid.\n\n5. **Autonomous Operation:**\n   - Designs must accommodate and adhere to installation configuration management protocols.\n   - Consider looped distribution, multi-terminal switches, and bypass of DERs and SWGR to minimize impact of equipment maintenance and testing.\n   - A MILCON (Maintenance, Inventory, Logistics, Contingency) is valid for five years; expansion after that requires a new MILCON.\n   - Perform studies to determine if a microgrid is appropriate.\n   - Investigate options for a combination of energy sources, including renewable energy and energy storage, at the start of any microgrid project.\n\n6. **Performance and Cost Analysis:**\n   - Use tools to design and assess microgrid options that meet Section 2911 requirements of Title 10.\n   - Tools must provide accurate projections of costs and performance, be understandable and usable, consistent with standards and analytical tools, adaptable to a rapidly changing technological environment, peer-reviewed for quality and precision, and measured against the highest level of development for such tools.\n\nThese requirements ensure the microgrid is robust, reliable, and capable of operating autonomously, providing essential services during grid failures or emergencies.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 20.34,
+      "prompt_tokens": 788
+    },
+    "baseline": {
+      "answer": "Design requirements for installation microgrids include:\n\n1. **Grid Independence**: Ability to operate independently from the main power grid.\n2. **Energy Storage**: Integration of batteries or other energy storage systems.\n3. **Control Systems**: Advanced control systems for managing power distribution.\n4. **Reliability**: High reliability to ensure continuous power supply.\n5. **Scalability**: Design for future expansion and integration with renewable energy sources.\n6. **Safety**: Compliance with safety standards and regulations.\n7. **Interoperability**: Compatibility with existing infrastructure and systems.\n8. **Cost Efficiency**: Optimization for cost-effectiveness and long-term sustainability.\n9. **Regulatory Compliance**: Adherence to local, state, and federal regulations.\n10. **Environmental Impact**: Consideration of environmental sustainability and emissions reduction.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 19.2
+    },
+    "keyword_scores": {
+      "compressed": 0.6,
+      "compressed_hits": [
+        "grid connected",
+        "frequency",
+        "renewable",
+        "energy storage",
+        "demand response",
+        "black start"
+      ],
+      "baseline": 0.2,
+      "baseline_hits": [
+        "renewable",
+        "energy storage"
+      ],
+      "delta": 0.4,
+      "winner": "COMPRESSED"
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the requirements for C5ISR facility design?",
+    "orig_tokens": 29067,
+    "comp_tokens": 396,
+    "compression_ratio": 73.4,
+    "compressed": {
+      "answer": "Based on the provided context, the requirements for C5ISR facility design include:\n\n1. **Grade Classification:**\n   - All C5ISR facilities must be at least Grade 3 (concurrently maintainable facility).\n   - Facilities can be elevated to Grade 4 (fault-tolerant facility) or lowered to Grade 2 (redundant component) based on the mission's requirements.\n   - The decision to design a facility for Grade 2 or 4 must be made during the planning phase.\n\n2. **Physical Security and Antiterrorism:**\n   - C5ISR facilities must comply with UFC 4-010-01, assuming they are inhabited buildings unless otherwise specified by the using agency or AHJ.\n   - Protective design requirements must be established in accordance with UFC 4-020-01.\n\n3. **Specialized Technical Requirements:**\n   - C5ISR spaces must utilize outside design temperature criteria for Specialized Technical Requirements.\n   - C5ISR facilities have spaces with stringent indoor air temperature and humidity requirements.\n\n4. **Electrical Requirements:**\n   - C5ISR facilities may have varying electrical requirements depending on the project size, ranging from small projects under 250 kVA to large capacity projects greater than 2,500 kVA.\n\n5. **Planning Process:**\n   - During the planning phase, the CTR must validate the facility grade and capture justification for facility grades other than Grade 3 in planning documents.\n   - The decision to design a facility for Grade 2 or 4 must be made during the planning phase.\n\n6. **Design Basis Threats and Levels of Protection:**\n   - The installation must establish explicit project-specific Design Basis Threats and Levels of Protection in accordance with UFC 4-020-01.\n\nThese requirements ensure that C5ISR facilities are designed to meet the specific needs of their mission, while also providing robust physical security and specialized technical requirements.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 20.86,
+      "prompt_tokens": 675
+    },
+    "baseline": {
+      "answer": "C5ISR (Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance) facility design requires specialized considerations including:\n\n1. **High Security**: Due to the sensitive nature of the systems, high security measures are essential.\n2. **Reliability and Resilience**: Critical infrastructure must be designed to withstand potential disruptions and maintain operations.\n3. **Advanced Technology Integration**: Incorporation of the latest technology for command, control, and communication systems.\n4. **Intelligence and Surveillance**: Facilities must be equipped to support advanced surveillance and intelligence gathering.\n5. **Comprehensive Security Measures**: Physical and electronic security measures to protect against unauthorized access.\n6. **Flexibility and Scalability**: Design should accommodate future technological advancements and changes in mission requirements.\n7. **Environmental Controls**: Temperature, humidity, and air filtration systems to maintain optimal conditions for sensitive equipment.\n8. **Accessibility and Mobility**: Design should facilitate easy access and mobility for personnel and equipment.\n\nThese requirements ensure that C5ISR facilities are capable of supporting the nation's critical defense and intelligence operations effectively.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 10.63
+    },
+    "keyword_scores": {
+      "compressed": 0.4,
+      "compressed_hits": [
+        "grade 3",
+        "grade 4",
+        "redundan",
+        "concurrently maintainable"
+      ],
+      "baseline": 0.0,
+      "baseline_hits": [],
+      "delta": 0.4,
+      "winner": "COMPRESSED"
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the design standards for military unaccompanied housing?",
+    "orig_tokens": 5836,
+    "comp_tokens": 525,
+    "compression_ratio": 11.1,
+    "compressed": {
+      "answer": "Based on the provided context, the design standards for military unaccompanied housing (UH) are established by the Secretary of Defense to ensure uniform design across the Military Departments. These standards are detailed in UFC 4-721-01, which was updated on December 12, 2025. Key points include:\n\n1. **Minimum Gross Building Area**: The total gross building area of UH facilities includes all spaces such as room modules, common areas, circulation spaces, and service areas. The UFC provides a minimum gross building area requirement in Table 4-1 Minimum Requirements Matrix.\n\n2. **Room Type Efficiency**: The table specifies the minimum Net Square Footage (NSF) required per resident for different room types and unit types, including bedrooms, closets, bathrooms, living rooms, kitchenettes, laundry facilities, and community spaces.\n\n3. **Parking**: Parking spaces are required to be 70% of the total bed spaces.\n\n4. **Habitability Standards**: The NDAA for Fiscal Year 2024 (FY24) directs the Secretary of Defense to develop uniform minimum habitability standards for covered military unaccompanied housing. This is detailed in Chapter 5 of the UFC, which establishes the policy standards for the Military Departments to implement these standards.\n\n5. **Compliance**: The design criteria in this document cannot be waived, meaning all projects must adhere to these standards.\n\n6. **Service Specific Guidelines**: Different branches (Air Force, Navy, Army) have specific design guidelines and policies that must be followed for their respective projects.\n\n7. **Community Spaces**: For Air Force projects, specific guidelines for Community Activity Space and Community Passive Space on the first floor are provided, requiring compliance with the Americans with Disabilities Act (ABA) compliant door opening systems.\n\nThese standards ensure that military unaccompanied housing facilities are designed to meet the needs of service members and their families, providing efficient and habitable living spaces.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 21.17,
+      "prompt_tokens": 1123
+    },
+    "baseline": {
+      "answer": "Design standards for military unaccompanied housing typically include:\n\n1. Accessibility: Compliance with ADA standards for all areas.\n2. Security: Enhanced security measures, including restricted access areas.\n3. Amenities: Modern amenities such as high-speed internet, laundry facilities, and recreational areas.\n4. Space: Adequate living space, including bedrooms, living rooms, and kitchens.\n5. Comfort: Comfortable furnishings and climate control systems.\n6. Safety: Fire safety features, smoke detectors, and carbon monoxide detectors.\n7. Sustainability: Energy-efficient design and materials.\n8. Flexibility: Design for potential future occupants or changes in military deployment.\n9. Privacy: Adequate privacy and separation between rooms and communal areas.\n10. Maintenance: Easy access for maintenance and repairs.\n\nThese standards ensure the housing meets the needs of military personnel and their families while maintaining a safe and comfortable environment.",
+      "scores": {
+        "factual_accuracy": 0.0,
+        "completeness": 0.0,
+        "coherence": 0.0,
+        "hallucination_risk": 1.0,
+        "verdict": "failed"
+      },
+      "latency": 8.6
+    },
+    "keyword_scores": {
+      "compressed": 0.3,
+      "compressed_hits": [
+        "ndaa",
+        "secretary of defense",
+        "standard"
+      ],
+      "baseline": 0.4,
+      "baseline_hits": [
+        "ada",
+        "privacy",
+        "energy",
+        "standard"
+      ],
+      "delta": -0.1,
+      "winner": "BASELINE"
+    }
+  }
+]

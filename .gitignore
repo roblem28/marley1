@@ -1,0 +1,16 @@
+# Vendored / submodule
+whisper.cpp/
+
+# Python
+__pycache__/
+*.pyc
+
+# Large binary models
+*.onnx
+*.bin
+
+# Logs
+*.log
+
+# Backup files
+*.bak
