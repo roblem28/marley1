@@ -14,3 +14,10 @@ __pycache__/
 
 # Backup files
 *.bak
+cert.pem
+key.pem
+chatstore/
+backups/
+benchmarks/
+compression/answers*/
+compression/answers/

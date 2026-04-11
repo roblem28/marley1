@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marley1</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap');
+:root {
+  --bg: #0a0a0a; --surface: #111; --surface2: #161616;
+  --border: #1e1e1e; --border2: #2a2a2a;
+  --green: #00ff88; --green-dim: #00ff8820;
+  --text: #e0e0e0; --text-dim: #555; --text-mid: #888;
+  --red: #ff4455; --blue: #4488ff; --gold: #ffcc44;
+  --sidebar-w: 240px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Space Mono', monospace; height: 100vh; display: flex; overflow: hidden; font-size: 13px; }
+
+/* SIDEBAR */
+#sidebar { width: var(--sidebar-w); background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; overflow: hidden; }
+.sidebar-header { padding: 16px 14px 8px; border-bottom: 1px solid var(--border); }
+.logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--green); }
+.sidebar-tabs { display: flex; border-bottom: 1px solid var(--border); }
+.tab { flex: 1; padding: 8px 4px; text-align: center; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; color: var(--text-dim); border-bottom: 2px solid transparent; transition: all 0.15s; }
+.tab.active { color: var(--green); border-bottom-color: var(--green); }
+.tab:hover:not(.active) { color: var(--text-mid); }
+.sidebar-section { flex: 1; overflow-y: auto; padding: 8px 0; }
+.sidebar-section::-webkit-scrollbar { width: 3px; }
+.sidebar-section::-webkit-scrollbar-thumb { background: var(--border2); }
+.new-btn { margin: 8px 10px; padding: 7px 12px; background: var(--green-dim); border: 1px solid var(--green); color: var(--green); font-family: 'Space Mono', monospace; font-size: 11px; cursor: pointer; border-radius: 2px; width: calc(100% - 20px); text-align: left; transition: all 0.15s; text-transform: uppercase; letter-spacing: 0.5px; }
+.new-btn:hover { background: var(--green); color: var(--bg); }
+.item { padding: 8px 14px; cursor: pointer; border-left: 2px solid transparent; transition: all 0.1s; display: flex; align-items: center; gap: 8px; position: relative; }
+.item:hover { background: var(--surface2); }
+.item.active { border-left-color: var(--green); background: var(--surface2); }
+.item-icon { font-size: 12px; flex-shrink: 0; }
+.item-text { flex: 1; overflow: hidden; }
+.item-title { color: var(--text); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.item-sub { color: var(--text-dim); font-size: 10px; margin-top: 2px; }
+.item-del { opacity: 0; font-size: 10px; color: var(--red); background: none; border: none; cursor: pointer; padding: 2px 4px; transition: opacity 0.1s; }
+.item:hover .item-del { opacity: 1; }
+
+/* MAIN */
+#main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+#topbar { padding: 12px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; flex-shrink: 0; background: var(--surface); }
+#chatTitle { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; flex: 1; background: none; border: none; color: var(--text); outline: none; }
+#chatTitle:focus { color: var(--green); }
+.topbar-meta { font-size: 10px; color: var(--text-dim); display: flex; gap: 10px; align-items: center; }
+.tag { padding: 2px 8px; border: 1px solid var(--border2); border-radius: 2px; font-size: 10px; color: var(--text-dim); cursor: pointer; }
+.tag:hover { border-color: var(--green); color: var(--green); }
+.tag.set { border-color: var(--blue); color: var(--blue); }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+.status-dot.off { background: #333; animation: none; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+/* MESSAGES */
+#messages { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+#messages::-webkit-scrollbar { width: 4px; }
+#messages::-webkit-scrollbar-thumb { background: var(--border); }
+.msg { display: flex; flex-direction: column; gap: 3px; max-width: 78%; animation: fadeUp 0.2s ease; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(5px)} to{opacity:1;transform:translateY(0)} }
+.msg.user { align-self: flex-end; }
+.msg.assistant { align-self: flex-start; }
+.msg-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; padding: 0 3px; color: var(--text-dim); display: flex; align-items: center; gap: 6px; }
+.msg.user .msg-label { justify-content: flex-end; color: var(--green); }
+.msg-bubble { padding: 10px 14px; font-size: 12px; line-height: 1.75; border-radius: 2px; white-space: pre-wrap; word-break: break-word; }
+.msg.user .msg-bubble { background: #161616; border: 1px solid var(--border2); }
+.msg.assistant .msg-bubble { background: #0d1a12; border: 1px solid var(--green-dim); border-left: 2px solid var(--green); cursor: pointer; transition: all 0.15s; }
+.msg.assistant .msg-bubble:hover { border-color: #00ff8860; }
+.msg.assistant.playing .msg-bubble { border-left-color: var(--gold); border-color: #ffcc4440; background: #1a1600; }
+.play-btn { font-size: 9px; color: var(--text-dim); cursor: pointer; background: none; border: 1px solid var(--border2); border-radius: 2px; padding: 1px 5px; transition: all 0.1s; font-family: 'Space Mono', monospace; }
+.play-btn:hover { color: var(--gold); border-color: var(--gold); }
+.typing .msg-bubble::after { content: '\25CB'; animation: blink .7s infinite; color: var(--green); }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.empty { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+.empty .big { font-family:'Syne',sans-serif; font-size:56px; font-weight:800; color:#161616; }
+.empty .sub { font-size:11px; color: var(--text-dim); text-transform:uppercase; letter-spacing:2px; }
+
+/* AUDIO CONSOLE */
+#audioconsole { background: #0d0d0d; border-top: 1px solid var(--border2); flex-shrink: 0; }
+#trackStrip { padding: 5px 20px 0; font-size: 10px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; min-height: 20px; }
+#trackTitle { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: italic; }
+#trackIdx { color: var(--text-mid); flex-shrink: 0; }
+#progressRow { padding: 3px 20px; display: flex; align-items: center; gap: 8px; }
+#progressBar { flex: 1; height: 3px; background: var(--border2); border-radius: 2px; cursor: pointer; position: relative; overflow: hidden; }
+#progressFill { height: 100%; background: var(--green); width: 0%; border-radius: 2px; transition: width 0.5s linear; }
+#progressBar.speaking #progressFill { animation: progressSim 45s linear forwards; }
+@keyframes progressSim { from{width:2%} to{width:98%} }
+#timeEl { font-size: 10px; color: var(--text-dim); flex-shrink: 0; width: 28px; text-align: right; }
+#controlsRow { padding: 5px 20px 8px; display: flex; align-items: center; gap: 5px; flex-wrap: nowrap; }
+.tbtn { background: transparent; border: 1px solid var(--border2); color: var(--text-mid); font-size: 14px; width: 32px; height: 28px; border-radius: 2px; cursor: pointer; transition: all 0.12s; display: flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1; }
+.tbtn:hover { border-color: var(--green); color: var(--green); }
+.tbtn.playing { border-color: var(--gold); color: var(--gold); background: #ffcc4415; }
+#ttsBadge { font-size: 10px; padding: 0 8px; height: 28px; border-radius: 2px; cursor: pointer; border: 1px solid var(--border2); color: var(--text-dim); transition: all 0.12s; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; background: transparent; font-family: 'Space Mono', monospace; }
+#ttsBadge.on { border-color: var(--green); color: var(--green); background: var(--green-dim); }
+#speedWrap { display: flex; align-items: center; gap: 3px; flex-shrink: 0; }
+#speedLabel { font-size: 10px; color: var(--text-dim); width: 32px; text-align: center; }
+#speedRange { width: 55px; accent-color: var(--green); cursor: pointer; }
+#voiceSelect { background: var(--bg); border: 1px solid var(--border2); color: var(--text-dim); font-family: 'Space Mono', monospace; font-size: 10px; padding: 0 6px; border-radius: 2px; height: 28px; outline: none; flex: 1; min-width: 0; max-width: 200px; }
+#voiceSelect:focus { border-color: var(--green); }
+#micBtn { background: transparent; border: 1px solid var(--border2); color: var(--text-dim); font-family: 'Space Mono', monospace; font-size: 10px; padding: 0 10px; height: 28px; border-radius: 2px; cursor: pointer; transition: all 0.12s; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; }
+#micBtn:hover { border-color: var(--red); color: var(--red); }
+#micBtn.listening { border-color: var(--red); color: var(--red); background: #ff445520; animation: recPulse 0.8s infinite; }
+#micBtn.nosec { border-color: var(--gold); color: var(--gold); }
+@keyframes recPulse { 0%,100%{border-color:var(--red)} 50%{border-color:#ff445533} }
+#levelMeter { width: 44px; height: 6px; background: var(--border2); border-radius: 2px; overflow: hidden; flex-shrink: 0; }
+#levelFill { height: 100%; background: var(--green); width: 0%; transition: width 0.08s; border-radius: 2px; }
+#levelFill.hot { background: var(--red); }
+#consoleStatus { font-size: 10px; color: var(--text-dim); flex-shrink: 0; min-width: 70px; text-align: right; }
+.cdiv { width: 1px; height: 18px; background: var(--border2); flex-shrink: 0; }
+
+/* INPUT */
+#inputbar { border-top: 1px solid var(--border); padding: 12px 20px; background: var(--surface); flex-shrink: 0; }
+.input-row { display: flex; gap: 8px; align-items: flex-end; }
+#textInput { flex:1; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'Space Mono', monospace; font-size: 12px; padding: 9px 13px; border-radius: 2px; resize: none; min-height: 40px; max-height: 100px; outline: none; transition: border-color 0.15s; line-height: 1.5; }
+#textInput:focus { border-color: var(--green); }
+#textInput::placeholder { color: var(--text-dim); }
+.btn { background: transparent; border: 1px solid var(--border); color: var(--text-dim); font-family: 'Space Mono', monospace; font-size: 11px; padding: 9px 13px; border-radius: 2px; cursor: pointer; transition: all 0.12s; white-space: nowrap; height: 40px; text-transform: uppercase; letter-spacing: 0.5px; }
+.btn:hover { border-color: var(--green); color: var(--green); }
+.btn.primary { border-color: var(--green); color: var(--green); }
+.btn.primary:hover { background: var(--green); color: var(--bg); }
+.hint { font-size: 10px; color: var(--text-dim); margin-top: 7px; text-align: center; }
+.hint input { background: none; border: none; color: var(--text-dim); font-family: 'Space Mono', monospace; font-size: 10px; width: 210px; outline: none; }
+.hint input:focus { color: var(--green); border-bottom: 1px solid var(--green); }
+
+/* PANELS */
+#panel { width: 340px; background: var(--surface); border-left: 1px solid var(--border); display: none; flex-direction: column; flex-shrink: 0; }
+#panel.open { display: flex; }
+.panel-header { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+.panel-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; flex: 1; }
+.panel-close { background: none; border: none; color: var(--text-dim); cursor: pointer; font-size: 16px; }
+.panel-body { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.field-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.field-input, .field-textarea, .field-select { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'Space Mono', monospace; font-size: 12px; padding: 8px 10px; border-radius: 2px; outline: none; }
+.field-input:focus, .field-textarea:focus, .field-select:focus { border-color: var(--green); }
+.field-textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
+.field-select option { background: var(--surface); }
+.save-btn { padding: 9px; background: var(--green-dim); border: 1px solid var(--green); color: var(--green); font-family: 'Space Mono', monospace; font-size: 11px; cursor: pointer; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.15s; }
+.save-btn:hover { background: var(--green); color: var(--bg); }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div class="sidebar-header"><div class="logo">MARLEY1</div></div>
+  <div class="sidebar-tabs">
+    <div class="tab active" onclick="switchTab('chats')">Chats</div>
+    <div class="tab" onclick="switchTab('agents')">Agents</div>
+    <div class="tab" onclick="switchTab('projects')">Projects</div>
+  </div>
+  <div class="sidebar-section" id="sidebarContent"></div>
+</div>
+
+<div id="main">
+  <div id="topbar">
+    <input id="chatTitle" placeholder="Untitled chat" onblur="saveTitle()" />
+    <div class="topbar-meta">
+      <span class="tag" id="agentTag" onclick="openPanel('agent')">+ agent</span>
+      <span class="tag" id="projectTag" onclick="openPanel('project')">+ project</span>
+      <div class="status-dot" id="statusDot"></div>
+      <span id="statusText" style="font-size:10px;color:var(--text-dim)">ready</span>
+    </div>
+  </div>
+
+  <div id="messages">
+    <div class="empty">
+      <div class="big">M1</div>
+      <div class="sub">select or create a chat</div>
+    </div>
+  </div>
+
+  <!-- AUDIO CONSOLE -->
+  <div id="audioconsole">
+    <div id="trackStrip">
+      <span id="trackTitle">no track</span>
+      <span id="trackIdx"></span>
+    </div>
+    <div id="progressRow">
+      <div id="progressBar" onclick="seekClick(event)"><div id="progressFill"></div></div>
+      <span id="timeEl">0s</span>
+    </div>
+    <div id="controlsRow">
+      <button class="tbtn" id="prevBtn"  onclick="trackPrev()"  title="Prev message">&#x23EE;</button>
+      <button class="tbtn" id="playBtn"  onclick="playPause()"  title="Play / Pause">&#x25B6;</button>
+      <button class="tbtn" id="stopBtn"  onclick="trackStop()"  title="Stop">&#x23F9;</button>
+      <button class="tbtn" id="nextBtn"  onclick="trackNext()"  title="Next message">&#x23ED;</button>
+      <div class="cdiv"></div>
+      <button id="ttsBadge" class="on" onclick="toggleTTS()" title="Auto-play on new replies">TTS</button>
+      <div class="cdiv"></div>
+      <div id="speedWrap">
+        <span id="speedLabel">1.0x</span>
+        <input id="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0" oninput="onSpeed(this.value)" title="Speed" />
+      </div>
+      <div class="cdiv"></div>
+      <select id="voiceSelect" onchange="onVoiceChange()" title="TTS voice"></select>
+      <div class="cdiv"></div>
+      <button id="micBtn" onclick="toggleMic()" title="Microphone / speech input">&#x1F3A4; MIC</button>
+      <div id="levelMeter"><div id="levelFill"></div></div>
+      <div class="cdiv"></div>
+      <span id="consoleStatus"></span>
+    </div>
+  </div>
+
+  <div id="inputbar">
+    <div class="input-row">
+      <textarea id="textInput" placeholder="message..." rows="1"></textarea>
+      <button class="btn primary" onclick="sendText()">SEND</button>
+    </div>
+    <div class="hint">
+      Enter to send &middot; Shift+Enter newline &middot; server:
+      <input id="serverUrl" value="http://100.110.181.128:7842" />
+    </div>
+  </div>
+</div>
+
+<div id="panel">
+  <div class="panel-header">
+    <div class="panel-title" id="panelTitle">Panel</div>
+    <button class="panel-close" onclick="closePanel()">&times;</button>
+  </div>
+  <div class="panel-body" id="panelBody"></div>
+</div>
+
+<script>
+const API = () => document.getElementById('serverUrl').value.trim();
+let currentChat = null, currentTab = 'chats';
+let chats = [], agents = [], projects = [];
+
+// TTS / Player
+let ttsEnabled = true, selectedVoice = null, ttsRate = 1.0;
+let ttsQueue = [], trackIndex = -1;
+let isPlaying = false, isPaused = false, currentUtter = null;
+let trackTimer = null;
+
+// Mic
+let recognition = null, micActive = false;
+let audioCtx = null, analyser = null, levelTimer = null, micStream = null;
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+async function api(method, path, body){
+  const opts={method,headers:{'Content-Type':'application/json'}};
+  if(body) opts.body=JSON.stringify(body);
+  return (await fetch(API()+path,opts)).json();
+}
+function setStatus(txt,on=true){
+  document.getElementById('statusText').textContent=txt;
+  document.getElementById('statusDot').className='status-dot'+(on?'':' off');
+}
+function setCS(txt){ document.getElementById('consoleStatus').textContent=txt; }
+
+// ── Load ─────────────────────────────────────────────────────────────────────
+async function loadAll(){
+  try{
+    [chats,agents,projects]=await Promise.all([api('GET','/api/chats'),api('GET','/api/agents'),api('GET','/api/projects')]);
+    renderSidebar();
+  }catch(e){ setStatus('server unreachable',false); }
+}
+
+// ── Sidebar ──────────────────────────────────────────────────────────────────
+function switchTab(tab){
+  currentTab=tab;
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',['chats','agents','projects'][i]===tab));
+  renderSidebar();
+}
+function renderSidebar(){
+  const el=document.getElementById('sidebarContent');
+  if(currentTab==='chats'){
+    el.innerHTML=`<button class="new-btn" onclick="newChat()">+ New Chat</button>`;
+    if(!chats.length){el.innerHTML+=`<div style="padding:12px 14px;color:var(--text-dim);font-size:11px">No chats yet</div>`;return;}
+    chats.sort((a,b)=>b.updated-a.updated).forEach(c=>{
+      const proj=projects.find(p=>p.id===c.project_id),agent=agents.find(a=>a.id===c.agent_id);
+      el.innerHTML+=`<div class="item ${currentChat?.id===c.id?'active':''}" onclick="openChat('${c.id}')">
+        <div class="item-icon">&#x1F4AC;</div>
+        <div class="item-text"><div class="item-title">${esc(c.title)}</div>
+        <div class="item-sub">${agent?'&#x1F916; '+esc(agent.name):''}${proj?' &middot; &#x1F4C1; '+esc(proj.name):''}</div></div>
+        <button class="item-del" onclick="deleteItem(event,'chats','${c.id}')">&#x2715;</button></div>`;
+    });
+  }else if(currentTab==='agents'){
+    el.innerHTML=`<button class="new-btn" onclick="newAgent()">+ New Agent</button>`;
+    if(!agents.length){el.innerHTML+=`<div style="padding:12px 14px;color:var(--text-dim);font-size:11px">No agents</div>`;return;}
+    agents.forEach(a=>{el.innerHTML+=`<div class="item" onclick="editAgent('${a.id}')">
+      <div class="item-icon">&#x1F916;</div>
+      <div class="item-text"><div class="item-title">${esc(a.name)}</div><div class="item-sub">${esc(a.description||'no description')}</div></div>
+      <button class="item-del" onclick="deleteItem(event,'agents','${a.id}')">&#x2715;</button></div>`;});
+  }else{
+    el.innerHTML=`<button class="new-btn" onclick="newProject()">+ New Project</button>`;
+    if(!projects.length){el.innerHTML+=`<div style="padding:12px 14px;color:var(--text-dim);font-size:11px">No projects</div>`;return;}
+    projects.forEach(p=>{
+      const count=chats.filter(c=>c.project_id===p.id).length;
+      el.innerHTML+=`<div class="item" onclick="editProject('${p.id}')">
+        <div class="item-icon">&#x1F4C1;</div>
+        <div class="item-text"><div class="item-title">${esc(p.name)}</div>
+        <div class="item-sub">${count} chat${count!==1?'s':''} &middot; ${esc(p.description||'no desc')}</div></div>
+        <button class="item-del" onclick="deleteItem(event,'projects','${p.id}')">&#x2715;</button></div>`;
+    });
+  }
+}
+
+// ── Chats ────────────────────────────────────────────────────────────────────
+async function newChat(){ const c=await api('POST','/api/chats',{title:'New Chat'}); chats.unshift(c); openChat(c.id); }
+async function openChat(id){
+  trackStop();
+  const c=await api('GET',`/api/chats/${id}`);
+  currentChat=c;
+  document.getElementById('chatTitle').value=c.title;
+  const agent=agents.find(a=>a.id===c.agent_id),proj=projects.find(p=>p.id===c.project_id);
+  const agTag=document.getElementById('agentTag'),prTag=document.getElementById('projectTag');
+  agTag.textContent=agent?'\u{1F916} '+agent.name:'+ agent'; agTag.className='tag'+(agent?' set':'');
+  prTag.textContent=proj?'\u{1F4C1} '+proj.name:'+ project'; prTag.className='tag'+(proj?' set':'');
+  renderMessages(); renderSidebar(); rebuildQueue();
+}
+
+function renderMessages(){
+  const el=document.getElementById('messages');
+  if(!currentChat||!currentChat.messages.length){
+    el.innerHTML=`<div class="empty"><div class="big">M1</div><div class="sub">start the conversation</div></div>`;
+    return;
+  }
+  el.innerHTML='';
+  currentChat.messages.forEach((m,i)=>{
+    const d=document.createElement('div');
+    d.className=`msg ${m.role}`; d.dataset.msgidx=i;
+    if(m.role==='assistant'){
+      d.innerHTML=`<div class="msg-label">marley1 <button class="play-btn" onclick="playByMsgIdx(${i})">&#x25B6;</button></div><div class="msg-bubble">${esc(m.content)}</div>`;
+      d.querySelector('.msg-bubble').addEventListener('dblclick',()=>playByMsgIdx(i));
+    }else{
+      d.innerHTML=`<div class="msg-label">you</div><div class="msg-bubble">${esc(m.content)}</div>`;
+    }
+    el.appendChild(d);
+  });
+  el.scrollTop=el.scrollHeight;
+}
+
+function rebuildQueue(){
+  if(!currentChat){ttsQueue=[];trackIndex=-1;updateTrackDisplay();return;}
+  ttsQueue=currentChat.messages
+    .map((m,i)=>({text:m.content,msgIdx:i,role:m.role}))
+    .filter(m=>m.role==='assistant');
+  trackIndex=Math.max(0,ttsQueue.length-1);
+  updateTrackDisplay();
+}
+
+function playByMsgIdx(msgIdx){
+  const qi=ttsQueue.findIndex(q=>q.msgIdx===msgIdx);
+  if(qi>=0){trackIndex=qi;playTrack(qi);}
+}
+
+async function sendText(){
+  if(!currentChat) await newChat();
+  const input=document.getElementById('textInput');
+  const text=input.value.trim(); if(!text) return;
+  input.value=''; input.style.height='auto';
+  addMsgEl('user',text);
+  const typing=addMsgEl('assistant','',true);
+  setStatus('thinking...');
+  try{
+    const r=await api('POST',`/api/chats/${currentChat.id}/message`,{content:text});
+    currentChat=r.chat;
+    const bubble=typing.querySelector('.msg-bubble');
+    bubble.textContent=r.reply;
+    typing.classList.remove('typing');
+    const newMsgIdx=currentChat.messages.length-1;
+    const label=typing.querySelector('.msg-label');
+    label.innerHTML=`marley1 <button class="play-btn" onclick="playByMsgIdx(${newMsgIdx})">&#x25B6;</button>`;
+    bubble.addEventListener('dblclick',()=>playByMsgIdx(newMsgIdx));
+    typing.dataset.msgidx=newMsgIdx;
+    document.getElementById('chatTitle').value=currentChat.title;
+    setStatus('ready');
+    ttsQueue.push({text:r.reply,msgIdx:newMsgIdx,role:'assistant'});
+    trackIndex=ttsQueue.length-1;
+    updateTrackDisplay();
+    if(ttsEnabled) playTrack(trackIndex);
+    const idx2=chats.findIndex(c=>c.id===currentChat.id);
+    if(idx2>=0) chats[idx2]=currentChat; else chats.unshift(currentChat);
+    renderSidebar();
+  }catch(e){
+    typing.querySelector('.msg-bubble').textContent=`Error: ${e.message}`;
+    typing.classList.remove('typing'); setStatus('error',false);
+  }
+}
+
+function addMsgEl(role,text,typing=false){
+  const el=document.getElementById('messages'),empty=el.querySelector('.empty');
+  if(empty) empty.remove();
+  const d=document.createElement('div');
+  d.className=`msg ${role}${typing?' typing':''}`;
+  d.innerHTML=`<div class="msg-label">${role==='user'?'you':'marley1'}</div><div class="msg-bubble">${esc(text)}</div>`;
+  el.appendChild(d); el.scrollTop=el.scrollHeight; return d;
+}
+
+async function saveTitle(){
+  if(!currentChat) return;
+  const t=document.getElementById('chatTitle').value.trim();
+  if(t&&t!==currentChat.title){await api('PUT',`/api/chats/${currentChat.id}`,{title:t});currentChat.title=t;renderSidebar();}
+}
+async function deleteItem(e,type,id){
+  e.stopPropagation(); await api('DELETE',`/api/${type}/${id}`);
+  if(type==='chats'){chats=chats.filter(c=>c.id!==id);if(currentChat?.id===id){currentChat=null;trackStop();document.getElementById('messages').innerHTML='<div class="empty"><div class="big">M1</div><div class="sub">select or create a chat</div></div>';}}
+  else if(type==='agents') agents=agents.filter(a=>a.id!==id);
+  else projects=projects.filter(p=>p.id!==id);
+  renderSidebar();
+}
+
+// ── Agents / Projects ────────────────────────────────────────────────────────
+function newAgent(){openPanel('new-agent');}
+function editAgent(id){const a=agents.find(x=>x.id===id);if(a)openPanel('edit-agent',a);}
+function newProject(){openPanel('new-project');}
+function editProject(id){const p=projects.find(x=>x.id===id);if(p)openPanel('edit-project',p);}
+
+function openPanel(type,data={}){
+  document.getElementById('panel').classList.add('open');
+  const titles={'new-agent':'New Agent','edit-agent':'Edit Agent','new-project':'New Project','edit-project':'Edit Project','agent':'Assign Agent','project':'Assign Project'};
+  document.getElementById('panelTitle').textContent=titles[type]||type;
+  const body=document.getElementById('panelBody');
+  if(type==='new-agent'){body.innerHTML=`<div><div class="field-label">Name</div><input class="field-input" id="pName" placeholder="Agent name"/></div><div><div class="field-label">Description</div><input class="field-input" id="pDesc" placeholder="Short description"/></div><div><div class="field-label">System Prompt</div><textarea class="field-textarea" id="pSys" placeholder="You are..."></textarea></div><button class="save-btn" onclick="saveAgent(null)">Create Agent</button>`;}
+  else if(type==='edit-agent'){body.innerHTML=`<div><div class="field-label">Name</div><input class="field-input" id="pName" value="${esc(data.name||'')}"/></div><div><div class="field-label">Description</div><input class="field-input" id="pDesc" value="${esc(data.description||'')}"/></div><div><div class="field-label">System Prompt</div><textarea class="field-textarea" id="pSys">${esc(data.system_prompt||'')}</textarea></div><button class="save-btn" onclick="saveAgent('${data.id}')">Save Agent</button>`;}
+  else if(type==='new-project'){body.innerHTML=`<div><div class="field-label">Name</div><input class="field-input" id="pName" placeholder="Project name"/></div><div><div class="field-label">Description</div><textarea class="field-textarea" id="pDesc" placeholder="What is this?"></textarea></div><button class="save-btn" onclick="saveProject(null)">Create Project</button>`;}
+  else if(type==='edit-project'){body.innerHTML=`<div><div class="field-label">Name</div><input class="field-input" id="pName" value="${esc(data.name||'')}"/></div><div><div class="field-label">Description</div><textarea class="field-textarea" id="pDesc">${esc(data.description||'')}</textarea></div><button class="save-btn" onclick="saveProject('${data.id}')">Save Project</button>`;}
+  else if(type==='agent'){const opts=agents.map(a=>`<option value="${a.id}" ${currentChat?.agent_id===a.id?'selected':''}>${esc(a.name)}</option>`).join('');body.innerHTML=`<div><div class="field-label">Agent</div><select class="field-select" id="pAgentSel"><option value="">None</option>${opts}</select></div><button class="save-btn" onclick="assignAgent()">Assign</button>`;}
+  else if(type==='project'){const opts=projects.map(p=>`<option value="${p.id}" ${currentChat?.project_id===p.id?'selected':''}>${esc(p.name)}</option>`).join('');body.innerHTML=`<div><div class="field-label">Project</div><select class="field-select" id="pProjSel"><option value="">None</option>${opts}</select></div><button class="save-btn" onclick="assignProject()">Assign</button>`;}
+}
+function closePanel(){document.getElementById('panel').classList.remove('open');}
+async function saveAgent(id){
+  const name=document.getElementById('pName').value.trim(),desc=document.getElementById('pDesc').value.trim(),sys=document.getElementById('pSys').value.trim();
+  if(!name) return;
+  if(id){const a=await api('PUT',`/api/agents/${id}`,{name,description:desc,system_prompt:sys});const i=agents.findIndex(x=>x.id===id);if(i>=0)agents[i]=a;}
+  else{const a=await api('POST','/api/agents',{name,description:desc,system_prompt:sys});agents.push(a);}
+  closePanel();renderSidebar();
+}
+async function saveProject(id){
+  const name=document.getElementById('pName').value.trim(),desc=document.getElementById('pDesc').value.trim();
+  if(!name) return;
+  if(id){const p=await api('PUT',`/api/projects/${id}`,{name,description:desc});const i=projects.findIndex(x=>x.id===id);if(i>=0)projects[i]=p;}
+  else{const p=await api('POST','/api/projects',{name,description:desc});projects.push(p);}
+  closePanel();renderSidebar();
+}
+async function assignAgent(){
+  if(!currentChat) return;
+  const aid=document.getElementById('pAgentSel').value||null;
+  currentChat=await api('PUT',`/api/chats/${currentChat.id}`,{agent_id:aid});
+  const agent=agents.find(a=>a.id===aid),tag=document.getElementById('agentTag');
+  tag.textContent=agent?'\u{1F916} '+agent.name:'+ agent';tag.className='tag'+(agent?' set':'');
+  closePanel();renderSidebar();
+}
+async function assignProject(){
+  if(!currentChat) return;
+  const pid=document.getElementById('pProjSel').value||null;
+  currentChat=await api('PUT',`/api/chats/${currentChat.id}`,{project_id:pid});
+  const proj=projects.find(p=>p.id===pid),tag=document.getElementById('projectTag');
+  tag.textContent=proj?'\u{1F4C1} '+proj.name:'+ project';tag.className='tag'+(proj?' set':'');
+  closePanel();renderSidebar();
+}
+
+// ── Input ────────────────────────────────────────────────────────────────────
+document.getElementById('textInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendText();}});
+document.getElementById('textInput').addEventListener('input',function(){this.style.height='auto';this.style.height=Math.min(this.scrollHeight,100)+'px';});
+
+// ══ AUDIO CONSOLE ════════════════════════════════════════════════════════════
+
+function populateVoices(){
+  const sel=document.getElementById('voiceSelect'),voices=speechSynthesis.getVoices();
+  if(!voices.length) return;
+  sel.innerHTML='';
+  voices.forEach((v,i)=>{
+    const o=document.createElement('option');o.value=i;
+    o.textContent=`${v.name} (${v.lang})`;
+    if(v.lang.startsWith('en')&&v.name.toLowerCase().includes('google')) o.selected=true;
+    sel.appendChild(o);
+  });
+  onVoiceChange();
+}
+function onVoiceChange(){const i=parseInt(document.getElementById('voiceSelect').value);selectedVoice=speechSynthesis.getVoices()[i]||null;}
+function onSpeed(v){ttsRate=parseFloat(v);document.getElementById('speedLabel').textContent=parseFloat(v).toFixed(1)+'x';}
+function toggleTTS(){ttsEnabled=!ttsEnabled;document.getElementById('ttsBadge').classList.toggle('on',ttsEnabled);setCS(ttsEnabled?'auto on':'auto off');if(!ttsEnabled)trackStop();}
+
+// Transport
+function playPause(){
+  if(!ttsQueue.length){setCS('no messages');return;}
+  if(isPlaying&&!isPaused){
+    speechSynthesis.pause();isPaused=true;
+    clearInterval(trackTimer);
+    document.getElementById('playBtn').innerHTML='&#x25B6;';
+    document.getElementById('playBtn').classList.remove('playing');
+    setCS('paused');
+  }else if(isPaused){
+    speechSynthesis.resume();isPaused=false;
+    startTimer();
+    document.getElementById('playBtn').innerHTML='&#x23F8;';
+    document.getElementById('playBtn').classList.add('playing');
+    setCS('playing');
+  }else{
+    if(trackIndex<0) trackIndex=0;
+    playTrack(trackIndex);
+  }
+}
+
+function playTrack(qi){
+  if(qi<0||qi>=ttsQueue.length) return;
+  trackStop(true); // silent stop, no reset of index
+  trackIndex=qi;
+  const item=ttsQueue[qi];
+  const u=new SpeechSynthesisUtterance(item.text);
+  if(selectedVoice) u.voice=selectedVoice;
+  u.rate=ttsRate; u.pitch=1.0;
+  currentUtter=u;
+  u.onstart=()=>{
+    isPlaying=true;isPaused=false;
+    document.getElementById('playBtn').innerHTML='&#x23F8;';
+    document.getElementById('playBtn').classList.add('playing');
+    document.getElementById('progressBar').classList.add('speaking');
+    startTimer();highlightMsg(item.msgIdx,true);setCS('playing');
+  };
+  u.onend=()=>{
+    isPlaying=false;isPaused=false;clearInterval(trackTimer);
+    document.getElementById('progressBar').classList.remove('speaking');
+    document.getElementById('progressFill').style.width='100%';
+    document.getElementById('playBtn').innerHTML='&#x25B6;';
+    document.getElementById('playBtn').classList.remove('playing');
+    highlightMsg(item.msgIdx,false);setCS('');
+    if(trackIndex<ttsQueue.length-1) setTimeout(()=>playTrack(trackIndex+1),500);
+  };
+  u.onerror=(e)=>{
+    isPlaying=false;clearInterval(trackTimer);
+    document.getElementById('progressBar').classList.remove('speaking');
+    document.getElementById('playBtn').innerHTML='&#x25B6;';
+    document.getElementById('playBtn').classList.remove('playing');
+    highlightMsg(item.msgIdx,false);setCS('err:'+e.error);
+  };
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+  updateTrackDisplay();
+}
+
+function trackStop(silent=false){
+  speechSynthesis.cancel();
+  isPlaying=false;isPaused=false;currentUtter=null;
+  clearInterval(trackTimer);
+  document.getElementById('progressBar').classList.remove('speaking');
+  document.getElementById('progressFill').style.width='0%';
+  document.getElementById('timeEl').textContent='0s';
+  document.getElementById('playBtn').innerHTML='&#x25B6;';
+  document.getElementById('playBtn').classList.remove('playing');
+  document.querySelectorAll('.msg.assistant.playing').forEach(el=>el.classList.remove('playing'));
+  if(!silent) setCS('');
+}
+function trackPrev(){if(trackIndex>0){trackIndex--;playTrack(trackIndex);}else setCS('first');}
+function trackNext(){if(trackIndex<ttsQueue.length-1){trackIndex++;playTrack(trackIndex);}else setCS('last');}
+
+function seekClick(e){
+  if(!ttsQueue[trackIndex]) return;
+  // Web Speech has no true seek — just restart
+  playTrack(trackIndex);
+}
+
+let timerStart=0;
+function startTimer(){
+  clearInterval(trackTimer);
+  timerStart=Date.now();
+  trackTimer=setInterval(()=>{
+    if(!isPlaying||isPaused) return;
+    const s=Math.round((Date.now()-timerStart)/1000);
+    document.getElementById('timeEl').textContent=s+'s';
+  },500);
+}
+
+function updateTrackDisplay(){
+  const total=ttsQueue.length;
+  document.getElementById('trackIdx').textContent=total?(trackIndex+1)+'/'+total:'';
+  if(total&&trackIndex>=0){
+    const txt=ttsQueue[trackIndex].text;
+    document.getElementById('trackTitle').textContent=txt.length>70?txt.slice(0,70)+'\u2026':txt;
+  }else{
+    document.getElementById('trackTitle').textContent='no track';
+  }
+}
+
+function highlightMsg(msgIdx,on){
+  document.querySelectorAll('.msg.assistant').forEach(el=>{
+    const i=parseInt(el.dataset.msgidx);
+    if(i===msgIdx) el.classList.toggle('playing',on);
+    else el.classList.remove('playing');
+  });
+}
+
+// ── Mic ──────────────────────────────────────────────────────────────────────
+function toggleMic(){
+  if(micActive){stopMic();return;}
+  if(!window.isSecureContext){
+    alert('Mic requires HTTPS or localhost.\n\nChrome fix:\n1. Go to: chrome://flags/#unsafely-treat-insecure-origin-as-secure\n2. Add: http://100.110.181.128:7842\n3. Enable \u2192 Relaunch Chrome');
+    return;
+  }
+  if(!('SpeechRecognition' in window||'webkitSpeechRecognition' in window)){
+    setCS('Chrome only');return;
+  }
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  recognition=new SR();
+  recognition.lang='en-US';recognition.interimResults=false;recognition.continuous=false;
+  recognition.onresult=e=>{
+    document.getElementById('textInput').value=e.results[0][0].transcript;
+    stopMic();sendText();
+  };
+  recognition.onerror=err=>{setCS('mic: '+err.error);stopMic();};
+  recognition.onend=()=>{if(micActive)stopMic();};
+  try{
+    recognition.start();micActive=true;
+    document.getElementById('micBtn').classList.add('listening');
+    document.getElementById('micBtn').innerHTML='&#x23F9; STOP';
+    setCS('listening...');
+    startLevelMeter();
+  }catch(e){setCS('mic err');}
+}
+
+function stopMic(){
+  if(recognition){try{recognition.stop();}catch(e){}recognition=null;}
+  micActive=false;
+  document.getElementById('micBtn').classList.remove('listening','nosec');
+  document.getElementById('micBtn').innerHTML='&#x1F3A4; MIC';
+  stopLevelMeter();
+  if(document.getElementById('consoleStatus').textContent==='listening...') setCS('');
+}
+
+async function startLevelMeter(){
+  try{
+    micStream=await navigator.mediaDevices.getUserMedia({audio:true,video:false});
+    audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+    analyser=audioCtx.createAnalyser();analyser.fftSize=128;
+    audioCtx.createMediaStreamSource(micStream).connect(analyser);
+    const buf=new Uint8Array(analyser.frequencyBinCount);
+    levelTimer=setInterval(()=>{
+      analyser.getByteFrequencyData(buf);
+      const avg=buf.reduce((a,b)=>a+b,0)/buf.length;
+      const pct=Math.min(avg*2.5,100);
+      const fill=document.getElementById('levelFill');
+      fill.style.width=pct+'%';fill.classList.toggle('hot',pct>80);
+    },80);
+  }catch(e){}
+}
+function stopLevelMeter(){
+  clearInterval(levelTimer);levelTimer=null;
+  if(audioCtx){audioCtx.close();audioCtx=null;}
+  if(micStream){micStream.getTracks().forEach(t=>t.stop());micStream=null;}
+  document.getElementById('levelFill').style.width='0%';
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+if(window.speechSynthesis){
+  speechSynthesis.onvoiceschanged=populateVoices;
+  setTimeout(populateVoices,300);
+}
+if(!window.isSecureContext){
+  document.getElementById('micBtn').classList.add('nosec');
+  document.getElementById('micBtn').title='Mic requires HTTPS — click for fix';
+}
+loadAll();
+</script>
+</body>
+</html>
