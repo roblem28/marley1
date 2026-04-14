@@ -1,0 +1,792 @@
+[
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the metering and monitoring requirements?",
+    "answer": "Based on the provided context, the metering and monitoring requirements for electrical systems are as follows:\n\n1. **Determine Installation Specific Metering Requirements**: As part of the electrical distribution system connection during design, determine the specific metering requirements for the installation. This includes the type of metering equipment to be used, such as meters for measuring power, voltage, and current.\n\n2. **Include Metering in the Design**: The metering requirements should be included in the design documentation. This includes the type of meters (e.g., power meters, voltage meters, current meters), the installation location, and the specific metering equipment to be used.\n\n3. **Metering Equipment**: The type of metering equipment should be specified, including the meter type, voltage rating, insulation level, and other relevant parameters. This ensures that the metering equipment is compatible with the electrical system and can accurately measure the required parameters.\n\n4. **Monitoring Systems**: The context also mentions the need for remote monitoring and control requirements for exterior distribution system equipment. This implies that the design should also include monitoring systems to ensure that the electrical systems can be remotely monitored and controlled. This includes the type of monitoring equipment (e.g., SCADA systems, remote monitoring devices), the location of these devices, and the communication protocols used for monitoring and control.\n\n5. **Compliance with Standards**: The metering and monitoring requirements should comply with relevant industry standards and regulations. This ensures that the systems meet the necessary standards and are reliable and effective.\n\n6. **Documentation**: All metering and monitoring requirements should be documented in the design and construction documentation. This includes the specific metering and monitoring equipment, their locations, and the communication protocols used.\n\nIn summary, the metering and monitoring requirements are critical components of the electrical system design, ensuring that the system can be effectively monitored and controlled, and that the system operates safely and efficiently.",
+    "orig_tokens": 22893,
+    "comp_tokens": 3682,
+    "compression_ratio": 6.2,
+    "latency": 27.02,
+    "filter_time": 6.707,
+    "prompt_tokens": 5508,
+    "top_sections": [
+      {
+        "index": 93,
+        "header": "1-6 CYBERSECURITY.",
+        "bi_sim": 0.3201,
+        "rerank_score": -5.6619
+      },
+      {
+        "index": 7,
+        "header": "CHAPTER 2 TECHNICAL REQUIREMENTS ................................................................ 3",
+        "bi_sim": 0.4153,
+        "rerank_score": -7.5453
+      },
+      {
+        "index": 109,
+        "header": "2-2 SITE EXTERIOR POWER DISTRIBUTION SYSTEMS..",
+        "bi_sim": 0.3617,
+        "rerank_score": -7.7269
+      },
+      {
+        "index": 62,
+        "header": "3-3 DRAWING REQUIREMENTS. ................................................................ 32",
+        "bi_sim": 0.2126,
+        "rerank_score": -8.2717
+      },
+      {
+        "index": 136,
+        "header": "3-2.1 Basis of Design.",
+        "bi_sim": 0.3668,
+        "rerank_score": -8.2785
+      },
+      {
+        "index": 4,
+        "header": "1-4 GENERAL BUILDING REQUIREMENTS. ................................................ 1",
+        "bi_sim": 0.3631,
+        "rerank_score": -8.437
+      },
+      {
+        "index": 138,
+        "header": "3-2.3 Load Analysis.",
+        "bi_sim": 0.37,
+        "rerank_score": -8.7544
+      },
+      {
+        "index": 184,
+        "header": "3-3.11 Power One-Line/Riser Diagrams.",
+        "bi_sim": 0.3357,
+        "rerank_score": -8.8469
+      },
+      {
+        "index": 137,
+        "header": "3-2.2 Electrical Calculations \u2013 Overview.",
+        "bi_sim": 0.453,
+        "rerank_score": -8.8879
+      },
+      {
+        "index": 189,
+        "header": "3-3.16 Schedules and Elevations.",
+        "bi_sim": 0.4331,
+        "rerank_score": -9.065
+      }
+    ],
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for renewable energy integration?",
+    "answer": "Based on the provided context, the requirements for renewable energy integration include:\n\n1. **Predicted Power Generation and Energy Production**: These are typically calculated in kW and kVAR for power generation, and kWh per year for energy production. This information is crucial for sizing the renewable energy system and predicting its performance.\n\n2. **IEEE Std 1547 Interface Compliance**: This standard is essential for ensuring the compatibility of the renewable energy system with the electrical grid. Compliance with IEEE Std 1547 is necessary to ensure that the renewable energy system can safely and effectively interface with the grid.\n\n3. **Voltage Drop**: This is a critical factor in determining the appropriate conductor size and spacing for the renewable energy system. Voltage drop calculations help in ensuring that the voltage at the point of use remains within acceptable limits.\n\n4. **Ampacity Requirements**: This involves determining the maximum current that a conductor can safely carry without overheating. Proper ampacity calculations are necessary to ensure that the conductors are not overloaded and to prevent overheating, which can lead to fire hazards.\n\n5. **Site Orientation and Safety Considerations**: For photovoltaic systems, glare analysis is a critical safety consideration. Proper site orientation helps in minimizing glare and ensuring that the system operates efficiently.\n\n6.",
+    "orig_tokens": 22893,
+    "comp_tokens": 1151,
+    "compression_ratio": 19.9,
+    "latency": 15.11,
+    "filter_time": 6.545,
+    "prompt_tokens": 1851,
+    "top_sections": [
+      {
+        "index": 165,
+        "header": "3-2.17 Renewable Energy System Calculations.",
+        "bi_sim": 0.5476,
+        "rerank_score": 3.298
+      },
+      {
+        "index": 117,
+        "header": "2-2.8 Renewable Energy Systems.",
+        "bi_sim": 0.53,
+        "rerank_score": -2.9021
+      },
+      {
+        "index": 126,
+        "header": "2-3.8 Renewable Energy Systems.",
+        "bi_sim": 0.5151,
+        "rerank_score": -3.0579
+      },
+      {
+        "index": 35,
+        "header": "2-3.8 Renewable Energy Systems. ................................................................. 9",
+        "bi_sim": 0.5965,
+        "rerank_score": -3.7522
+      },
+      {
+        "index": 26,
+        "header": "2-2.8 Renewable Energy Systems. ................................................................. 8",
+        "bi_sim": 0.598,
+        "rerank_score": -3.7932
+      },
+      {
+        "index": 61,
+        "header": "3-2.17 Renewable Energy System Calculations. ............................................ 32",
+        "bi_sim": 0.5467,
+        "rerank_score": -4.7737
+      },
+      {
+        "index": 138,
+        "header": "3-2.3 Load Analysis.",
+        "bi_sim": 0.327,
+        "rerank_score": -5.2284
+      },
+      {
+        "index": 62,
+        "header": "3-3 DRAWING REQUIREMENTS. ................................................................ 32",
+        "bi_sim": 0.2286,
+        "rerank_score": -6.0301
+      },
+      {
+        "index": 4,
+        "header": "1-4 GENERAL BUILDING REQUIREMENTS. ................................................ 1",
+        "bi_sim": 0.4285,
+        "rerank_score": -7.126
+      },
+      {
+        "index": 103,
+        "header": "2-1.6 Energy Efficiency and Sustainable Design.",
+        "bi_sim": 0.2853,
+        "rerank_score": -7.4085
+      }
+    ],
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "simple",
+      "top_k": 10,
+      "max_tokens": 256
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the progressive collapse prevention requirements?",
+    "answer": "To address progressive collapse prevention requirements, the DoD must adhere to UFC 4-023-03, which provides specific guidelines for designing buildings to resist progressive collapse. This includes ensuring that the structure is capable of withstanding the failure of a single load-bearing member without causing the entire structure to collapse. \n\nSpecifically, the design must meet the following criteria:\n\n1. **UFC 4-023-03, Design of Buildings to Resist Progressive Collapse**: This standard provides detailed guidelines on how to design buildings to resist progressive collapse. It includes requirements for the structural integrity of buildings, ensuring that the failure of a single load-bearing member does not lead to the collapse of the entire structure.\n\n2. **Serviceability Requirements**: The structure must be designed to ensure that the maximum allowable frame drift is suitable for the proposed structure, considering the occupancy, use/function, and all details of construction. This is detailed in ASCE 7-22 Appendix C and UFC 3-301-01.\n\n3. **Deflection Limits**: Deflections of structural members must not exceed the most restrictive of the limitations provided in Table 2-1 of UFC 3-301-01. This table specifies lateral deflection limits for framing supporting exterior wall finishes, such as brick veneer, exterior insulation finish systems, cement board, stone masonry, plywood and wood-based structural-use panels, gypsum sheathing, metal or vinyl siding and insulated metal panels, etc.\n\n4. **Risk Categories**: The structure must be designed to meet the risk category requirements based on the nature of occupancy and the potential consequences of failure. This is detailed in Table 2-2 of UFC 3-301-01, which categorizes buildings and other structures based on their potential hazard to human life and economic loss.\n\n5. **Expansion Joints**: Expansion joints must be designed to accommodate movements due to temperature changes, humidity, and other environmental factors. Guidance for this can be found in \"Design of Concrete Floor Slabs-on-Ground for DoD Facilities\" under Related Materials for this UFC (WBDG page for 3-301-01).\n\n6. **Seismic Design Requirements**: For seismic design, the structure must comply with ASCE 7-16 Chapter 17, which provides seismic design requirements for seismic isolated structures.\n\nIn summary, progressive collapse prevention requires a comprehensive design approach that includes serviceability requirements, deflection limits, risk category considerations, expansion joints,",
+    "orig_tokens": 65325,
+    "comp_tokens": 1548,
+    "compression_ratio": 42.2,
+    "latency": 28.9,
+    "filter_time": 6.503,
+    "prompt_tokens": 2716,
+    "top_sections": [
+      {
+        "index": 167,
+        "header": "1-8.2 Progressive Collapse Analysis and Design.",
+        "bi_sim": 0.573,
+        "rerank_score": 4.1627
+      },
+      {
+        "index": 7,
+        "header": "1-8.2 Progressive Collapse Analysis and Design. ........................................... 5",
+        "bi_sim": 0.6105,
+        "rerank_score": -0.1048
+      },
+      {
+        "index": 95,
+        "header": "4-3 ADDITIONAL REQUIREMENTS. ............................................................ 76",
+        "bi_sim": 0.301,
+        "rerank_score": -8.0933
+      },
+      {
+        "index": 56,
+        "header": "3-1.1 Section 1.3 - BASIC REQUIREMENTS. .............................................. 43",
+        "bi_sim": 0.3467,
+        "rerank_score": -9.48
+      },
+      {
+        "index": 38,
+        "header": "2-7.3 Section 1904 - DURABILITY REQUIREMENTS. ................................. 34",
+        "bi_sim": 0.3764,
+        "rerank_score": -9.6661
+      },
+      {
+        "index": 6,
+        "header": "1-8.1 General Building Requirements. ............................................................ 4",
+        "bi_sim": 0.2974,
+        "rerank_score": -9.6761
+      },
+      {
+        "index": 181,
+        "header": "2-4.2 Section 1604 - GENERAL DESIGN REQUIREMENTS.",
+        "bi_sim": 0.2512,
+        "rerank_score": -9.7388
+      },
+      {
+        "index": 15,
+        "header": "2-3 IBC CHAPTER 4 \u2013 SPECIAL DETAILED REQUIREMENTS BASED ON",
+        "bi_sim": 0.3744,
+        "rerank_score": -10.1197
+      },
+      {
+        "index": 84,
+        "header": "3-8 ASCE 7 CHAPTER 15 \u2013 SEISMIC DESIGN REQUIREMENTS FOR",
+        "bi_sim": 0.2839,
+        "rerank_score": -10.2536
+      },
+      {
+        "index": 146,
+        "header": "7-4 ASCE 7-16 CHAPTER 17 \u2013 SEISMIC DESIGN REQUIREMENTS FOR",
+        "bi_sim": 0.3398,
+        "rerank_score": -10.2842
+      }
+    ],
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the blast resistance requirements?",
+    "answer": "Based on the provided context, the blast resistance requirements for nonbuilding structures are not explicitly detailed. However, the context does provide information on structural and nonstructural components, their connections, and durability requirements. For blast resistance, the key points are:\n\n1. **Documentation and Approval**: During the design concept stage, documentation must be submitted to the AHJ for approval of the performance-based design approach. This includes analysis and testing to demonstrate reliability not less than that expected for similar components designed in accordance with the Strength Procedures of Section 1.3.1.1.\n\n2. **Analysis and Testing**: Nonstructural components and their connections must be demonstrated by a combination of analysis and testing to provide a reliability not less than that expected for similar components. Uncertainties in loading and resistance must be considered.\n\n3. **Load Considerations**: Consideration must be given to uncertainties in loading and resistance, including dead, live, environmental, and other loads. For nonbuilding structures, drift limitations specified for buildings in ASCE 7-22 Chapter 12 may not apply, but a rational analysis acceptable to the AHJ must indicate they can be exceeded without adversely affecting structural stability.\n\n4. **Specific Anchors**: For non-building structures assigned to SDC C, D, E, or F, at least one of the following must be satisfied:\n   - Anchors in tension are designed to be governed by the tensile strength of a ductile steel element.\n   - Anchors are designed for the maximum load that can be transmitted to the anchors from a ductile attachment, considering both material overstrength and strain hardening of the attachment.\n   - Anchors are designed for the maximum load that can be transmitted to the anchors by a non-yielding attachment.\n   - Anchors are designed for the maximum load obtained from design load combinations that include E, where the effect of horizontal ground motion, Q, is multiplied by as given in ASCE 7-22 Tables 13.5-1 and 13.6-1.\n\n5. **Seismic Design Requirements**: For seismic design requirements, the context mentions the use of Required Response Spectra (RRS) and testing procedures such as ICC-ES AC156, CERL Equipment Fragility and Protection Procedure, and IEEE 693-2018. However, these are for nonstructural components and not specifically for blast resistance.\n\nGiven the context, blast resistance requirements are not detailed. However, the design approach and documentation for nonstructural components",
+    "orig_tokens": 65325,
+    "comp_tokens": 1273,
+    "compression_ratio": 51.3,
+    "latency": 28.1,
+    "filter_time": 6.723,
+    "prompt_tokens": 2211,
+    "top_sections": [
+      {
+        "index": 95,
+        "header": "4-3 ADDITIONAL REQUIREMENTS. ............................................................ 76",
+        "bi_sim": 0.357,
+        "rerank_score": -6.7049
+      },
+      {
+        "index": 219,
+        "header": "3-1.1 Section 1.3 - BASIC REQUIREMENTS.",
+        "bi_sim": 0.3641,
+        "rerank_score": -7.6155
+      },
+      {
+        "index": 38,
+        "header": "2-7.3 Section 1904 - DURABILITY REQUIREMENTS. ................................. 34",
+        "bi_sim": 0.3929,
+        "rerank_score": -8.2064
+      },
+      {
+        "index": 248,
+        "header": "3-8.1 Section 15.4 - STRUCTURAL DESIGN REQUIREMENTS.",
+        "bi_sim": 0.2363,
+        "rerank_score": -8.2724
+      },
+      {
+        "index": 242,
+        "header": "3-7.2 Section 13.2 - GENERAL DESIGN REQUIREMENTS.",
+        "bi_sim": 0.3073,
+        "rerank_score": -8.3128
+      },
+      {
+        "index": 56,
+        "header": "3-1.1 Section 1.3 - BASIC REQUIREMENTS. .............................................. 43",
+        "bi_sim": 0.3661,
+        "rerank_score": -8.3608
+      },
+      {
+        "index": 6,
+        "header": "1-8.1 General Building Requirements. ............................................................ 4",
+        "bi_sim": 0.3442,
+        "rerank_score": -8.5604
+      },
+      {
+        "index": 84,
+        "header": "3-8 ASCE 7 CHAPTER 15 \u2013 SEISMIC DESIGN REQUIREMENTS FOR",
+        "bi_sim": 0.3292,
+        "rerank_score": -8.708
+      },
+      {
+        "index": 77,
+        "header": "3-7 ASCE 7-22 CHAPTER 13 \u2013 SEISMIC DESIGN REQUIREMENTS FOR",
+        "bi_sim": 0.3441,
+        "rerank_score": -8.7508
+      },
+      {
+        "index": 141,
+        "header": "7-3 ASCE 7-16 CHAPTER 13 \u2013 SEISMIC DESIGN REQUIREMENTS FOR",
+        "bi_sim": 0.3633,
+        "rerank_score": -8.7593
+      }
+    ],
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the cybersecurity requirements for microgrid systems?",
+    "answer": "Based on the provided context, the cybersecurity requirements for microgrid systems are comprehensive and multifaceted. Here are the key points:\n\n1. **System Boundary Definition**: The system boundary must be defined based on stakeholders and mission commands with elevated security requirements. This ensures that only necessary assets are included in the cybersecurity framework.\n\n2. **Cybersecurity Accreditation**: The System Owner and Authorizing Official (AO) determine the \"Authority To Operate (ATO)\" based on risk and approve the final implementation. This ensures that the system operates with minimized, well-managed risk.\n\n3. **Risk Management Framework (RMF)**: The RMF is applied to microgrid controls systems, which includes:\n   - Conducting a risk assessment.\n   - Implementing a risk mitigation strategy.\n   - Employing techniques and procedures for continuous monitoring of the security state of the system.\n\n4. **Network Boundary**: The network boundary should include all control points and IP-addressable assets constructed as part of, or controlled by, the microgrid system. This ensures that all critical assets are protected.\n\n5. **Control System Design**: The microgrid control design must follow the published UFC 4-010-06 for Cybersecurity of Facility Related Control Systems. This ensures that the control system is built with security in mind, not bolted on later.\n\n6. **Redundancy and Resilience**: Redundant networked sources of generation, energy storage, and independent black start sources are essential. This ensures that the microgrid can continue to operate even if part of the system is compromised.\n\n7. **Cybersecurity Authorization to Operate (ATO)**: A DoD Approving Official (AO) must initiate a Cybersecurity Authorization to Operate (ATO) process. This ensures that the system is authorized to operate and tested in accordance with UFC 4-010-06.\n\n8. **Continuous Monitoring**: Continuous monitoring of the security state of the system is required to detect and mitigate potential cyber threats.\n\n9. **Independent Black Start Sources**: The microgrid must have redundant (minimum 2) independent black start sources to ensure grid-independent black start capability.\n\n10. **Redundant HMI Front-Ends**: Redundant (minimum 2) HMI Front-Ends are necessary to ensure that the human-machine interface remains operational in case of a failure.\n\n11. **Redundant Load Shedding Capability**: Redundant load shedding capability is essential to ensure that critical loads can be managed",
+    "orig_tokens": 20319,
+    "comp_tokens": 1903,
+    "compression_ratio": 10.7,
+    "latency": 29.61,
+    "filter_time": 6.532,
+    "prompt_tokens": 2976,
+    "top_sections": [
+      {
+        "index": 112,
+        "header": "4-2.1.11 for further details on each element.",
+        "bi_sim": 0.6778,
+        "rerank_score": 4.8999
+      },
+      {
+        "index": 91,
+        "header": "2-2.3 Cybersecurity and Risk Management Framework.",
+        "bi_sim": 0.6766,
+        "rerank_score": 4.5375
+      },
+      {
+        "index": 84,
+        "header": "2-2 PERFORMANCE REQUIREMENTS.",
+        "bi_sim": 0.5689,
+        "rerank_score": 4.5161
+      },
+      {
+        "index": 163,
+        "header": "APPENDIX C CYBERSECURITY FOR MICROGRIDS",
+        "bi_sim": 0.7497,
+        "rerank_score": 4.3056
+      },
+      {
+        "index": 161,
+        "header": "APPENDIX A MICROGRID BACKGROUND INFORMATION",
+        "bi_sim": 0.6297,
+        "rerank_score": 3.2469
+      },
+      {
+        "index": 72,
+        "header": "1-8 OWNERSHIP AND SUSTAINMENT.",
+        "bi_sim": 0.6559,
+        "rerank_score": 1.9627
+      },
+      {
+        "index": 132,
+        "header": "4-4.1 Aligning Microgrid Operation with Existing Infrastructure.",
+        "bi_sim": 0.4699,
+        "rerank_score": 0.9199
+      },
+      {
+        "index": 83,
+        "header": "2-1 MINIMUM DESIGN REQUIREMENTS.",
+        "bi_sim": 0.6801,
+        "rerank_score": 0.7411
+      },
+      {
+        "index": 109,
+        "header": "4-1.3 Methods of Procurement.",
+        "bi_sim": 0.5885,
+        "rerank_score": 0.2126
+      },
+      {
+        "index": 73,
+        "header": "1-9 CYBERSECURITY.",
+        "bi_sim": 0.5687,
+        "rerank_score": -0.0393
+      }
+    ],
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the islanding requirements for military microgrids?",
+    "answer": "Based on the provided context, the islanding requirements for military microgrids include:\n\n1. **Islanding Capability**: The microgrid must be capable of islanding with the ability to network (or parallel) more than one disparate source of generation. This ensures the microgrid can operate independently of the external grid during an emergency.\n\n2. **Redundancy**: Redundant networked sources of generation are recommended. This redundancy ensures that the microgrid can continue to operate even if one source of generation fails.\n\n3. **Black Start Capability**: The microgrid must have the capability for grid-independent black start with a minimum of one grid-forming DER (Distributed Energy Resource). This ensures the microgrid can start up and operate independently after a grid failure.\n\n4. **Energy Storage**: Energy storage is recommended to ensure sufficient generating sources, stored form of energy, and reserve capacity to meet the peak critical load within the system boundary with off-grid endurance not less than the duration of time required by mission and service policy.\n\n5. **Fail-Safe Operation**: The microgrid must have a fail-safe ability that resorts to load-dedicated (or pre-microgrid) operation following electrical system, communication, or other network disruption. This ensures that the microgrid can continue to operate safely and efficiently even in the event of a network disruption.\n\n6. **Redundant Assets**: Redundant grid forming assets and redundant HMI Visualization Front-Ends are recommended. This redundancy ensures that the microgrid can continue to operate safely and efficiently even if some of its critical components fail.\n\n7. **Redundant Independent Black Start Sources**: Redundant independent black start sources are recommended. This redundancy ensures that the microgrid can start up and operate independently after a grid failure.\n\n8. **Load Shedding Capability**: Load shedding capability is recommended. This ensures that the microgrid can manage its load during an emergency, reducing the risk of overload or failure.\n\n9. **Soft Transition Capability**: Soft (seamless) transition back to the external grid is recommended. This ensures that the microgrid can safely and smoothly return to external power after an emergency, minimizing any disruption to operations.\n\n10. **Testing and Validation**: The microgrid must be tested and validated during commissioning to ensure that it can operate safely and efficiently in various operational states, including black start, microgrid formation, generator paralleling, and islanded inverter-based device interconnection.\n\nThese requirements ensure that the microgrid can operate safely, securely, and logically with maxim",
+    "orig_tokens": 20319,
+    "comp_tokens": 1898,
+    "compression_ratio": 10.7,
+    "latency": 28.99,
+    "filter_time": 6.409,
+    "prompt_tokens": 2795,
+    "top_sections": [
+      {
+        "index": 158,
+        "header": "CHAPTER 7 OPERATIONS AND SUSTAINMENT CONSIDERATIONS",
+        "bi_sim": 0.5974,
+        "rerank_score": 3.4716
+      },
+      {
+        "index": 104,
+        "header": "3-11 POWER QUALITY.",
+        "bi_sim": 0.6272,
+        "rerank_score": 3.3133
+      },
+      {
+        "index": 97,
+        "header": "3-4 RESTORATION TIME AND SOFT TRANSITION.",
+        "bi_sim": 0.5673,
+        "rerank_score": 3.2772
+      },
+      {
+        "index": 86,
+        "header": "2-2.2 Safety and Grounding.",
+        "bi_sim": 0.6397,
+        "rerank_score": 3.2213
+      },
+      {
+        "index": 84,
+        "header": "2-2 PERFORMANCE REQUIREMENTS.",
+        "bi_sim": 0.5824,
+        "rerank_score": 2.6759
+      },
+      {
+        "index": 120,
+        "header": "4-2.1.6.2 Thermal and Non-Electrical Loads.",
+        "bi_sim": 0.6189,
+        "rerank_score": 1.7884
+      },
+      {
+        "index": 156,
+        "header": "6-2.1 Utility Interconnection and Secure Islanding.",
+        "bi_sim": 0.6611,
+        "rerank_score": 1.6563
+      },
+      {
+        "index": 83,
+        "header": "2-1 MINIMUM DESIGN REQUIREMENTS.",
+        "bi_sim": 0.6027,
+        "rerank_score": 1.6001
+      },
+      {
+        "index": 65,
+        "header": "1-1 GENERAL.",
+        "bi_sim": 0.634,
+        "rerank_score": 1.0905
+      },
+      {
+        "index": 142,
+        "header": "5-3.2 Validate Operational State",
+        "bi_sim": 0.6061,
+        "rerank_score": 0.382
+      }
+    ],
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the power and grounding requirements for C5ISR systems?",
+    "answer": "For C5ISR facilities, power and grounding requirements are stringent and must be tailored to the specific mission grade and facility type. Here are the key points:\n\n### Power Requirements:\n1. **Voltage and Capacity:**\n   - Projects may range from small (under 250 kVA) to large (greater than 10 MVA) depending on the facility's needs.\n   - Multi-site facilities with multiple buildings and primary power circuits from commercial sources are common.\n   - The electrical distribution architecture must be designed to meet the facility's Grade requirement, as determined by the mission.\n\n2. **Black Start Capability:**\n   - C5ISR facilities must be capable of disconnecting from the main utility power supply and providing independent power to emergency power system controls, mechanical system controls, and start standby power systems.\n   - This includes standby generators and UPS systems, and the quantity and complexity depend on the mission's Grade.\n\n3. **Voltage Levels:**\n   - Electronic facilities often require direct-current power supplies and distribution systems, typically operating at 24 to 48 volts DC.\n\n### Grounding and Bonding Requirements:\n1. **NFPA 70, TIA-607-D, and MIL-STD-188-124B:**\n   - Provide grounding in accordance with NFPA 70, TIA-607-D, and MIL-STD-188-124B.\n   - TIA-607 grounding is not required in spaces where MIL-STD-188-124B applies.\n   - MIL-STD-188-124B grounding includes an equipotential ground plane (copper mesh) imbedded in the concrete floors/slab, increasing design thickness.\n   - Provide grounding in accordance with Motorola R56 for Motorola equipment and AE/LZT 123 4618/1 R3A for Harris equipment.\n   - Earth electrode subsystem must not exceed 5 ohms.\n\n2. **Specialized Grounding:**\n   - Radio equipment with manufacturer warranties require specialized grounding.\n   - Grounding in accordance with Motorola R56 for Motorola equipment and AE/LZT 123 4618/1 R3A for Harris equipment is necessary.\n\n### Security Requirements:\n1. **Clear Zones:**\n   - Establish a minimum clear area around the facility and supporting structures, free of obstacles, topographical features, and vegetation exceeding 8",
+    "orig_tokens": 29067,
+    "comp_tokens": 965,
+    "compression_ratio": 30.1,
+    "latency": 28.03,
+    "filter_time": 6.437,
+    "prompt_tokens": 1577,
+    "top_sections": [
+      {
+        "index": 213,
+        "header": "3-7 ELECTRICAL ENGINEERING.",
+        "bi_sim": 0.6755,
+        "rerank_score": 4.5641
+      },
+      {
+        "index": 313,
+        "header": "4-1.2.5 Systems Manual Requirements.",
+        "bi_sim": 0.4846,
+        "rerank_score": 3.9127
+      },
+      {
+        "index": 170,
+        "header": "3-6.2.1 C5ISR Space Temperatures.",
+        "bi_sim": 0.4759,
+        "rerank_score": 3.7052
+      },
+      {
+        "index": 131,
+        "header": "3-1.1 C5ISR Facilities Enhancements.",
+        "bi_sim": 0.5016,
+        "rerank_score": 2.7
+      },
+      {
+        "index": 129,
+        "header": "2-6 BLACK START SYSTEMS CAPABILITIES.",
+        "bi_sim": 0.5254,
+        "rerank_score": 2.6024
+      },
+      {
+        "index": 299,
+        "header": "3-8.3.3.3 Clean Agent Systems.",
+        "bi_sim": 0.408,
+        "rerank_score": 2.4235
+      },
+      {
+        "index": 26,
+        "header": "3-1.1 C5ISR Facilities Enhancements. ......................................................... 39",
+        "bi_sim": 0.5153,
+        "rerank_score": -1.3765
+      },
+      {
+        "index": 251,
+        "header": "3-7.8 Grounding and Bonding.",
+        "bi_sim": 0.4527,
+        "rerank_score": -2.6733
+      },
+      {
+        "index": 64,
+        "header": "3-7.8 Grounding and Bonding. ...................................................................... 85",
+        "bi_sim": 0.4645,
+        "rerank_score": -4.0593
+      },
+      {
+        "index": 316,
+        "header": "4-2.2 Direct Current (DC) Power Systems.",
+        "bi_sim": 0.4405,
+        "rerank_score": -4.2668
+      }
+    ],
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the antenna and RF system requirements?",
+    "answer": "Based on the provided context, the antenna and RF system requirements include:\n\n1. **Power Supply**: Antenna systems, especially those in exterior locations, should be powered by underground cable trenches with removable covers to ensure reliable and secure power supply.\n\n2. **Cable Entry Ports and Booting**: Cable entry ports should be sized and provided with cable boots to protect cables from environmental factors. Multi-cable modular-based compression systems are acceptable.\n\n3. **Lighting Considerations**: Fluorescent and LED lighting can interfere with radio systems. Incandescent lighting is suggested for radio systems that are easily influenced by EMI. Lighting should be discussed with radio operators to verify EMI impact on systems.\n\n4. **RF System Isolation**: Proper isolation from sources of interference is crucial for optimal radio communications. Minimum separation distances for electromagnetic interference protection of receiver sites are provided in Table 2-1. Specific requirements for each project, including variations required by local conditions, are developed in the MESEP.\n\n5. **Antenna Placement and Separation Distances**: Antennas must be placed at a minimum distance from other sources of interference as specified in Table 2-1. For example, high-power transmitter stations require a 25-mile separation from other facilities, while airfields and guide paths require a 5-mile separation.\n\n6. **RF Building and Antenna Separation**: The separation between the RF building and antennas must be at least 300 feet (91 m) to ensure proper RF isolation and prevent interference.\n\n7. **Network Security and Cybersecurity**: The electronic equipment engineering requirements document must include network security requirements, such as Network Security Requirements (Black/Red/Special Red), and network security must be aligned with CNSSAM TEMPEST 1-13. Facility physical and cybersecurity requirements must be coordinated with the mission and security assessment provided in accordance with UFC 4-020-01.\n\n8. **Commissioning and Maintenance**: The Systems Manual (SM) for all C5ISR facilities must be provided in accordance with ER 1110-345-723 and ER 25-345-1. Maintenance and commissioning requirements must be included in the construction documents via UFGS 01 91 00.15 Building Commissioning.\n\nThese requirements ensure that the antenna and RF systems are designed, installed, and maintained to meet DoD standards for security, functionality, and interference protection.",
+    "orig_tokens": 29067,
+    "comp_tokens": 862,
+    "compression_ratio": 33.7,
+    "latency": 26.47,
+    "filter_time": 6.552,
+    "prompt_tokens": 1523,
+    "top_sections": [
+      {
+        "index": 319,
+        "header": "4-2.5 Antenna Systems.",
+        "bi_sim": 0.5986,
+        "rerank_score": 0.512
+      },
+      {
+        "index": 127,
+        "header": "2-5.6 Isolation.",
+        "bi_sim": 0.4841,
+        "rerank_score": -1.5223
+      },
+      {
+        "index": 88,
+        "header": "4-2.5 Antenna Systems. .............................................................................. 101",
+        "bi_sim": 0.6641,
+        "rerank_score": -2.4249
+      },
+      {
+        "index": 120,
+        "header": "2-4.1 Minimum MESEP Requirements.",
+        "bi_sim": 0.413,
+        "rerank_score": -5.5166
+      },
+      {
+        "index": 313,
+        "header": "4-1.2.5 Systems Manual Requirements.",
+        "bi_sim": 0.3136,
+        "rerank_score": -5.5971
+      },
+      {
+        "index": 306,
+        "header": "4-1 MAINTENANCE AND COMMISSIONING REQUIREMENTS.",
+        "bi_sim": 0.2622,
+        "rerank_score": -6.0231
+      },
+      {
+        "index": 57,
+        "header": "3-7.1 Utility Requirements. ............................................................................ 67",
+        "bi_sim": 0.3729,
+        "rerank_score": -6.0479
+      },
+      {
+        "index": 24,
+        "header": "CHAPTER 3 GENERAL REQUIREMENTS .................................................................. 39",
+        "bi_sim": 0.2497,
+        "rerank_score": -6.4319
+      },
+      {
+        "index": 16,
+        "header": "2-4.1 Minimum MESEP Requirements. ........................................................ 32",
+        "bi_sim": 0.3212,
+        "rerank_score": -6.489
+      },
+      {
+        "index": 81,
+        "header": "CHAPTER 4 SPECIAL REQUIREMENTS .................................................................... 99",
+        "bi_sim": 0.2583,
+        "rerank_score": -6.5649
+      }
+    ],
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the laundry facility requirements?",
+    "answer": "Based on the provided context, the laundry facility requirements for DoD housing units include:\n\n1. **Water Supply**: The laundry rooms must be provided with hot and cold water to meet the needs of residents. This ensures that residents can wash clothes and other linens as needed.\n\n2. **Shutoff Valves**: At all fixtures within the laundry rooms, shutoff valves must be installed. This ensures that water supply can be easily turned off in case of leaks or maintenance needs.\n\n3. **Hose Bibs**: Hose bibs must be provided on exterior walls of each building at 100-foot intervals. These allow residents to connect hoses for washing clothes outdoors, which is a common practice in DoD housing.\n\n4. **Floor Drains**: Floor drains must be installed in all janitor closets, laundry rooms, public restrooms, and trash rooms. This is essential for proper drainage and to prevent water from accumulating in these areas.\n\n5. **Drinking Fountains**: Drinking fountains with coolers and water bottle filling features must be provided in interior public areas. This ensures that residents have access to clean drinking water.\n\n6. **Service Sink**: One service sink must be provided per floor. This is important for general cleaning and maintenance tasks within the laundry room.\n\n7. **Operational Condition**: The laundry facilities must be operational and in accordance with UFC 1-200-01 General Building Requirements. This ensures that the laundry facilities meet the necessary standards for functionality and maintenance.\n\n8. **Environmental Standards**: The laundry rooms must be free from pungent or offensive odors and must be continuously monitored to ensure they meet the environmental standards set by the Department of Defense.\n\n9. **Maintenance and Inspection**: The laundry facilities must be inspected and maintained regularly to ensure they meet the habitability standards set forth in Table A-1 of UFC 4-721-01.\n\nThese requirements ensure that the laundry facilities are functional, safe, and meet the necessary standards for DoD housing.",
+    "orig_tokens": 5836,
+    "comp_tokens": 2568,
+    "compression_ratio": 2.3,
+    "latency": 25.9,
+    "filter_time": 6.383,
+    "prompt_tokens": 4124,
+    "top_sections": [
+      {
+        "index": 61,
+        "header": "3-14 PLUMBING.",
+        "bi_sim": 0.5568,
+        "rerank_score": -0.711
+      },
+      {
+        "index": 78,
+        "header": "APPENDIX A HABITABILITY STANDARDS",
+        "bi_sim": 0.4265,
+        "rerank_score": -2.0568
+      },
+      {
+        "index": 76,
+        "header": "4-1 MINIMUM REQUIREMENTS.",
+        "bi_sim": 0.5923,
+        "rerank_score": -3.1876
+      },
+      {
+        "index": 29,
+        "header": "4-1 MINIMUM REQUIREMENTS. .................................................................. 13",
+        "bi_sim": 0.4538,
+        "rerank_score": -4.5708
+      },
+      {
+        "index": 69,
+        "header": "3-22 GENERAL SPACE REQUIREMENTS FOR UH FACILITIES.",
+        "bi_sim": 0.4041,
+        "rerank_score": -4.6556
+      },
+      {
+        "index": 24,
+        "header": "3-22 GENERAL SPACE REQUIREMENTS FOR UH FACILITIES. ................ 10",
+        "bi_sim": 0.419,
+        "rerank_score": -4.8982
+      },
+      {
+        "index": 42,
+        "header": "2-3.1 Building Common Areas.",
+        "bi_sim": 0.376,
+        "rerank_score": -5.3416
+      },
+      {
+        "index": 2,
+        "header": "1-4 GENERAL BUILDING REQUIREMENTS. ................................................ 1",
+        "bi_sim": 0.4363,
+        "rerank_score": -6.3693
+      },
+      {
+        "index": 31,
+        "header": "5-1 HABITABILITY STANDARDS REQUIREMENT. .................................... 15",
+        "bi_sim": 0.403,
+        "rerank_score": -6.677
+      },
+      {
+        "index": 6,
+        "header": "2-3 FACILITY FUNCTIONS. ............................................................................ 4",
+        "bi_sim": 0.3745,
+        "rerank_score": -7.0789
+      }
+    ],
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the storage and closet space requirements?",
+    "answer": "Based on the provided context, the storage and closet space requirements are as follows:\n\n- **Bedroom**: 170 NSF (Net Square Feet) for a 1-bedroom unit, and 72 NSF per resident for a 2-4 bedroom unit.\n- **Closet**: 12 NSF for a 1-bedroom unit, and 12 NSF per resident for a 2-4 bedroom unit.\n\nThese requirements are specified in Table 4-1 of the DoD Design Standards for Unaccompanied Housing. The context also mentions that the Closet NSF is to be part of the overall Bedroom/Living Room NSF, as per Note 2 in Table 4-1.",
+    "orig_tokens": 5836,
+    "comp_tokens": 841,
+    "compression_ratio": 6.9,
+    "latency": 9.02,
+    "filter_time": 5.609,
+    "prompt_tokens": 1424,
+    "top_sections": [
+      {
+        "index": 76,
+        "header": "4-1 MINIMUM REQUIREMENTS.",
+        "bi_sim": 0.5135,
+        "rerank_score": -1.0957
+      },
+      {
+        "index": 69,
+        "header": "3-22 GENERAL SPACE REQUIREMENTS FOR UH FACILITIES.",
+        "bi_sim": 0.4751,
+        "rerank_score": -2.6221
+      },
+      {
+        "index": 24,
+        "header": "3-22 GENERAL SPACE REQUIREMENTS FOR UH FACILITIES. ................ 10",
+        "bi_sim": 0.5146,
+        "rerank_score": -2.8327
+      },
+      {
+        "index": 42,
+        "header": "2-3.1 Building Common Areas.",
+        "bi_sim": 0.501,
+        "rerank_score": -3.8397
+      },
+      {
+        "index": 41,
+        "header": "2-2 MINIMUM CONFIGURATION AND PRIVACY STANDARDS.",
+        "bi_sim": 0.4687,
+        "rerank_score": -5.2638
+      },
+      {
+        "index": 29,
+        "header": "4-1 MINIMUM REQUIREMENTS. .................................................................. 13",
+        "bi_sim": 0.2817,
+        "rerank_score": -6.4297
+      },
+      {
+        "index": 61,
+        "header": "3-14 PLUMBING.",
+        "bi_sim": 0.412,
+        "rerank_score": -6.5246
+      },
+      {
+        "index": 2,
+        "header": "1-4 GENERAL BUILDING REQUIREMENTS. ................................................ 1",
+        "bi_sim": 0.39,
+        "rerank_score": -6.9802
+      },
+      {
+        "index": 26,
+        "header": "3-22.2 Multi-Purpose Space. .......................................................................... 10",
+        "bi_sim": 0.4165,
+        "rerank_score": -7.2708
+      },
+      {
+        "index": 71,
+        "header": "3-22.2 Multi-Purpose Space.",
+        "bi_sim": 0.4419,
+        "rerank_score": -7.9345
+      }
+    ],
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  }
+]

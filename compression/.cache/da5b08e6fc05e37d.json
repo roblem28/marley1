@@ -1,0 +1,15 @@
+{
+  "query": "hello",
+  "doc": "/home/marley1/marley1/specs/ufc_electrical.pdf",
+  "answer": "- Specific terms and their definitions are provided in Appendix D, section D-2 DEFINITION OF TERMS, which complies with UFC 3-440-01.\n- Demolition plans are detailed in section 3-3.3 Legends and Abbreviations, which is referenced in section 3-3.1 Legends and Abbreviations.\n- Activity loads are specified in section C-2.4 Activity Loads, which is referenced in section C-2.4 Activity Loads.\n- Underground telecommunications wiring is detailed in section 2-4 COMMUNICATIONS AND SECURITY, subsection 2-4.1 Telecommunication Systems, which complies with UFC 3-580-01 for interior and exterior information communications technology, and is provided to a depth of",
+  "metadata": {
+    "doc_type": "electrical",
+    "query_complexity": "moderate",
+    "orig_tokens": 22893,
+    "comp_tokens": 111,
+    "ratio": 206.2,
+    "total_time": 8.532208263059147,
+    "prompt_tokens": 376
+  },
+  "timestamp": 1776129916.8474324
+}

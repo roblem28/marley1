@@ -1,0 +1,15 @@
+{
+  "query": "what are the electrical grounding requirements",
+  "doc": "/home/marley1/marley1/specs/ufc_electrical.pdf",
+  "answer": "The electrical grounding requirements include the identification of grounding and grounded conductor requirements in grounding diagrams. These diagrams start from the medium-voltage system and continue through the transformer up to and including the Service entrance equipment, step down transformers, sub-panels, and telecommunications systems grounding. The service entrance grounding electrode systems and interconnections with other system grounding electrodes must be clearly shown and identified on the grounding plan. The main bonding jumper connection must be indicated, and system bonding jumper connections for separately derived systems must be clearly indicated. Section 250.122 of NFPA 70 specifies the increase in size of the equipment grounding conductor proportional to the circular mil increase of the phase conductor when phase conductor size is increased for voltage drop. The adequacy of the primary system must be addressed, and measures proposed",
+  "metadata": {
+    "doc_type": "electrical",
+    "query_complexity": "moderate",
+    "orig_tokens": 22893,
+    "comp_tokens": 503,
+    "ratio": 45.5,
+    "total_time": 8.102109133033082,
+    "prompt_tokens": 760
+  },
+  "timestamp": 1776119544.8706894
+}

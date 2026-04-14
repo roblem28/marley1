@@ -62,7 +62,7 @@ def search_specs(query, top_k=10):
 
 
 # --- Config ---
-FAT_MAN_URL = "http://172.20.10.13:8080/v1/chat/completions"
+FAT_MAN_URL = "http://100.97.87.86:8080/v1/chat/completions"
 WHISPER_CLI = "/home/marley1/marley1/whisper.cpp/build/bin/whisper-cli"
 WHISPER_MODEL = "/home/marley1/marley1/whisper.cpp/models/ggml-tiny.bin"
 PIPER_MODEL = "/home/marley1/marley1/voice/models/en_US-lessac-medium.onnx"

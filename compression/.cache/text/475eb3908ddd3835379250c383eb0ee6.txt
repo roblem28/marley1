@@ -1,0 +1,3053 @@
+UFC 3-501-01
+27 November 2024
+UNIFIED FACILITIES CRITERIA (UFC)
+ELECTRICAL ENGINEERING
+APPROVED FOR PUBLIC RELEASE; DISTRIBUTION UNLIMITED
+UFC 3-501-01
+27 November 2024
+This Page Intentionally Left Blank
+UFC 3-501-01
+27 November 2024
+UNIFIED FACILITIES CRITERIA (UFC)
+ELECTRICAL ENGINEERING
+Any copyrighted material included in this UFC is identified at its point of use.
+Use of the copyrighted material apart from this UFC must have the permission of the
+copyright holder.
+Indicate the Military Department Preparing Activity responsible for the document.
+U.S. ARMY CORPS OF ENGINEERS
+NAVAL FACILITIES ENGINEERING SYSTEMS COMMAND (Preparing Activity)
+AIR FORCE CIVIL ENGINEER CENTER
+Record of Changes (changes are indicated by \1\ ... /1/)
+Change No. Date Location
+This UFC supersedes UFC 3-501-01, Electrical Engineering, dated 06 October
+2015.
+UFC 3-501-01
+27 November 2024
+This Page Intentionally Left Blank
+UFC 3-501-01
+27 November 2024
+FOREWORD
+The Unified Facilities Criteria (UFC) system is prescribed by MIL-STD 3007 and provides
+planning, design, construction, sustainment, restoration, and modernization criteria, and applies
+to the Military Departments, the Defense Agencies, and the DoD Field Activities in accordance
+with USD (AT&L) Memorandum dated 29 May 2002. UFC will be used for all DoD projects and
+work for other customers where appropriate. All construction outside of the United States, its
+territories, and possessions is also governed by Status of Forces Agreements (SOFA), Host
+Nation Funded Construction Agreements (HNFA), and in some instances, Bilateral
+Infrastructure Agreements (BIA). Therefore, the acquisition team must ensure compliance with
+the most stringent of the UFC, the SOFA, the HNFA, and the BIA, as applicable.
+UFC are living documents and will be periodically reviewed, updated, and made available to
+users as part of the Military Department’s responsibility for providing technical criteria for military
+construction. Headquarters, U.S. Army Corps of Engineers (HQUSACE), Naval Facilities
+Engineering Systems Command (NAVFAC), and Air Force Civil Engineer Center (AFCEC) are
+responsible for administration of the UFC system. Technical content of UFC is the responsibility
+of the cognizant DoD working group. Defense Agencies should contact the respective DoD
+Working Group for document interpretation and improvements. Recommended changes with
+supporting rationale may be sent to the respective DoD working group by submitting a Criteria
+Change Request (CCR) via the Internet site listed below.
+UFC are effective upon issuance and are distributed only in electronic media from the following
+source:
+• Whole Building Design Guide website https://www.wbdg.org/dod.
+Refer to UFC 1-200-01, DoD Building Code, for implementation of new issuances on projects.
+AUTHORIZED BY:
+PETE G. PEREZ, P.E., SES S. KEITH HAMILTON, P.E., SES
+Chief, Engineering and Construction Chief Engineer and Assistant Commander
+U.S. Army Corps of Engineers Planning, Design and Construction
+Naval Facilities Engineering Systems Command
+THOMAS P. BROWN, SES MICHAEL McANDREW, SES
+Deputy Director of Civil Engineers Deputy Assistant Secretary of Defense
+DCS/Logistics, Engineering & (Infrastructure Modernization and Resilience)
+Force Protection (HAF/A4C) Office of the Secretary of Defense
+HQ United States Air Force
+UFC 3-501-01
+27 November 2024
+This Page Intentionally Left Blank
+UFC 3-501-01
+27 November 2024
+TABLE OF CONTENTS
+CHAPTER 1 INTRODUCTION........................................................................................ 1
+1-1 PURPOSE AND SCOPE. .......................................................................... 1
+1-1.1 UFC Hierarchy. ...................................................................................... 1
+1-1.2 Upgrades and Modifications to Existing Systems. ................................. 1
+1-2 REISSUES AND CANCELS. ..................................................................... 1
+1-3 APPLICABILITY. ....................................................................................... 1
+1-4 GENERAL BUILDING REQUIREMENTS. ................................................ 1
+1-5 WAIVER AND EXEMPTIONS PROCESS. ................................................ 2
+1-6 CYBERSECURITY. ................................................................................... 2
+1-7 PERMITS – CONSTRUCTION, ENVIRONMENTAL, AND OTHER. ......... 2
+1-8 GLOSSARY. .............................................................................................. 2
+1-9 REFERENCES. ......................................................................................... 2
+CHAPTER 2 TECHNICAL REQUIREMENTS ................................................................ 3
+2-1 GENERAL. ................................................................................................ 3
+2-1.1 Removal of Existing Cables and Conductors. ........................................ 3
+2-1.2 Hot Caps and Removal of T-Splices Inside Manholes. .......................... 3
+2-1.3 Modification to Existing Electrical Equipment. ........................................ 3
+2-1.4 Salvaged Materials and Equipment. ...................................................... 4
+2-1.5 Scheduling and Sequencing Outages. ................................................... 4
+2-1.6 Energy Efficiency and Sustainable Design. ........................................... 4
+2-1.7 Antiterrorism and Physical Security. ...................................................... 4
+2-1.8 Facility Systems Safety. ......................................................................... 5
+2-1.9 Corrosive and High Humidity Areas. ...................................................... 5
+2-1.10 Arc Flash Warning Labels. ..................................................................... 5
+2-1.11 NFPA 70 (NEC) / IEEE C2 (NESC) Design Interface Points. ................ 6
+2-2 SITE EXTERIOR POWER DISTRIBUTION SYSTEMS.. ........................... 7
+2-2.1 Exterior Power Distribution Systems, Including Housing. ...................... 7
+2-2.2 Dockside Utilities for Ship Service. ........................................................ 7
+2-2.3 Exterior Lighting Systems. ..................................................................... 8
+2-2.4 Airfield Lighting. ..................................................................................... 8
+2-2.5 Cathodic Protection Systems. ................................................................ 8
+i
+UFC 3-501-01
+27 November 2024
+2-2.6 High-Altitude Electromagnetic Pulse (HEMP) Shielded Systems –
+Exterior. ............................................................................................................... 8
+2-2.7 Generators. ............................................................................................ 8
+2-2.8 Renewable Energy Systems. ................................................................. 8
+2-2.9 Microgrids. ............................................................................................. 8
+2-3 INTERIOR DISTRIBUTION SYSTEMS. .................................................... 8
+2-3.1 Interior Electrical Systems. .................................................................... 8
+2-3.2 Interior Lighting Systems. ...................................................................... 9
+2-3.3 Emergency and Standby Systems. ........................................................ 9
+2-3.4 Sensitive Compartmented Information Facilities (SCIF). ....................... 9
+2-3.5 Hazardous Locations. ............................................................................ 9
+2-3.6 Stationary and Mission Batteries. .......................................................... 9
+2-3.7 HEMP Shielded Systems – Interior. ....................................................... 9
+2-3.8 Renewable Energy Systems. ................................................................. 9
+2-3.9 Mission Critical Power, Cooling, and Control Systems. ......................... 9
+2-4 COMMUNICATIONS AND SECURITY. .................................................. 10
+2-4.1 Telecommunication Systems. .............................................................. 10
+2-4.2 Television Systems. ............................................................................. 10
+2-4.3 Community Antenna Television (CATV) Systems. ............................... 10
+2-5 ELECTRONIC SECURITY SYSTEMS (ESS). ......................................... 10
+2-6 MASS NOTIFICATION SYSTEMS. ......................................................... 10
+CHAPTER 3 DESIGN ANALYSIS AND DOCUMENTATION ....................................... 11
+3-1 GENERAL. .............................................................................................. 11
+3-2 DESIGN ANALYSIS. ............................................................................... 11
+3-2.1 Basis of Design. ................................................................................... 11
+3-2.2 Electrical Calculations – Overview. ...................................................... 14
+3-2.3 Load Analysis. ..................................................................................... 16
+3-2.4 Short Circuit Analysis. .......................................................................... 19
+3-2.5 Protective Device Time-Current Coordination Study. .......................... 20
+3-2.6 Arc Flash Analysis. .............................................................................. 22
+3-2.7 Voltage Drop. ....................................................................................... 24
+3-2.8 Motor Starting. ..................................................................................... 30
+3-2.9 Lighting. ............................................................................................... 31
+ii
+UFC 3-501-01
+27 November 2024
+3-2.10 Underground Structures Design. ......................................................... 31
+3-2.11 Cable Pulling Tension Calculations...................................................... 31
+3-2.12 Calculations for Directional Boring. ...................................................... 31
+3-2.13 Sag, Tension, and Guying Analysis. .................................................... 31
+3-2.14 Cathodic Protection Calculations. ........................................................ 31
+3-2.15 Lightning Protection Calculations. ........................................................ 31
+3-2.16 ESS Calculations. ................................................................................ 31
+3-2.17 Renewable Energy System Calculations. ............................................ 32
+3-3 DRAWING REQUIREMENTS. ................................................................ 32
+3-3.1 Legends and Abbreviations. ................................................................ 33
+3-3.2 Site Plans. ............................................................................................ 33
+3-3.3 Demolition Plans. ................................................................................. 36
+3-3.4 Lighting Plans and Details. .................................................................. 36
+3-3.5 Power Plans. ........................................................................................ 37
+3-3.6 Telecommunication Plans. ................................................................... 37
+3-3.7 Grounding Plan. ................................................................................... 37
+3-3.8 Roof Plan. ............................................................................................ 37
+3-3.9 Lightning Protection Plan. .................................................................... 38
+3-3.10 Hazardous Location Plan. .................................................................... 38
+3-3.11 Power One-Line/Riser Diagrams. ........................................................ 38
+3-3.12 Telecommunications Riser Diagram. ................................................... 40
+3-3.13 Intercommunication/Paging Riser Diagram. ......................................... 40
+3-3.14 Fire Alarm Riser Diagram. ................................................................... 40
+3-3.15 Special Systems Riser Diagrams. ........................................................ 41
+3-3.16 Schedules and Elevations. ................................................................... 41
+3-3.17 Details/Diagrams.................................................................................. 42
+3-3.18 Grounding Diagrams. ........................................................................... 42
+3-3.19 Cathodic Protection Plans and Details. ................................................ 43
+APPENDIX A TRI-SERVICE ELECTRICAL WORKING GROUP TECHNICAL PAPERS
+................................................................................................................. 45
+APPENDIX B DESIGN DATA TABLES ....................................................................... 47
+APPENDIX C ELECTRICAL ENGINEERING PRELIMINARY CONSIDERATIONS .... 51
+C-1 PRELIMINARY DATA ............................................................................. 51
+iii
+UFC 3-501-01
+27 November 2024
+C-1.1 Load Data. ........................................................................................... 51
+C-1.2 Load Analysis. ..................................................................................... 51
+C-1.3 Terminology. ........................................................................................ 51
+C-2 ESTIMATION OF LOADS. ...................................................................... 59
+C-2.1 Preparation of Load Data. .................................................................... 59
+C-2.2 Individual Loads. .................................................................................. 59
+C-2.3 Area Loads. ......................................................................................... 66
+C-2.4 Activity Loads. ...................................................................................... 73
+APPENDIX D GLOSSARY ........................................................................................... 75
+D-1 ACRONYMS. ........................................................................................... 75
+D-2 DEFINITION OF TERMS. ........................................................................ 78
+APPENDIX E REFERENCES ....................................................................................... 81
+iv
+UFC 3-501-01
+27 November 2024
+FIGURES
+Figure 2-1 Illustration of NFPA 70 Service Point and NFPA 70 / IEEE C2
+Demarcation .................................................................................................................. 7
+Figure C-1 Theoretical Relationship between Load Factor and Coincidence Factor
+at U.S. Naval Shore Establishments .......................................................................... 71
+TABLES
+Table B-1 Typical Loading for Personal Computer Systems .................................. 47
+Table B-2 Load Data for Preliminary Demand Calculations .................................... 47
+Table B-3 Dwelling Demand kVA per A/C Size ......................................................... 48
+Table B-4 Typical A/C Size for Dwelling Units .......................................................... 48
+Table B-5 Demand for Electric Strip Heat ................................................................. 48
+Table C-1 Factors for Individual Facilities by Navy Category Code (See Note 1) .. 53
+Table C-2 Demand Factors for Specific Loads (See Note 1) ................................... 61
+Table C-3 Annual Hours of Demand Usage for Specific Loads............................... 62
+Table C-4 Academic Building (Code 171-10) Demand and Load Factor
+Calculations (See Note 1) ........................................................................................... 63
+Table C-5 Guides for Selection of Demand Factors ................................................. 64
+Table C-6 Guides for Selection of Loads Factors..................................................... 65
+Table C-7 Method of Calculating Coincident Peak Demand .................................... 69
+Table C-8 Relationship between Load Factor and Coincidence Factor ................. 72
+v
+UFC 3-501-01
+27 November 2024
+This Page Intentionally Left Blank
+vi
+UFC 3-501-01
+27 November 2024
+CHAPTER 1 INTRODUCTION
+1-1 PURPOSE AND SCOPE.
+The purpose of this UFC is to provide technical requirements for general aspects of the
+electrical design of projects. Apply the criteria provided in this UFC for the development
+of the plans, specifications, calculations, and Design/Build Request for Proposals
+(RFP). It serves as the minimum electrical design requirements for design-build and
+design-bid-build projects. Project conditions may dictate the need for a design that
+exceeds these minimum requirements.
+1-1.1 UFC Hierarchy.
+This UFC provides the top-tier baseline requirements for electrical UFCs and is
+intended as a reference for all electrical work on projects. All electrical UFCs listed in
+Appendix E rely on this UFC for overall requirements regarding design analysis and
+documentation.
+1-1.2 Upgrades and Modifications to Existing Systems.
+Modernization of electrical systems solely for the purpose of meeting design criteria in
+UFCs is not required. Upgrades or modifications to electrical systems should consider
+the design criteria in this UFC, but it is not intended that an entire facility or system
+require modernization solely because of a minor modification.
+For minor projects, determine if the project will affect existing electrical system
+calculations such as by modifying circuit breaker settings. If any electrical system
+calculations are affected by the modification, update the calculations, including the arc
+flash calculation, as part of the project.
+Note: Arc flash calculation updates are necessary for electrical safety.
+1-2 REISSUES AND CANCELS.
+This UFC reissues and cancels UFC 3-501-01, Electrical Engineering, dated 06 October
+2015.
+1-3 APPLICABILITY.
+This UFC applies to the planning, design, construction, sustainment, restoration, and
+modernization of DoD-owned facilities. It is applicable to all methods of project delivery
+and levels of construction as defined by UFC 1-200-01 section 1-3.
+1-4 GENERAL BUILDING REQUIREMENTS.
+Comply with UFC 1-200-01, DoD Building Code. UFC 1-200-01 provides applicability of
+model building codes and government unique criteria for typical design disciplines and
+1
+UFC 3-501-01
+27 November 2024
+building systems, as well as for accessibility, antiterrorism, security, high performance
+and sustainability requirements, and safety. Use this UFC in addition to UFC 1-200-01
+and the UFCs and government criteria referenced therein.
+1-5 WAIVER AND EXEMPTIONS PROCESS.
+The waiver and exemption process is provided in MIL-STD 3007.
+1-6 CYBERSECURITY.
+All facility-related control systems (including systems separate from a utility monitoring
+and control system) must be planned, designed, acquired, executed, and maintained in
+accordance with UFC 4-010-06, and as required by individual Service Implementation
+Policy.
+1-7 PERMITS – CONSTRUCTION, ENVIRONMENTAL, AND OTHER.
+Identify the permits and fees necessary for environmental, construction, and operation
+of facilities.
+1-8 GLOSSARY.
+APPENDIX D contains acronyms, abbreviations, and terms.
+1-9 REFERENCES.
+APPENDIX E contains a list of references used in this document. The publication date
+of the code or standard is not included in this document. Unless otherwise specified,
+the most recent edition of the referenced publication applies. If dates are not indicated
+in the contract or in the absence or other direction, the issue/version of publication in
+effect at the time the design started is to be used. Designs that have been started and
+then delayed will need to evaluate which version is applicable and may have to update
+to the newer version if considerable time has gone by. This may require some redesign.
+2
+UFC 3-501-01
+27 November 2024
+CHAPTER 2 TECHNICAL REQUIREMENTS
+2-1 GENERAL.
+Design electrical systems to meet the needs of the activity and supporting facilities in
+accordance with this document.
+Provide electrical equipment that is the manufacturer’s standard catalog products,
+conforming to the latest published industry and technical society standards at the date
+of contract award. Underwriters Laboratories (UL) listing or third-party certification is
+required for all basic equipment. Use of shop or field fabricated electrical equipment
+assemblies that are not manufacturer’s standard catalog products or do not conform to
+the industry and technical society standards are not acceptable.
+2-1.1 Removal of Existing Cables and Conductors.
+When a project requires disconnection of existing cables and conductors enclosed in
+either duct or conduit, physically remove the existing cables and conductors. Associated
+ducts or conduits may be abandoned in place only for the following conditions:
+• They are planned for re-use.
+• Removal will cause substantial facility damage.
+• Conduits are inaccessible.
+On duct systems between underground structures (handholes, manholes, and vaults),
+provide a pull wire (string or rope) for future use, and seal both ends of duct. Apply label
+to each end of the pull rope noting the location of the other end of the conduit.
+2-1.2 Hot Caps and Removal of T-Splices Inside Manholes.
+Regardless of voltage, do not hot cap conductors in a manhole or handhole as part of
+demolition.
+If the conductor is part of a T-splice or Y-splice that is being removed, remove the splice
+and install an in-line splice for the remaining conductors. For the Army and Navy, if the
+conductor is part of a T-splice or Y-splice that is being re-used, a hot cap is allowed
+during construction to maintain an energized circuit.
+Note: Hot caps are only allowed as a temporary method during construction to maintain
+an energized circuit.
+2-1.3 Modification to Existing Electrical Equipment.
+Uniquely identify equipment to be “Modified” or “Added to” and include the
+manufacturer’s name and other pertinent manufacturer’s identification (e.g., serial
+number, model number, style), if such information exists.
+3
+UFC 3-501-01
+27 November 2024
+2-1.4 Salvaged Materials and Equipment.
+Demolition projects may require equipment or material to be salvaged for, or by the
+Government. Uniquely identify all salvageable equipment or material. Include the
+manufacturer’s name and other pertinent manufacturer’s identification including serial
+number, model number, style, physical dimensions, and weight if such information
+exists. Indicate who is responsible for removal, storage, and transportation.
+2-1.5 Scheduling and Sequencing Outages.
+Designer of Record must:
+• Determine and address scheduling, sequencing, and outage requirements
+including anticipated outage durations as a part of contract design
+documents. Provide a specific and detailed suggested sequence of
+construction. Identify any temporary requirements, including the need for
+emergency generators for backup power during construction-related
+outages.
+• Require the contractor to review all identified requirements and submit
+outage requests for approval by the Government prior to initiating the
+specific work task.
+• Require that all work complies with the electrical safety requirements
+contained in UFC 3-560-01 for government workers and EM 385-1-1 for
+contractor work.
+Note: UFC 3-560-01 is usually more stringent than EM 385-1-1. However, it may be
+invoked on contractor work when desired and agreed to by the Activity. In that case,
+include the appropriate requirements during the design phase in the contract
+documents.
+2-1.6 Energy Efficiency and Sustainable Design.
+Comply with UFC 1-200-02.
+2-1.7 Antiterrorism and Physical Security.
+UFC 4-010-01 is a multidiscipline document which contains several standards that may
+impact electrical system design. Electrical designers must be familiar with UFC 4-010-
+01 and how it may affect the design of utilities, service entrance equipment, emergency
+backup systems, and bracing of electrical equipment. Incorporate the minimum
+standards into the design of all new construction and major renovations of inhabited
+DoD buildings. UFC 4-020-01 supports the planning of DoD facilities that include
+requirements for security and antiterrorism. Use in conjunction with UFC 4-010-01 to
+establish the security and antiterrorism design criteria that will be the basis for DoD
+facility designs.
+4
+UFC 3-501-01
+27 November 2024
+2-1.8 Facility Systems Safety.
+Incorporating safety into the engineering and design process is an important part of
+designing, constructing and maintaining safe facilities for use by U.S. Military, U.S.
+Government, and Contractor personnel. To the extent practicable and feasible,
+incorporate the safety engineering practices delineated under the Facilities Systems
+Safety (FASS) program as prescribed under OPNAV M-5100.23 Chapter 38 and DA
+PAM 385-16.
+Ensure systems safety engineering related to equipment access and proper equipment
+clearances are addressed during a FASS review at the earliest phases of project
+development when remedies and solutions are more easily addressed rather than
+during construction or after facility turnover.
+2-1.9 Corrosive and High Humidity Areas.
+The special design requirements listed below apply when electrical equipment is
+routinely subjected to salt spray (such as installations at piers and wharves) or is
+installed in locations exposed to condensing humidity that has historically caused
+premature rusting and degradation of equipment enclosures. Coordinate with local
+Activity to obtain historical information and documentation to validate requirements.
+• Provide an entire corrosion resistant transformer assembly, fabricated of
+stainless steel.
+• Use stainless steel cabinets and hardware for pad-mounted switchgear,
+switchboards, and sectionalizing termination cabinets.
+Note: When feasible, sectionalizing termination cabinets can be designed to comply
+with NEMA 4X non-metallic enclosure requirements instead of stainless steel if the
+enclosures are not subject to physical or structural integrity damage.
+• Use stainless steel enclosures and hardware for exterior safety switches
+and other electrical equipment.
+• Do not use aluminum-conductor steel-reinforced (ACSR) overhead
+conductors.
+• Use weatherproof stainless steel or aluminum enclosures for outdoor
+engine generator applications.
+• Use corrosion-resistant materials for other electrical components, such as
+conduit, conduit supports, couplings, fittings, plugs, connectors,
+receptacles, equipment supports, and luminaires.
+2-1.10 Arc Flash Warning Labels.
+Refer to UFC 3-560-01 for arc flash label requirements.
+5
+UFC 3-501-01
+27 November 2024
+2-1.11 NFPA 70 (NEC) / IEEE C2 (NESC) Design Interface Points.
+Design buildings and similar support structures such as piers, wharfs, parking
+structures, sewage pump stations, and fueling facilities in accordance with the general
+requirements of NFPA 70:
+a. Services. Apply the following:
+• The location for the “service point” (for clarification of the NFPA 70
+Article 100 and IEEE C2 Section definitions): at the building/similar
+support structure service equipment which contains the main
+incoming overcurrent protective device.
+• The demarcation between NFPA 70 and IEEE C2 for electrical
+power design purposes: is always the secondary terminal of the
+building/support structure utilization electric supply system.
+• The demarcation between NFPA 70 and IEEE C2 for
+communication and security systems design purposes: is always
+the incoming service interface equipment including the five-foot
+raceway extension outside the building/support structure.
+Figure 2-1 illustrates the above in graphic form.
+b. Exterior branch circuits. Design the following in accordance with the
+general requirements of NFPA 70:
+• Exterior lighting systems (parking lot, roadway, security, and
+sports).
+• Exterior branch or feeder circuits originating from building/support
+structure service equipment.
+• Wiring from and connections to non-utility equipment supplying
+power to the wiring system of the facility or the low-voltage
+terminals of the medium-voltage distribution system, including
+engine-generator sets, photovoltaic power systems, wind turbines,
+and fuel cells.
+c. Design all exterior underground and overhead, medium, and low voltage
+systems not specifically associated with a building/support structure in
+accordance with the general requirements of IEEE C2 except utilize the
+NFPA 70 ampacity and conduit fill tables for all designs.
+6
+UFC 3-501-01
+27 November 2024
+Figure 2-1 Illustration of NFPA 70 Service Point and NFPA 70 / IEEE C2 Demarcation
+Figure 2-2
+2-2 SITE EXTERIOR POWER DISTRIBUTION SYSTEMS..
+Provide the site utility distribution system that is compatible with the existing system and
+comply with UFC 3-550-01. Where the site service is derived from an existing primary
+feeder, the designer of record must coordinate with the government authority and
+receive direction regarding point of connection and concurrence that existing circuit can
+support the new loads.
+Coordinate remote monitoring and control requirements for exterior distribution system
+equipment with the Activity.
+2-2.1 Exterior Power Distribution Systems, Including Housing.
+Comply with UFC 3-550-01.
+2-2.2 Dockside Utilities for Ship Service.
+Comply with UFC 4-150-02.
+7
+UFC 3-501-01
+27 November 2024
+2-2.3 Exterior Lighting Systems.
+Comply with UFC 3-530-01.
+2-2.4 Airfield Lighting.
+Comply with UFC 3-535-01.
+2-2.5 Cathodic Protection Systems.
+Comply with UFC 3-570-01
+2-2.6 High-Altitude Electromagnetic Pulse (HEMP) Shielded Systems –
+Exterior.
+Comply with MIL-STD-188-125-1A and MIL-HDBK-423. In lieu of concrete encasement
+for medium voltage direct buried metal conduits (ductbank), utilize a sand bed
+(minimum thickness of 3” (75 mm)) and topped with a minimum of 3” (75 mm) of sand.
+Provide a 2” (50 mm) thick concrete cap, the width of the trench atop the sand
+encasement. Place detectable warning tape above the concrete cap, 12” (300 mm)
+below finished grade to provide easy identification for future excavations.
+2-2.7 Generators.
+Comply with UFC 3-540-01.
+2-2.8 Renewable Energy Systems.
+Comply with UFC 3-540-08.
+2-2.9 Microgrids.
+Comply with UFC 3-550-04.
+2-3 INTERIOR DISTRIBUTION SYSTEMS.
+2-3.1 Interior Electrical Systems.
+Comply with UFC 3-520-01.
+For Army Civil Works funded projects, the requirements of NFPA 70 Article 240.2(A)(4)
+do not apply if all the following conditions are met.
+a. The molded-case circuit breaker (MCCB) is considered mission critical.
+b. A new replacement for the MCCB is not commercially available.
+c. The replacement MCCB is refurbished in accordance with ANSI/PEARL
+Electrical Equipment Reconditioning Standard for Electrical Apparatus and
+Equipment used in Commercial and Industrial Applications (EERS).
+8
+UFC 3-501-01
+27 November 2024
+d. Any equipment requiring the use of a refurbished MCCB must be
+prioritized for replacement.
+2-3.2 Interior Lighting Systems.
+Comply with UFC 3-530-01.
+2-3.3 Emergency and Standby Systems.
+Exit and Emergency Lighting.
+Comply with UFC 3-530-01.
+Fire Alarm Systems.
+Comply with UFC 3-600-01.
+Generators.
+Comply with UFC 3-540-01.
+2-3.4 Sensitive Compartmented Information Facilities (SCIF).
+Comply with UFC 4-010-05.
+2-3.5 Hazardous Locations.
+Show boundaries of hazardous locations on the plans and identify the type of hazard by
+class, division, and group.
+2-3.6 Stationary and Mission Batteries.
+Comply with UFC 3-520-05.
+2-3.7 HEMP Shielded Systems – Interior.
+Comply with MIL-STD-188-125-1A and MIL-HDBK-423.
+2-3.8 Renewable Energy Systems.
+Comply with UFC 3-440-01.
+2-3.9 Mission Critical Power, Cooling, and Control Systems.
+Comply with UFC 3-520-02.
+9
+UFC 3-501-01
+27 November 2024
+2-4 COMMUNICATIONS AND SECURITY.
+2-4.1 Telecommunication Systems.
+General.
+Comply with UFC 3-580-01 for interior and exterior information communications
+technology.
+Outside Plant.
+Provide underground telecommunications wiring in conduit to a depth of 24 in (610
+mm). Specify concrete encased conduits for telecommunications systems in
+accordance with UFC 3-550-01. Unless directed otherwise by the BCO, size outside
+category 3 copper cable for a minimum of one pair per 100 ft2 (9 m2) of building and
+provide a minimum of one 12 strand single-mode fiber optic cable for each facility.
+Coordinate cable selection and point of connection with the BCO and specify using RUS
+specifications.
+Provide solid-state type primary communication circuit protectors with sneak current
+protection for all twisted pair media terminating inside a building from an overhead or
+underground outside plant.
+BEQ/BOQ Housing.
+Completely wire the building interior conforming to UFC 3-580-01.
+Family Housing.
+Provide a complete structured telecommunications system in accordance with UFC 3-
+580-01.
+2-4.2 Television Systems.
+Coordinate television system requirements with the activity.
+2-4.3 Community Antenna Television (CATV) Systems.
+Comply with UFC 3-580-01. Coordinate exterior cable installation with the local service
+provider and Base Communications Officer (BCO). Provide a conduit and pull wire from
+a point of connection to the base system and the main distribution equipment.
+2-5 ELECTRONIC SECURITY SYSTEMS (ESS).
+Comply with UFC 4-021-02.
+2-6 MASS NOTIFICATION SYSTEMS.
+Comply with UFC 4-021-01.
+10
+UFC 3-501-01
+27 November 2024
+CHAPTER 3 DESIGN ANALYSIS AND DOCUMENTATION
+3-1 GENERAL.
+This chapter defines the minimum information to be provided at the various design
+submittal levels. During the design submittal process, the Designer of Record must
+clarify comments with the appropriate Government reviewer rather than wait until the
+next submittal to respond. Whenever possible, the Designer of Record is encouraged to
+meet with the reviewer to discuss comments.
+3-2 DESIGN ANALYSIS.
+The Design Analysis is a presentation of facts to demonstrate the concept of the project
+is fully understood and the design is based on sound engineering principles. As a
+minimum, include the following information in the Design Analysis.
+3-2.1 Basis of Design.
+Document design decisions throughout the design process. List any special features
+and alternatives that were considered. Provide a written narrative accurately addressing
+the electrical and telecommunication design. Describe the design approach to all
+electrical systems. Include the method used for sizing conductors, conduit, protective
+devices, and other equipment. Show all calculations used in determining capacities of
+electrical systems. When tables from industry standards are used in the design, indicate
+the title, source, and date of the document. Include a complete list of all design
+standards and references used for the design.
+Update the Basis of Design for each submittal to accurately show the current state of
+the design. Include the information in the following sub-paragraphs as a minimum.
+Exterior Primary Power Distribution Systems.
+• Existing Primary Power Source – Identify the location of the point of
+connection into the existing primary system. Address the characteristics of
+this primary system, including ANSI voltage designation, phase, number of
+conductors, available fault current, and the circuit grounding classifications
+(ungrounded, uni-grounded, resistance grounded, or multi- grounded).
+Address the adequacy of the primary system; if inadequate, state
+measures proposed to correct the inadequacy.
+• Estimated Electrical Project Load – Provide an estimate of total connected
+load (kVA) and the resulting demand load (kVA), transformer size, and
+service size.
+• Voltage Selection – Provide basis for selection of primary and secondary
+voltages.
+• Conductors – Include conductor size, type, number of conductors,
+insulation voltage rating, and insulation level.
+11
+UFC 3-501-01
+27 November 2024
+• Standards of Design – Describe pertinent standards of design, such as
+voltage drop, and equipment ratings.
+• Materials – Provide manufacturer’s data sheets and product data for
+selected equipment.
+Other Exterior Systems.
+• Telecommunications (including voice, video and data) System – Identify
+point of connection into base system. Describe modifications, if required,
+to existing base system.
+• Special Systems – Identify any special systems, such as Electronic
+Security Systems (ESS) or Cable Television (CATV). Describe how and
+where the facility will connect to the basewide Mass Notification System.
+• Exterior Lighting Systems – Describe types of luminaires and illuminance
+values.
+• Alternate Energy Sources – Describe alternate energy systems such as
+engine-generator sets, photovoltaic power systems, wind turbines, and
+fuel cells.
+• Metering – Determine installation specific metering requirements as part of
+the electrical distribution system connection during design.
+• Conductors – Include conductor type and number of conductors.
+• Standards of Design – Describe pertinent standards of design, such as
+voltage drop and equipment ratings.
+• Materials – Provide manufacturer’s data sheets and product data for
+selected equipment.
+Interior Distribution Systems.
+Describe the electrical systems including the following: lighting systems; power
+systems; alternate energy systems, emergency lighting; emergency/standby power;
+grounding systems; telecommunications system; other systems such as television;
+physical and electronic security features such as ESS or TEMPEST. Refer to NSTISSI
+7000, TEMPEST Countermeasures for Facilities, for TEMPEST criteria.
+a. Electrical Characteristics – Describe the electrical system to be provided
+and justify its selection. Indicate ANSI voltage designation, phase, and
+number of conductors.
+b. Switchgear and Switchboards – Provide specific design information for the
+following:
+• Nominal system voltage.
+• Short circuit ratings.
+• Maximum voltage ratings.
+12
+UFC 3-501-01
+27 November 2024
+• Basic impulse level (BIL).
+• Main bus ampacity.
+c. Estimated Electrical Loads – Provide a breakdown, by category, of the
+estimated loads (kVA). Include lighting, convenience outlet, mechanical
+equipment, special operating equipment, user equipment, and
+miscellaneous load categories.
+d. Wiring Methods – Indicate the type of wiring method, such as rigid conduit,
+electrical metallic tubing, cable tray, nonmetallic sheathed cable, and
+where proposed to use.
+e. Conductors – Indicate the type of conductors and insulation material such
+as CU, AL, THW, XHHW, and where proposed to use.
+f. Standards of Design – Describe the proposed standards of design, such
+as voltage drop, illuminance values, type of light sources, and energy
+conserving features.
+g. ASHRAE compliance – Describe the approach for compliance with UFC 1-
+200-02 and its ASHRAE 90.1 requirements.
+h. Special Systems – Describe the proposed type of systems. Indicate each
+system’s function and the interrelationships between systems, when
+applicable. Identify government-furnished equipment, if any. Special
+systems include such systems as CATV, Closed Circuit Television
+(CCTV), Intercom, Sound, Nurse Call, Security, or Uninterruptible Power
+Supplies (UPS). Identify special security requirements. Identify special
+physical security requirements.
+i. Telecommunications Systems – Identify space required for
+telecommunication equipment, and size of incoming duct/conduit. Include
+documentation concerning telecommunications room sizes, to
+accommodate interface equipment provisions for multi-use systems (i.e.
+special use systems, such as voice, video, and data).
+j. Materials – Where appropriate, like for design build, provide
+manufacturer’s data sheets and product data for selected equipment.
+System Maintainability.
+Design the system in a manner that facilitates safe periodic maintenance of the
+equipment in accordance with Section 2-1.8.
+Instrumentation and Controls.
+Coordinate all interfaces with instrumentation and control systems provided by other
+disciplines, and provide required connections, either empty conduits or power wiring as
+required. Normally, the designer for the discipline that is responsible for the process
+(such as electrical, mechanical, or civil) is also responsible for the instrumentation and
+controls design of that system.
+13
+UFC 3-501-01
+27 November 2024
+3-2.2 Electrical Calculations – Overview.
+The Designer of Record (DOR) is responsible for providing calculations (in accordance
+with the associated follow-on paragraphs) to verify proper design and operation of the
+facility to the point of connection to the existing electrical systems.
+Note: There can be differences in how the required electrical analyses are handled,
+depending on whether the project is design-build or design-bid-build. Army projects
+might also use UFGS 26 05 73, Power System Studies, as the method for specifying
+requirements associated with the coordination study during the construction phase.
+The DOR is also responsible for:
+• Contacting and obtaining all utility data required to complete the relay
+coordination study from the respective Base Electric Utility Department or
+Private Utility Company including existing upstream protective device
+types and settings. The information needed for the electrical analysis
+depends on the point of connection to the primary distribution system and
+the scope of the project.
+• Determining the different operational configurations. If the facility or
+system has various operational configurations (such as different
+transformer supplies, emergency generator operation, UPS bypass, or
+microgrid) or operational modes (such as normal parallel mode, transition-
+to-island mode, island mode, and reconnection mode), evaluate each
+possible operating configuration and each operational mode, and provide
+the results for each case.
+• Providing analyses and calculations that are described fully, written
+clearly, and lead the reviewer through the design by stating all
+assumptions and design inputs. Computer printouts are acceptable only if
+accompanied by explanations to allow adequate independent review of
+calculation methods and results.
+Electrical Analysis Software.
+Most electrical-related calculations for significant projects will be completed with
+software tools; hand calculations are typically only acceptable for minor modifications to
+an existing system. For power systems analyses, coordinate with the base to determine
+if specific software tools are required for the analyses. Whenever software tools are
+used to perform analyses, provide the electronic software files with each submittal.
+Electronic software files must be in a format compatible with the analysis software used
+at the Government's facility. Before using any software tools, identify any base or
+service-specific limitations regarding which software packages can be used.
+Note: The Navy Network is only able to utilize ETAP, SKM software modules and
+EasyPower for electrical analysis. If project calculations are done using any other
+software, they must also be provided in either ETAP, SKM or EasyPower so that they
+14
+UFC 3-501-01
+27 November 2024
+are usable by Navy personnel on the Navy Network. The designer performing the
+calculations shall verify with the Navy which software package they are using at that
+facility and provide there database calculations to the Navy in that software database.
+Note: For the Air Force, only EasyPower is certified in accordance with AFI 33-210 for
+use on standard desktop systems connected to the Air Force Global Information Grid
+and placed on the Air Force Evaluated/Approved Products List. Other software products
+can be used on standard desktop systems connected to the Air Force Global
+Information Grid after they have been certified in accordance with AFI 33-210 and
+placed on the Air Force Evaluated/Approved Products List.
+Electrical Calculation Summary.
+Provide calculations that include a complete analysis with supporting data. Address
+system arrangement; voltage selection; and major equipment selections including load
+analysis and equipment sizing calculations. Whenever sizing electrical equipment, such
+as transformers, breakers, or electric cables, provide calculations to demonstrate proper
+facility design. Provide the following calculations unless the Basis of Design clearly
+explains why a particular calculation type is not applicable:
+a. Load analysis.
+b. Short circuit analysis, including protective device interrupting rating.
+c. Protective device time-current coordination study.
+d. Arc flash analysis.
+e. Voltage drop.
+f. Motor starting analysis.
+g. Lighting.
+h. Underground structure design.
+i. Cable pulling tension.
+j. Directional Boring
+k. Sag, tension, and guying analysis.
+l. Cathodic protection calculation.
+m. Lightning protection analysis.
+n. CATV network loss calculations.
+o. ESS calculations.
+p. Alternate energy system calculations.
+q. Utility interactive systems and distributed resources island systems
+evaluation.
+r. ASHRAE 90.1 calculations.
+15
+UFC 3-501-01
+27 November 2024
+Detailed requirements for each calculation item in the list are contained in the following
+paragraphs.
+3-2.3 Load Analysis.
+Preliminary Basis of Design.
+a. Load Analysis for Service Entrance Equipment, Including Feeders:
+• Complete a preliminary load analysis (Basis of Design). Base
+calculations on NFPA 70 and use load information provided in
+Appendix B or ASHRAE 90.1 as applicable. Use Appendix C to
+apply demand and load factors when sizing the service entrance
+transformer only. Do not apply these factors to distribution
+equipment downstream of the service entrance transformer.
+b. Load Analysis for Service Entrance Transformer:
+• Select appropriately sized transformer based on:
+i. The standard available ratings and
+ii. The calculated demand load which is connection to each
+transformer.
+• Apply the demand and diversity factors from Appendix C to the
+preliminary load analysis to determine the transformer size.
+• For building designs, do not exceed a service transformer size
+greater than 12 VA/square foot (130 VA/square meter) of facility
+gross floor area or 70% of the total connected load on installations
+served by transformer rated 300 kVA or greater. Any design
+calculations exceeding these requirements must be specifically
+approved by the technical reviewing authority.
+Note: The above check is intended to serve as a simple confirmation that the facility
+transformer is not oversized.
+c. Load Analysis for Emergency/Standby Generator:
+• Provide sizing calculations including starting kVA.
+• Refer to UFC 3-540-01 for additional load analysis requirements,
+including the effect of UPS systems on generator sizing.
+d. Load Analysis for Alternate Energy Systems:
+• Provide maximum power calculations applicable to the type of
+alternate energy system. This includes:
+i. DC systems, including 270 VDC charging systems.
+ii. Frequency conversion equipment.
+iii. Renewable energy systems.
+16
+UFC 3-501-01
+27 November 2024
+e. Load Analysis for Uninterruptible Power Supply (UPS):
+• Provide sizing calculations in accordance with UFC 3-520-01,
+section entitled “Stationary Batteries and Battery Chargers”.
+f. Load Analysis for utility interactive systems and distributed resource island
+systems (microgrids). Provide a load analysis in accordance with IEEE Std
+1547.4 Clause 5. Include a system one-line diagram with system
+interconnection points. Evaluate historical demand profiles (real and
+reactive) and identify any large motor loads. Include in the load analysis a
+calculation of real and reactive power requirements in normal and island
+mode of operation.
+Note: Microgrids are not included with all projects. When required by the project scope
+of work to install a new system or to incorporate a microgrid into an existing system,
+provide a complete description of the microgrid including its connection points to the
+system and how the system will operate.
+g. ASHRAE 90.1 calculations:
+• Power allowance for lighting.
+• If the design methodology requires additional receptacles to satisfy
+the ASHRAE 90.1 automatic receptacle control criteria, identify as a
+line item in the system load analysis.
+Follow-On Submittals.
+a. Load Analysis for Service Entrance Equipment, Including Feeders:
+• Complete a load analysis (Basis of Design). Base calculations on
+NFPA criteria.
+b. Load Analysis for Service Entrance Transformer:
+• Apply the demand and diversity factors from Appendix C to the final
+total connected load analysis to determine the transformer size.
+For example, Diversity Factor - A distribution feeder serves 4
+buildings, each has a peak demand of 25 KW. The feeder peak
+demand is equal to 80 KW. The diversity is equal to 80/100 or .8.
+Demand Factor - a residence having 12,000W of total connected
+load has a maximum demand load of 9,000W. The demand factor
+is 9,000/12,000= 75%.
+• For building designs:
+• For all transformers, do not exceed a service transformer
+size greater than 12 VA/square foot (130 VA/square meter)
+of facility gross floor area.
+• For a transformer rated 300 kVA and larger, do not exceed a
+service transformer size of 70% of the total connected load.
+17
+UFC 3-501-01
+27 November 2024
+• Validate that transformer size has not been increased by the
+design approach taken to comply with ASHRAE 90.1.
+Any design calculations exceeding these requirements must be specifically approved by
+the Technical Reviewing Authority.
+c. Load Analysis for Emergency/Standby Generator:
+• Provide sizing calculations including starting kVA.
+• Refer to UFC 3-540-01 for additional load analysis requirements,
+including the effect of UPS systems on generator sizing.
+d. Load Analysis for Alternate Energy Systems:
+• Provide maximum power calculations applicable to the type of
+alternate energy system. Identify actual power delivered from
+source.
+e. Load Analysis for Uninterruptible Power Supply (UPS):
+• Provide sizing calculations in accordance with UFC 3-520-01,
+section entitled “Stationary Batteries and Battery Chargers”.
+f. Load Analysis for utility interactive systems and distributed resource island
+systems (microgrids) in accordance with the criteria provided in Section 3-
+2.3.1.f.
+g. ASHRAE 90.1 calculations in accordance with the criteria provided in
+Section 3-2.3.1.g.
+Load Analysis Criteria.
+Use the following additional criteria for the load analysis:
+• Assign a “0%” demand factor for fire pump loads in demand calculations.
+• Design underground service entrance distribution using commercially-
+available thermal analysis software based on Neher-McGrath or finite
+element methods. Assume a load factor of 100%.
+• Size the service entrance conductors for a continuous load current not
+less than the ampacity of the main bus in the service entrance equipment.
+For example, provide conductors sized for 1200 amperes with 1200
+ampere rated equipment which is protected with a 1000 ampere device.
+Listed conductor size adapters are acceptable. Design main service
+equipment to provide a minimum of approximately 15% combination of
+spare devices/space to accommodate future work. Include this 15% spare
+capacity in the demand load calculations for future or anticipated load
+growth.
+Note: Consideration for spare device/space above 15% should be addressed during the
+scoping of the project.
+18
+UFC 3-501-01
+27 November 2024
+• Select size of service entrance transformers based on the standard
+available ratings.
+Note: This criterion does not apply to secondary substation transformers, dedicated site
+lighting transformers, etc.
+For small systems 225 amps or less, or for small modifications to large systems, the
+load analysis can be performed manually using the above criteria. For larger systems, a
+load analysis using computer software tools is necessary to evaluate properly all of the
+possible facility modes of operation.
+3-2.4 Short Circuit Analysis.
+Complete a short circuit analysis in accordance with IEEE 3002.3 and include the
+following in the analysis:
+a. Include the utility system data as well as data for the distribution system.
+Contact the Contracting Officer or technical reviewing authority for the
+utility system data and available fault current on the primary side of
+medium voltage equipment. When accurate data does not exist, assume
+that maximum available fault exists, up to a possible infinite bus on the
+primary side of the upstream transformer, and design the system
+assuming such conditions.
+b. Calculate the available short circuit and ground fault currents at each bus.
+Incorporate any motor contribution in determining the momentary and
+interrupting ratings of the protective devices.
+c. Use a commercially available software program designed for the type of
+required analysis. Incorporate pertinent data and the rationale employed in
+developing the calculations in the introductory remarks of the study.
+Comply with IEEE C37.06, IEEE C37.13.1, or UL 489 criteria, as
+applicable, for equipment interrupting capability evaluations.
+d. Where diagrams will not fit on standard letter size paper, present the data
+determined by the short circuit study in a tabular format. Include the
+following:
+• Device identification
+• Operating voltage
+• Protective device
+• Device rating
+• Calculated short circuit current
+e. Coordinate the calculated short circuit current at the service entrance with
+the available fault current labeling required by NFPA 70 for the service
+entrance equipment (switchgear, switchboard, or panelboard).
+19
+UFC 3-501-01
+27 November 2024
+3-2.5 Protective Device Time-Current Coordination Study.
+Selective Coordination.
+Design the electrical system such that any fault in the system will be preferentially
+isolated by the selective operation of only the overcurrent protective device closest to
+the faulted condition. If required by the contract, perform a coordination study at the
+design stage to establish the basis for the system design and to enable completion of
+an initial arc flash analysis. Provide a final coordination study based on the as-built
+configuration of the system. Identify locations where selective coordination is not
+achievable, such as with instantaneous trips on molded case circuit breakers.
+The Designer of Record is responsible for the selective coordination of overcurrent
+protective devices, including protective relays and medium voltage protective devices,
+high side transformer protection for distribution transformers, main secondary breakers,
+and secondary feeder protective devices. Ensure coordination between the new
+equipment design and the existing distribution system.
+Selective coordination shall not be required between two overcurrent devices located in
+series if no loads are connected in parallel with the downstream device.
+Any permanently installed backup power source required by published DoD or agency-
+specific criteria shall be considered a legally required standby system or emergency
+system.
+Required Time-Current Data.
+The Designer of Record is responsible for ensuring that construction contract
+documents require the Contractor to submit the transformers’ inrush current and
+damage curve and the manufacturer’s published time-current curves for primary fuses,
+relays, main secondary breakers, and secondary feeder protective devices. This
+information is required during the submittal process. Using the time-current curve data,
+perform a coordination study in accordance with the following paragraphs to ensure that
+protective devices are properly coordinated.
+Coordination Study.
+If required by the contract, provide a complete coordination study that includes a system
+one-line diagram, short circuit and ground fault analysis, and protective coordination
+plots.
+The Designer of Record is responsible for providing to the Contractor settings for relays,
+main secondary breakers, secondary feeder protective devices, and any other
+protective devices in the circuit. Base the final coordination study and the specified
+setting information on the as-built configuration.
+20
+UFC 3-501-01
+27 November 2024
+One-Line Diagram(s).
+Show on the one-line diagram all electrical equipment and wiring to be protected by the
+overcurrent devices including breakers and fuses. Multiple one-line diagrams may be
+used if required to clearly present all the required data. Also, show on the one-line
+diagram the following specific information:
+a. Calculated short circuit values and X/R ratios at the project utility point of
+connection.
+b. Breaker and fuse ratings.
+c. Transformer kVA and voltage ratings, percent impedance, and wiring
+connections.
+d. Identification and voltage at each bus.
+e. Identify feeder cable sizes and conduit sizes. Identify configuration such
+as 4-#2 AWG, 1-#4 AWG ground in 1-1/2" conduit. (Use worst case fill
+based on allowed materials.) Where limitations on materials and insulation
+are specifically required due to special environments, clearly identify this
+when applicable.
+Coordination Curves.
+Prepare the coordination curves to determine the required settings of protective devices
+to assure selective coordination. Graphically illustrate on a log-log scale that adequate
+time separation exists between series devices, including the utility company upstream
+devices where applicable. Plot the specific time-current characteristics of each
+protective device in such a manner that all applicable upstream devices will be clearly
+shown on one sheet. Include the following information on the coordination curves:
+a. Device identification.
+b. Voltage and current ratios for curves.
+c. 3-phase and 1-phase ANSI damage points for transformers directly fed
+from the switchgear.
+d. Minimum melt and total clearing curves for fuses.
+e. Cable damage curves.
+f. Transformer inrush points.
+g. Maximum short circuit current.
+Settings.
+Develop a table to summarize the settings selected for each protective device. Low
+voltage protective devices less than 225 amperes, unless adjustable trip, are not
+required to be included. Address all relays and relay functions. Include in the table the
+following:
+21
+UFC 3-501-01
+27 November 2024
+a. Device identification and breaker or load controlled.
+b. Relay CT ratios and electronic set point equivalents for relay tap, time dial,
+and instantaneous pickup points.
+c. Circuit breaker sensor rating.
+d. Fuse rating and type.
+e. Ground fault pickup and time delay.
+f. Differential relay settings.
+Coordination Study Report.
+Include the following in each coordination study report:
+a. A narrative describing the analyses performed, the methods used, and the
+desired method of coordinated protection of the power system.
+b. Descriptive and technical data for existing devices and new protective
+devices. Include the manufacturers’ published data, nameplate data, and
+definition of the fixed or adjustable features of the existing or new
+protective devices.
+c. Documentation of the utility company data including system voltages, fault
+MVA, system X/R ratio, time-current characteristic curves, current
+transformer ratios, and protective device settings.
+d. Fully coordinated composite time-current characteristic curves to ensure
+coordinated power system protection between protective devices or
+equipment. Include recommended ratings and settings of all protective
+devices in tabulated form.
+e. Evaluation of the total feeder inrush current with respect to relay or circuit
+breaker overcurrent trip settings. Power restoration following an outage
+should not cause a feeder trip on overcurrent.
+3-2.6 Arc Flash Analysis.
+Complete an arc flash evaluation in accordance with NFPA 70E, IEEE C2 and IEEE Std
+1584 (including Amendments 1 and 2), and IEEE Std 1584.1 as applicable.
+Note: Nominal system voltages over 15 kV must follow IEEE C2 (NESC) instead of
+NFPA 70E and IEEE Std 1584.
+Note: Provide PPE criteria in accordance with Chapter 4 of UFC 3-560-01.
+Complete an arc flash evaluation on direct current (DC) systems analysis in accordance
+with NFPA 70E. Include the following:
+22
+UFC 3-501-01
+27 November 2024
+a. Description of the software used to perform the evaluation, including an
+explanation of software-specific user adjustable analysis settings that
+were used for the study.
+b. Scope of analysis. When switchgear, switchboards, and panelboards are
+equipped with main circuit breakers, provide both “Line Side” and “Bus
+Side” results for each item. If the facility or system has different
+operational configurations, such as different transformer supplies,
+emergency generator operation, or UPS bypass, evaluate each possible
+operating configuration and provide the arc flash results for each case.
+When equipment design includes dual protective device settings for the
+purpose of equipment maintenance (non-coordinated system), provide the
+arc flash result for that scenario. Summarize all data and include the
+worst-case results in terms of arc flash levels.
+c. Assumed working distance in feet. For low voltage systems, assume a
+working distance of 18 in. For medium voltage systems, assume a
+minimum working distance of 4 ft. For high voltage systems, assume a
+minimum working distance of 6 ft.
+d. For medium voltage and high voltage systems, credit can be taken for the
+associated distribution feeder circuit breaker as the upstream device if:
+• Existing circuit breakers – documented maintenance and testing of
+the circuit breaker and relay is less than five years old.
+• New circuit breakers – the circuit breaker and relay commissioning
+process confirm functionality in accordance with NETA ATS.
+e. For existing low voltage systems, credit can be taken for the main breaker
+as the upstream protection device if one of the following configurations
+apply:
+• The main breaker is located remotely (separate enclosure) from the
+feeder breakers.
+• The main breaker is located in its own sealed compartment, such
+as a switchgear.
+f. For existing low voltage systems, an upstream circuit breaker can be
+credited to clear the arcing fault if:
+• There is documented maintenance and testing for the circuit
+breaker.
+Note: Maintenance confirms the functional capability and physical condition. Testing
+confirms that the circuit breaker can respond to and clearing an overcurrent event in
+accordance with its published time-current curves.
+• Documented maintenance and testing is less than five years old.
+23
+UFC 3-501-01
+27 November 2024
+g. For new low voltage systems, an upstream circuit breaker can be credited
+to clear the arcing fault if the circuit breaker commissioning process
+confirms functionality of the trip unit in accordance with NETA ATS.
+h. Calculated energy in cal/cm2 at each evaluated location. The design goal
+is to establish arc flash levels that result in 8 cal/cm2 or less. Consider
+remote racking mechanisms to rack breakers in and out to limit personnel
+exposure to an arc flash event. Specifically identify locations where this
+energy level cannot be achieved, such as upstream of a main breaker
+(between the breaker and an upstream transformer) or downstream of
+UPS systems.
+i. Specified protective device settings to achieve the arc flash results.
+Reconcile arc flash protective device setting recommendations with the
+protective device time-current coordination study.
+j. List of work locations exceeding 40 cal/cm2.
+3-2.7 Voltage Drop.
+The following voltage drop requirements apply to AC and DC constant voltage systems
+1000V or less unless more stringent criteria apply. The following does not apply to
+constant current systems or distribution systems over 1000V. In situations where the
+voltage within a facility’s distribution system is increased over this threshold, the voltage
+drop requirements shall restart assuming nominal voltage when transformed below the
+threshold.
+400Hz systems must be designed for voltage drop in accordance with UFC 3-555-01N
+requirements.
+If the phase conductor size is increased for voltage drop, increase the size of the
+equipment grounding conductor proportional to the circular mil increase of the phase
+conductor in accordance with NFPA 70 Section 250.122.
+Permitted Voltage Drop.
+The maximum voltage drop permitted must not exceed 5%. Unless stricter
+requirements apply as adopted by this or other UFCs, feeders and service conductors
+must be limited to 3% voltage drop and branch circuits must be limited to 3% voltage
+drop, with no greater than 5% total. The starting point for this calculation is defined
+below.
+Calculation limits must be based on the cumulative amount of voltage drop seen at a
+given location in the distribution system from the start of calculation identified below, not
+on an individual basis by circuit.
+24
+UFC 3-501-01
+27 November 2024
+General Voltage Drop Mitigation Strategies and Impacts.
+Voltage drop can be mitigated through various strategies, including increasing
+conductor size, reducing the circuit’s load, decreasing the conductor’s length,
+decreasing conductor temperature, and improving power factor. When establishing
+distribution equipment placement within a facility, locate panelboards relatively central
+to the loads supplied to minimize circuit lengths. Likewise, routing the majority of the
+distribution at 480/277V and stepping down to 208/120V more locally to the loads
+served will yield a lower voltage drop to the end devices; this strategy needs to evaluate
+a balance between transformer and circuit costs, as well as requirements to submeter
+different load types when applicable.
+Note increased conductor sizes will yield lower conductor resistances, lead to increased
+fault current values, and impact arc flash values at the equipment buses, potentially
+leading to protection coordination issues. Designers must ensure all conductor sizes
+are established prior to performing final fault current and arc flash calculations, and
+update safety calculations when modifying existing systems.
+Voltage Drop Relationship with Utilization Voltage.
+Voltage drop calculations focus on energy loss through conductors, and voltage drop
+contributes to utilization voltage for end users. However, voltage drop and utilization
+voltage, which is the actual voltage seen at end-use devices and equipment, are not
+synonymous. Devices and equipment have acceptable utilization voltage ranges within
+which operation can occur, the lower bound of which can be of a lower voltage than
+yielded by the maximum permitted voltage drop alone. Other system losses occur
+throughout the distribution system, most notably through transformers, and the voltage
+delivered by the utility service may deviate from the nominal voltage assumed in
+calculations. Transformer tap settings aid in providing appropriate downstream
+utilization voltage, however, the use of transformer taps does not negate energy losses
+incurred through conductor impedance voltage drop.
+Design and construction personnel must remain cognizant of the utilization voltage
+requirements for the equipment and appliances served. Adjustments to the distribution
+system, such as the use of transformer taps and/or an increase in conductor sizes, must
+be performed accordingly to ensure proper utilization voltage is provided to the end use
+devices while simultaneously satisfying the voltage drop energy conservation
+requirements.
+Practices used to boost utilization voltage at the load must not be used as a method to
+comply with voltage drop requirements.
+Calculation Assumptions and Procedures.
+3-2.7.4.1 Initial Voltage.
+The use of service transformer taps must not be assumed to compensate for voltage
+drop on the service-entrance equipment side of the calculation start point. Calculations
+25
+UFC 3-501-01
+27 November 2024
+must assume the nominal system voltage (i.e., 208V, 240V, 480V) is present at the
+location described for the calculation starting point.
+3-2.7.4.2 Starting Point.
+Voltage drop calculations must start at the point of government ownership (i.e.,
+transformer, disconnect switch, meter cabinet, or similar). Where the government owns
+the exterior distribution upstream of the service transformer, the calculation must start at
+the service transformer secondary lugs. Where the facility is without a service
+transformer and supplied by independent generator or energy storage system, the
+calculation must start at such power supply’s output terminals.
+3-2.7.4.3 Load Estimations.
+3-2.7.4.3.1 Capacity.
+The capacity must be 100% of a circuit breaker or fuse device’s nominal rating (e.g.,
+100A standard (80%) devices and 100A continuous (100%) devices are both
+considered 100A capacity) for voltage drop calculation purposes. See UFC 3-520-01
+regarding Adjustable-Trip Devices.
+3-2.7.4.3.2 Feeder Loads.
+Size feeders to accommodate the maximum permitted load based on the circuit
+ampacity. Exceptions to this are as follows:
+a. Transformer Feeders. Per ANSI C57.96, transformers complying with
+the ANSI standard are designed for continuous operation at the specified
+temperature rise for normal life expectancy at the rated kVA. The rated
+kVA may be different than the nameplate or nominal kVA value based
+upon insulation temperature rating, ambient temperature, altitude, and
+other operating conditions.
+For voltage drop purposes, a transformer’s secondary feeders must
+assume a load equivalent to the transformer’s nominal output rating.
+For voltage drop purposes, a transformer’s primary feeders must assume
+the same load as identified above for the secondary feeders PLUS 6%
+transformer loss load.
+b. Motor Feeders. Motor overcurrent protection is located at the overloads
+and NFPA 70 categorizes the circuits from the circuit breakers to the
+overcurrent protection as feeders. As on transformer primary circuits,
+circuit breakers are sized to account for inrush. Utilize the circuit’s total
+full-load amps (FLA) based on NFPA 70 Article 430 tables for voltage drop
+calculations. Additionally, this circuit must be considered a “branch circuit”
+for voltage drop compliance purposes only.
+26
+UFC 3-501-01
+27 November 2024
+Fire pumps must comply with the voltage drop requirements identified in
+NFPA 70 Article 695 in lieu of the limits stated in this section.
+c. Air-Conditioning and Refrigerating Equipment Feeders. The voltage
+drop load must be the rated-load current or full-load current marked on the
+nameplate as identified in NFPA 70 Article 440. Additionally, this circuit
+must be considered a “branch circuit” for voltage drop compliance
+purposes only.
+d. Variable Frequency Drives/Adjustable Speed Drive Feeders. Feeders
+to variable frequency drives, adjustable speed drives, and similar must be
+sized for voltage drop based on the drive’s maximum input current,
+including any drive losses. Additionally, this circuit must be considered a
+“branch circuit” for voltage drop compliance purposes only.
+e. Other Feeders Directly Supplying Motor-Based Equipment. Where
+NFPA 70 categorizes conductors as feeders, but the conductors supply
+dedicated motor-based equipment or equipment assemblies such as
+cranes and elevators, the voltage drop calculation load must be the total
+FLA. Application-specific NFPA 70 demand factors may be applied to the
+loads when used for voltage drop calculations. Additionally, this circuit
+must be considered a “branch circuit” for voltage drop compliance
+purposes only.
+3-2.7.4.3.3 Branch Circuit Loads.
+a. Lighting Circuits. Lighting circuits must utilize the total full load of all
+luminaire and non-luminaire devices connected. Where the lighting circuit
+contains non-luminaire components such as room controllers or power
+packs, ensure such loads are captured.
+b. Receptacle Circuits. Receptacle circuits (including circuits where a
+dedicated receptacle is provided for a single device, appliance, or
+equipment) must use 80% of the circuit’s capacity for voltage drop
+calculations.
+c. Systems Furniture Circuits. Systems furniture circuits must use 80% of
+the circuit’s capacity for voltage drop calculations.
+d. Hard-Wired Appliance and Other Non-Receptacle Circuits. Hard-
+wired appliance and other non-receptacle circuits must utilize the total
+connected load on the circuit for voltage drop calculations.
+3-2.7.4.4 Circuit Lengths.
+3-2.7.4.4.1 Methods.
+See UFC 3-520-01 for routing estimation instructions, and utilize the applicable method
+as described and assigned below.
+27
+UFC 3-501-01
+27 November 2024
+a. End-of-Line Method. Loads on circuits must be at the end of the circuit
+for voltage drop calculations unless otherwise indicated below.
+b. Point-to-Point Method. Calculate the load contributions to voltage drop
+as a function of the load experienced for a given portion of the circuit
+except as identified in the subsequent entries of this section. That is, the
+entire load on the circuit is experienced to the first device, be it a load,
+splicing/junction point, etc. Beyond that point, the load is diminished for
+the next series or parallel lengths, and only those loads contribute to the
+voltage dropped in the associated circuit length.
+The totality of the voltage dropped on any given path must be evaluated in
+determining a satisfactory conductor size (i.e., the path to one end device
+may experience less voltage drop than the path to a different end device),
+and the more severe condition in a comparison of multiple paths must be
+used for the entire circuit size.
+3-2.7.4.4.2 Feeders.
+The entire feeder conductor lengths from the start of calculation described above to the
+last circuit breaker or fuse for a given portion of the distribution system must be used in
+the voltage drop calculation using the End-of-Line method.
+3-2.7.4.4.3 Branch Circuits.
+As with feeder conductors, the entire length of the branch circuit conductors (End-of-
+Line) must be used in the calculation except as follows for the purposes of the voltage
+drop load location:
+a. Lighting Circuits. Lighting circuits may use the Point-to-Point Method.
+Where the lighting circuit contains non-luminaire components such as
+room controllers, power packs, or other line-voltage control devices,
+ensure the lengths used and loads associated used in the voltage drop
+calculation capture these portions of the circuit, including travelers
+between three- and four-way switches.
+b. Receptacle Circuits. The load identified above must be at the farthest
+receptacle (End-of-Line) as routed through other receptacles, junction
+boxes, control devices, etc.
+c. Systems Furniture Circuits. The load identified above must be at the
+point of connection to the assembly (End-of-Line) as routed through
+junction boxes, control devices, etc., prior to the point of systems furniture
+connection.
+d. Hard-Wired Appliances and Other Non-Receptacle Circuits. Hard-
+wired appliances and other non-receptacle circuits may use the Point-to-
+Point Method.
+28
+UFC 3-501-01
+27 November 2024
+3-2.7.4.5 Additional Calculation Considerations.
+3-2.7.4.5.1 Circuit Breakers in Series for Singular Loads or Set of Receptacles.
+In situations where a circuit supplies a singular load or set of receptacles but is provided
+with an additional overcurrent protective device local to the load, the two portions of the
+distribution system may collectively be considered as part of the “branch circuit” for
+voltage drop calculations. For example, if an interior panelboard circuit breaker supplies
+an exterior pedestal-mounted receptacle with a local circuit breaker, the combined
+length of the circuits from the panelboard circuit breaker to the pedestal circuit breaker
+and from the pedestal circuit breaker to the receptacle may be sized using the branch
+circuit requirements for voltage drop (rather than the circuit from the panelboard circuit
+breaker to the pedestal circuit breaker being considered part of the feeder portion of the
+distribution system).
+3-2.7.4.5.2 Branch Circuits Containing a Mix of Load Types.
+Use the worst-case load assignment for the voltage drop calculation. Where portions of
+the circuit are distinguishable by load type, the worst-case voltage drop calculation may
+be performed for each full path from source to end device and the worst-case of the
+comparative results must be used.
+For example, a branch circuit is routed to a junction box, where the circuit is split into
+separate circuit paths (‘A’) for a set of receptacles and (‘B’) for a set of luminaires. The
+entirety of the circuit load must be included from the source to the divergent point at the
+junction box; include the voltage drop to this point in the sizing for the comparative
+calculations. Then use the sizing results from the comparative calculations between ‘A’
+and ‘B’ to establish a circuit size.
+3-2.7.4.5.3 Voltage Drop through Transformers.
+Voltage drop through transformers due to transformer losses for design calculation
+purposes must be zero. When modeling, configure transformers such that the voltage
+drop percentages relative to the values identified in section “Initial Voltage” above on
+the transformer primary and secondary buses match. That is, if the totality of the
+voltage dropped to the transformer primary terminations is, for example, 1.50% of the
+nominal system primary voltage, the calculation for the start of the conductors at the
+transformer secondary lugs must be at 1.50% of the nominal system secondary voltage.
+The aforementioned load associated with transformer losses are to be accounted for in
+the voltage drop calculations for the distribution system upstream of the transformer.
+Voltage drop mitigation measures must be through conductor size increases only, and
+through strategic selection of voltage systems and locations of transformation
+equipment.
+Transformer taps must not be used in voltage drop design calculations and must be
+used for field adjustments only, including to account for voltage lost through the
+transformer or longer conductor routing lengths than estimated in design. Note the
+29
+UFC 3-501-01
+27 November 2024
+output voltage of a transformer will drop as the load increases or the power factor
+decreases.
+3-2.7.4.5.4 Voltage Drop Allowances Addressed by Industry Standards.
+For specific applications whereby a published industry standard establishes a voltage
+tolerance wider than the requirements of this section, the requirements of this section
+will end at the point at which the facility distribution system interfaces with the specific
+appliance, equipment, or similar system. For example, the voltage drop limits provided
+by this section must be met for crane systems to the point of connection at the runway
+electrification system, however, the voltage drop experienced through the runway and
+subsequent conduction paths to the eventual loads may adhere to CMAA-70 instead.
+Similarly, the additional voltage drop experienced through appliance cord and plug
+connections are not covered under this section’s requirements, which end at the
+receptacle connection point.
+3-2.7.4.6 Power Factor.
+For applications where power factor is known or can be easily estimated based on
+industry standards or approved sole-source equipment, utilize such information. The
+following are typical power factors and must be used as estimations where the specific
+power factor is unknown:
+208/120V 480/277V
+Fluorescent Lighting 0.95 0.95
+Compact Fluorescent Lighting (hardwired) 0.90 0.90
+Compact Fluorescent Lighting (GU-24) 0.50 0.30
+LED Lighting 0.90 0.90
+Incandescent Lighting 1.00 ---
+High-Intensity Discharge Lighting 0.90 0.90
+HVAC Package Units 0.85 0.90
+Other Motors Less than 5HP 0.80 0.80
+Other Motors Greater than or Equal to 5HP 0.85 0.85
+Electric Resistance Heating (including Hot Water) 1.00 1.00
+Kitchen Equipment 0.90 0.90
+Receptacles 0.85 0.85
+Other 0.85 0.85
+Table adapted from California Title 24.
+Unity power factor must not be used for loads other than electric resistance heating and
+incandescent lighting.
+3-2.8 Motor Starting.
+Account for both starting and running current in motor calculations.
+30
+UFC 3-501-01
+27 November 2024
+Refer to IEEE C37.96 for calculating motor inrush and how to place the knee point from
+starting to running on a Time Current Curve.
+3-2.9 Lighting.
+Provide calculations for interior and exterior lighting systems in accordance with UFC 3-
+530-01.
+3-2.10 Underground Structures Design.
+Provide sizing and cable bending radius calculations for underground structures
+(manholes and handholes) with cable sizing exceeding 500 kcmil. Verify design
+requirements of UFC 3-550-01 are met. Coordinate with the Activity on the naming
+convention for underground structure identification on the drawings.
+3-2.11 Cable Pulling Tension Calculations.
+Provide cable pulling tension and sidewall pressure calculations for medium voltage
+cable in conduit. Compare the calculations to the rating of the cable.
+3-2.12 Calculations for Directional Boring.
+Provide calculations in accordance with UFC 3-550-01, Appendix B.
+3-2.13 Sag, Tension, and Guying Analysis.
+Provide calculations in accordance with UFC 3-550-01.
+Crane trolley contact conductors are exempted from this requirement due to excessive
+enveloping of the conductor.
+3-2.14 Cathodic Protection Calculations.
+Provide calculations in accordance with UFC 3-570-01.
+3-2.15 Lightning Protection Calculations.
+Provide a lightning risk assessment in accordance with NFPA 780 Annex L and
+document the required level of protection.
+If lightning protection is a design requirement, provide a lightning protection system in
+accordance with UFC 3-575-01. Provide side flash calculations as required by NFPA
+780. Provide calculations for alternative grounding methods when required by the
+design.
+3-2.16 ESS Calculations.
+Provide calculations in accordance with UFC 4-021-02.
+31
+UFC 3-501-01
+27 November 2024
+3-2.17 Renewable Energy System Calculations.
+Provide calculations for renewable energy system project requirements. As a minimum,
+incorporate the requirements of criteria under development in accordance with Section
+2-1.8. Calculations can vary with the types of renewable energy system, but typically
+include:
+• Predicted power generation – kW and kVAR.
+• Predicted energy production – kWh per year.
+• IEEE Std 1547 interface compliance.
+• Voltage drop.
+• Ampacity requirements.
+• Site orientation and safety considerations, including glare analysis for
+photovoltaic systems.
+• Electrical protection and coordination.
+3-3 DRAWING REQUIREMENTS.
+Provide adequate plans, including demolition, existing conditions, and new work,
+legends, details, and diagrams to clearly define the work to be accomplished.
+Coordinate construction drawings and specifications; show information only once to
+avoid conflicts. For the Navy, additionally comply with FC 1-300-09N for specific
+drawing requirements and drawing phases.
+Utilize electrical design “Best Practices Information” located at
+https://www.wbdg.org/dod/supp-tech-documents to facilitate drawing requirements and
+related equipment detail required by the remaining paragraphs of this UFC.
+Provide a General Note at the beginning of the Electrical Drawings clarifying the work to
+be accomplished. The following note is required unless directed or approved by the
+government:
+“ELECTRICAL WORK AND MATERIAL IS NEW AND PROVIDED BY THE
+CONTRACTOR UNLESS INDICATED OTHERWISE”.
+a. Arrangement. Arrange the Electrical Drawings in accordance with the
+National CAD standards at https://www.nationalcadstandard.org/ncs6/.
+Provide drawings that are clear and consistent in presentation and format.
+Follow the NFPA 70 Metric Designations (mm) and Trade Sizes (in) for
+conduit.
+b. Multiple Conduit/Cable Runs. To avoid misinterpretation as to the quantity
+of cables and conduit required in multiple conduit and cable runs, use one
+of the following acceptable descriptions:
+32
+UFC 3-501-01
+27 November 2024
+• Acceptable: Two 4-inch conduits, each containing four 500 kcmil
+and one #2 Gnd.
+• Acceptable: Two 4-inch conduits, each with four 500 kcmil and one
+#2 Gnd
+• Acceptable: Two 4-inch conduits, with four 500 kcmil and one #2
+Gnd in each conduit
+• Unacceptable: Two sets of four 500 kcmil and one #2 Gnd in 4-inch
+conduit
+• Unacceptable: Parallel Service: Four 500 kcmil and one #2 Gnd in
+4-inch conduit
+3-3.1 Legends and Abbreviations.
+Define all symbols used in the drawings in the legend. Locate legend on the first
+electrical sheet using multiple legends where required and identifying the specific use of
+each legend. Use different legends for new and existing work. Avoid using composite
+legends that include all symbols but fail to indicate which symbols are to be used on
+which drawings.
+Refer to electrical technical paper TSEWG TP-12: Appendices for typical illustrations of
+how to properly display legends on the contract drawings. Refer to Appendix A for more
+information.
+3-3.2 Site Plans.
+Show utility point of common coupling to the base power and telecommunications
+systems on the site plan. Provide explicit direction on method of entering existing
+manholes. Provide all details including composition of duct banks and depth and
+configurations of the duct banks.
+Coordination with Other Utilities.
+Provide Electrical Site Plans that are separate and distinct from other utility site plans.
+Include with the electrical drawings. Electrical and civil site plans may be combined only
+when the project requires minor utility work. Coordinate with the electrical engineering
+reviewer before combining the electrical and civil site plans.
+Provide the orientation of electrical drawings consistently with the civil drawings. In
+addition, provide the orientation of partial building or site plans identical to the
+orientation of the larger plan from which the partial was taken. Indicate the exact title of
+each detail, partial plan or elevation as identified on the cross-referenced sheet.
+Overhead Distribution.
+For overhead distribution use a separate symbol for each individual circuit; define each
+circuit by voltage level as well as number, size, and type of conductors. Coordinate
+33
+UFC 3-501-01
+27 November 2024
+guying and conductor sag information shown on the drawings with that shown in the
+specifications.
+Pole Details.
+Indicate overhead distribution pole details on the drawings. Identify pole number
+assignment consistent with installation standards on the site plan and require pole
+identifier number to be installed on pole matching installation standard.
+3-3.2.3.1 Format.
+NAVFAC pole details are available in Adobe PDF format and in AutoCAD format on the
+WBDG website at https://www.wbdg.org/dod/ufgs/forms-graphics-tables.
+Provide details in situations where an applicable pole detail has not been developed.
+Designer developed details must contain the same level of detail equivalent to the
+NAVFAC pole details and include material requirements.
+Review the information contained on Details OH-1.1 through OH-1.5a for examples of
+how to show overhead distribution work. Do not describe proposed work by referencing
+sketch numbers instead of pole detail designation symbols. Do not use pole detail
+designation symbols to describe existing facilities to be removed. To maintain the
+integrity of the pole details, do not modify pole details; include any required exceptions
+or modifications as supplemental information with the pole detail designation symbols.
+When using pole details, place a note referencing the pole detail designation symbols
+(like the following) on the drawings:
+“XFB, 15FR3-N are pole detail designation symbols. Refer to Sketches OH-1.1
+through OH-41 on Sheets [TBD] for an explanation of the use and description of
+equipment provided by these symbols.”
+3-3.2.3.2 Conductor Sag.
+Indicate conductor initial sag values. Provide initial sag values at ambient temperatures
+in 18 degrees F (10 degrees C) increments for a temperature range, which includes the
+outside summer and winter design temperature values. Clearly indicate each different
+calculated ruling span on the plans and provide initial sag for one span in the calculated
+ruling span.
+3-3.2.3.3 Fusing.
+Provide appropriate symbol and detail indicating the use of backup current limiting fuses
+with the device being protected. Indicate the fuse type and ampere rating as well as the
+voltage rating and current designation of the backup current limiting fuse.
+34
+UFC 3-501-01
+27 November 2024
+Transformer Details.
+Indicate transformer details on the drawings. Transformer details are available in a PDF
+format and an AutoCAD format on the WBDG website at
+https://www.wbdg.org/dod/ufgs/forms-graphics-tables.
+3-3.2.4.1 Descriptive Information.
+Provide the following transformer descriptive information:
+• Transformer type (e.g., pad-mounted, pole mounted, station type, unit-
+sub)
+• kVA, single or three phase
+• Voltage ratings per IEEE C57.12.00 (e.g., 11.5KV – 208Y/120 volts)
+• Primary and secondary connection (when using single-phase units for
+three-phase service; specifically indicate how the units are to be
+connected, i.e., connect delta-wye grounded for 208Y/120-volt secondary
+service)
+3-3.2.4.2 Surge Arresters and Fused Cutouts.
+Include the following information for surge arresters and fused cutouts:
+• Surge arrester kV rating.
+• Cutout kV, continuous ampere, and interrupting ampere rating.
+• Fuse link type and ampere rating.
+Underground Distribution.
+3-3.2.5.1 Required Information.
+Profiles may be required for ductbank runs. Discuss profile requirements with the
+electrical reviewer. Indicate structure (manhole and handhole) tops, ductbank
+elevations, slopes, and diameters. Coordinate structure numbers with plan sheets.
+Show and label all crossing utility lines, both existing and new. If depths of existing
+utilities are unknown, indicate the horizontal location of the utility and indicate the
+vertical location with a line representing the anticipated range of elevations where the
+utility will be found in the field. Indicate the method of new utility installation routing
+above or below conflicts. Notes can be used to identify parts.
+Provide cable/ductbank information indicating cable identification, description, conduit
+size, and remarks for any special instructions. Where four or more conduits are to be
+installed, provide in schedule format. For smaller applications, schedule or notational
+conveyance is acceptable.
+35
+UFC 3-501-01
+27 November 2024
+3-3.2.5.2 Detail Drawings.
+Provide manhole foldout details or exploded views for all multiple-circuit primary
+systems and all primary systems requiring splices. Indicate the entrance of all conduits
+and the routing of all conductors in the manholes.
+Manhole details are available in Adobe PDF format and in AutoCAD format on the
+WBDG website at https://www.wbdg.org/dod/ufgs/forms-graphics-tables.
+3-3.3 Demolition Plans.
+Required Information.
+Provide “Demolition” plans separate and distinct from “New Work” plans, except where
+only minor demolition work is required. Clearly show what is to be demolished, at an
+appropriate scale. Indicate the beginning and ending points of circuit removals.
+For modification of or additions to existing equipment, provide the manufacturer’s name
+and other pertinent manufacturer’s identification (e.g., serial number, model number,
+style, and any other manufacturer’s identifying markings).
+Demolition Sequence.
+Provide a sequence of demolition; if necessary, include any known requirement for
+continuous operation and limited shutdown requirements. Identify these in the special
+scheduling paragraphs of the specifications.
+Lighting Demolition.
+Indicate the quantity of lighting ballasts that contain PCBs and the quantity of lamps that
+contain mercury.
+3-3.4 Lighting Plans and Details.
+Do not show lighting and power on the same floor plan, unless the scale of the plan is
+1:50 (¼ in = 1 ft – 0 in) or larger. "Provide a photometric layout plan as an appendix to
+the design analysis. The photometric layout plan may also be a for-information-only
+(FIO) drawing but may not be a contract drawing.
+Provide luminaire (lighting fixture) details, separate luminaire schedule, controls, and
+control strategies for each space. Details and a luminaire schedule are available in
+Adobe PDF format and in AutoCAD format on the WBDG website at
+https://www.wbdg.org/dod/ufgs/forms-graphics-tables. To maintain the integrity of the
+details, do not modify details; make any required exceptions or modifications in the
+remark’s column of the luminaires schedule and not on the details themselves. Provide
+applicable luminaires type symbol(s) with each luminaire sketch/detail. When using
+luminaire(s) not included in the database, detail the luminaire(s) on the drawings
+providing the following minimum information:
+36
+UFC 3-501-01
+27 November 2024
+• Luminaire type (e.g., high bay, fluorescent, industrial, downlight, roadway
+type, floodlight).
+• Physical construction including housing material and fabrication method,
+description of lens, reflector, refractor.
+• Electrical data including number of lamps, lamp type, ballast data,
+operating voltage.
+• Mounting (surface, suspended, flush) and mounting height.
+• Special characteristics such as wet label, specific hazardous classification,
+or air handling.
+3-3.5 Power Plans.
+Show all power requirements and points of connections. Specifically identify each piece
+of equipment including HVAC and mechanical equipment (e.g., unit heater No. 1, unit
+heater No. 2).
+Typical illustrations showing proper methods for displaying equipment on the contract
+drawings are provided in a PDF format within the electrical technical paper TSEWG TP-
+12: Appendices. Refer to Appendix A for more information.
+3-3.6 Telecommunication Plans.
+Show locations of voice and data outlets in each room, closets, and equipment spaces.
+Detail all outlet, cable tray, backboard or distribution frames, and grounding bus bars.
+Note: Power and telecommunication systems may be shown on the same drawings
+provided the design is small, the electrical designer and the telecommunications
+registered communications distribution designer (RCDD) are the same person, and
+combining the drawings is approved by the Contracting Officer or technical reviewing
+authority.
+For larger designs where power and telecommunications plans are not shown on the
+same drawings, provide telecommunications drawings stamped by an RCDD. Refer to
+UFC 3-580-01 for telecommunications requirements.
+3-3.7 Grounding Plan.
+Provide grounding plans and details at an appropriate scale.
+3-3.8 Roof Plan.
+When roof mounted equipment, including HVAC equipment, cannot be adequately
+shown on the Power Plan, provide an appropriately scaled roof plan.
+37
+UFC 3-501-01
+27 November 2024
+3-3.9 Lightning Protection Plan.
+Provide lightning protection plan and details at an appropriate scale. Indicate locations
+and number of system components required. Show air terminal installation details, roof
+and wall penetration details, and details to show concealed components of the system.
+Coordinate roof and wall penetrations with other disciplines to ensure that the integrity
+of the facility envelope is not compromised.
+3-3.10 Hazardous Location Plan.
+Provide on the drawings the boundaries and classifications of all hazardous locations in
+accordance with NFPA 70.
+3-3.11 Power One-Line/Riser Diagrams.
+Provide a power one-line (single-line) diagram for:
+• Medium-voltage distribution systems, including substations and switching
+stations.
+• Systems involving generation, either low voltage or medium voltage.
+• Building switchgear, switchboards, and main distribution panels (MDPs).
+Content and Format.
+The one-line diagram must show all components (including metering and protective
+relaying). Indicate sizes of bus, feeders and conduits. Show connections of
+transformers, PTs, CTs, and capacitors on the one-line diagram by means of the proper
+symbol. Show potential and current transformer ratios. Indicate relay quantity and
+function (overcurrent, voltage, differential) using ANSI designation numbers.
+On most facility-related projects, it is acceptable to combine the one-line diagram with a
+riser diagram. The one-line diagram would begin with the medium voltage system and
+continue through the transformer up to and including the main breaker and feeder
+breakers within the MDP. Sub-panels beyond the MDP may be shown in the riser
+diagram format.
+Electrical Equipment.
+Indicate kV ratings for surge arresters, and kV and ampere rating for cutouts. Indicate
+fuse link type and ampere rating. For capacitors indicate kVAR per unit, number of units
+per bank, voltage (voltage rating of units, not the system voltage), phase (e.g., three-
+phase or single-phase units), fuse size, and fuse type.
+38
+UFC 3-501-01
+27 November 2024
+Transformer Information.
+Show the following on the one-line diagram when a transformer is indicated, as
+applicable.
+• Primary switches.
+• Wye or delta connection.
+• Loadbreak elbows.
+• Lightning arresters.
+• kVA rating.
+• Rated voltage (primary & secondary).
+• Transformer identification number.
+• Industry standard impedance.
+• Meter type.
+• CT and PT sizes.
+• Fuse sizes.
+Show all pertinent transformer information on the one-line diagram as opposed to the
+specifications. Items that are common to all transformers can be indicated by notes on
+the one-line diagram if a typical detail drawing is provided.
+Pad-Mounted Switchgear Information.
+Show the following on the one-line diagram when pad-mounted switchgear is indicated:
+• Spare ways (cubicles).
+• Protective devices.
+• Loadbreak elbows.
+• Switch identification number.
+Primary Distribution.
+Show the following on the one-line diagram when a new primary is indicated:
+• In-line splices in manholes.
+• Normally open points.
+• Number and sizes of phase, neutral and ground cables.
+• Conduit sizes.
+39
+UFC 3-501-01
+27 November 2024
+One-Line Diagram for Demolition.
+If there is demolition involved or work is to be done to existing equipment, provide an
+existing one-line diagram showing the current arrangement of the gear and then show a
+new one-line diagram indicating by line weights what is existing or new.
+Format.
+Ensure that information shown on the one-line diagram is not duplicated elsewhere in
+the construction package, as this will likely cause conflicts if changes are necessary.
+Indicate on the electrical legend the exact nomenclature used to indicate conductor and
+conduit sizing. Provide a schedule for feeder runs. Provide medium voltage one-line
+diagrams for stations and distribution systems that have a geographic affiliation to the
+actual constructed distribution system.
+Typical illustrations showing proper methods for displaying one-line and power riser
+diagrams on the contract drawings are provided in a PDF format within the electrical
+technical paper TSEWG TP-12: Appendices. Refer to Appendix A for more information.
+3-3.12 Telecommunications Riser Diagram.
+Clearly indicate service entrance cable and duct, entrance protector assemblies, and
+connections to existing outside cable plant. Include the following:
+• Cross-connects. Indicate by notation that voice and data cables terminate
+in separate fields. Indicate method of cross connecting – patch panel or
+connector block.
+• Telecommunications outlets, including room numbers.
+• Cable for building backbone and horizontal distribution system.
+• Pathway, including conduit and cable tray for backbone and horizontal
+distribution system.
+• Telecommunications grounding system.
+3-3.13 Intercommunication/Paging Riser Diagram.
+Show power source, master station with associated equipment, speakers, and outlets.
+Include room numbers, wiring/conduit between components.
+3-3.14 Fire Alarm Riser Diagram.
+If required, fire alarm riser diagrams, including mass notification system, will be provided
+by the fire protection engineer.
+40
+UFC 3-501-01
+27 November 2024
+3-3.15 Special Systems Riser Diagrams.
+Provide other riser diagrams like those developed for telecommunications or
+intercommunication/paging.
+3-3.16 Schedules and Elevations.
+Provide elevations, sections, and details to clearly identify space constraints, unique
+conditions, design intent, or to ensure a specific method is implemented.
+Panelboards.
+Provide schedules for all panelboards. Provide the panelboard schedule reflecting the
+actual circuit breaker and bus arrangement. Include the following:
+• Panelboard designation and location (i.e. room number).
+• Voltage, phase, frequency, number of poles, and minimum interrupting
+rating.
+• Main amperes indicating main breakers or lugs only.
+• Surface or flush mounting.
+• Circuit number, wire size, breaker trip, connected load, and identification
+of load associated with each branch or feeder. Provide the specific
+identification of load. For example, do not merely indicate “Lighting,” but
+rather “Lighting, Room 102” for the directory marking.
+• Total connected load (calculated load) including demand factors of all
+circuits.
+• Any special breaker requirements such as GFCI, AFCI, SWD, adjustable
+trip, 100% rated.
+Note: many manufacturers require minimum 400A panel frames for 100%
+breakers to be used.
+• Neutral bus size (100% or 200%).
+• See UFC 3-520-01 for additional values to be included in panelboard
+schedules and drawings.
+Additionally, consider the following:
+• Other conductor sizing factors specific to a given circuit such as
+anticipated ambient temperature on the assumed routing path, whether
+the load is nonlinear, and the number of current-carrying conductors for
+purposes of re-sizing should circuits be consolidated into a common
+raceway during construction.
+41
+UFC 3-501-01
+27 November 2024
+Show all circuiting (identifying conduit and wiring back to specific panels but not
+identifying the exact routing required during construction) on the design drawings
+exactly as they are to be installed.
+Switchboards and Switchgear.
+Provide plan and elevation or isometric drawings for switchboards and switchgear,
+showing compartments, their intended use, and instruments, relays, and controls.
+Clearly show contents of all sections including whether breakers are individually, or
+group mounted. Indicate that switchboards and switchgear are mounted on 4 in (100
+mm) elevated concrete pads. Coordinate design of pad with structural engineer.
+Motor Control Centers.
+Provide plan and elevation or isometric drawings for Motor Control Centers (MCCs)
+identifying compartments. Provide schedule listing each compartment. Include on the
+schedule (for each compartment) the description of load, load in amperes, load in
+horsepower, NEMA size and type of starter, breaker size, conductor and conduit size,
+control devices, and other special requirements.
+• Indicate, on plans or in specifications, enclosure type, bus rating, bus
+material, bus bracing, NEMA class and wiring type, service voltage,
+control voltage and source, and top or bottom feed.
+• Indicate on the drawings that MCCs are mounted on 4 in (100 mm)
+elevated concrete pads. Coordinate design of pad with structural engineer.
+• Provide elevation of control panels, indicating front panel devices, such as
+indicator lights, pushbuttons, gauges, and switches.
+3-3.17 Details/Diagrams.
+Detail all telecommunications outlets, cable tray, and backboard/distribution frames.
+Provide elevations of pertinent communication room walls. Indicate additional details as
+required. Provide a junction box detail on the drawings showing the interface between
+the Systems Furniture wiring harness and the branch circuit wiring.
+3-3.18 Grounding Diagrams.
+Provide grounding diagrams with explicit grounding and grounded conductor
+requirements beginning with the medium-voltage system and continuing through the
+transformer up to and including the Service entrance equipment, step down
+transformers, sub-panels, and telecommunications systems grounding.
+The service entrance grounding electrode systems and interconnections with other
+system grounding electrodes must be clearly shown and identified on the grounding
+plan. The main bonding jumper connection must be indicated and system bonding
+jumper connections for separately derived systems must be clearly indicated. Automatic
+Transfer switches must be identified indicating 3-pole design for single-phase systems
+42
+UFC 3-501-01
+27 November 2024
+and 4-pole design for three-phase systems. Coordinate this UFC with TSEWG TP-19
+and clarify when ATS with unswitched neutral be used in lieu of ATS with switched
+neutral. Typical illustrations showing proper methods for displaying grounding diagrams
+on the contract drawings are provided in a PDF format within the electrical technical
+paper TSEWG TP-12: Appendices. Refer to Appendix A for more information.
+3-3.19 Cathodic Protection Plans and Details.
+Provide cathodic protection plans and details at appropriate scales. Indicate on the
+drawing the location of all rectifiers, anode beds, structures, elevators, and overhead
+cranes protected by cathodic protection system(s). Include all structures, elevators, and
+overhead cranes that may be affected by stray current corrosion because of cathodic
+protection of the specific structure within the affected area of cathodic protection. A
+NACE-certified Cathodic Protection Specialist must prepare or review cathodic
+protection design. Follow the requirements of UFC 3-570-01.
+43
+UFC 3-501-01
+27 November 2024
+This Page Intentionally Left Blank
+44
+UFC 3-501-01
+27 November 2024
+APPENDIX A TRI-SERVICE ELECTRICAL WORKING GROUP TECHNICAL PAPERS
+The Tri-Service Electrical Working Group (TSEWG) has developed technical white
+papers to provide additional information on certain topics. Some of these papers contain
+information that was provided in earlier versions of the UFCs, which was considered
+important to maintain for reference. The following white papers are located at
+https://www.wbdg.org/dod/supp-tech-documents:
+• TP-01: Electrical Calculation Examples – provides example calculations
+for a variety of electrical equipment.
+• TP-02: Capacitors for Power Factor Correction – provides information
+regarding capacitor application, sizing, and design.
+• TP-03: Surge Protector Performance and Evaluation Criteria –
+provides information for low voltage surge protection.
+• TP-04: Stationary Battery and Charger Sizing – provides different sizing
+techniques for stationary applications.
+• TP-05: Interior Transformer Ratings and Installation – discusses
+transformer application, rating, and installation criteria.
+• TP-06: Low-Voltage Breaker Interrupting Ratings – explains how low-
+voltage circuit breakers are rated and tested.
+• TP-07: Protection System Design – provides electrical analysis criteria
+for relays, fuses, and circuit breakers.
+• TP-08: Electrical Equipment Enclosures and Hazardous Locations –
+provides NEMA and NFPA guidance regarding enclosure designs and
+hazardous location classifications.
+• TP-09: Automatic Transfer Equipment – provides information regarding
+automatic transfer switch application and design.
+• TP-10: Arc Flash Levels for Fused Voltage Inputs to Electricity
+Meters – provides an arc flash analysis for arcing faults downstream of
+protective fuses on an electricity meter.
+• TP-11: UFC 3-500-10N Best Practices – UFC 3-500-10N was developed
+by NAVFAC and was superseded by the initial issue of UFC 3-501-01. TP-
+11 provides the best practices information that was contained in UFC 3-
+500-10N.
+• TP-12: UFC 3-500-10N Appendices – UFC 3-500-10N was developed by
+NAVFAC and was superseded by the initial issue of UFC 3-501-01. TP-12
+provides appendices that were not included in UFC 3-501-01.
+• TP-13: UFC 3-501-03N Load Demand Analyses – UFC 3-501-03N,
+Electrical Engineering Preliminary Considerations, was superseded by the
+initial issue of UFC 3-501-01. UFC 3-501-03N contained in its entirety
+MIL-HDBK 1004/1, Electrical Engineering Preliminary Design
+45
+UFC 3-501-01
+27 November 2024
+Considerations. TP-13 was issued to retain the load demand analysis
+information originally contained in MIL-HDBK 1004/1.
+• TP-14. Reserved
+• TP-15: Arc Flash Calculations and Detailed Arc Flash Warning Labels
+– NFPA 70E requires a detailed arc flash warning label that specifies
+either the available incident energy in cal/cm2 or the required level of
+personal protective equipment (PPE) that must be worn at a particular
+work location. TP-15 explains why detailed arc flash warning labels might
+be inappropriate for many military installations.
+46
+UFC 3-501-01
+27 November 2024
+APPENDIX B DESIGN DATA TABLES
+Table B-1 Typical Loading for Personal Computer Systems
+Component Measured Load
+Dell Precision T5400 Desktop (Max) 2.4A
+15.6”, 2.6 GHz Dell Inspiron Laptop 0.75A
+24” Dell Monitor 0.58A
+HP LaserJet Pro P1102w printer 0.22A idle,
+3A printing
+Table B-2 Load Data for Preliminary Demand Calculations
+Facility Type VA/m2 VA/ft2
+BEQ 21-64 2-6
+Commissary/Exchange 75- 97 7-9
+Cafe/Mess Hall 75-108 7-10
+Administration Building 64-108 6-10
+Craft/Hobby/Golf Pro 43-54 4-5
+Shore Intermediate Maintenance 64-108 6-10
+Activity (SIMA)
+BOQ 22-64 2-6
+Warehouse/Exchange 43 4
+Child Care 64 6
+Chapel 54-75 5-7
+Applied Instruction Building 64-108 6-10
+Use the above information to aid in estimating demand for transformer sizing for
+preliminary calculations. As the design progresses, update demand calculations to
+reflect actual load of the building.
+47
+UFC 3-501-01
+27 November 2024
+Dwelling Unit Demand Data for Electrical Calculations.
+Note: These Tables are provided to aid the Designer of Record in estimating the total
+demand for “ALL ELECTRIC” dwelling units (including diversity). Size all distribution
+systems for dwellings for “ALL ELECTRIC”. Use the data below for sizing distribution
+transformers, service lateral voltage drops and flicker calculations. These tables are not
+to be used for sizing the service laterals or service entrance conductors.
+Table B-3 Dwelling Demand kVA per A/C Size
+# of HVAC
+2 Tons 2.5 Tons 3 Tons 3.5 Tons 4 Tons
+Units Diversity FE Total FE Total FE Total FE Total FE Total
+1 1.0 3.89 6.42 4.09 7.25 4.29 8.08 4.93 9.35 5.67 10.72
+2 0.85 6.61 10.91 6.95 12.33 7.29 13.74 8.38 15.9 9.64 18.22
+3 0.82 8.64 14.91 9.08 16.95 9.52 18.96 10.94 21.95 12.59 25.16
+4 0.80 10.27 18.37 10.8 20.91 11.33 23.45 13.02 27.16 14.97 31.13
+5 0.77 11.86 21.61 12.47 24.64 13.08 27.68 15.04 32.05 17.29 36.74
+6 0.75 13.3 24.69 13.99 20.21 14.67 31.73 16.86 36.75 19.39 42.12
+7 0.73 14.7 27.63 15.46 31.61 16.22 35.58 18.64 41.22 21.43 47.24
+8 0.72 16.2 30.76 17.01 35.22 17.85 39.68 20.51 45.97 23.59 52.68
+Table B-4 Typical A/C Size for Dwelling Units
+Dwelling Type A/C (Tons) Typical (m2) Typical (ft2)
+Mobile Home, Small House 2.0 93 1000
+Townhouse, House 2.5 116 1250
+Townhouse, Condominium 3.0 140 1500
+Condo, House 3.5 163-186 1750-2000
+House 4.0 186-279 2000-3000
+Table B-5 Demand for Electric Strip Heat
+kW Rating kVA
+of Strip Demand
+5 5.0
+10 8.0
+15 10.5
+20 14.0
+48
+UFC 3-501-01
+27 November 2024
+FE (Full Electric) is the demand value (with diversity pre-calculated) of the load without
+a summer (air conditioning) or winter (heat strip) HVAC mechanical load included.
+"Total" is the demand which includes a summer air conditioner load (Total = FE + air
+conditioning load). "Total" does not include the demand associated with resistive heat
+elements (which may drive the need for larger transformers). HVAC diversity = the
+diversity factor to use for winter HVAC unit demand calculations. It is incumbent on the
+electrical designer to address loads that are larger than those associated with the
+summer load. Size the transformer for the summer load unless the winter load
+calculation is more than 140% of the summer calculation.
+Example: A new underground distribution system is being designed for a housing
+development of duplexes. Each dwelling unit is 1500 ft2 (140 m2) with a 3-ton heat pump
+and 5 kW of strip heat. "Total" load for 8 dwellings (maximum 4 duplexes per
+transformer – See paragraph “Housing Distribution” in UFC 3-550-01) and 3-ton units =
+39.68 kVA (Table B-3). A check of the winter load = FE (Table B-3) + # of strip units x
+heat strip demand (Table B-5) x HVAC diversity (Table B-3). Winter load = 17.85 + 8 x 5
+kW x 0.72 or 46.65 kVA. Summer to Winter load ratio = 46.65/39.68 or 1.18. Size the
+transformer for the summer load (39.68 kVA). Thus, each 50 kVA pad-mounted
+transformer must feed 4 duplexes.
+49
+UFC 3-501-01
+27 November 2024
+This Page Intentionally Left Blank
+50
+UFC 3-501-01
+27 November 2024
+APPENDIX C ELECTRICAL ENGINEERING PRELIMINARY CONSIDERATIONS
+Appendix C provides the preliminary design considerations information previously
+contained in UFC 3-501-03N, Electrical Engineering Preliminary Considerations, which
+has been superseded by UFC 3-550-01. UFC 3-501-03N contained MIL HDBK 1004/1,
+Electrical Engineering Preliminary Design Considerations.
+C-1 PRELIMINARY DATA
+C-1.1 Load Data.
+Before specific electric power sources and distribution systems can be considered,
+realistic preliminary load data must be compiled. The expected electric power demand
+on intermediate substations, and on the main electric power supply, shall be calculated
+from the connected load by applying appropriate factors. Determine these factors by
+load analysis and by combining loads progressively. To combine the loads, start at the
+ends of the smallest feeders and work back to the electric power source. Because all
+loads must be on a common kilowatt (kW) or kilovolt-ampere (kVA) basis, it is
+necessary to convert motor horsepower ratings to input kilowatts or kilovolt- amperes
+before combining them with other loads already expressed in those terms. Preliminary
+electric power load estimates can be made by using the approximate value of one
+kilovolt-ampere of input per horsepower (hp) at full load. Preliminary estimates of
+lighting loads may be made by assuming watts per ft2 (m2) of building area.
+C-1.2 Load Analysis.
+To determine appropriate load estimating factors, using the tables and factors below as
+guides analyze the characteristics of each load. Consider items such as environmental
+conditions of weather, geographical location, and working hours, as the situation
+dictates. Notice that when the load densities in w/ft2 (m2) are used only in preliminary
+estimates, the demand and load factors will be used in the final designs.
+C-1.3 Terminology.
+Five terms are essential to the analysis of load characteristics: demand factor,
+coincidence factor, diversity factor, load factors and maximum demand. These terms
+are defined in paragraphs C-1.3.1 through C-1.3.5.
+C-1.3.1 Demand Factor.
+The demand factor is the ratio of maximum demand of a system to the total connected
+load of the system or
+Equation: Demand factor = Maximum demand load / Total load connected
+51
+UFC 3-501-01
+27 November 2024
+C-1.3.2 Coincidence Factor.
+The coincidence factor is the ratio of the maximum demand of a system, or part under
+consideration, to the sum of the individual maximum demands of the subdivisions or
+Equation: Coincidence factor = Maximum system demand / Sum of individual
+maximum demands
+C-1.3.3 Diversity Factor.
+The diversity factor is the reciprocal of the coincidence factor or
+Equation: Diversity factor = Sum of individual maximum demands / Maximum system
+demand
+C-1.3.4 Load factor.
+The load factor is the ratio of the average load over a designated period, usually 1 year,
+to the maximum load occurring in that period or
+Equation: Load factor = Average load / Maximum load
+Load factors in Table C-1 are not to be used when sizing the service conductors.
+C-1.3.5 Maximum Demand.
+The maximum demand is the integrated demand for a specified time interval, i.e., 5
+minutes, 15 minutes, 30 minutes, or other appropriate time intervals, rather than the
+instantaneous or peak demand.
+52
+UFC 3-501-01
+27 November 2024
+Table C-1 Factors for Individual Facilities by Navy Category Code (See Note 1)
+Demand Load
+Navy
+Description Factor Factor
+Code
+(%) (%)
+100 Operational and Training Facilities:
+121 Aircraft fueling/dispensing facility 40-60 16-20
+122 Marine fuel dispensing 40-60 16-20
+123 10 Filling station 40-60 13-17
+125 16 Miscellaneous POL pipeline facilities 100 13-17
+126 Liquid fueling and dispensing-other 40-60 3-7
+131 Communications – buildings 60-65 70-75
+131 40 Telephone exchange building 55-70 20-25
+133 75 Air surveillance radar building 55-70 70-75
+137 40 Port control office 55-70 20-25
+141 11 Air passenger terminal building 65-80 28-32
+141 20 Aircraft fire and rescue station 25-35 13-17
+141 30 Aircraft line operations building 65-80 24-28
+141 40 Aircraft operations building * EXC 141-70* 65-80 28-32
+141 60 Photographic building 65-80 16-20
+171 10 Academic instruction building 40-60 22-26
+171 20 Applied instruction building 35-65 24-28
+171 40 Drill Hall 75-85 3-7
+200 Maintenance and Production Facilities:
+211 05 Maintenance Hangar O/H space (high bay) 45-50 28-30
+211 06 Maintenance Hangar – 01 space (crew equipment) 45-50 28-30
+211 07 Maintenance Hangar – 02 space (administrative) 45-50 28-30
+211 10 Aircraft overhaul and repair shop (NARF) 32-38 25-30
+211 12 Paint/finishing hangar 65-75 25-27
+211 20 Engine overhaul shop (NARF) 32-38 20-25
+211 30 Aircraft/engine accessories overhaul shop (NAR) 32-38 25-30
+211 75 Parachute/survival equipment 60-65 23-28
+211 81 Engine test cell (Non-NARF) 42-48 25-30
+211 96 Maintenance, aircraft spares storage (Miscellaneous) 58-63 23-28
+212 20 Missile equipment maintenance shop 35-40 15-20
+213-10 Drydock 5-10 0.5-1
+214-10 Combat vehicle maintenance shop 55-65 20-25
+214-20 Automobile vehicle maintenance – noncombat 55-65 20-25
+215 Maintenance – weapons/spares 70-80 20-25
+216 10 Ammunition rework and overhaul shop 35-40 18-22
+216 20 Rocket rework and overhaul shop 35-40 18-22
+53
+UFC 3-501-01
+27 November 2024
+Demand Load
+Navy
+Description Factor Factor
+Code
+(%) (%)
+216 30 Mines and depth charge rework shop 35-40 15-20
+216 40 Torpedo shop 45-55 18-22
+216 50 Special weapons shop 35-40 18-22
+216 60 Quality evaluation laboratory 55-65 22-27
+217 10 Electronics/communications maintenance shop 35-40 20-25
+218 20 Construction/weight handling equipment shop 35-45 20-25
+218 40 Railroad equipment shop 35-45 15-20
+218 50 Battery shop 55-65 20-25
+219 10 Public works shop 32-38 18-22
+221 10 Aircraft engine assembly plant 32-38 20-25
+222 10 Missile assembly buildings 35-40 15-20
+222 20 Missile handling launch equipment 35-40 15-20
+223 10 Fabrication/assembly building 22-27 24-29
+225 10 Small arms plant 15-20 22-27
+225 20 Light gun (20mm/51n) plant 15-20 22-27
+225 30 Heavy gun (6/161n) plant 16-21 21-26
+225 50 Launcher/projector plant 15-20 22-27
+226 10 Bag charge filling plant 62-67 23-28
+226 15 Case filling plant 35-40 23-28
+226 20 Case overhaul tank repair facility 35-40 18-22
+226 35 Major-caliber projectile loading plant 35-40 18-22
+226 40 Medium-caliber projectile loading plant 35-40 18-22
+226 55 Cast high explosives filling plant 35-40 18-22
+226 65 Propellant and related chemical facility 30-40 32-38
+227 10 Radio and radar equipment plant 50-55 23-28
+227 10 Sonar equipment plant 50-55 23-28
+228 10 Parachute/survival equipment plant 35-40 20-25
+229 10 Asphalt plant 75-80 7-12
+229 20 Concrete batching plant 75-80 15-20
+229 30 Rock crusher plant 75-80 15-20
+229 40 Sawmill 45-55 15-20
+300 Research, Development, Test & Evaluation Facilities:
+310 13 Chemistry and Toxicology Laboratory 70-80 22-28
+310 15 Materials Laboratory 30-35 27-32
+310 19 Physics Laboratory 70-80 22-28
+316 10 Ammunition, explosives, and toxics laboratory 28-32 20-25
+317 20 Electrical and electronics systems laboratory 20-30 3-7
+54
+UFC 3-501-01
+27 November 2024
+Demand Load
+Navy
+Description Factor Factor
+Code
+(%) (%)
+400 Supply Facilities
+421 Ammunition storage- installation 75-80 …..
+423 Ammunition storage-liquid propellant 75-80 20-25
+431 10 Cold storage warehouse 70-75 20-25
+441 10 General warehouse Navy 75-80 23-28
+441 20 Controlled humidity warehouse 60-65 33-38
+441 30 Hazardous/ flammable storehouse 75-80 20-25
+441 40 Underground storage 65-70 23-28
+441 70 Disposal, salvage, scrap building 35-40 25-20
+500 Hospital-Medical Facilities:
+510 10 Hospital 38-42 45-50
+530 20 Laboratory 32-37 20-25
+540 10 Dental Clinic 35-40 18-23
+550 10 Medical Clinic 45-50 20-23
+600 Administrative Facilities:
+610 10 Administrative Office 50-65 20-35
+620 10 Administrative facility, underground 50-65 35-40
+700 Housing and Community Facilities:
+711 Family housing-dwellings 60-70 10-15
+712 Substandard: Trailers - family housing 70-75 10-15
+714 10 Detached garages 40-50 2-4
+721 11 Bachelor enlisted quarters 35-40 38-42
+721 12 Bachelor enlisted quarters E5/E6 35-40 38-42
+721 13 Bachelor enlisted quarters E7/E9 35-40 38-42
+721 30 Civilian barracks GS 01/6 35-40 38-42
+721 40 Disciplinary barracks 35-40 38-42
+722 10 Detached dining facilities, enlisted men 30-35 45-60
+723 20 Latrine, detached 75-80 20-25
+723 30 Laundry, detached 30-35 20-25
+723 40 Garage, detached 40-50 2-4
+724 11 UOPH, W-1/0-2 40-50 20-25
+724 12 UOPH, 0-3 and above 40-50 20-25
+724 22 Civilian quarters, GS-7/PLS 40-50 20-25
+724 30 Dining facility (attached) commissioned personnel 35-40 30-40
+730 10 Fire station 25-35 13-17
+730 15 Confinement facility 60-65 33-38
+730 20 Police station 48-53 20-25
+55
+UFC 3-501-01
+27 November 2024
+Demand Load
+Navy
+Description Factor Factor
+Code
+(%) (%)
+730 25 Gate/sentry house 70-75 28-33
+730 30 Bakery 30-35 45-60
+730 35 Enlisted personnel locker room 75-80 18-23
+730 40 Laundry/dry cleaning plant 30-35 20-25
+730 45 Dependent school – nursery school 75-80 10-15
+730 50 Dependent school – kindergarten 75-80 10-15
+730 55 Dependent school – grade school 75-80 10-15
+730 60 Dependent school – high school 65-70 12-17
+730 65 Fallout shelter 80-85 30-35
+730 67 Bus station 80-85 30-35
+730 70 Decontamination facility 75-80 15-2
+730 83 Chapel 65-70 5-25
+730 85 Post Office 75-80 20-25
+740 01 Exchange retail store 65-70 25-32
+740-18 Bank 75-80 20-25
+740 23 Commissary including backup storage 55-60 25-30
+740 26 Installation restaurant 45-75 15-25
+740 30 Exchange auto repair station 40-60 15-20
+740 36 Hobby shop, art/crafts 30-40 25-30
+740 40 Bowling Alley 70-75 10-15
+740 43 Gymnasium 70-75 20-45
+740 46 Skating rink 70-75 10-15
+740 50 Field house 75-80 7-12
+740 53 Indoor swimming pool 55-60 25-50
+740 56 Theater 45-55 8-13
+740 60 Commissioned officers’ mess, open 55-60 15-20
+740 63 Enlisted personnel club 55-60 18-23
+740 66 Petty officers’ mess, open 55-60 18-23
+740 70 Mess open, E-7 through E-9 55-60 15-20
+740 76 Library 75-80 30-35
+740 80 Golf club house 75-80 15-20
+740 86 Exchange installation warehouse 58-63 23-28
+740 88 Educational services office 70-75 30-35
+760 10 Museum/memorial building 75-80 30-35
+800 Utilities and Ground Improvements:
+811 10 Electric power plant-diesel 60-65 58-63
+811 25 Electric power plant-steam 60-65 58-63
+56
+UFC 3-501-01
+27 November 2024
+Demand Load
+Navy
+Description Factor Factor
+Code
+(%) (%)
+811 45 Electric power plant-gas turbine 60-65 58-63
+811 60 Standby generator plant 75-80 5-10
+812 20 Street lighting 95-… 46-…
+812 40 Perimeter/security lighting 80-85 22-27
+813 20 Substation, more than 499 kV 25-30 20-25
+821 12 Fossil fuel heating plant – medium 55-60 30-60
+821 22 Fossil fuel heating plant – large 55-60 30-60
+821 50 Non-nuclear steam plant 50-55 30-40
+826 20 Chilled water plant 25/100 tons 60-70 25-30
+Air conditioning-chilled water transmission/distribution
+827 20 60-70 25-30
+system – medium (25/100 tons)
+831 10 Combination sewage and industrial waste treatment plant 60-70 15-20
+832 30 Sewage-industrial waste pumping station 55-60 30-35
+833 22 Incinerator building and incinerator 55-60 15-20
+841 10 Water treatment facilities 60-80 15-25
+841 50 Wells-potable water 60-80 15-25
+Do not include – operate
+843 20 Fire protection pumping station
+for test off peak.
+890 20 Compressed air plant 45-50 25-30
+890 42 Air-conditioning plant 60-70 25-30
+Miscellaneous Operational and Training Facilities:
+125 10 POL pipeline
+132 10 Antenna – communications 95-… 46-…
+Miscellaneous Facilities for Ship Repair and Shipbuilding:
+Ship repair shops:
+213 41 Central tool shop – (06) (E) 32-37 23-28
+213 42 Shipfitting shop – (11) (A) 22-27 24-29
+213 43 Sheet metal ship (17) (B) 10-15 15-20
+213 44 Forge and heat treatment space (23) (F) 25-30 13-18
+213 49 Inside machine shop – (31) (G) 16-21 21-26
+213 53 Boiler making shop – (41) (D) 12-17 14-19
+213 54 Electrical shop – (51) (M) 33-38 20-25
+213 55 Pipefitting shop – (56) (J) 22-27 17-22
+213 56 Woodworking shop – (64) (R) 25-30 21-26
+213 59 Abrasive blast facility 30-35 10-15
+213 60 Paint and blasting shop – (71) (S) 50-55 23-28
+213 61 Riggers shop – (72) (T) 50-55 20-25
+213 62 Sail loft 35-40 20-25
+57
+UFC 3-501-01
+27 November 2024
+Demand Load
+Navy
+Description Factor Factor
+Code
+(%) (%)
+213 63 Foundry – (81) (K) 35-40 22-27
+213 64 Patternmaking shop – (94) (X) 28-33 12-17
+213 67 Pumphouse, drydocks 75-80 0.1-0.2
+Miscellaneous Facilities for Naval Ordnance Manufacture:
+226 Ammunition components building 15-20 20-25
+226 Manufacturing 30-45 17-32
+226 Explosive loading 65-70 25-30
+226 Miscellaneous explosives storage and handling 65-70 5-10
+226 Assembly building 40-50 20-25
+226 Detonator building 65-70 20-25
+226 Pelleting 40-50 20-25
+226 Plastic beading 55-60 18-23
+226 Sewing room 35-40 25-30
+226 Projective assembly breakdown 55-60 18-23
+226 Machine shop 16-21 21-26
+226 Phosphorous plant 35-40 25-30
+226 TNT detonator (military) 35-40 15-20
+226 Ammunition tank box assembly 35-40 15-20
+226 Box emptying 35-40 15-20
+226 Plating maintenance 35-40 18-23
+226 Mixing 40-45 18-23
+226 Segregation fleet return 35-40 15-20
+226 Plaster load 35-40 15-20
+Fluoroscope building 45-50 18-23
+Tank building rocket 40-45 15-20
+Hydrostatic test 35-40 15-20
+Phosphorous loading 35-40 15-20
+226 Vacuum and hydraulic pump building 35-40 12-17
+226 Cable drive 35-40 12-17
+226 Dryer building 75-80 3-8
+Miscellaneous Production Facilities:
+229 50 Printing Plant 45-55 25-30
+Miscellaneous Storage Facilities:
+Community Facilities – morale, welfare, and recreation – Determine by load
+750
+exterior count and time.
+750 30 Outdoor swimming pool installation 80-85 20-25
+750 54 Band stand 75-80 15-25
+Miscellaneous Facilities for Utilities and Ground Improvements:
+58
+UFC 3-501-01
+27 November 2024
+Demand Load
+Navy
+Description Factor Factor
+Code
+(%) (%)
+821 09 Heating plant building (condensate) 55-60 25-40
+821 09 Heating plant building (heating) 55-60 30-35
+833 40 Garbage house 75-80 20-25
+841 Potable water – supply/treatment/storage Determine by load
+count and time.
+845 20 Pipeline nonpotable water 55-60 3-8
+852 30 Pedestrian bridge 80-85 20-25
+872 20 Guard and watch towers 80- 46-
+890 20 Compressed air plant 60-65 20-25
+Note 1: Demand factors include allowance for system loss.
+C-2 ESTIMATION OF LOADS.
+C-2.1 Preparation of Load Data.
+Load data are generally computed in steps such as:
+a. individual loads,
+b. area loads, and
+c. activity loads.
+A particular design problem may be limited to step a), to steps a) and b), or may
+encompass steps a), b), and c). This section outlines each step as a separate entity,
+dependent only on previous steps for data. Paragraphs C-2.2 through C-2.4.4 describe
+the three loads.
+C-2.2 Individual Loads.
+Individual loads are those with one incoming service supplying utilization voltage to the
+premises. In general, these loads would comprise single structures. Large structures
+could contain more than one function: for example, aircraft operations, aircraft fire and
+rescue stations, and photographic buildings. Under this condition, factors that have
+been developed and keyed to Navy category codes (refer to Table C-1) would be used.
+In this case, the factors listed under Navy category Code 141 40, 141-20, and 141-60,
+respectively, would be combined to obtain the total load.
+C-2.2.1 Lighting.
+To eliminate lighting loads, divide a facility area into its significant components by
+function (for example, office, storage, mechanical, and corridor). Determine the average
+lighting level and type of light source for each area. Consider requirements for
+supplementary lighting (for example, floodlighting, security lighting, and special task
+59
+UFC 3-501-01
+27 November 2024
+lighting). Preliminary load estimates may be made based on applicable ASHRAE 90.1
+lighting power allowances.
+C-2.2.1.1 Small Appliance Loads.
+Small appliance loads shall include those served by general purpose receptacles. In
+general, the dividing of areas by function for estimating lighting loads will serve for
+estimating small appliance loads. The determination of loads requires not only the
+knowledge of the function of an area, but to what extent its occupants use small
+appliances. For example, an office area demand may average about 1 W/ft2 (10.76
+W/m2) but could vary from a low of 0.5 W/ft2 (5.38 W/m2) to a high of 1.5 W/ft2 (16
+W/m2), depending on the specific tasks to be performed. A minimum of 0.1 W/ft2 (1
+W/m2) for auditoriums to a maximum of 2.5 W/ft2 (27 W/m2) for machine shops is
+possible, although the upper limit would occur very rarely. Mechanical spaces in
+building storage areas and similar spaces in which outlets are provided but infrequently
+used are usually neglected in computing loads, except for special cases.
+C-2.2.1.2 Electric Power Loads.
+Electric power loads shall include all loads other than lighting loads and those served by
+general purpose receptacles. Electric power loads comprise the environmental system
+electric power requirements and the facility occupancy equipment electric power
+requirements.
+C-2.2.1.3 System Loss.
+A system loss of approximately 6 percent, based on calculated maximum demand,
+should be added to the building load.
+C-2.2.2 Demand and Load Factors.
+The demand and load factors for a specific facility will vary with the division of load and
+hours of usage. Refer to Tables C-2 and C-3 for values that can be applied to determine
+demand and load factors. Table C-4 is included as a guide and an aid in illustrating the
+method of determining loads, which are calculated for a particular type of building, such
+as an academic and general instruction building (Navy Code 171-10). The values given
+are empirical and will vary from activity to activity and may vary from one facility to
+another within an activity. Annual hours use of demand must be determined for each
+case in accordance with methods of operation and characteristics of the installation.
+Demand factors and load factors for individual facilities by the Navy category code given
+in Table C-1 are based on a survey of existing Navy facilities and past experience. Such
+factors should be used for quick estimating purposes and as a check when a more
+precise calculation is undertaken (refer to Table C-4).
+C-2.2.2.1 Guides for Demand Factors.
+For guides on selection of demand factors, refer to Table C-5.
+60
+UFC 3-501-01
+27 November 2024
+C-2.2.2.2 Guides for Load Factors.
+Guides for the selection of load factors indicate the need for special considerations
+(refer to Table C-6). Factors in the middle of the range are for the average facility at the
+peacetime shore establishment and should be used unless the guides in Table C-6
+indicate otherwise.
+Table C-2 Demand Factors for Specific Loads (See Note 1)
+Estimated Range Quick Estimating
+Types of Loads of Demand Factor Demand Factor
+(%) (%)
+Motors:
+General purpose, machine tool, cranes, elevators, 20–100 30
+ventilation, compressors, pumps, etc.
+Motors:
+10–50 25
+Miscellaneous, fractional, and small appliances
+Resistance ovens, heaters, and furnaces 80–100 80
+Induction furnaces 80–100 80
+Lighting 65–100 75
+Arc welders 25–50 30
+Resistance welders 5–40 20
+Air-conditioning equipment 60–100 70
+Refrigeration compressors 40–100 60
+Note 1: Demand factors include allowance for system loss.
+61
+UFC 3-501-01
+27 November 2024
+Table C-3 Annual Hours of Demand Usage for Specific Loads
+Quick Estimating Hours of Use
+Types of Loads
+1-Shift 2-Shift 3-Shift
+Operation Operation Operation
+Motors:
+1,200 1,600 2,000
+General purpose
+Motors:
+1,500 1,800 2,100
+Miscellaneous, fractional, and small appliances
+Resistance ovens, heaters, and furnaces 1,000 1,300 1,600
+Induction furnaces 900 1,200 1,500
+Lighting 2,200 2,800 3,500
+Arc welders 500 700 900
+Resistance welders 500 700 900
+Air-conditioning equipment
+Less than 1,500 cooling degree days 1,200 1,400 1,600
+1,500 to 2,500 cooling degree days 1,600 1,800 2,000
+More than 2,500 cooling degree days 2,200 2,500 2,800
+62
+UFC 3-501-01
+27 November 2024
+Table C-4 Academic Building (Code 171-10) Demand and Load Factor
+Calculations (See Note 1)
+Motors
+Miscellaneous
+Fractional & Air
+General Lighting Total
+Small Conditioning
+Appliances
+1. Watts/square foot 1.0 1.0 2.7 4.5 9.2
+(Watts/square meter) (10) (10) (26.5) (45) (91.5)
+2.
+Connected load 100 kW 100 kW 265 kW 450 kW 915 kW
+3.
+Specific load demand factor 30% 10% 75% 70%
+4. Maximum demand load
+30 kW 10 kW 200 kW 315 kW 555 kW
+(line 2 x line 3)
+5. Annual operating
+1,200 hrs. 1,500 hrs. 2,200 hrs. 1,600 hrs.
+(1-shift) usage
+6. Annual usage in megawatt hours
+36 15 440 504 995
+(line 4 x line 5)
+7. Demand factor
+- - - - 60%
+Formula = Line 4 / Line 2 (1)
+8. Load factor
+Formula = - - - - 20%
+Line 6 / (Line 4 x 8760 hours) (4)
+Note 1: Calculated for a 100,000 square-foot (10,000 square meter) building. See
+Tables C-2 and C-3 for data used for lines 3 and 5 respectively. Load growth is included
+in connected load. Maximum demand load includes allowance for system loss. For this
+illustration, the coincidence factor occurring when individual demand loads are added is
+considered to be 1.00 and has not been shown.
+63
+UFC 3-501-01
+27 November 2024
+Table C-5 Guides for Selection of Demand Factors
+Select factors in upper half of range for conditions Select factors in lower half of range for conditions
+described below described below
+GENERAL GUIDES
+Facilities of intermittent use or not being fully
+Facilities in active use and approaching maximum
+utilized.
+capacity.
+Motor loads made up of a number of independently
+Loads predominantly lighting.
+operated small motors.
+Loads predominantly heating.
+Motor loads controlled automatically unless control
+Loads dominated by one or two large motors.
+depends upon weather conditions.
+OPERATIONAL AND TRAINING FACILITIES
+Instruction buildings with little or no electric Large instruction buildings with electrical
+equipment. demonstration and training equipment.
+Communications buildings with telephonic
+equipment only.
+MAINTENANCE AND PRODUCTION FACILITIES
+Shops and facilities when engaged in mass No special guides.
+production of similar parts.
+RESEARCH, DEVELOPMENT, AND TEST FACILITIES
+Facilities used for repetitive testing of material or No special guides.
+equipment.
+SUPPLY FACILITIES
+Refrigerated warehouses in South. Warehouses with many items of electric materials
+Dehumidified warehouses in Mississippi Valley and handling equipment, including cranes and
+along seacoasts. elevators.
+Warehouses for active storage.
+HOSPITAL AND MEDICAL FACILITIES
+No special guides. No special guides.
+ADMINISTRATIVE FACILITIES
+Large administrative buildings with mechanical Casual offices, offices used infrequently by
+ventilation and air conditioning. foremen and supervisors, or offices in which
+Note: Group large administrative buildings there is little prolonged desk work.
+separately only when administration is a
+significant part of total activity load.
+HOUSING AND COMMUNITY FACILITIES
+Enlisted barracks at training centers. Food service facilities where load is primarily
+Public quarters where less than 25 family units are cooking and baking.
+involved.
+Restaurants, exchanges, cafeterias, and other food
+service facilities when gas or steam is primary
+fuel.
+UTILITIES AND GROUND IMPROVEMENTS
+Central heating plants serving extended areas and No special guides.
+buildings.
+Water pumping stations serving extended areas or
+carrying most of load of water systems.
+Central station compressed air plants.
+64
+UFC 3-501-01
+27 November 2024
+Table C-6 Guides for Selection of Loads Factors
+Select factors in upper half of range for Selection factors in lower half of range for conditions
+conditions described below described below
+GENERAL GUIDES
+Facilities operated on two or more shifts. Facilities used intermittently.
+Loads that are primarily fluorescent or high Inactive facilities.
+intensity discharge lighting. Large motor loads when the load consists of relatively
+Many small independently operated motors. small numbers of motors.
+Electronic equipment continuously operated Wholesale-type service facilities.
+for immediate use.
+Cooling and dehumidification loads for year-
+round climate control in southern climates.
+Retail-type service loads and loads that are in
+active use.
+OPERATIONAL AND TRAINING FACILITIES
+Large, permanent instruction buildings in Special-purpose instruction and training facilities not
+active use. regularly used.
+MAINTENANCE AND PRODUCTION FACILITIES
+Shops with battery charging equipment Welding loads or loads made up primarily of welding
+operated after hours. equipment.
+Active shops at full employment. Job-order workshops.
+Mass production shops. Shops with large, heavy special function machines.
+Large induction or dielectric heating loads.
+RESEARCH, DEVELOPMENT, AND TEST FACILITIES
+No special guides. No special guides.
+SUPPLY FACILITIES
+Refrigerated and dehumidified warehouses in Refrigerated warehouses in North.
+South or in humid climates. Warehouses with large materials handling equipment
+Warehouses for active storage and in loads.
+continuous use.
+HOSPITAL AND MEDICAL FACILITIES
+Clinics and wards with daily operating hours No special guides.
+and in active use.
+ADMINISTRATIVE FACILITIES
+Large, active, well-lighted offices with No special guides.
+ventilation and air-conditioning equipment.
+HOUSING AND COMMUNITY FACILITIES
+Navy exchanges with food service facilities. Restaurants and exchanges serving only one meal a day.
+Gymnasiums used in connection or with Restaurants and exchanges with gas steam food
+physical therapy. preparation equipment.
+Barracks at schools and training centers. Chapels used primarily on Sundays.
+Subsistence buildings serving less than four meals a day.
+Laundries with dry cleaning plants.
+Exchanges operated less than 8 hrs/day
+Gatehouses operated less than 24 hrs/day
+UTILITIES AND GROUND IMPROVEMENTS
+Heating plants that supply both heating and Heating plants in South.
+process steam.
+Water plants with little power load.
+Air-conditioning plants for year-round control
+of environment in South.
+Compressed air plants consisting of many
+banked compressors operating
+automatically.
+65
+UFC 3-501-01
+27 November 2024
+C-2.2.3 Load Growth.
+Determine the requirements for load growth for anticipated usage and life expectancy
+with particular attention to the possibility of adding heavy loads in the form of air
+conditioning, electric heating, electric data processing and electronic communication
+equipment. Before determining the size of service and method of distribution to a
+facility, an economic analysis shall be made to determine the most feasible way of
+serving this future load. This analysis shall include the effect on the existing installation
+if future loads require reinforcing or rehabilitation of the service system.
+C-2.2.4 Emergency Loads.
+The determination of emergency electric power requirements is based on three types of
+loads (refer to Section 3 for types of loads to be included in each category):
+• Minimum essential load,
+• Emergency load for vital operations, and
+• Uninterruptible (no-break) load.
+When the three categories of emergency electric power requirements have been
+ascertained, determine where local emergency facilities are required, where loads may
+be grouped for centralized emergency facilities, and what loads are satisfied by the
+reliability of the general system. Base the above determinations on safety, reliability,
+and economy, in that order.
+C-2.3 Area Loads.
+Area loads consist of groups of individual facility loads served by a subdivision of the
+electric distribution system. The term “area” applies to the next larger subdivision of an
+overall distribution system. Demand loads for an area must be known for sizing the
+distribution wiring and switching, and in a large installation will be required for the
+design of substations serving the area. Table C-7 gives an example of how the
+coincident peak demand is calculated.
+C-2.3.1 General Loads.
+To obtain the general load, add roadway lighting, area lighting, obstruction lighting, and
+other loads not included in individual facility loads.
+C-2.3.2 Coincidence Factor.
+Determine the maximum expected demands, taking into consideration whether loads
+within the area peak at the same or at different times.
+66
+UFC 3-501-01
+27 November 2024
+C-2.3.2.1 Relationships.
+Figure C-1 indicates the relationship that exists between the load factor of individual
+facility loads and the coincidence of their peak demands with the peak demand of the
+group. This relationship was developed by a study of the loads of selected naval shore
+activities and by the application of factors developed to the formulas published by IEEE.
+For collateral reading on this subject, refer to IEEE Technical Paper 45-116
+Coincidence-Factor Relationship of Electric Service Load Characteristics. Table C-8 is
+Figure C-1 in tabular form with values shown to the nearest whole dollar, except for low
+load factors.
+C-2.3.2.2 Selection.
+Areas with relatively insignificant residential type loads, where the load curve indicates
+that most of the electric power consumed in the area is used during the 40 normal
+working hours of a week, have coincidence factors at the higher end of the range.
+C-2.3.2.3 Electric Power Consumption.
+In general, areas where large amounts of electric power are consumed outside the
+usual 40 working hours a week have a coincidence factor at the lower end of the range
+(examples are hospitals, areas operated on two or more shifts, or large barracks type
+activities). The upper limit of the range is for the 40 hour per week operation; the lower
+limit is for a 60 hour per week operation.
+C-2.3.2.4 Influencing Factors.
+The number of individual loads in a group and their load factors influence the individual
+load coincidence factor. The coincidence factors in Table C-8 apply for groups of 100 or
+more individual loads. These coincidence factors can also be used for groups of as few
+as 30 to 50 individual loads if their load factor is 0.30 or greater. For areas of fewer
+individual loads, the mathematical relationship from IEEE Technical Paper 45-116
+provides a basis for estimating the connected coincidence factor as shown by the
+following equation:
+Equation: En = Et + (1 – Et)1/n
+Where:
+En = The individual load coincidence factor applied with a given number of consumers.
+Et = The coincidence factor as given in Table C-8 in hundredths.
+n = The number of individual loads in a group.
+67
+UFC 3-501-01
+27 November 2024
+C-2.3.2.5 Individual loads.
+The coincidence factors in Table C-8 are based on the individual loads in a group being
+substantially the same size. If a single load or small group of loads in an area represent
+a substantial percentage of overall load, the coincidence factors as given in Table C-8
+will no longer apply. With an individual load, increase the coincidence factor to a value
+commensurate with its effect on the overall area load. This is not in addition to, but in
+place of, the normal coincidence factor. Determine this value by considering intergroup
+coincidence factors given in paragraph C-2.3.2.
+An example of facility Navy Code 211-70 is presented in Table C-7.
+For a small group, determine the coincidence peak load, and to this apply the
+appropriate intergroup coincidence factor to obtain the coincidence peak load for the
+area.
+C-2.3.2.6 Groups of Loads or Areas.
+Where groups of loads within an area, or areas within a facility are combined, an
+additional intergroup coincidence factor will exist. For loads of similar nature, the
+intergroup coincidence factor should be in the range 0.93 to 1.00. If loads of a varying
+nature (evening loads and daytime loads) are combined, the intergroup coincidence
+factor should be in the range of 0.70 to 1.00. The lower values will occur when
+magnitudes of the loads are nearly balanced, and the higher ones when the combined
+load is predominantly one type.
+68
+UFC 3-501-01
+27 November 2024
+Table C-7 Method of Calculating Coincident Peak Demand
+Total Demand Maximum Load Coincidence Coincidence
+Navy
+Connected Factor Demand Factor Factor Peak
+Code Description
+Load (kW) (%) (%) (%) (%) (kW)
+125 16 Fuel oil pump house
+125 16 Fuel oil pump house
+125 16 Total 0.3 100 0.3 52 52(1) 0.2
+125 20 Filling station 3.0 60 1.8 18 57(1) 1.0
+125 20 Filling station building 0.3 80 0.2 20 61(1) 0.1
+131 35 Receiver building 2.1 65 1.4 72 79 1.1
+131 50 Transmitter building
+131 50 Transmitter building
+131 50 Total 37.2 65 24.2 72 79 19.1
+133 25 Tacan building 0.7 65 0.5 72 79 0.4
+133 75 Radar building 1.2 70 0.8 72 79 0.6
+141 20 Aircraft fire and rescue station 8.0 30 2.4 15 52(1) 1.2
+141 40 Aircraft operations building 80.2 80 64.2 28 68(1) 43.6
+141 60 Photographic building 10.5 70 7.4 18 57(1) 4.2
+171 10 Academic instruct building
+171 10 Academic instruct building
+171 10 Academic instruct building
+171 10 Academic instruct building
+171 10 Total 47 60 28.2 22 62(1) 17.5
+171 35 Operational Trainer Facility 0.1 80 0.1 15 52(1) ………
+211 10 Aircraft overhaul and repair shop 7,600 38 2,890 25 95(2) 2,745
+211 12 Paint/finishing hangar 127 70 89.0 26 66(1) 58.3
+211 22 Engine preparation and storage shop
+211 21 Engine maintenance shop
+69
+UFC 3-501-01
+27 November 2024
+Navy Total Connected Demand Maximum Load Factor Coincidence Coincidence
+Code Description Load (kW) Factor Demand (%) Factor Peak
+(%) (%) (%) (kW)
+211 21 Engine maintenance shop
+211 21 Total 405 40 162 15 52(1) 84.2
+211 83 Engine test cell 360 45 162 28 68(1) 110
+212 20 Missile equipment maintenance shop 3.0 40 1.2 22 62(1) 0.7
+214 20 Auto vehicle maintenance facilities
+214 20 Auto vehicle maintenance facilities
+214 20 Auto vehicle maintenance facilities
+214 20 Auto vehicle maintenance facilities
+214 20 Total 370 60 222 25 65(1) 145
+730 10 Fire station 14.6 30 4.4 15 521 2.3
+Total 3,325
+System loss 194
+(6%)
+Grand total 3,429
+(1) The coincidence factor has been increased to allow for low load factor and number of facilities in the area. Refer to
+paragraph C-2.3.2.4, Influencing Factors, of this handbook.
+(2) The coincidence factor has been increased because of the relative magnitude of the load. Refer to paragraph C-
+2.3.2.5, Individual Loads, of this handbook.
+70
+UFC 3-501-01
+27 November 2024
+Figure C-1 Theoretical Relationship between Load Factor and Coincidence
+Factor at U.S. Naval Shore Establishments
+71
+UFC 3-501-01
+27 November 2024
+Table C-8 Relationship between Load Factor and Coincidence Factor
+Coincidence Factor (%) Coincidence Factor (%)
+Load Factor Load Factor
+Loads (hr/wk) Loads (hr/wk)
+(%) %
+40 60 40 60
+1 2.5 1.5 51 73 69
+2 7.5 4.5 52 73 70
+3 12 8 53 73 70
+4 17 11 54 73 70
+5 21 14 55 73 71
+6 25 17 56 73 71
+7 28 20 57 73 71
+8 32 22 58 74 71
+9 35 24 59 74 72
+10 38 26 60 74 72
+11 41 29 61 74 72
+12 44 32 62 75 73
+13 46 34 63 75 73
+14 49 36 64 76 74
+15 51 38 65 76 74
+16 53 40 66 77 75
+17 54 42 67 77 75
+18 56 44 68 78 76
+19 57 46 69 78 76
+20 59 48 70 78 77
+21 60 50 71 78 77
+22 61 51 72 79 78
+23 62 53 73 79 78
+24 63 54 74 80 79
+25 64 55 75 81 80
+26 65 56 76 81 80
+27 66 56 77 82 81
+28 67 57 78 82 81
+29 68 58 79 82 81
+30 69 59 80 82 82
+31 69 60 81 82 82
+32 69 61 82 82 82
+33 70 62 83 83 83
+34 70 63 84 84 84
+35 71 64 85 85 85
+36 71 64 86 86 86
+37 71 65 87 87 87
+38 71 65 88 88 88
+39 72 65 89 89 89
+40 72 66 90 90 90
+41 72 66 91 91 91
+42 72 66 92 92 92
+43 72 67 93 93 93
+44 73 67 94 94 94
+45 73 67 95 95 95
+46 73 67 96 96 96
+47 73 68 97 97 97
+48 73 68 98 98 98
+49 73 69 99 99 99
+50 73 69 100 100 100
+72
+UFC 3-501-01
+27 November 2024
+C-2.3.3 Load Growth.
+In addition to planned expansion, increased application of electric equipment will
+generate an increase in load. When sizing components, such as transformers or
+feeders for the area system, consider possible load growth in addition to that included in
+determination of individual loads.
+C-2.3.4 System Losses.
+Add distribution system losses to estimated area demands. For a good approximation,
+use 6 percent of the calculated maximum demand.
+C-2.3.5 Emergency Loads.
+Review the overall emergency requirements for the area, based on criteria for the
+facility or as furnished by the using agency, to determine the following:
+a. The emergency loads that may be combined in groups to take advantage
+of the coincidence factor.
+b. The type of distribution system needed for reliability and to economically
+satisfy at least the less critical emergency load requirements. This
+reliability can be provided only if the source of electric power is not the
+determining factor.
+c. Area loads that must be added to individual emergency loads, for
+example, security lighting and minimum roadway lighting.
+C-2.3.6 Expansion.
+The planned development of the area, as shown on the activity general development
+map, shall be considered for requirements of future expansion.
+C-2.4 Activity Loads.
+Activity Loads are loads that consist of two or more area loads served from a single
+electric power source and an integrated distribution system.
+C-2.4.1 General Loads.
+Follow the approach used in paragraph C-2.3 for area loads. Area loads used for
+determining activity coincidence demand should be the area coincident demand
+exclusive of allowance for load growth.
+C-2.4.2 Coincidence Factor.
+Refer to paragraph C-2.3.2 for the necessary approach. Where dissimilar areas,
+whether residential, administrative, or industrial, are part of an activity, make a careful
+analysis of the coincidence factor used.
+73
+UFC 3-501-01
+27 November 2024
+C-2.4.3 Load Growth.
+As for an area, components should be sized after due consideration has been given to
+load growth. Apply this increase to the coincident demand of the activity.
+C-2.4.4 Expansion.
+The planned development of the activity, as shown on its general development map,
+shall be considered for requirements of future expansion.
+74
+UFC 3-501-01
+27 November 2024
+APPENDIX D GLOSSARY
+D-1 ACRONYMS.
+AC Alternating Current
+ACSR Aluminum Conductor Steel-Reinforced
+AFI Air Force Instruction
+AL Aluminum
+ANSI American National Standards Institute
+ASHRAE American Society of Heating, Refrigerating, and Air-Conditioning
+Engineers
+ATS Acceptance Test Specifications
+ATS Automatic Transfer Switch
+BCO Base Communications Officer
+BEQ/BOQ Bachelor Enlisted Quarters/Bachelor Officer Quarters
+BICSI Building Industry Consulting Services International
+BIL Basic Impulse Level
+CAD Computer Aided Drafting
+cal/cm2 Calories per Centimeter Squared
+CATV Community Antenna Television
+CCTV Closed Circuit Television
+CT Current Transformer
+CU Copper
+DC Direct Current
+Degrees C Degrees Centigrade
+Degrees F Degrees Fahrenheit
+DoD Department of Defense
+DOR Designer of Record
+75
+UFC 3-501-01
+27 November 2024
+EIA/TIA Electronics Industries Association/Telecommunications Industry
+Association
+ESS Electronic Security Systems
+ESS Electric Supply Station
+FASS Facilities Systems Safety program
+ft Feet (or Foot)
+ft2 Foot Squared
+GFCI Ground Fault Circuit Interrupter
+GND Ground
+HEMP High-Altitude Electromagnetic Pulse
+HID High Intensity Discharge
+HQUSACE Headquarters, U.S. Army Corps of Engineers
+HVAC Heating Ventilation and Air Conditioning
+hp Horsepower
+ICS Intelligence Community Standard
+IEEE IEEE (Formerly, Institute of Electrical and Electronic Engineers)
+in Inch
+kcmil Thousand circular mils
+kV Kilovolts
+kVA Kilo-Volt-Ampere
+kVAR Kilo-Volt-Ampere-Reactive
+m2 Meter Squared
+mm Millimeter
+MDP Main Distribution Panel
+MVA Mega-Volt-Ampere
+NAVFAC Naval Facilities Engineering Systems Command
+76
+UFC 3-501-01
+27 November 2024
+NEC National Electrical Code
+NEMA National Electrical Manufacturers Association
+NESC National Electrical Safety Code
+NETA International Electrical Test Association
+NFPA National Fire Protection Association
+NMCI Navy and Marine Corps Intranet
+O&M Operation and Maintenance
+PCBs Polychlorinated Biphenyls
+PPE Personal Protective Equipment (Clothing)
+PT Potential Transformer
+RCDD Registered Communications Distribution Designer
+RFP Request for Proposal
+RUS Rural Utility Service
+SCIF Sensitive Compartmented Information Facility
+SF6 Sulfur Hexafluoride
+SWD Switch Duty
+TSEWG Tri-Service Electrical Working Group
+UFC Unified Facilities Criteria
+UFGS Unified Facilities Guide Specifications
+UL Underwriters Laboratories
+UPS Uninterruptible Power Supply
+V Volt
+VA Volt-Amp
+X/R Ratio of Reactance to Resistance
+77
+UFC 3-501-01
+27 November 2024
+D-2 DEFINITION OF TERMS.
+Activity: The end user of a base or facility.
+Base Communications Officer (BCO): The person(s) responsible for the
+telecommunications and data infrastructure for a base or facility.
+Closed Circuit Television (CCTV): A network of cables and equipment to monitor and
+transmit video signals throughout a facility.
+Community Antenna Television System (CATV): A network of cables, headend and
+electronic components that process and amplify television and frequency-modulated
+(FM) radio signals for distribution from one central location to outlets throughout a
+facility.
+Contractor: Person(s) doing actual construction portion of a project.
+Corrosive Area: An area identified by the Technical Reviewing Authority as requiring
+special equipment corrosion mitigation methods.
+Designer of Record: The engineer responsible for the actual preparation of the
+construction documents.
+Distribution Device: A facility located within a dwelling unit for interconnection or cross
+connection of interior telecommunications wiring. Passive cross connect facilities enable
+the termination of cable elements and their interconnection or cross-connection by
+means of jumpers and patch cords.
+Ductbank: Two or more conduits (or ducts) routed together in a common excavation
+with or without concrete encasement.
+Electric Supply Station: A station that transforms the energy level (voltage) for further
+bulk distribution at medium voltage levels.
+Hot Cap: A sealed insulated cover over the end of a bare energized conductor.
+Low Voltage System: An electrical system having a maximum root-mean-square (rms)
+voltage of less than 1,000 volts.
+Medium Voltage System: An electrical system having a maximum RMS AC voltage of
+1,000 volts to 34.5 kV. Some documents such as ANSI C84.1 define the medium
+voltage upper limit as 100 kV, but this definition is inappropriate for facility applications.
+Non-Linear Loads: Loads that convert AC to DC and contain some kind of rectifier.
+Service: The conductors and equipment for delivering electrical energy from the serving
+utility or Government-owned system to the wiring system of the premises served.
+78
+UFC 3-501-01
+27 November 2024
+Service Point: Demarcation for the “service point” (for clarification of the NFPA 70
+Article 100 definition): at the building/similar support structure service equipment line
+side connection.
+Site Electrical Utilities: Site Electrical Utilities are the primary electric power
+distribution to the facilities and other electrical loads, exterior lighting not attached to the
+building; and telecommunication services (such as fiber optic, copper cable, CATV)
+required by the Facilities.
+Systems Furniture: Modular prewired office furniture.
+Technical Reviewing Authority: The “discipline specific” person at the DoD
+organization who is responsible for signing the project design documents. This is
+different than the authority responsible for waivers and exemptions required by Mil Std
+3007.
+Telecommunications Room: An enclosed space for telecommunications equipment,
+terminations, and cross-connect wiring for horizontal cabling.
+TEMPEST: The unclassified name for the studies and investigation of compromising
+emanations (communications security).
+Utilization Electric Supply Station: Equipment such as pole or pad-mounted
+transformers or secondary unit substations that transforms the energy level (voltage) to
+a utilization voltage for consumer use.
+79
+UFC 3-501-01
+27 November 2024
+This Page Intentionally Left Blank
+80
+UFC 3-501-01
+27 November 2024
+APPENDIX E REFERENCES
+DEPARTMENT OF DEFENSE
+MIL-HDBK-423, High-Altitude Electromagnetic Pulse (HEMP) Protection for Fixed and
+Transportable Ground-Based Facilities, Volume I: Fixed Facilities
+MIL-STD-3007 Standard Practice Unified Facilities Criteria, Facilities Criteria And
+Unified Facilities Guide Specifications
+MIL-STD-188-125-1A, High-Altitude Electromagnetic Pulse (HEMP) Protection for
+Ground-Based C41 Facilities Performing Critical, Time-Urgent Missions, Part 1
+Fixed Facilities
+NSTISSI 7000, TEMPEST Countermeasures for Facilities
+UNIFIED FACILITIES CRITERIA
+https://www.wbdg.org/dod/ufc
+UFC 1-200-01, DoD Building Code
+UFC 1-200-02, High Performance and Sustainable Building Requirements
+FC 1-300-09N, Navy and Marine Corps Design Procedures
+UFC 3-440-01, Facility-Scale Renewable Energy Systems
+UFC 3-510-01, Foreign Voltages and Frequencies Guide
+UFC 3-520-01, Interior Electrical Systems
+UFC 3-520-02, Facility Energy System Resilience and Reliability
+UFC 3-520-05, Stationary and Mission Batteries
+UFC 3-530-01, Interior and Exterior Lighting Systems
+UFC 3-535-01, Visual Air Navigation Facilities
+UFC 3-540-01, Engine-Driven Generator Systems for Prime and Standby Power
+Applications
+UFC 3-540-08, Utility-Scale Renewable Energy Systems
+UFC 3-550-01, Exterior Electrical Power Distribution
+UFC 3-550-04: Installation Microgrid Design
+81
+UFC 3-501-01
+27 November 2024
+UFC 3-555-01, Aircraft Point-of-Use Power Systems
+UFC 3-560-01, Operation and Maintenance: Electrical Safety
+UFC 3-570-01, Cathodic Protection
+UFC 3-575-01, Lightning and Static Electricity Protection Systems
+UFC 3-580-01, Telecommunications Interior Infrastructure Planning and Design
+UFC 3-600-01, Fire Protection Engineering for Facilities
+UFC 4-010-01, DoD Minimum Antiterrorism Standards for Buildings
+UFC 4-010-05, SCIF/SAPF Planning, Design, and Construction
+UFC 4-010-06, Cybersecurity of Facility-Related Control Systems (FRCS)
+UFC 4-020-01, DoD Security Engineering Facilities Planning Manual
+UFC 4-021-01, Design and O&M: Mass Notification Systems
+UFC 4-021-02, Electronic Security Systems
+UFC 4-150-02, Dockside Utilities for Ship Service
+UNIFIED FACILITIES GUIDE SPECIFICATIONS
+UFGS 26 05 73, Power System Studies
+AIR FORCE
+AFI 33-210, Communications and Information Cryptographic Access Program
+https://apps.dtic.mil/sti/pdfs/ADA404994.pdf
+U.S. ARMY CORPS OF ENGINEERS
+DA PAM 385-16, System Safety Management Guide
+EM 385-1-1, Safety and Health Requirements
+U.S. NAVY
+OPNAV M-5100.23, Navy Safety and Occupational Health Manual
+https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/5100.23.pdf
+82
+UFC 3-501-01
+27 November 2024
+AMERICAN NATIONAL STANDARDS INSTITUTE (ANSI)
+https://www.ansi.org/
+Note: Many ANSI documents are sponsored or co-sponsored by other organizations,
+such as NEMA or IEEE.
+ANSI C84.1, Electric Power Systems and Equipment—Voltage Ratings (60 Hz)
+AMERICAN SOCIETY OF HEATING, REFRIGERATING AND AIR-CONDITIONING
+ENGINEERS (ASHRAE)
+https://www.ashrae.org/
+ASHRAE Standard 90.1, Energy Standard for Buildings Except Low-Rise Residential
+Buildings
+Note: Refer to UFC 1-200-02, for applicable publication date
+INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS (IEEE)
+https://www.ieee.org/
+IEEE C2, National Electrical Safety Code
+IEEE C37.06, IEEE Standard for AC High-Voltage Circuit Breakers Rated on a
+Symmetrical Current Basis – Preferred Ratings and Related Required Capabilities
+IEEE C37.13.1, IEEE Standard for Definite Purpose Switching Devices for Use in Metal-
+Enclosed Low-Voltage
+IEEE C37.96, IEEE Guide for AC Motor Protection
+IEEE C57.12.00, IEEE Standard General Requirements for Liquid-Immersed
+Distribution, Power, and Regulating Transformers
+IEEE Std 551, IEEE Recommended Practice for Calculating AC Short-Circuit Currents
+in Industrial and Commercial Power Systems
+IEEE Std 1547, IEEE Standard for Interconnecting Distributed Resources with Electric
+Power Systems
+IEEE Std 1547.4, IEEE Guide for Design, Operation, and Integration of Distributed
+Resource Island Systems with Electric Power Systems
+IEEE Std 551, IEEE Recommended Practice for Calculating Short-Circuit Currents in
+Industrial and Commercial Power Systems
+83
+UFC 3-501-01
+27 November 2024
+IEEE Std 1584, IEEE Guide for Performing Arc-Flash Hazard Calculations, including
+Amendments 1 and 2
+IEEE Std 1584.1, IEEE Guide for the Specification of Scope and Deliverable
+Requirements for an Arc-Flash Hazard Calculation Study in Accordance with IEEE
+Std 1584™
+IEEE Std 3002.3TM, IEEE Recommended Practice for Conducting Short-Circuit Studies
+and Analysis of Industrial and Commercial Power Systems
+INTERNATIONAL ELECTRICAL TESTING ASSOCIATION (NETA)
+NETA ATS, Acceptance Test Specifications
+NATIONAL FIRE PROTECTION ASSOCIATION
+https://www.nfpa.org/
+NFPA 70, National Electrical Code
+NFPA 70E, Standard for Electrical Safety in the Workplace
+NFPA 780, Standard for the Installation of Lightning Protection Systems
+PROFESSIONAL ELECTRICAL APPARATUS RECONDITIONING LEAGUE (PEARL)
+ANSI/PEARL EERS, Electrical Equipment Reconditioning Standard for Electrical
+Apparatus and Equipment used in Commercial and Industrial Applications
+UNDERWRITER’S LABORATORY
+UL 489, Molded-Case Circuit Breakers and Circuit-Breaker Enclosures
+84

@@ -1,0 +1,1057 @@
+[
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the metering and monitoring requirements?",
+    "expanded_query": "What are the metering and monitoring requirements? CT PT SCADA energy management",
+    "answer_mode": "multi_aspect",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 22013,
+    "retrieved_tokens": 4241,
+    "evidence_tokens": 1193,
+    "compression_ratio": 18.5,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": false,
+      "missing": [
+        "numeric value with unit",
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.757,
+    "evidence_time": 0.0097,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 98,
+        "header": "3-3.11 Power One-Line/Riser Diagrams.",
+        "dense": 0.3985,
+        "sparse": 1.0,
+        "rerank": -7.9284
+      },
+      {
+        "index": 56,
+        "header": "3-2.7 Voltage Drop.",
+        "dense": 0.2161,
+        "sparse": 0.5857,
+        "rerank": -8.8262
+      },
+      {
+        "index": 110,
+        "header": "APPENDIX D GLOSSARY",
+        "dense": 0.3572,
+        "sparse": 0.6998,
+        "rerank": -8.9309
+      },
+      {
+        "index": 52,
+        "header": "3-2.3 Load Analysis.",
+        "dense": 0.332,
+        "sparse": 0.5336,
+        "rerank": -8.9794
+      },
+      {
+        "index": 7,
+        "header": "1-6 CYBERSECURITY.",
+        "dense": 0.383,
+        "sparse": 0.6691,
+        "rerank": -9.4463
+      },
+      {
+        "index": 79,
+        "header": "3-2.17 Renewable Energy System Calculations.",
+        "dense": 0.3127,
+        "sparse": 0.6742,
+        "rerank": -9.6423
+      },
+      {
+        "index": 107,
+        "header": "APPENDIX A TRI-SERVICE ELECTRICAL WORKING GROUP TECHNICAL PAPERS",
+        "dense": 0.4122,
+        "sparse": 0.4917,
+        "rerank": -9.6778
+      },
+      {
+        "index": 23,
+        "header": "2-2 SITE EXTERIOR POWER DISTRIBUTION SYSTEMS..",
+        "dense": 0.3545,
+        "sparse": 0.7766,
+        "rerank": -9.8136
+      },
+      {
+        "index": 111,
+        "header": "APPENDIX E REFERENCES",
+        "dense": 0.3791,
+        "sparse": 0.627,
+        "rerank": -9.95
+      },
+      {
+        "index": 40,
+        "header": "2-3.8 Renewable Energy Systems.",
+        "dense": 0.331,
+        "sparse": 0.33,
+        "rerank": -10.5709
+      }
+    ],
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for renewable energy integration?",
+    "expanded_query": "What are the requirements for renewable energy integration? IEEE 1547 PV photovoltaic solar wind",
+    "answer_mode": "requirement_list",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 22013,
+    "retrieved_tokens": 3584,
+    "evidence_tokens": 1085,
+    "compression_ratio": 20.3,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.706,
+    "evidence_time": 0.0079,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 79,
+        "header": "3-2.17 Renewable Energy System Calculations.",
+        "dense": 0.651,
+        "sparse": 1.0,
+        "rerank": 4.6403
+      },
+      {
+        "index": 22,
+        "header": "2-1.11 NFPA 70 (NEC) / IEEE C2 (NESC) Design Interface Points.",
+        "dense": 0.3358,
+        "sparse": 0.5263,
+        "rerank": -3.6933
+      },
+      {
+        "index": 40,
+        "header": "2-3.8 Renewable Energy Systems.",
+        "dense": 0.4948,
+        "sparse": 0.3498,
+        "rerank": -4.6594
+      },
+      {
+        "index": 31,
+        "header": "2-2.8 Renewable Energy Systems.",
+        "dense": 0.5075,
+        "sparse": 0.3498,
+        "rerank": -5.1454
+      },
+      {
+        "index": 52,
+        "header": "3-2.3 Load Analysis.",
+        "dense": 0.3045,
+        "sparse": 0.2852,
+        "rerank": -5.4692
+      },
+      {
+        "index": 111,
+        "header": "APPENDIX E REFERENCES",
+        "dense": 0.3163,
+        "sparse": 0.4786,
+        "rerank": -7.3052
+      },
+      {
+        "index": 17,
+        "header": "2-1.6 Energy Efficiency and Sustainable Design.",
+        "dense": 0.2348,
+        "sparse": 0.1442,
+        "rerank": -8.0292
+      },
+      {
+        "index": 50,
+        "header": "3-2.1 Basis of Design.",
+        "dense": 0.386,
+        "sparse": 0.2818,
+        "rerank": -8.587
+      },
+      {
+        "index": 56,
+        "header": "3-2.7 Voltage Drop.",
+        "dense": 0.2312,
+        "sparse": 0.2658,
+        "rerank": -8.9545
+      },
+      {
+        "index": 86,
+        "header": "3-3.2.4.1 Descriptive Information.",
+        "dense": 0.2985,
+        "sparse": 0.2508,
+        "rerank": -9.5373
+      }
+    ],
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "simple",
+      "top_k": 10,
+      "max_tokens": 256
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the progressive collapse prevention requirements?",
+    "expanded_query": "What are the progressive collapse prevention requirements? alternate load path redundancy tie force",
+    "answer_mode": "requirement_list",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 62574,
+    "retrieved_tokens": 13025,
+    "evidence_tokens": 3512,
+    "compression_ratio": 17.8,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.476,
+    "evidence_time": 0.0261,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 66,
+        "header": "3-2.3 Section 2.5 - LOAD COMBINATIONS FOR EXTRAORDINARY EVENTS.",
+        "dense": 0.6006,
+        "sparse": 1.0,
+        "rerank": -0.0267
+      },
+      {
+        "index": 9,
+        "header": "1-8.2 Progressive Collapse Analysis and Design.",
+        "dense": 0.5387,
+        "sparse": 0.9073,
+        "rerank": -1.8027
+      },
+      {
+        "index": 162,
+        "header": "7-22 Sections 16.4.1.2 and 16.4.1.3, respectively.",
+        "dense": 0.3813,
+        "sparse": 0.3911,
+        "rerank": -6.0782
+      },
+      {
+        "index": 163,
+        "header": "APPENDIX C GUIDANCE FOR SEISMIC DESIGN OF NONSTRUCTURAL",
+        "dense": 0.3997,
+        "sparse": 0.3252,
+        "rerank": -7.4951
+      },
+      {
+        "index": 104,
+        "header": "4-3.2 Existing Structural Elements Carrying Lateral Load.",
+        "dense": 0.4395,
+        "sparse": 0.2926,
+        "rerank": -8.3645
+      },
+      {
+        "index": 159,
+        "header": "APPENDIX B ALTERNATE DESIGN PROCEDURE FOR BUILDINGS AND OTHER",
+        "dense": 0.3918,
+        "sparse": 0.459,
+        "rerank": -8.5328
+      },
+      {
+        "index": 161,
+        "header": "7-22 is less than 40 psf, the effective snow load is permitted to be taken as zero.",
+        "dense": 0.3434,
+        "sparse": 0.3625,
+        "rerank": -9.2635
+      },
+      {
+        "index": 24,
+        "header": "2-4.3 Section 1605 \u2013 LOAD COMBINATIONS.",
+        "dense": 0.4265,
+        "sparse": 0.2611,
+        "rerank": -9.3623
+      },
+      {
+        "index": 86,
+        "header": "3-7.4 Section 13.4 - NONSTRUCTURAL COMPONENT ANCHORAGE AND",
+        "dense": 0.3599,
+        "sparse": 0.4843,
+        "rerank": -9.7666
+      },
+      {
+        "index": 25,
+        "header": "2-4.4 Section 1607 - LIVE LOADS.",
+        "dense": 0.4128,
+        "sparse": 0.5057,
+        "rerank": -9.891
+      }
+    ],
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the blast resistance requirements?",
+    "expanded_query": "What are the blast resistance requirements? UFC 4-010-01 antiterrorism explosion protective design",
+    "answer_mode": "requirement_list",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 62574,
+    "retrieved_tokens": 9033,
+    "evidence_tokens": 2010,
+    "compression_ratio": 31.1,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.514,
+    "evidence_time": 0.019,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 8,
+        "header": "1-8.1 General Building Requirements.",
+        "dense": 0.5719,
+        "sparse": 0.7282,
+        "rerank": 0.4248
+      },
+      {
+        "index": 9,
+        "header": "1-8.2 Progressive Collapse Analysis and Design.",
+        "dense": 0.3862,
+        "sparse": 0.5803,
+        "rerank": -0.4241
+      },
+      {
+        "index": 74,
+        "header": "3-5.1 Section 11.1 \u2013 GENERAL.",
+        "dense": 0.4687,
+        "sparse": 0.8571,
+        "rerank": -1.6892
+      },
+      {
+        "index": 22,
+        "header": "2-4.1 Section 1603 \u2013 CONSTRUCTION DOCUMENTS.",
+        "dense": 0.3767,
+        "sparse": 0.9363,
+        "rerank": -3.3887
+      },
+      {
+        "index": 84,
+        "header": "3-7.2 Section 13.2 - GENERAL DESIGN REQUIREMENTS.",
+        "dense": 0.4096,
+        "sparse": 0.5566,
+        "rerank": -3.4434
+      },
+      {
+        "index": 2,
+        "header": "1-3 PURPOSE AND SCOPE.",
+        "dense": 0.5002,
+        "sparse": 0.7785,
+        "rerank": -3.9297
+      },
+      {
+        "index": 23,
+        "header": "2-4.2 Section 1604 - GENERAL DESIGN REQUIREMENTS.",
+        "dense": 0.3635,
+        "sparse": 0.6009,
+        "rerank": -4.0345
+      },
+      {
+        "index": 157,
+        "header": "7-5 ASCE 7-16 CHAPTER 18 \u2013 SEISMIC DESIGN REQUIREMENTS FOR",
+        "dense": 0.2457,
+        "sparse": 0.6229,
+        "rerank": -4.6208
+      },
+      {
+        "index": 0,
+        "header": "1-1 BACKGROUND.",
+        "dense": 0.4745,
+        "sparse": 0.7836,
+        "rerank": -4.7539
+      },
+      {
+        "index": 163,
+        "header": "APPENDIX C GUIDANCE FOR SEISMIC DESIGN OF NONSTRUCTURAL",
+        "dense": 0.3451,
+        "sparse": 0.6752,
+        "rerank": -5.5574
+      }
+    ],
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the cybersecurity requirements for microgrid systems?",
+    "expanded_query": "What are the cybersecurity requirements for microgrid systems? NIST RMF UFC 4-010-06 risk management framework",
+    "answer_mode": "requirement_list",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 19471,
+    "retrieved_tokens": 1810,
+    "evidence_tokens": 430,
+    "compression_ratio": 45.3,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": false,
+      "missing": [
+        "numeric value with unit",
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.471,
+    "evidence_time": 0.0039,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 26,
+        "header": "2-2.3 Cybersecurity and Risk Management Framework.",
+        "dense": 0.7434,
+        "sparse": 1.0,
+        "rerank": 6.6673
+      },
+      {
+        "index": 98,
+        "header": "APPENDIX C CYBERSECURITY FOR MICROGRIDS",
+        "dense": 0.8097,
+        "sparse": 0.9237,
+        "rerank": 5.4966
+      },
+      {
+        "index": 47,
+        "header": "4-2.1.11 for further details on each element.",
+        "dense": 0.701,
+        "sparse": 0.4112,
+        "rerank": 4.1323
+      },
+      {
+        "index": 8,
+        "header": "1-9 CYBERSECURITY.",
+        "dense": 0.59,
+        "sparse": 0.2351,
+        "rerank": 1.6695
+      },
+      {
+        "index": 94,
+        "header": "7-1 SYSTEM TRAINING.",
+        "dense": 0.4975,
+        "sparse": 0.2356,
+        "rerank": 0.8579
+      },
+      {
+        "index": 96,
+        "header": "APPENDIX A MICROGRID BACKGROUND INFORMATION",
+        "dense": 0.6282,
+        "sparse": 0.2724,
+        "rerank": 0.6604
+      },
+      {
+        "index": 27,
+        "header": "2-2.4 Utility Management Control System (UMCS) Integration.",
+        "dense": 0.4171,
+        "sparse": 0.2351,
+        "rerank": 0.1609
+      },
+      {
+        "index": 18,
+        "header": "2-1 MINIMUM DESIGN REQUIREMENTS.",
+        "dense": 0.7028,
+        "sparse": 0.3899,
+        "rerank": 0.0424
+      },
+      {
+        "index": 19,
+        "header": "2-2 PERFORMANCE REQUIREMENTS.",
+        "dense": 0.5438,
+        "sparse": 0.2738,
+        "rerank": -0.0891
+      },
+      {
+        "index": 42,
+        "header": "4-1.1 Performance-Based Planning and Design Process.",
+        "dense": 0.6226,
+        "sparse": 0.2046,
+        "rerank": -0.2512
+      }
+    ],
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the islanding requirements for military microgrids?",
+    "expanded_query": "What are the islanding requirements for military microgrids? PCC black start grid disconnect off-grid soft transition",
+    "answer_mode": "requirement_list",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 19471,
+    "retrieved_tokens": 2340,
+    "evidence_tokens": 486,
+    "compression_ratio": 40.1,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": false,
+      "missing": [
+        "numeric value with unit",
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.688,
+    "evidence_time": 0.0049,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 18,
+        "header": "2-1 MINIMUM DESIGN REQUIREMENTS.",
+        "dense": 0.6172,
+        "sparse": 1.0,
+        "rerank": 3.6186
+      },
+      {
+        "index": 80,
+        "header": "6-1 STATES OF OPERATION.",
+        "dense": 0.6504,
+        "sparse": 0.9258,
+        "rerank": 3.3079
+      },
+      {
+        "index": 32,
+        "header": "3-4 RESTORATION TIME AND SOFT TRANSITION.",
+        "dense": 0.6448,
+        "sparse": 0.6491,
+        "rerank": 2.1753
+      },
+      {
+        "index": 83,
+        "header": "6-1.3 Microgrid Formation.",
+        "dense": 0.6113,
+        "sparse": 0.4511,
+        "rerank": 1.9504
+      },
+      {
+        "index": 92,
+        "header": "6-2.2 Commercial Utility Relations.",
+        "dense": 0.515,
+        "sparse": 0.692,
+        "rerank": 1.8927
+      },
+      {
+        "index": 91,
+        "header": "6-2.1 Utility Interconnection and Secure Islanding.",
+        "dense": 0.6565,
+        "sparse": 0.2846,
+        "rerank": 0.8847
+      },
+      {
+        "index": 68,
+        "header": "4-4.2 Aligning Generation Sources for Islanded Operation.",
+        "dense": 0.5424,
+        "sparse": 0.4729,
+        "rerank": 0.3364
+      },
+      {
+        "index": 39,
+        "header": "3-11 POWER QUALITY.",
+        "dense": 0.6184,
+        "sparse": 0.2285,
+        "rerank": 0.289
+      },
+      {
+        "index": 29,
+        "header": "3-1 OFF-GRID SYSTEM ENDURANCE.",
+        "dense": 0.5142,
+        "sparse": 0.826,
+        "rerank": 0.0797
+      },
+      {
+        "index": 0,
+        "header": "1-1 GENERAL.",
+        "dense": 0.6266,
+        "sparse": 0.5768,
+        "rerank": -0.0991
+      }
+    ],
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the power and grounding requirements for C5ISR systems?",
+    "expanded_query": "What are the power and grounding requirements for C5ISR systems? UPS bonding distribution earth electrode electrical equipotential ground ring ground rod switchgear transformer",
+    "answer_mode": "multi_aspect",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 28100,
+    "retrieved_tokens": 1133,
+    "evidence_tokens": 494,
+    "compression_ratio": 56.9,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.653,
+    "evidence_time": 0.0021,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 158,
+        "header": "3-7.8 Grounding and Bonding.",
+        "dense": 0.5118,
+        "sparse": 1.0,
+        "rerank": 0.8853
+      },
+      {
+        "index": 120,
+        "header": "3-7 ELECTRICAL ENGINEERING.",
+        "dense": 0.5801,
+        "sparse": 0.502,
+        "rerank": 0.4179
+      },
+      {
+        "index": 220,
+        "header": "4-1.2.5 Systems Manual Requirements.",
+        "dense": 0.4093,
+        "sparse": 0.2412,
+        "rerank": -0.7183
+      },
+      {
+        "index": 203,
+        "header": "3-8.3.2 Vaults, Other Electrical/Telecom Rooms Supplying Electronic",
+        "dense": 0.369,
+        "sparse": 0.3009,
+        "rerank": -1.7521
+      },
+      {
+        "index": 38,
+        "header": "3-1.1 C5ISR Facilities Enhancements.",
+        "dense": 0.476,
+        "sparse": 0.2558,
+        "rerank": -2.2607
+      },
+      {
+        "index": 77,
+        "header": "3-6.2.1 C5ISR Space Temperatures.",
+        "dense": 0.3644,
+        "sparse": 0.3197,
+        "rerank": -2.2933
+      },
+      {
+        "index": 206,
+        "header": "3-8.3.3.3 Clean Agent Systems.",
+        "dense": 0.3198,
+        "sparse": 0.2561,
+        "rerank": -2.6603
+      },
+      {
+        "index": 36,
+        "header": "2-6 BLACK START SYSTEMS CAPABILITIES.",
+        "dense": 0.4183,
+        "sparse": 0.3277,
+        "rerank": -2.8885
+      },
+      {
+        "index": 152,
+        "header": "3-7.6.7.3 Uninterruptible Power Supplies (UPS).",
+        "dense": 0.4127,
+        "sparse": 0.3775,
+        "rerank": -3.4575
+      },
+      {
+        "index": 113,
+        "header": "3-6.11 Backup Power and Generators.",
+        "dense": 0.4366,
+        "sparse": 0.2545,
+        "rerank": -4.4149
+      }
+    ],
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the antenna and RF system requirements?",
+    "expanded_query": "What are the antenna and RF system requirements? EMC electromagnetic isolation radio frequency separation",
+    "answer_mode": "multi_aspect",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 28100,
+    "retrieved_tokens": 744,
+    "evidence_tokens": 264,
+    "compression_ratio": 106.4,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.515,
+    "evidence_time": 0.0014,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 34,
+        "header": "2-5.6 Isolation.",
+        "dense": 0.5775,
+        "sparse": 1.0,
+        "rerank": 3.1398
+      },
+      {
+        "index": 440,
+        "header": "Table 2-1",
+        "dense": 0.5986,
+        "sparse": 0.5757,
+        "rerank": -0.1196
+      },
+      {
+        "index": 441,
+        "header": "Table 2-1",
+        "dense": 0.4952,
+        "sparse": 0.5808,
+        "rerank": -2.8783
+      },
+      {
+        "index": 33,
+        "header": "2-5.5 Electromagnetic Compatibility (EMC) Evaluation.",
+        "dense": 0.5686,
+        "sparse": 0.3273,
+        "rerank": -2.8812
+      },
+      {
+        "index": 421,
+        "header": "Table 2-1",
+        "dense": 0.5613,
+        "sparse": 0.428,
+        "rerank": -3.1824
+      },
+      {
+        "index": 420,
+        "header": "Table 2-1",
+        "dense": 0.5549,
+        "sparse": 0.431,
+        "rerank": -3.4023
+      },
+      {
+        "index": 419,
+        "header": "Table 2-1",
+        "dense": 0.5361,
+        "sparse": 0.2528,
+        "rerank": -3.896
+      },
+      {
+        "index": 202,
+        "header": "3-8.3.1 Electronic Equipment Area Separation.",
+        "dense": 0.4341,
+        "sparse": 0.0327,
+        "rerank": -4.4691
+      },
+      {
+        "index": 414,
+        "header": "Table 2-1",
+        "dense": 0.5568,
+        "sparse": 0.406,
+        "rerank": -4.8686
+      },
+      {
+        "index": 431,
+        "header": "Table 2-1",
+        "dense": 0.5393,
+        "sparse": 0.3766,
+        "rerank": -4.8742
+      }
+    ],
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the laundry facility requirements?",
+    "expanded_query": "What are the laundry facility requirements? dryer laundry room washer",
+    "answer_mode": "requirement_list",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 5508,
+    "retrieved_tokens": 2726,
+    "evidence_tokens": 739,
+    "compression_ratio": 7.5,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 6.645,
+    "evidence_time": 0.006,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 61,
+        "header": "Table 2-1",
+        "dense": 0.7317,
+        "sparse": 0.1296,
+        "rerank": 4.2489
+      },
+      {
+        "index": 28,
+        "header": "3-14 PLUMBING.",
+        "dense": 0.5017,
+        "sparse": 1.0,
+        "rerank": -1.5912
+      },
+      {
+        "index": 43,
+        "header": "4-1 MINIMUM REQUIREMENTS.",
+        "dense": 0.6217,
+        "sparse": 0.6253,
+        "rerank": -2.2839
+      },
+      {
+        "index": 57,
+        "header": "Table 2-1",
+        "dense": 0.432,
+        "sparse": 0.1356,
+        "rerank": -4.2914
+      },
+      {
+        "index": 69,
+        "header": "Table 2-1",
+        "dense": 0.5404,
+        "sparse": 0.0,
+        "rerank": -4.4858
+      },
+      {
+        "index": 45,
+        "header": "APPENDIX A HABITABILITY STANDARDS",
+        "dense": 0.3883,
+        "sparse": 0.3315,
+        "rerank": -4.5805
+      },
+      {
+        "index": 58,
+        "header": "Table 2-1",
+        "dense": 0.4109,
+        "sparse": 0.1369,
+        "rerank": -5.6178
+      },
+      {
+        "index": 56,
+        "header": "Table 2-1",
+        "dense": 0.4363,
+        "sparse": 0.1356,
+        "rerank": -6.1242
+      },
+      {
+        "index": 52,
+        "header": "Table 2-1",
+        "dense": 0.48,
+        "sparse": 0.4424,
+        "rerank": -6.2862
+      },
+      {
+        "index": 59,
+        "header": "Table 2-1",
+        "dense": 0.4419,
+        "sparse": 0.1319,
+        "rerank": -6.4245
+      }
+    ],
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the storage and closet space requirements?",
+    "expanded_query": "What are the storage and closet space requirements? NSF room matrix wardrobe",
+    "answer_mode": "multi_aspect",
+    "used_deterministic": false,
+    "used_llm": false,
+    "answer": "Fat Man unreachable.",
+    "pre_verify_answer": null,
+    "orig_tokens": 5508,
+    "retrieved_tokens": 812,
+    "evidence_tokens": 418,
+    "compression_ratio": 13.2,
+    "answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "latency": 0,
+    "retrieval_time": 5.543,
+    "evidence_time": 0.0012,
+    "prompt_tokens": 0,
+    "top_sections": [
+      {
+        "index": 43,
+        "header": "4-1 MINIMUM REQUIREMENTS.",
+        "dense": 0.511,
+        "sparse": 1.0,
+        "rerank": 3.4804
+      },
+      {
+        "index": 57,
+        "header": "Table 2-1",
+        "dense": 0.5465,
+        "sparse": 0.2709,
+        "rerank": 1.0514
+      },
+      {
+        "index": 8,
+        "header": "2-2 MINIMUM CONFIGURATION AND PRIVACY STANDARDS.",
+        "dense": 0.4683,
+        "sparse": 0.4129,
+        "rerank": -0.1484
+      },
+      {
+        "index": 56,
+        "header": "Table 2-1",
+        "dense": 0.4742,
+        "sparse": 0.2709,
+        "rerank": -1.2564
+      },
+      {
+        "index": 47,
+        "header": "Table 2-1",
+        "dense": 0.5222,
+        "sparse": 0.1917,
+        "rerank": -1.4154
+      },
+      {
+        "index": 63,
+        "header": "Table 2-1",
+        "dense": 0.463,
+        "sparse": 0.491,
+        "rerank": -1.428
+      },
+      {
+        "index": 59,
+        "header": "Table 2-1",
+        "dense": 0.4957,
+        "sparse": 0.3111,
+        "rerank": -1.7922
+      },
+      {
+        "index": 38,
+        "header": "3-22.2 Multi-Purpose Space.",
+        "dense": 0.4968,
+        "sparse": 0.4663,
+        "rerank": -2.6593
+      },
+      {
+        "index": 58,
+        "header": "Table 2-1",
+        "dense": 0.4176,
+        "sparse": 0.2734,
+        "rerank": -2.8864
+      },
+      {
+        "index": 49,
+        "header": "Table 2-1",
+        "dense": 0.4897,
+        "sparse": 0.0996,
+        "rerank": -3.0762
+      }
+    ],
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  }
+]

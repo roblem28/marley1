@@ -1,0 +1,852 @@
+[
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the electrical design requirements for DoD facilities?",
+    "answer": "Based on the provided context, the electrical design requirements for DoD facilities include:\n\n1. **Compliance with Industry Standards**: Design electrical systems to meet the needs of the activity and supporting facilities in accordance with this document. Use manufacturer's standard catalog products that conform to the latest published industry and technical society standards at the date of contract award. UL listing or third-party certification is required for all basic equipment.\n\n2. **Telecommunications Room**: An enclosed space for telecommunications equipment, terminations, and cross-connect wiring for horizontal cabling.\n\n3. **Tempest Protection**: Studies and investigation of compromising emanations (communications security).\n\n4. **Utilization Electric Supply Station**: Equipment such as pole or pad-mounted transformers or secondary unit substations that transforms the energy level (voltage) to a utilization voltage for consumer use.\n\n5. **Safety and Security**: Incorporating safety into the engineering and design process is an important part of designing, constructing, and maintaining safe facilities for use by U.S. Military, U.S. Government, and Contractor personnel. Wiring from and connections to non-utility equipment supplying power to the wiring system of the facility or the low-voltage terminals of the medium-voltage distribution system, including engine-generator sets, photovoltaic power systems, wind turbines, and fuel cells.\n\n6. **Power Distribution Systems**: Provide the site utility distribution system that is compatible with the existing system and comply with UFC 3-550-01. Identify special security and physical security requirements.\n\n7. **Telecommunications Systems**: Identify space required for telecommunications equipment, size of incoming duct/conduit, and documentation concerning telecommunications room sizes to accommodate interface equipment provisions for multi-use systems.\n\n8. **Power Plans**: Show all power requirements and points of connections. Specifically identify each piece of equipment, including HVAC and mechanical equipment, and total connected load (calculated load) including demand factors of all circuits. Include any special breaker requirements such as GFCI, AFCI, SWD, adjustable trip, 100% rated, and neutral bus size (100% or 200%).\n\n9. **Site Exterior Power Distribution Systems**: Provide the site utility distribution system that is compatible with the existing system and comply with UFC 3-550-01. Identify special security requirements and physical security requirements.\n\n10. **Facility-Scale Renewable Energy Systems**: Design and implement systems that are compatible with the existing system and comply with UFC 3-540-01.\n\n11. **Station",
+    "orig_tokens": 22893,
+    "comp_tokens": 1120,
+    "compression_ratio": 20.4,
+    "latency": 27.94,
+    "prompt_tokens": 2198,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for emergency power systems in DoD facilities?",
+    "answer": "Based on the provided context, the requirements for emergency power systems in DoD facilities include:\n\n1. **Minimum Essential Load**: This load must be provided to ensure the safety and basic operations of the facility. It is the lowest level of power required to maintain essential functions.\n\n2. **Emergency Load for Vital Operations**: This load must be provided to ensure the continuity of operations for critical functions that cannot be interrupted. This load is essential for maintaining the functionality of the facility during emergencies.\n\n3. **Uninterruptible (no-break) Load**: This load must be provided to ensure that critical equipment and operations are not interrupted, even during power outages. This load is critical for maintaining the functionality of the facility during emergencies.\n\n4. **Area Loads**: These loads are groups of individual facility loads served by a subdivision of the electric distribution system. The term \"area\" applies to the next larger subdivision of an overall distribution system. The determination of load growth for anticipated usage and life expectancy is crucial, especially considering the possibility of adding heavy loads such as air conditioning, electric heating, electric data processing, and electronic communication equipment.\n\n5. **Economic Analysis**: Before determining the size of service and method of distribution to a facility, an economic analysis is made to determine the most feasible way",
+    "orig_tokens": 22893,
+    "comp_tokens": 1077,
+    "compression_ratio": 21.3,
+    "latency": 15.27,
+    "prompt_tokens": 1980,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "simple",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 256
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the grounding and bonding requirements?",
+    "answer": "Based on the provided context, grounding and bonding requirements are detailed in specific sections of the UFC 3-501-01 standard. Specifically, Section 3-3.18 Grounding Diagrams outlines the explicit grounding and grounded conductor requirements from the medium-voltage system up to the Service entrance equipment, step-down transformers, sub-panels, and telecommunications systems grounding. \n\nFor the grounding plan, Section 3-3.7 Grounding Plan provides grounding plans and details at an appropriate scale, including the main bonding jumper connection and system bonding jumper connections for separately derived systems. \n\nAdditionally, Section 3-3.18 Grounding Diagrams specifies the interface between the Systems Furniture wiring harness and the branch circuit wiring, and it also includes the service entrance grounding electrode systems and interconnections with other system grounding electrodes, clearly showing and identifying these on the grounding plan.\n\nThe context also mentions the need to identify feeder cable sizes and conduit sizes, and to identify the configuration such as 4-#2 AWG, 1-#4 AWG ground in 1-1/2\" conduit. Coordination Curves are prepared to determine the required settings of protective devices to assure selective coordination.\n\nIn summary, the grounding and bonding requirements are detailed in specific sections of the UFC 3-501-01 standard, ensuring that all grounding and bonding connections are clearly identified and coordinated to meet the necessary safety and electrical standards.",
+    "orig_tokens": 22893,
+    "comp_tokens": 520,
+    "compression_ratio": 44.0,
+    "latency": 15.48,
+    "prompt_tokens": 951,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the lighting design standards for DoD facilities?",
+    "answer": "Based on the provided context, the lighting design standards for DoD facilities are outlined in UFC 3-501-01, effective 27 November 2024. Key points include:\n\n1. **Divide Facility Areas**: Facilities should be divided into significant components by function (e.g., office, storage, mechanical, corridor) to determine the average lighting level and type of light source for each area.\n\n2. **Lighting Standards**: The standards of design for lighting include voltage drop, illuminance values, type of light sources, and energy-conserving features. Compliance with UFC 1-200-02 and ASHRAE 90.1 requirements is also described.\n\n3. **Photometric Layout Plan**: A photometric layout plan should be provided as an appendix to the design analysis. This plan should include luminaire details, a separate luminaire schedule, controls, and control strategies for each space.\n\n4. **Luminaire Details**: Details and a luminaire schedule are available in Adobe PDF and AutoCAD formats on the WBDG website. When using luminaire types not included in the database, detailed information must be provided, including the luminaire type, physical construction, electrical data, and operating voltage.\n\n5. **Security and Antiterrorism Design Criteria**: These criteria are established using UFC 4-010-01 to ensure security and safety in DoD facility designs.\n\n6. **General Note**: The note \"ELECTRICAL WORK AND MATERIAL IS NEW AND PROVIDED BY THE CONTRACTOR UNLESS INDICATED OTHERWISE\" should be provided unless directed or approved by the government.\n\n7. **Underground Structure Design**: Underground structure design is not explicitly mentioned but is implied in the context of overall facility design.\n\nThese standards ensure that DoD facilities are designed with safety, energy efficiency, and security in mind, aligning with the requirements of UFC 3-501-01 and related guidelines.",
+    "orig_tokens": 22893,
+    "comp_tokens": 692,
+    "compression_ratio": 33.1,
+    "latency": 21.13,
+    "prompt_tokens": 1208,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for electrical distribution systems?",
+    "answer": "Based on the provided context, the requirements for electrical distribution systems include:\n\n1. **Reliability and Load Satisfying**: The type of distribution system needed to ensure reliability and to economically satisfy at least the less critical emergency load requirements. This reliability can be provided only if the source of electric power is not the determining factor.\n\n2. **Area Loads Addition**: Area loads that must be added to individual emergency loads, such as security lighting and minimum roadway lighting.\n\n3. **Standards of Design**: Descriptions of pertinent standards of design, such as voltage drop and equipment ratings.\n\n4. **Materials**: Manufacturer\u2019s data sheets and product data for selected equipment.\n\n5. **Interior Distribution Systems**: Lighting systems, power systems, alternate energy systems, emergency lighting, emergency/standby power, grounding systems, telecommunications systems, other systems such as television, physical and electronic security features, and TEMPEST criteria.\n\n6. **Site Exterior Power Distribution Systems**: Existing Primary Power Source, including the location of the point of connection into the existing primary system, characteristics of this primary system, including ANSI voltage designation, phase, number of conductors, available fault current, and circuit grounding classifications.\n\n7. **Design Approach**: Method used for sizing conductors, conduit, protective devices, and",
+    "orig_tokens": 22893,
+    "comp_tokens": 712,
+    "compression_ratio": 32.2,
+    "latency": 13.87,
+    "prompt_tokens": 1109,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "simple",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 256
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the power quality requirements?",
+    "answer": "Based on the provided context, power quality requirements include voltage drop limits, power factor, and standards of design such as voltage drop and equipment ratings. Specifically:\n\n1. Voltage Drop Limits: These limits must be met for crane systems to the point of connection at the runway electrification system. However, voltage drop experienced through the runway and subsequent conduction paths to the eventual loads may adhere to CMAA-70 instead.\n\n2. Power Factor: For applications where power factor is known or can be easily estimated based on industry standards or approved sole-source equipment, utilize such information. The context provides typical power factors for different types of lighting, motors, HVAC units, and other equipment.\n\n3. Standards of Design: This includes voltage drop, equipment ratings, and other factors such as:\n   - Voltage Selection: Basis for selection of primary and secondary voltages.\n   - Conductors: Include conductor size, type, number of conductors, insulation voltage rating, and insulation level.\n   - Mounting (surface, suspended, flush) and mounting height.\n   - Special characteristics such as wet label, specific hazardous classification, or air handling.\n\n4. Load Analysis for Emergency/Standby Generator: This includes sizing calculations including starting kVA, specific load demand factor, maximum demand load, and annual operating hours. It also includes environmental system electric power requirements and facility occupancy equipment electric power requirements.\n\n5. System Loss: A system loss of approximately 6 percent, based on calculated maximum demand, should be added to the building load.\n\n6. Demand and Load Factors: This includes rated voltage (primary & secondary), transformer identification number, industry standard impedance, meter type, CT and PT sizes, primary switches, wye or delta connection, loadbreak elbows, lightning arresters, kVA rating, short circuit ratings, maximum voltage ratings, basic impulse level (BIL), and main bus ampacity.\n\nThese requirements are critical for ensuring reliable and efficient electrical systems in DoD applications.",
+    "orig_tokens": 22893,
+    "comp_tokens": 660,
+    "compression_ratio": 34.7,
+    "latency": 20.85,
+    "prompt_tokens": 1251,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for electrical safety and protection systems?",
+    "answer": "Based on the provided context, the requirements for electrical safety and protection systems include:\n\n1. **Maximum Short Circuit Current and Settings**: The document specifies that settings for protective devices should be developed, especially for low voltage protective devices less than 225 amperes unless adjustable trip. This ensures that the protective devices are appropriately sized to handle the maximum short circuit current.\n\n2. **Relays and Relay Functions**: Addressing relays and their functions is crucial. This includes identifying and documenting the functions of all relays used in the system.\n\n3. **Special Security Requirements**: Special security requirements must be identified. This includes identifying space required for telecommunications equipment and the size of incoming duct/conduit. Documentation concerning telecommunications room sizes is also required to accommodate interface equipment provisions for multi-use systems.\n\n4. **Telecommunications Systems**: Telecommunications systems need to be described, including space required for equipment, size of incoming duct/conduit, and documentation concerning telecommunications room sizes.\n\n5. **Materials and Standards**: Materials and product data sheets for selected equipment must be provided. Standards of design, such as voltage drop and equipment ratings, should be described.\n\n6. **Grounding Systems**: Grounding systems must be described, including the grounding method and the grounding electrode system.\n\n7. **Emergency",
+    "orig_tokens": 22893,
+    "comp_tokens": 721,
+    "compression_ratio": 31.8,
+    "latency": 13.82,
+    "prompt_tokens": 1092,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "simple",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 256
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the metering and monitoring requirements?",
+    "answer": "Based on the provided context, the metering and monitoring requirements for an electrical system include:\n\n1. **Installation Specific Metering Requirements**: These are determined as part of the electrical distribution system connection during design. This involves specifying the type and number of conductors required for the system.\n\n2. **Remote Monitoring and Control Requirements**: These are coordinated with the Activity. This ensures that the system can be remotely monitored and controlled, which is particularly important for exterior distribution system equipment.\n\n3. **Meter Type**: The type of meter used should be identified. This could include specific details such as CT (Current Transformer) and PT (Potential Transformer) sizes.\n\n4. **CT and PT Sizes**: These sizes are determined as part of the installation specific metering requirements. The sizes of CT and PT are crucial for accurate metering and monitoring.\n\n5. **Special Security and Physical Security Requirements**: These are identified as part of the overall security measures for the facility. This could include specific security protocols and physical security measures related to the metering and monitoring systems.\n\n6. **Telecommunications Systems**: For telecommunications systems, space required for equipment and the size of incoming duct/conduit are identified. Documentation concerning telecommunications room sizes is provided to accommodate interface equipment provisions for multi-use systems.\n\nThese requirements are part of the broader design and coordination of the electrical system, ensuring that the system is both functional and secure.",
+    "orig_tokens": 22893,
+    "comp_tokens": 555,
+    "compression_ratio": 41.2,
+    "latency": 14.65,
+    "prompt_tokens": 827,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for renewable energy integration?",
+    "answer": "Based on the provided context, the requirements for renewable energy integration include:\n\n1. **Predicted Power Generation and Production**: This involves calculating the expected power output in kW and kVAR, and the total energy production in kWh per year.\n\n2. **IEEE Std 1547 Interface Compliance**: Ensuring the renewable energy system meets the standards for interconnection with the electrical grid.\n\n3. **Voltage Drop and Ampacity Requirements**: These are critical for determining the appropriate conductor sizes and ensuring the system operates within safe limits.\n\n4. **Site Orientation and Safety Considerations**: For photovoltaic systems, this includes glare analysis to ensure safety and efficiency.\n\n5. **Electrical Protection and Coordination**: Ensuring the system is protected against faults and coordinated with other electrical systems to prevent overloads and other hazards.\n\n6. **Frequency Conversion Equipment**: Necessary for converting the frequency of the renewable energy source to match the grid frequency.\n\n7. **Renewable Energy Systems Specifics**: This includes detailed site orientation, safety considerations, and specific system requirements such as surface or flush mounting, circuit number, wire size, breaker trip, connected load, and identification of associated loads.\n\n8. **Connectivity to Basewide Mass Notification System**: Describing how the facility will connect to",
+    "orig_tokens": 22893,
+    "comp_tokens": 461,
+    "compression_ratio": 49.7,
+    "latency": 13.38,
+    "prompt_tokens": 760,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "simple",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 256
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the electrical requirements for exterior and site lighting?",
+    "answer": "For exterior and site lighting, the electrical requirements include:\n\n- Total connected load (calculated load) including demand factors of all circuits.\n- Special breaker requirements such as GFCI, AFCI, SWD, adjustable trip, 100% rated.\n- Neutral bus size (100% or 200%).\n- Supplementary lighting (floodlighting, security lighting, and special task lighting) requirements.\n- Design all exterior underground and overhead, medium, and low voltage systems not specifically associated with a building/support structure in accordance with IEEE C2.\n- Utilize NFPA 70 ampacity and conduit fill tables for all designs.\n- Provide adequate plans, including demolition, existing conditions, and new work, legends, details, and diagrams to clearly define the work to be accomplished.\n- Coordinate construction drawings and specifications; show information only once to avoid conflicts.\n- Design exterior lighting systems (parking lot, roadway, security, and sports).\n- Design exterior branch or feeder circuits originating from building/support structure service equipment.\n- Site orientation and safety considerations, including glare analysis for photovoltaic systems.\n- Electrical protection and coordination.\n\nSpecifically, for site lighting, the requirements are detailed in UFC 3-501-01, Section 2-2.4, which covers Airfield Lighting. For exterior lighting, Section 2-2.3 covers the requirements for exterior lighting systems.",
+    "orig_tokens": 22893,
+    "comp_tokens": 515,
+    "compression_ratio": 44.5,
+    "latency": 15.17,
+    "prompt_tokens": 914,
+    "router": {
+      "doc_type": "electrical",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the structural design requirements for DoD buildings?",
+    "answer": "Based on the provided context, the structural design requirements for DoD buildings include:\n\n1. **Seismic Design Requirements**: The structural design must comply with ASCE 7-22, which is referenced in the 2024 International Building Code (IBC) and modified by UFC 1-200-01, DoD Building Code. ASCE 7-22 provides minimum design loads and associated criteria for buildings and other structures, including seismic design requirements.\n\n2. **Component Importance Factors**: The component importance factor, I, is required for force calculations in ASCE 7-22 Section 13.3.1. I must be as given in ASCE 7-22 Section 13.1.3.\n\n3. **Structural System Selection**: The selection of the structural system and the configuration of structural elements must be included in the preliminary design. The final design of the entire structural system and all supporting analyses must be provided.\n\n4. **Load Combinations**: For structural members sensitive to vertical ground motion, additional load combinations must be designed for strength design and allowable stress design, as specified in Chapter 3 of the UFC.\n\n5. **Seismic Design Categories**: The structural design must be tailored to the seismic design categories (B through F) based on the building height and the type of structural system selected. For example, buildings with heights up to 65 feet may use ordinary steel braced frames in light-frame construction, while buildings over 160 feet may use special reinforced concrete shear walls.\n\n6. **Peer Review**: The design must be peer-reviewed by the government a minimum of 90 days prior to construction start, including review by subject matter experts at the USACE Construction Engineering Research Laboratory (CERL).\n\n7. **Seismic Evaluation and Retrofit**: For seismic evaluation and retrofit of existing buildings, the criteria references ICSSC RP 10 and ASCE/SEI 41-17, as well as the 2024 IEBC.\n\n8. **Load Capacity Values**: Load capacity values must be published as part of a third-party testing report and tested assemblies must be applicable to constructed assemblies.\n\n9. **Expansion Joints**: Expansion joints must be designed and detailed to adequately depict continuous vertical and lateral load paths to foundation.\n\n10. **Seismic Design Category**: The structural design must be tailored to the seismic design category (B through F) based on the building height and the type of structural system selected.\n\nThese",
+    "orig_tokens": 65325,
+    "comp_tokens": 1919,
+    "compression_ratio": 34.0,
+    "latency": 29.86,
+    "prompt_tokens": 3421,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the seismic design requirements?",
+    "answer": "Seismic design requirements for structures include several key elements:\n\n1. **Seismic Design Category**: Each structure must be assigned a Seismic Design Category (SDC) in accordance with the 2024 IBC Section 1613.2.5 and ASCE 7-22 Section 11.6. This category determines the level of seismic design and construction provisions required.\n\n2. **Force-Resisting Systems**: The structure must be provided with complete lateral and vertical force-resisting systems capable of providing adequate strength, stiffness, and energy dissipation capacity to withstand earthquake ground motions. These systems must be designed to transfer forces induced by the earthquake ground motions from the points of application to the final point of resistance.\n\n3. **Ground Motion Considerations**: Ground motions must be assumed to occur along any horizontal direction of the structure. A continuous load path with adequate strength and stiffness must be provided to transfer forces.\n\n4. **Importance Factors**: Structures must be designed to accommodate architectural, mechanical, and electrical component requirements as specified in Section B-22.\n\n5. **Design Coefficients and Factors**: Design coefficients and factors for basic seismic force-resisting systems are provided in Table 7-1. These coefficients and factors are used to determine the strength and stiffness requirements for different structural systems.\n\n6. **Special Considerations for Certain Systems**:\n   - For seismic isolated structures, linear procedures must not be used in Seismic Design Category E or F structures.\n   - Seismic joints must be properly detailed and sized based on the maximum expected displacements, considering story drift, diaphragm displacements, and rotations, and a realistic approximation of element section properties.\n   - Adjacent structures not integral with an existing structure must be separated by at least 2 inches per story.\n\n7. **Nonstructural Components**: Nonstructural components must be designed to withstand the earthquake ground motions and deformation demands, as specified in ASCE 7-22 Chapter 13.\n\n8. **Seismic Wall and Anchorage Design**: Structural walls and their anchorage must be designed to withstand the earthquake ground motions, as specified in Section 12.11.\n\n9. **Seismic Isolated Structures**: For seismic isolated structures, the analysis procedure selection must be based on the appropriate criteria, as specified in Section 17.4.\n\n10. **Structures with Damping Systems**: For structures with damping systems, the seismic design requirements must be followed as specified in Section 18.\n\nThese requirements ensure",
+    "orig_tokens": 65325,
+    "comp_tokens": 1006,
+    "compression_ratio": 64.9,
+    "latency": 27.65,
+    "prompt_tokens": 1957,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the wind load design requirements?",
+    "answer": "Based on the provided context, the wind load design requirements for DoD structures are quite specific and stringent. Here are the key points:\n\n1. **Basic Wind Speed Determination**:\n   - For DoD installations within the United States and its territories, the basic wind speed must be determined using the ASCE Hazard Tool hosted at https://ascehazardtool.org.\n   - For locations outside the United States, the basic wind speed must be identified using a spreadsheet available on the Whole Building Design Guide Structural Engineering UFC Page.\n   - If the basic wind speed is not provided, the best locally available information should be used.\n\n2. **Design Wind Speed for Non-permanent Structures**:\n   - For non-permanent structures, the design wind speed can be reduced by a factor of 0.78. This reduction factor is applicable only in non-hurricane prone regions.\n\n3. **Wind Load on Hangar Structures**:\n   - For aircraft hangars, the wind load on the main wind force resisting system must be determined based on the hangar doors being closed for winds at the maximum design velocity.\n   - The structural forces must be calculated based on the assumption of a \"partially enclosed building.\"\n   - It is permissible to use the large volume reduction factor of ASCE 7 in determining the design wind pressures.\n   - Assume that a 1-inch (25-mm) strip around the perimeter of all hangar door panels is an opening and combine this with the area of all unshielded fenestration.\n\n4. **Wind Load on Open Buildings**:\n   - For open buildings with large openings such as overhead doors in warehouses, the criteria for hangars in Section 1609.1.2 of Chapter 2 of this UFC should be used to determine wind loads.\n\n5. **Wind Load on Buildings with Large Openings**:\n   - For buildings containing large openings, the criteria for hangars in Section 1609.1.2 of Chapter 2 of this UFC should be used to determine wind loads.\n\n6. **Wind Load on Buildings in High-Wind Regions**:\n   - For buildings in high-wind regions (where the basic wind speed equals or exceeds 130 mph), roof diaphragms, diaphragm connections to roof framing members, and diaphragm-to-wall connections must be evaluated for wind loads specified in this UFC.\n\n7. **Wind Load on Buildings in Hurricane Prone Regions**:\n   - For buildings in hurricane prone regions, warehouse",
+    "orig_tokens": 65325,
+    "comp_tokens": 1888,
+    "compression_ratio": 34.6,
+    "latency": 29.41,
+    "prompt_tokens": 3114,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the progressive collapse prevention requirements?",
+    "answer": "Based on the provided context, the progressive collapse prevention requirements are not explicitly detailed. However, the context does provide some relevant information that can be used to infer these requirements:\n\n1. **Risk Categories and Design Criteria**: The context mentions different risk categories for buildings and structures, each with specific design criteria. For buildings in Risk Category IV and above, the design criteria include ensuring that nonstructural components remain operational following a design earthquake (BSE-1N). This implies that for these categories, there are specific design requirements to prevent progressive collapse.\n\n2. **Nonstructural Components**: The context discusses the Operational Performance Level for nonstructural components, which is defined as the post-earthquake damage state in which nonstructural components are able to provide the functions they provided before the earthquake. This suggests that nonstructural components must be designed to prevent failure and ensure functionality post-earthquake, which indirectly implies a requirement to prevent progressive collapse.\n\n3. **Designated Seismic Systems**: The context mentions designated seismic systems, which are nonstructural components requiring design in accordance with Chapter 13 and have an importance factor greater than 1.0. Designing these components to remain operational post-earthquake would also prevent progressive collapse.\n\n4. **Snow Loads**: The context includes provisions related to snow loads, specifically mentioning considerations for roof obstructions like photovoltaic panels and lightning cable systems. Ensuring that these obstructions do not create potential for snow buildup around them is a design consideration that can prevent progressive collapse by preventing the accumulation of heavy loads in critical areas.\n\nIn summary, the progressive collapse prevention requirements for buildings and structures in Risk Categories IV and above would likely include:\n- Ensuring nonstructural components remain operational post-earthquake.\n- Designing designated seismic systems to remain operational post-earthquake.\n- Considering potential snow buildup around roof obstructions to prevent the accumulation of heavy loads in critical areas.\n\nThese requirements are derived from the context provided and are specific to buildings and structures in higher risk categories. For buildings in lower risk categories, the context suggests that the design criteria are less stringent, and thus, the requirements for progressive collapse prevention would be less stringent as well.",
+    "orig_tokens": 65325,
+    "comp_tokens": 2081,
+    "compression_ratio": 31.4,
+    "latency": 26.06,
+    "prompt_tokens": 3546,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the foundation design requirements?",
+    "answer": "Based on the provided context, the foundation design requirements for DoD buildings include:\n\n1. **Design Foundations in Accordance with ACI 351.3R or ACI 351.4R, as Applicable, and UFC 3-220-01**:\n   - Design foundations based on ACI 351.3R or ACI 351.4R, which provide specific guidelines for foundation design.\n   - Additionally, refer to UFC 3-220-01 for foundation design requirements specific to expansive soils.\n\n2. **Foundation Wall Design**:\n   - Foundation walls must be designed for lateral soil loads determined by a geotechnical investigation, in accordance with Section 1803 of UFC 6-3 IBC CHAPTER 18 \u2013 SOILS AND FOUNDATIONS.\n\n3. **Reinforcement Requirements**:\n   - For footings over three feet (914 mm) thick, the minimum ratio of reinforcement area to gross concrete area in each direction must be 0.0015.\n   - Not less than one-half nor more than two-thirds of the total reinforcement required must be placed near any one face.\n\n4. **Foundation Depth Considerations**:\n   - Footing depth for frost must be provided by the project geotechnical engineer.\n\n5. **Soil Investigation and Recommendations**:\n   - Ensure soil investigations include estimates of settlement, heave, and recommendations to mitigate effects of expansive soil movement.\n   - Ensure positive drainage away from structures to prevent ponding close to structures.\n   - Guidance on design of foundations on expansive soils can be found in UFC 3-220-01 and PTI DC 10.5-21.\n\nThese requirements ensure that the foundations of DoD buildings are robust and capable of withstanding the lateral soil loads and other environmental factors.",
+    "orig_tokens": 65325,
+    "comp_tokens": 1708,
+    "compression_ratio": 38.2,
+    "latency": 23.29,
+    "prompt_tokens": 3114,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the steel connection design requirements?",
+    "answer": "Based on the provided context, the steel connection design requirements include:\n\n1. **Compressive Washer-Type Direct Tension Indicators or Twist-Off-Type Tension-Control Bolts**: These must be provided at all high-strength bolted connections. They must conform to the RCSC Specification for Structural Joints Using High-Strength Bolts.\n\n2. **Design Structural Steel Floor Framing Systems for Vibration Serviceability**: Design structural steel floor framing systems for vibration serviceability in accordance with AISC Design Guide 11.\n\n3. **Protect Exposed Steel in Corrosive Environments**: Protect exposed steel in corrosion-prone environments with hot-dipped galvanizing or use stainless alloy.\n\n4. **Joist Connections**: Connections between open web steel joists and supporting girders or joist girders and building columns should be designed specifically for the project and take into consideration lateral and uplift loads acting on the connection. Metal plate connections for roof trusses, top plates, and sill plates are an effective way to provide a more robust load path.\n\n5. **Column Base Plate Shear Transfer**: For steel structures in Arctic and Antarctic zones, the specification establishes property limits and test methods for qualification and certification. Minimum guaranteed values for design are established. These limits must be met but the manufacturer may exceed these limits.\n\n6. **Lateral Force-Resisting System Connections**: Connections for wind and seismic forces must be designed by the Structural Engineer of Record (SER). This provision does not preclude a pre-engineered building engineer from designing primary lateral force-resisting connections where said engineer is the building SER. This would be the case with pre-engineered metal buildings and pre-engineered parking garages.\n\n7. **Welded Structural Steel Connections**: In hospitals and correctional treatment centers, welded structural steel connections having a medium or high level of restraint, as defined by AWS D1.1 Annex H, shall have a minimum pre-heat temperature of not less than 150\u00b0 F (66\u00b0 C). Welded structural steel connections with welds to flange, web, wall, or plate having a high level of restraint shall maintain a post-heat temperature of 300\u00b0 F (149\u00b0 C) for a minimum of 1 hour after completion of welding.\n\nThese requirements ensure that steel connections are designed to withstand various loads and environmental conditions, ensuring the structural integrity and safety of the building.",
+    "orig_tokens": 65325,
+    "comp_tokens": 1092,
+    "compression_ratio": 59.8,
+    "latency": 26.52,
+    "prompt_tokens": 1894,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the concrete design requirements?",
+    "answer": "Based on the provided context, the concrete design requirements include:\n\n1. **ACI 318**: This code provides the building code requirements for structural concrete, which is essential for designing concrete structures, including footings, slabs, and walls.\n\n2. **ACI 440.1R**: This guide provides the design and construction of structural concrete reinforced with fiber-reinforced polymer (FRP) bars, which is relevant for reinforced concrete structures.\n\n3. **ACI 351.3R and ACI 351.4R**: These codes provide specific requirements for foundations, including the minimum reinforcement area and the placement of reinforcement near one face of the footing.\n\n4. **UFC 3-220-01**: This specification provides additional requirements for foundations, including the reinforcement area and placement near one face.\n\n5. **ACI 318**: This code also provides requirements for masonry structures, stating that masonry must be designed as reinforced unless the element is isolated from the structure so that vertical and lateral forces are not imparted to the element.\n\n6. **ASCE 7-22**: This code provides minimum design loads and associated criteria for buildings and other structures, which includes seismic design requirements for nonbuilding structures.\n\n7. **ASCE 41-17**: This code provides standards for seismic evaluation and strengthening of existing buildings, which is relevant for retrofitting existing structures.\n\n8. **ASCE 8**: This code provides requirements for steel structures, including the design and construction of structures with damping systems.\n\n9. **AA ADM**: This code provides requirements for aluminum structures, which is relevant for aluminum components in structures.\n\n10. **ACI 318**: This code also provides requirements for concrete structures, including the design and construction of slabs-on-ground and circular wire-and-strand-wrapped prestressed concrete structures.\n\n11. **ACI 318**: This code also provides requirements for structural joints using high-strength bolts and shear transfer in exposed column base plates.\n\n12. **ACI 318**: This code also provides requirements for the design and construction of fixed offshore concrete structures and waterfront and coastal concrete marine structures.\n\n13. **ACI 318**: This code also provides requirements for the design and construction of slabs-on-ground.\n\n14. **ACI 318**: This code also provides requirements for the design and construction of circular wire-and-strand",
+    "orig_tokens": 65325,
+    "comp_tokens": 2208,
+    "compression_ratio": 29.6,
+    "latency": 32.33,
+    "prompt_tokens": 5055,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the load combination requirements?",
+    "answer": "Based on the provided context, the load combination requirements for structural design in the context of the UFC (Unified Facilities Criteria) are quite specific and detailed. Here are the key points:\n\n1. **Load Combinations for Strength Design (Section 2.3.4)**:\n   - ASCE 7-22 Section 2.3.4 does not provide specific load factors to use with T (self-straining forces and effects). Commentary Section C.2.3.4 contains such load factors.\n   - The commentary should be read and understood before using the load combinations in the commentary.\n   - The impact of T on serviceability and long-term performance of the facility may also need to be evaluated.\n\n2. **Seismic Load Combinations**:\n   - For buildings and nonbuilding structures specified in Section 1605.1.2 in Chapter 2 of this UFC, additional seismic load combinations must be considered.\n   - The seismic load combinations include:\n     - 1.2D + 1.0E + 0.3E + L + 0.2S (for combinations 8, 9, and 10)\n     - 0.9D \u2013 1.0E + 0.3E (for combinations 8, 9, and 10)\n   - These combinations apply when the prescribed seismic load effect, E = f(E, E), is combined with the effects of other loads.\n   - For overstrength seismic load effects, the following seismic load combinations apply:\n     - 1.2D + 1.0E + 0.3E + L + 0.2S (for combinations 8, 9, and 10)\n     - 0.9D \u2013 1.0E + 0.3E (for combinations 8, 9, and 10)\n\n3. **General Design Requirements**:\n   - The effect of load T needs to be taken into consideration on a structure. For further information, see ASCE 7 Section C2.3.4.\n\n4. **Design Considerations**:\n   - Design must be peer-reviewed by the government a minimum of 90 days prior to construction start and will include review by subject matter experts at USACE Construction Engineering Research Laboratory (CERL).\n   - Calculations must demonstrate a complete vertical and lateral load path and may not rely on printed shell elements to resist loads except for pure compression.\n   -",
+    "orig_tokens": 65325,
+    "comp_tokens": 1637,
+    "compression_ratio": 39.9,
+    "latency": 29.11,
+    "prompt_tokens": 2788,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the blast resistance requirements?",
+    "answer": "Based on the provided context, the blast resistance requirements for military facilities are not explicitly detailed. However, the context does provide information on structural design criteria and load requirements for various types of buildings, which can be extrapolated to understand blast resistance requirements.\n\nFor blast resistance, the context mentions:\n\n- The use of ASTM F2247 or ASTM F2927 for door locations and ASTM F1642 or GSA TS01 for windows locations for blast overpressure testing.\n- The use of MIL STD 662 for ballistics testing.\n- The use of the Response modification coefficient, R, which reduces forces to a strength level, not an allowable stress level.\n- The use of the Deflection amplification factor, Cd, for specific ASCE 7-22 sections.\n\nGiven these criteria, blast resistance requirements for military facilities would likely involve:\n\n1. **Structural Design**: Following the UFC 3-301-01 and ASCE 7-22 standards, which provide minimum design loads and associated criteria for buildings and other structures.\n2. **Testing**: Conducting dynamic testing for blast overpressure, as specified by ASTM F2247 or F2927, and ballistics testing as per MIL STD 662.\n3. **Deflection and Drift Limits**: Ensuring that structures can withstand the forces generated by blast events without exceeding allowable limits, as per ASCE 7-22 and ASCE 41-17 standards.\n4. **Retrofitting**: For existing buildings, the criteria may allow for the use of reduced seismic hazard ground motion parameters for non-permanent structures, reducing seismic forces and detailing requirements.\n\nFor specific load requirements and design criteria, the context does not provide detailed blast resistance values. However, it indicates that military facilities should be designed to withstand blast events using the specified testing methods and design standards. Specific load values and design criteria would need to be derived from the UFC 3-301-01 and ASCE 7-22 standards, as modified by the DoD Building Code.",
+    "orig_tokens": 65325,
+    "comp_tokens": 1250,
+    "compression_ratio": 52.3,
+    "latency": 24.05,
+    "prompt_tokens": 2288,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the inspection and quality control requirements for structural work?",
+    "answer": "Based on the provided context, the inspection and quality control requirements for structural work, particularly for seismic-resistant systems, include:\n\n1. **Field Testing and Proof Loads**: The Structural Engineer of Record (SER) must determine the proof load (as per ACI 318-19 Section 26.7.1(k)) to be used for field-testing and indicate in the construction documents which anchors are considered critical for testing.\n\n2. **Special Inspections for Seismic Resistance**: For Designated Seismic Systems, special inspections and verification are required and must be performed as per the Statement of Special Inspections and the Schedule of Special Inspections, which must be prepared for each project. Templates for these documents may be downloaded from the Structural Engineering UFC (3-301-01) page on the Whole Building Design Guide.\n\n3. **Walk-Down Inspections**: Initial walk-down inspections of new RC IV buildings are required. These inspections are visual inspections of the building to identify possible seismic vulnerabilities of its architectural, mechanical, and electrical components. Inspectors should investigate adequacy of component load paths, anchorage and bracing, and components' abilities to accommodate differential motions with respect to supporting building structure. Documentation of all observations should be made with photographs, schematic drawings, and narrative discussions of apparent vulnerabilities.\n\n4. **Component Certification and Operations & Maintenance (O&M) Manual**: For any electrical or mechanical component required by ASCE 7-22 Section 13.2.3 to be certified, evidence demonstrating compliance with the requirement must be maintained in a file identified as \"Equipment Seismic Certification Documentation.\" This file must be a part of the Operations & Maintenance (O&M) Manual that is turned over to the AHJ. The project specifications must require the O&M Manual to state that replaced or modified components need to be certified per the original certification criteria.\n\n5. **Review of Testing Requirements and Results**: Independent review must include, but need not be limited to, the following:\n   - Review of site-specific seismic criteria, including the development of site-specific spectra and ground motion histories, and all other project-specific criteria.\n   - Review of seismic designs and analyses for both the equipment and all supporting systems, including the generation of in-structure motions.\n   - Review of all testing requirements and results.\n   - Review of all equipment quality control, quality assurance, maintenance, and inspection requirements.\n\n6. **Load Requirements and Design Criteria**: Structural components and systems must meet the seismic design criteria as per ASCE ",
+    "orig_tokens": 65325,
+    "comp_tokens": 1445,
+    "compression_ratio": 45.2,
+    "latency": 27.97,
+    "prompt_tokens": 2328,
+    "router": {
+      "doc_type": "structural",
+      "complexity": "moderate",
+      "chunk_size": 7,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the design requirements for military microgrids?",
+    "answer": "Based on the provided context, the design requirements for military microgrids include:\n\n1. **Energy Sources and Loads**: The microgrid must be capable of supporting the required load and providing power to the systems needed. This includes investigating a combination of energy sources, such as renewable energy and energy storage options, informed by mission requirements and prevailing DoD guidance.\n\n2. **Redundancy**: The microgrid must include redundant grid forming assets, redundant HMI visualization front-ends, and redundant independent black start sources. This ensures that the microgrid can continue to operate even if some components fail.\n\n3. **Load Shedding Capability**: The microgrid must be capable of load shedding to manage power demand and ensure reliability.\n\n4. **Re-Synchronization and Transition**: The microgrid must be capable of re-synchronization and soft (seamless) transition back to the external grid to maintain continuity of power supply.\n\n5. **Cybersecurity**: The design must include strategies to ensure that a cyber attack on the grid does not compromise the microgrid. Microgrid control design must follow UFC 4-010-06 for Cybersecurity of Facility Related Control Systems.\n\n6. **Performance Metrics**: The microgrid must be designed to meet specific performance metrics and goals, informed by agency policy, mission needs, and installation requirements.\n\n7. **Interoperability**: The system design must demonstrate minimum interoperability with existing or planned Utility Management Control Systems (UMCS) for aspects of microgrid operation or information from the microgrid system to UMCS for display or other purposes.\n\n8. **Facility Classification and Cybersecurity**: Real property and cybersecurity ownership, appropriate accreditation authority, and cyber-sustainment strategy must be identified and planned for.\n\n9. **Autonomous Operation**: The microgrid must be capable of autonomous operation, which involves consulting official policy and guidance provided by the appropriate military service to determine if a microgrid is an appropriate approach to advance resilience and mission assurance metrics.\n\n10. **Utility Management Control System (UMCS) Integration**: The system design must demonstrate minimum interoperability with existing or planned UMCS, supporting aspects of microgrid design including communication with or control of primary assets of the Utility Control Systems (UCS).\n\nThese requirements ensure that military microgrids are robust, reliable, and capable of supporting critical mission needs while adhering to DoD guidelines and cybersecurity standards.",
+    "orig_tokens": 20319,
+    "comp_tokens": 1216,
+    "compression_ratio": 16.7,
+    "latency": 26.11,
+    "prompt_tokens": 1963,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the energy storage requirements?",
+    "answer": "Based on the provided context, the energy storage requirements for a DoD microgrid include:\n\n1. **Performance Requirements**:\n   - **Blinkless Transition**: To support a smooth transition to or from external grid power without any power interruption.\n   - **Rapid Load Restoration**: To provide UPS-grade support for rapid load restoration.\n   - **Rapid Load-Following**: To follow and adjust to changing loads efficiently.\n   - **Renewable Utilization**: To facilitate very high percentages of renewable energy utilization.\n   - **Firming Renewable DER Output**: To smooth solar output and other renewable energy sources.\n   - **Minimizing Unnecessary Spinning Reserve and Fuel-Based Generation**: To reduce the need for spinning reserve and fuel-based generation.\n   - **Active Power Quality Support**: To ensure stable and high-quality power supply.\n   - **Demand Response and Peak-Shaving**: To support demand response and peak-shaving services.\n   - **Supporting Grid Services**: To facilitate other grid services such as automation of CONOPS (Critical Operations Plan) during outages.\n\n2. **Application and Operational States**:\n   - Define the specific applications, operational states, and scenarios the storage will support. This includes:\n     - The type of storage (e.g., Battery Energy Storage System (BESS), Flywheel, Compressed Air Energy Storage (CAES), etc.)\n     - Sizing of the storage system and inverter.\n     - How the system should manage State of Charge (SOC) and rate of charge/discharge.\n     - The appropriate type of storage based on the specific requirements and constraints.\n\n3. **Sizing and Management**:\n   - Sizing of the storage system should consider the specific requirements and constraints of the microgrid.\n   - The rate of charge/discharge should be managed to optimize cycle efficiency, especially for electrochemical-based storage systems.\n   - SOC management is crucial to ensure the storage system operates efficiently and meets the required performance metrics.\n\n4. **Thermal and Non-Electrical Requirements**:\n   - Consider the thermal and non-electrical requirements, including heating, cooling, industrial loads, mechanical loads, pollution abatement systems, or other specialty functions.\n   - Startup requirements of these loads, associated in-rush or motor start needs, and other non-linear load requirements must be specifically addressed during islanded operation.\n\n5. **Integration and Redundancy**:\n   - Redundant networked sources of generation are essential to ensure reliability and resilience.\n   - Energy storage should be integrated into",
+    "orig_tokens": 20319,
+    "comp_tokens": 1584,
+    "compression_ratio": 12.8,
+    "latency": 28.36,
+    "prompt_tokens": 2542,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "How should a microgrid control system be designed?",
+    "answer": "Designing a microgrid control system requires a comprehensive approach that integrates multiple control points and technologies. Here are the key control requirements and redundancy considerations based on the provided context:\n\n### Control Requirements:\n1. **Management of Renewable Energy System Output:**\n   - The control system should manage the output of renewable energy sources like solar, wind, and hydro. This includes adjusting the output based on the fluctuation of renewable energy sources.\n\n2. **Management of Energy Storage:**\n   - The system should manage the charging and discharging of energy storage devices such as batteries. This involves optimizing the charging and discharging cycles to match the load and renewable energy output.\n\n3. **Optimization of Fossil Fuel-Based Generation Load Factors:**\n   - The control system should optimize the load factors of fossil fuel-based generators to ensure efficient operation and minimize fuel consumption.\n\n4. **Dynamic Load Following:**\n   - The system should dynamically follow the load demand, ensuring that the microgrid can supply power to the load as needed, even when the load varies.\n\n5. **Optimization of Network Efficiency and Endurance:**\n   - The control system should optimize the network efficiency and endurance, ensuring that the microgrid can operate effectively even during islanded operation.\n\n6. **Islanded Operation for Resilience and Endurance:**\n   - During islanded operation, the control system should manage the load factor of paralleled generation units, shed discretionary loads, and optimize network efficiency and endurance.\n\n7. **Demand Response and Load Management:**\n   - The control system should implement demand response programs and load management strategies, including the use of energy storage and renewable energy sources to reduce demand or load shifting.\n\n8. **Power Factor Correction:**\n   - The control system should correct for non-resistive loads, ensuring that the voltage and current are properly aligned. This involves specifying operating procedures and the exact behavior of individual equipment and control elements.\n\n9. **Interoperability with Utility Control Systems (UMCS):**\n   - The control system should demonstrate interoperability with existing UMCS, supporting aspects of microgrid design including communication with, or control of, primary assets of the Utility Control Systems (UCS).\n\n10. **Microgrid Performance Metrics:**\n    - The control system should be designed to meet specific performance metrics and goals identified in the microgrid design process, including the ability to drop non-critical loads.\n\n### Redundancy Considerations:\n1. **Multiple Technologies for Renewable Energy:**\n   - Utilize multiple technologies for renewable energy sources to",
+    "orig_tokens": 20319,
+    "comp_tokens": 1080,
+    "compression_ratio": 18.8,
+    "latency": 26.92,
+    "prompt_tokens": 1552,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the renewable energy integration requirements for microgrids?",
+    "answer": "Based on the provided context, the integration of renewable energy into microgrids requires careful consideration of several factors to ensure reliability, efficiency, and compliance with DoD guidelines. Here are the key requirements and control aspects:\n\n### Renewable Energy Integration Requirements:\n1. **Site Constraints and Permits:**\n   - **Environmental Permits:** Footprint and environmental permitting issues associated with microgrid DER and energy storage locations.\n   - **Site Space and Climate Factors:** Site space, permit, and climate factors associated with renewable energy, including operational issues such as mission conflicts with wind turbine operation.\n   - **Building Code Issues:** Compliance with building codes.\n   - **Commercial Power Procurement Agreements:** Options available to cost share (capital cost or maintenance cost) and modifications to service contracts.\n\n2. **Redundancy:**\n   - **Grid Forming Assets:** At least two redundant grid forming assets.\n   - **HMI Visualization Front-Ends:** At least two redundant HMI visualization front-ends.\n   - **Independent Black Start Sources:** At least two redundant independent black start sources.\n   - **Load Shedding Capability:** Load shedding capability to manage load during grid outages.\n\n3. **Control Requirements:**\n   - **Low-Speed Control Supervisory Controller:** A low-speed control supervisory controller manages distributed control points over slower communications.\n   - **Renewable Energy System Output Management:** Manages renewable energy system output.\n   - **Energy Storage Management:** Manages energy storage.\n   - **Fossil Fuel Generation Load Factors Optimization:** Optimizes fossil fuel-based generation load factors.\n   - **Dynamic Load Following:** Dynamic load following to manage load variations.\n   - **Network Efficiency and Endurance Optimization:** Optimizes network efficiency and endurance.\n   - **Load Factor Management:** Manages load factor of paralleled generation units.\n   - **Shedding Discretionary Loads:** Sheds discretionary loads to increase system endurance.\n\n4. **Performance and Cost Tradeoffs:**\n   - **Techno-Economic Analysis:** Conduct a techno-economic analysis to determine the optimal DER type and size based on energy resource costs, impacts of interdependent design decisions, attractive economic or lifecycle solutions, and other performance factors.\n   - **Microgrid Design Tools:** Use microgrid design tools that meet Section 2911 requirements of Title 10 to develop conceptual designs, assess cost and performance tradeoffs, and establish requirements for future proposals for detailed designs.\n\n5. **Load Characterization Using AMI Data:**\n   - **Load Information:**",
+    "orig_tokens": 20319,
+    "comp_tokens": 1306,
+    "compression_ratio": 15.6,
+    "latency": 28.16,
+    "prompt_tokens": 1973,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the islanding requirements for military microgrids?",
+    "answer": "Based on the provided context, the islanding requirements for military microgrids include:\n\n1. **Black Start Generation**: The microgrid must have a black start capability to energize the islanded distribution system. This typically involves having a generator or energy storage system capable of starting up and providing power to the grid when the external grid is lost.\n\n2. **Additional Generation Capacity**: There must be sufficient additional generation capacity to support full critical load during islanded operation. This ensures that the microgrid can maintain essential services and operations without relying on external power sources.\n\n3. **Anti-islanding and Ride-through Requirements**: Inverter-based devices must adhere to IEEE 1547 Clause 8, including Anti-islanding and Ride-through requirements. This ensures that the microgrid can safely disconnect from the grid during an emergency and reconnect to it when external power is restored.\n\n4. **Redundancy**: The microgrid must be designed with redundancy to ensure reliability. This includes:\n   - **Redundant Grid Forming Assets**: At least two grid-forming assets must be available to ensure that the microgrid can maintain islanded operation.\n   - **Redundant HMI Visualization HMI Front-Ends**: At least two HMI front-ends must be available to ensure that the microgrid can be monitored and controlled effectively.\n   - **Redundant Independent Black Start Sources**: At least two independent black start sources must be available to ensure that the microgrid can restart and reconnect to the grid when external power is restored.\n   - **Load Shedding Capability**: The microgrid must be capable of load shedding to manage power during islanded operation and ensure that critical loads are maintained.\n\n5. **Testing and Validation**: The microgrid must be tested under real-world mission and load conditions to ensure that it can successfully island and black start all supported mission loads without external grid support. Testing results must be kept on file and reported annually.\n\n6. **Control Sequences and Automation**: The microgrid must have automated operation and restoration sequences consistent with installation and mission CONOPS. This ensures that the microgrid can operate and transition seamlessly between grid-connected and islanded modes.\n\n7. **Cyber Sustainment and Re-configurability**: The microgrid must be designed with cyber sustainment and re-configurability to ensure that it can withstand and recover from cyber attacks or other disruptions.\n\nThese requirements are critical for ensuring that military microgrids can operate reliably and maintain critical services during emergencies, thereby supporting mission continuity and resilience.",
+    "orig_tokens": 20319,
+    "comp_tokens": 1371,
+    "compression_ratio": 14.8,
+    "latency": 27.81,
+    "prompt_tokens": 2195,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the cybersecurity requirements for microgrid systems?",
+    "answer": "Based on the provided context, the cybersecurity requirements for microgrid systems include:\n\n1. **Compliance with UFC 4-010-06**: All facility-related control systems, including those separate from a utility monitoring and control system, must be planned, designed, acquired, executed, and maintained in accordance with UFC 4-010-06. This ensures that the microgrid's control design follows established cybersecurity guidelines.\n\n2. **Holistic Security Approach**: The design must include strategies to ensure that a cyber attack on the grid does not compromise the microgrid. This holistic approach aims to build security into the system rather than bolt it on later.\n\n3. **System Boundary Definition**: The system boundary must be defined based on mission needs, infrastructure configuration, and operational requirements. This includes identifying critical loads, mission owners, system owners, and cybersecurity accreditation authorities.\n\n4. **Risk Management Framework**: A risk management framework process must be initiated, which may include a Cybersecurity Authorization to Operate (ATO) by a DoD Approving Official (AO). This ensures that the microgrid is secure and can operate under various conditions.\n\n5. **Fail-Safe Operation**: The microgrid must have a fail-safe ability that resorts to load-dedicated (or pre-microgrid) operation following electrical system, communication, or other network disruptions. This ensures that critical loads can be maintained even if the primary grid is disrupted.\n\n6. **Cybersecurity Accreditation**: The microgrid must be accredited by the appropriate cybersecurity accreditation authority, as outlined in UFC 4-010-06. This ensures that the microgrid meets the necessary cybersecurity standards.\n\n7. **Redundancy and Islanding**: The microgrid must have redundancy and islanding capabilities. This ensures that the microgrid can operate independently and maintain critical loads without external grid support.\n\n8. **Testing and Validation**: Testing under real-world mission and load conditions is strongly recommended. This ensures that the microgrid performs as expected and meets the required performance metrics.\n\n9. **Compliance with Service Implementation Policy**: All information systems connected to or with software loaded onto DoD information grids must receive an interim or full authorization to operate/test prior to connection, as required by individual Service Implementation Policy.\n\nThese requirements ensure that the microgrid is secure, resilient, and capable of maintaining critical loads even in the face of cyber attacks or other disruptions.",
+    "orig_tokens": 20319,
+    "comp_tokens": 1108,
+    "compression_ratio": 18.3,
+    "latency": 26.51,
+    "prompt_tokens": 1812,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the generator requirements for military microgrids?",
+    "answer": "Based on the provided context, the generator requirements for military microgrids include:\n\n1. **Redundant Generation Sources**: At least two redundant grid-forming assets are required to ensure reliability and resilience. This redundancy is crucial for maintaining power supply during grid failures or during unscheduled outages.\n\n2. **Testing and Maintenance**: Generators must be tested in accordance with maintenance intervals and procedures as prescribed by manufacturers. Load banks must only be used where no alternative exists to test the system under load without unacceptable mission disruption. Testing must include operating generation under variable load factors and with reduced mission disruption or hard transition to end users.\n\n3. **Control and Automation**: Automated operation and restoration sequences are necessary to ensure consistent and reliable power supply. This includes testing under load, using load banks, and testing controls. The system should also have a startup and reintegration sequence, and integration with existing or planned supervisory control and data system/industrial control system (SCADA/ICS) based grid operation.\n\n4. **Cybersecurity and Resilience**: The system should be capable of cyber sustainment and re-configurability. This includes standardized ICS configuration management for streamlined operation and real-time user visibility to operational metrics.\n\n5. **Load Shedding Capability**: The microgrid should have the capability to shed discretionary loads to increase system endurance. This is particularly important for maintaining power supply during grid failures or unscheduled outages.\n\n6. **Black Start Capability**: The microgrid should be capable of re-synchronization and soft (seamless) transition back to the external grid. This capability is essential for ensuring continuous power supply after unplanned grid failures.\n\n7. **Energy Storage**: Energy storage is a critical component of a microgrid system. It helps in managing renewable energy output fluctuations and load variations, thereby improving the overall efficiency and reliability of the system.\n\n8. **Bi-directional Soft Transition**: A bi-directional soft (seamless) transition capability is necessary to facilitate the transition between the microgrid and the external grid, ensuring a smooth and uninterrupted power supply.\n\nThese requirements ensure that the microgrid system is robust, reliable, and capable of providing power during grid failures or unscheduled outages, thereby supporting mission-critical facilities.",
+    "orig_tokens": 20319,
+    "comp_tokens": 1345,
+    "compression_ratio": 15.1,
+    "latency": 26.33,
+    "prompt_tokens": 2057,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the distribution system requirements for microgrids?",
+    "answer": "Based on the provided context, the distribution system requirements for microgrids include:\n\n1. **Redundancy**: The microgrid must have redundant grid forming assets, redundant HMI Visualization HMI Front-Ends, and redundant Independent Black Start Sources. This ensures that the microgrid can continue to operate even if some of these critical components fail.\n\n2. **Load Shedding Capability**: The microgrid should be capable of load shedding to manage power demand and ensure critical loads are maintained.\n\n3. **Re-synchronization and Seamless Transition**: The microgrid must be capable of re-synchronization and soft (seamless) transition back to the external grid to maintain continuity of power supply.\n\n4. **Autonomous Operation**: The microgrid must be designed to operate autonomously, allowing facility-level DERs to parallel and energize an islanded distribution feeder. This requires dedicated paralleling switchgear, breaker protection, and updated device protection settings.\n\n5. **Secure Controls**: All microgrids must include secure controls to manage energy sources, loads, and distribution systems effectively.\n\n6. **Energy Sources and Loads**: The microgrid must include energy sources and loads, one or more points of common coupling (PCCs), electrical distribution, and switchgear.\n\n7. **Integration with Existing Infrastructure**: The design must ensure that the microgrid leverages existing capital assets and is adequate to support all operational conditions required by the microgrid.\n\n8. **Techno-Economic Analysis**: Early design must investigate specific energy sources, including renewable energy and energy storage options, based on mission requirements, service policy, and prevailing DoD guidance.\n\nThese requirements ensure that the microgrid is robust, reliable, and capable of operating independently or in conjunction with the external grid, while also being integrated with existing infrastructure to minimize disruptions and costs.",
+    "orig_tokens": 20319,
+    "comp_tokens": 1021,
+    "compression_ratio": 19.9,
+    "latency": 200.78,
+    "prompt_tokens": 1572,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the testing and commissioning requirements for microgrids?",
+    "answer": "Based on the provided context, the testing and commissioning requirements for microgrids are quite comprehensive and detailed. Here are the key points:\n\n### Testing and Commissioning Requirements:\n\n1. **Remote Operation and Control:**\n   - Remote operation of devices must be verified and controlled at the master control location.\n   - Device settings, timing, controls, paralleling, and protections must be validated.\n\n2. **Redundancy:**\n   - At least two redundant grid forming assets are required.\n   - At least two redundant HMI Front-Ends are required.\n   - At least two independent black start sources are required.\n   - Load shedding capability is required.\n   - The system must be capable of re-synchronization and soft (seamless) transition back to the external grid.\n\n3. **Periodic Reverification Testing:**\n   - Periodic reverification testing must be conducted at intervals prescribed by the Operations and Maintenance Test plan, typically three to five years.\n   - This testing must be coordinated with facility generator testing per UFC 3-540-01.\n   - Generator assets must be tested in accordance with maintenance intervals and procedures as prescribed by the manufacturers.\n   - Load banks must only be used where no alternative exists to test the system under load without unacceptable mission disruption.\n\n4. **Testing and Diagnostic Mode:**\n   - Testing must be conducted monthly or quarterly to verify the working order of the equipment and system.\n   - Testing can incorporate emergency generator testing and allow sources to be tested under load while mitigating unnecessary facility outages associated with moving to and from generator power.\n   - Training material and strategy must be updated appropriately to reflect system improvements and modifications.\n\n5. **System-Level Commissioning:**\n   - Each subsystem must operate as designed.\n   - The interconnected system must operate in every state of operation as designed.\n   - Design must support contingency of operations and installation emergency response plan.\n   - The system must meet each of the performance metrics used to inform design.\n   - System performance reverification and testing is performed by a qualified testing organization such as an AFCEC/COM (CEMIRT) type organization or by an approved commissioning contractor.\n\n6. **Periodic Operational Testing:**\n   - Periodic testing of the microgrid system must be conducted annually (coordinated with DoD\u2019s Energy Resilience Readiness Exercises) to verify generator readiness and operator familiarity.\n   - Testing can be monthly or quarterly to verify working order of the equipment and system.\n   - At a minimum, the",
+    "orig_tokens": 20319,
+    "comp_tokens": 1245,
+    "compression_ratio": 16.3,
+    "latency": 27.25,
+    "prompt_tokens": 1843,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the maintenance and operations requirements for microgrids?",
+    "answer": "Based on the provided context, the maintenance and operations requirements for microgrids include:\n\n1. **Device Isolation and Loaded Testing:**\n   - Ensure generation bypass and other device isolation, and perform loaded testing.\n   - Implement step loading to ensure loads can be added, removed, or segregated in manageable increments.\n\n2. **Configuration Management Plan:**\n   - Develop a configuration management plan and implement procedures for controlling changes to the design baseline over time.\n\n3. **Nonstandard Hardware Components:**\n   - Maintain a stock of nonstandard hardware components for operations and maintenance (O&M) including spares, repair parts, supplies, tools, test equipment, etc.\n\n4. **Equipment/System Documentation:**\n   - Develop in-depth operational training material for step-by-step microgrid operation under various conditions and states of operation.\n   - Include troubleshooting procedures, vendor contact information, and warranty information.\n   - Ensure all design modifications and expansions adhere to installation configuration management protocols.\n   - Design considerations should include looped distribution, multi-terminal switches, bypass of DERs and switchgear to minimize impact of maintenance and testing.\n\n5. **Redundancy:**\n   - Ensure redundant grid forming assets (minimum 2).\n   - Implement redundant HMI Visualization HMI Front-Ends (minimum 2).\n   - Include redundant Independent Black Start Sources (minimum 2).\n   - Incorporate load shedding capability.\n   - Be capable of re-synchronization and soft (seamless) transition back to the external grid.\n\n6. **Maintenance and Testing:**\n   - Identify and microgrid performance should be recorded as required by each Service.\n   - Validate operational states during commissioning, including black start, microgrid formation, generator paralleling, islanded inverter-based device interconnection, and supporting variable load states.\n   - Exercise the system in conditions as faithfully as possible to normal installation conditions, with full load during unplanned utility outages.\n\n7. **Resilience and Performance Requirements:**\n   - Ensure the microgrid can support autonomous operation, including resources required for O&M and testing throughout the system lifecycle.\n   - Include energy sources, loads, one or more PCCs, electrical distribution and switchgear, and secure controls.\n   - Implement redundant networked sources of generation and energy storage.\n   - Ensure bi-directional soft, \"blinkless\" transition capabilities.\n\n8. **Cybersecurity:**\n   - Plan, design, acquire, execute, and maintain facility-related control systems in accordance with UFC 4-010",
+    "orig_tokens": 20319,
+    "comp_tokens": 1128,
+    "compression_ratio": 18.0,
+    "latency": 27.22,
+    "prompt_tokens": 1714,
+    "router": {
+      "doc_type": "microgrid",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the design requirements for C5ISR facilities?",
+    "answer": "The design requirements for C5ISR facilities are stringent and multifaceted, encompassing both physical and operational aspects. Here are the key requirements based on the provided context:\n\n1. **Infrastructure Grading**: C5ISR facilities must be at least Grade 3, which is concurrently maintainable. They can be designed to be Grade 2 (redundant component) or Grade 4 (fault-tolerant) based on mission requirements. The decision to design at Grade 2 or 4 must be made during the planning/DD1391 development phase and validated by the CTR.\n\n2. **Electrical Requirements**: Facilities can range from small projects under 250 kVA to large capacity projects greater than 2,500 kVA. The electrical system design must consider the Specialized Technical Requirements and be capable of handling the mission's critical equipment, including transformers and generators, which must meet the same standards as the primary facility.\n\n3. **Telecommunications**: C5ISR facilities contain large amounts of data processing equipment, typically in central rooms or multiple rooms called data centers. These data centers must be properly networked for redundancy and flexibility. The telecommunications system can be determined using small, medium, and large scales.\n\n4. **Indoor and Outdoor Design Conditions**: C5ISR spaces must utilize outside design temperature criteria for Specialized Technical Requirements. Indoor spaces have stringent indoor air temperature and humidity requirements. The design must also consider the mission-criticality of the facility's assets and the Design Basis Threat analysis.\n\n5. **Security Requirements**: Enhanced security is a critical aspect of C5ISR facilities. A minimum clear area must be established around the facility and supporting structures, free of all obstacles, topographical features, and vegetation exceeding 8 inches. This clear area must be free of all obstructions to ensure the facility's security.\n\n6. **Redundancy and Resilience**: Non-mission space and users should be minimized and limited to the space and users required to execute the C5ISR mission. This requirement is to reduce risk to the mission, facility construction, and maintenance costs. The CTR identifies any spaces that must be part of the facility but do not have the highest level of mission criticality, allowing these spaces to have a lower infrastructure Grade than the rest of the C5ISR facility.\n\n7. **Physical Security and Antiterrorism**: C5ISR facilities are treated as inhabited buildings unless otherwise stipulated by project-specific guidance provided by the using agency or AHJ. Protective design requirements",
+    "orig_tokens": 29067,
+    "comp_tokens": 842,
+    "compression_ratio": 34.5,
+    "latency": 26.5,
+    "prompt_tokens": 1297,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the telecommunications room requirements?",
+    "answer": "Based on the provided context, the telecommunications room (TR) requirements are as follows:\n\n1. **No Ceiling**: TR spaces should be provided with no ceiling. In facilities with high structure, a hard ceiling is acceptable 24\" above the highest infrastructure within the room.\n\n2. **Co-location**: Co-locate telecommunications spaces within the common secure boundaries for the areas being served to the greatest extent practicable.\n\n3. **Security and Separation**: Special networks with higher security than Red networks must be in their own cable trays. The TR must be sized for the equipment and mission. When selecting the computer or equipment room site, avoid locations restricted by building components that limit expansion, such as elevators, building cores, outside walls, or other fixed building walls. \n\n4. **Accessibility**: Provide accessibility, including pathways, corridors, and clear door openings for the delivery of large equipment to the equipment room for initial delivery, anticipated service, or replacement.\n\n5. **Network Security**: Network Security Requirements (Black/Red/Special Red) must be included. \n\n6. **Power Density**: Power density per rack must be provided in kW per rack unit.\n\n7. **Interconnection Point**: An optional interconnection point within the horizontal cabling located between the HDA and the EDA to allow frequent reconfiguration and added flexibility.\n\n8. **Separation of MDAs**: MDAs must have separate pathways to each entrance room. Sharing fire protection zones, power distribution units, and air conditioning equipment between MDAs is prohibited. \n\n9. **Redundancy**: The facility must have redundant MDAs and an automatic backup for all critical telecommunications equipment.\n\n10. **Labeling**: C5ISR facilities rooms/spaces/areas must be labeled as indicated when applicable.\n\nThese requirements ensure that the telecommunications rooms are secure, accessible, and capable of supporting the mission with redundancy and flexibility.",
+    "orig_tokens": 29067,
+    "comp_tokens": 658,
+    "compression_ratio": 44.2,
+    "latency": 19.74,
+    "prompt_tokens": 1086,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the equipment room cooling requirements?",
+    "answer": "Based on the provided context, the equipment room cooling requirements are quite specific and stringent. Here are the key points:\n\n1. **Design Compliance**: Equipment rooms larger than 1000 square feet or with cooling design loads greater than 100kW must be validated using computational fluid dynamics (CFD) modeling. This ensures that the air distribution and heat management meet ASHRAE Thermal Guidelines for Data Processing Environments.\n\n2. **Cooling Methods**: Traditional methods include below-grade air distribution in the raised access floor and ducted overhead conditioned supply air. However, these methods have challenges and are not always preferred due to their convenience.\n\n3. **Specialized Cooling Equipment**: Equipment rooms typically have high sensible heat gain and require specialized cooling equipment selection. The cooling equipment must be capable of operating efficiently with high sensible heat ratios. Additionally, tight temperature and humidity environmental requirements must be considered when selecting equipment and controls.\n\n4. **Air Distribution**: Good air distribution across the entire data center or equipment room is essential. This can result in significant energy savings and improved thermal performance. The design must ensure that all rack inlet temperatures conform with ASHRAE Thermal Guidelines for Data Processing Environments at design load with N capacity components.\n\n5. **Avoiding Economizers**: Economizers for emergency cooling are not allowed for the primary system serving equipment rooms. This is to ensure precise humidity control.\n\n6. **Humidification**: Electronic equipment areas require less humidification per thousand BTUs per hour (MBH) of heating than comfort applications. Humidification needs are higher if excessive fresh air is admitted to the space, dehumidification during the cooling process is excessive, or if the humidity ratio of the outside ventilation air is less than the desired humidity ratio. When needed, consider humidifiers mounted integral to the cooling equipment or standalone wall-mounted humidifiers.\n\n7. **System Redundancy**: For Grade 2 systems, utilize N+20% redundancy where N is met by five or more components. This ensures that the system can maintain a minimum of N+1 redundancy, accounting for temperature rise during primary power loss.\n\n8. **Cooling Strategies**: In-row cooling units and equipment-based cooling are gaining attention due to their ability to remove heat from the source, increasing cooling efficiency and preventing thermal hot spots. Avoid reheat where possible and, if required, utilize waste heat.\n\nThese requirements emphasize the need for precise and efficient cooling systems, ensuring that the equipment rooms meet stringent environmental and performance standards.",
+    "orig_tokens": 29067,
+    "comp_tokens": 843,
+    "compression_ratio": 34.5,
+    "latency": 26.29,
+    "prompt_tokens": 1434,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the redundancy requirements for C5ISR systems?",
+    "answer": "Based on the provided context, redundancy requirements for C5ISR systems are critical to ensure mission continuity and reliability. The redundancy requirements are tied to the facility's mission classification, which can range from Grade 2 to Grade 4. Here are specific details:\n\n1. **Grade 3 Facilities**: These are the minimum requirements for C5ISR facilities. They must be designed to provide a high level of redundancy and resilience. This includes using automatic transfer switches (ATS), manual transfer switches (MTS), or static transfer switches (STS) on individual mechanical equipment to provide a dual power path. Dual power feed mechanical equipment is also an acceptable solution to reduce required square footage.\n\n2. **Grade 2 Facilities**: These are designed to operate at a decreased availability and reliability. They may use simpler redundant system architectures, but still need to ensure mission availability and reliability. The decision to design a facility for Grade 2 must be made during the planning/DD1391 development phase.\n\n3. **Grade 4 Facilities**: These are designed to have increased mission availability and reliability. They use more complex redundant system architectures to ensure high availability and maintain mission operations with minimal downtime. The decision to design a facility for Grade 4 must also be made during the planning/DD1391 development phase.\n\n4. **Redundancy in Mechanical and Electrical Systems**: Both mechanical and electrical systems must be configured with multiple redundant system architectures. This includes using ATS, MTS, or STS to provide a dual power path. Dual power feed mechanical equipment is also an acceptable solution to reduce required square footage.\n\n5. **Cost Considerations**: Redundancy requirements can significantly increase the cost of a project. It is crucial to account for these costs during the planning phase to avoid unexpected increases in project cost.\n\n6. **Data Centers and Telecommunications**: C5ISR facilities often contain large amounts of data processing equipment in data centers. These data centers must be properly networked for redundancy and flexibility. Telecommunications systems can be determined using small, medium, and large scales, and must be designed to ensure high availability and mission continuity.\n\n7. **Labeling and Documentation**: C5ISR facilities rooms/spaces/areas must be labeled when applicable. This helps in maintaining the facility's mission classification and ensures that operators can maintain equipment or replace faulty equipment while maintaining mission operations with minimal downtime.\n\nIn summary, redundancy requirements for C5ISR systems are critical to ensure mission continuity and reliability. Facilities must be designed to meet the required mission classification, with appropriate redundancy and resilience measures to",
+    "orig_tokens": 29067,
+    "comp_tokens": 798,
+    "compression_ratio": 36.4,
+    "latency": 26.54,
+    "prompt_tokens": 1219,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the physical security requirements for C5ISR facilities?",
+    "answer": "Based on the provided context, the physical security requirements for C5ISR facilities are stringent and include:\n\n1. **Minimum Clear Area**: Establish a clear area around the facility and supporting structures. This area must be free of all obstacles, topographical features, and vegetation exceeding 8 inches in height. This clear area is crucial for reducing the risk of unauthorized access and potential threats.\n\n2. **Design Basis Threats and Levels of Protection**: The installation must establish explicit project-specific Design Basis Threats and Levels of Protection in accordance with UFC 4-020-01. This ensures that the facility is designed to withstand and mitigate potential threats to its critical assets and personnel.\n\n3. **Enhanced Security Requirements**: C5ISR facilities come with enhanced security requirements. This includes establishing a minimum clear area around the facility and supporting structures. The clear area must be free of all obstacles, topographical features, and vegetation exceeding 8 inches in height.\n\n4. **Redundancy and Resilience**: Non-mission space and users should be minimized and limited to the space and users required to execute the C5ISR mission. This requirement is to reduce risk to the mission (both outside and insider threats), facility construction, and facility maintenance costs.\n\n5. **Space Types and Users**: Spaces that must be part of the facility but do not have the highest level of mission criticality can be allowed to have a lower infrastructure Grade than the rest of the C5ISR facility. This is determined by the CTR (Criticality Task Room) and is based on the Military Department Category Code.\n\n6. **Cybersecurity and Information Security**: All facility-related control systems must be planned, designed, acquired, executed, and maintained in accordance with UFC 4-010-06, and as required by individual Service Implementation Policy. Additionally, where SCIFs (Sensitive Compartmented Information Facilities) and SAPFs (Sensitive Compartmented Information Facilities) are included in the C5ISR facility space program, refer to UFC 4-010-05 for planning, design, and construction requirements.\n\n7. **Structural Engineering**: C5ISR facilities must be at least Grade 3. Facilities that can operate at a decreased availability and reliability may be designed to have an infrastructure Grading of 2. Facilities that require increased mission availability and reliability may be designed to have an infrastructure Grading of 4. The decision to design a facility for Grade 2 or 4 must be made during the planning/DD1",
+    "orig_tokens": 29067,
+    "comp_tokens": 850,
+    "compression_ratio": 34.2,
+    "latency": 26.68,
+    "prompt_tokens": 1348,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the HVAC requirements for equipment rooms?",
+    "answer": "Based on the provided context, the HVAC requirements for equipment rooms, particularly those with high sensible heat gain, include specialized cooling equipment selection. The equipment must be capable of operating efficiently with high sensible heat ratios and must comply with tight temperature and humidity environmental requirements. \n\nFor specialized equipment rooms, the HVAC system must provide air filtration, positive pressurization, and humidity control. The design must ensure good air distribution across the entire equipment room and comply with ASHRAE Thermal Guidelines for Data Processing Environments. \n\nFor equipment rooms larger than 1000 square feet or with cooling design loads greater than 100kW, CFD modeling must be used for validation. Computer Room Air Conditioning (CRAC) and Computer Room Air Handling Units (CRAH) are recommended as they are designed to meet stringent equipment room requirements. \n\nThe units serving electronic equipment rooms must be dedicated and cannot serve both electronic equipment rooms and non-critical climate cooled rooms. The use of air-side economizers is not permitted for the primary system serving equipment rooms, except for emergency cooling when approved by the mission owner and design authority review engineer.\n\nThe HVAC system must be capable of meeting the specialized requirements of electronic equipment rooms and provide positive pressure to prevent uncontrolled airflow from entering the room. The system must also ensure proper humidity control and filtration to protect sensitive electronic equipment. \n\nLastly, the HVAC system must be maintainable and capable of meeting the life cycle cost-effective criteria, considering available utilities, energy consumption, first cost, and maintenance cost over the life of the system.",
+    "orig_tokens": 29067,
+    "comp_tokens": 776,
+    "compression_ratio": 37.5,
+    "latency": 16.95,
+    "prompt_tokens": 1250,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the power and grounding requirements for C5ISR systems?",
+    "answer": "For C5ISR systems, power and grounding requirements are stringent and must be tailored to the specific needs of the facility. Here are the key points:\n\n1. **Power Requirements**:\n   - **Voltage and Frequency**: C5ISR facilities may require 400 Hz power, which can be provided using motor generators or static converters.\n   - **HVAC Systems**: HVAC systems must be capable of meeting the specialized requirements of electronic equipment rooms, including air filtration, positive pressurization, and humidity control.\n   - **Grade of Facilities**: The power systems must meet the Facility-required Grade to provide the required level of redundancy and resilience. Facilities that can operate at a decreased availability and reliability may be designed to have an infrastructure Grading of 2, while those requiring increased mission availability and reliability may be designed to have an infrastructure Grading of 4.\n   - **Cable Run**: All cables carrying 400-Hz power must be run in separate raceway systems.\n\n2. **Grounding and Bonding**:\n   - **Grounding**: Grounding and bonding must be reliable and provide both resilience and redundancy. Static transfer switches (STS) and power distribution units (PDU) must be used to ensure a dual power path.\n   - **Static Transfer Switches (STS)**: These are used to provide a dual power path for mechanical equipment, reducing the required square footage.\n   - **Cable Raceway Systems**: Cables carrying 400-Hz power must be run in separate raceway systems to ensure proper isolation and safety.\n\n3. **Security and Physical Protection**:\n   - **Clear Areas**: Establish a minimum clear area around the facility and supporting structures, free of all obstacles, topographical features, and vegetation exceeding 8 inches.\n   - **Design Basis Threat**: The Design Basis Threat analysis must consider the criticality of the facility's assets to the success of the facility's mission, including equipment located exterior to the facility, such as transformers and generators.\n   - **Stand-alone Facilities**: If standalone supporting facilities, such as central utility plants, are used, they must meet the same standards as the primary facility.\n\nThese requirements ensure that C5ISR systems are not only reliable but also secure, capable of maintaining operations during maintenance or fault conditions, and designed to meet the specialized needs of electronic equipment rooms.",
+    "orig_tokens": 29067,
+    "comp_tokens": 732,
+    "compression_ratio": 39.7,
+    "latency": 24.55,
+    "prompt_tokens": 1193,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the cable plant and infrastructure requirements?",
+    "answer": "Based on the provided context, the cable plant and infrastructure requirements for DoD C5ISR facilities include:\n\n1. **Cable Entry Ports and Boots**: Size cable entry ports as required based on the quantity and size of cables. Cable boots must be provided and sized according to the cables entering the entry port. Multi-cable modular-based compression-type transit systems are acceptable.\n\n2. **Power to Antenna Systems**: Provide power to exterior antenna systems by underground cable trench with removable covers. Underground pathways should be concrete encased to provide incoming services to the facility.\n\n3. **Lighting Interference**: Fluorescent and LED lighting can cause interference in radio systems. Therefore, fluorescent and LED lighting should be avoided in areas where radio systems are used.\n\n4. **Telecommunications Infrastructure**: Provide High Density Acceptance (HDA) and Intermediate Density Acceptance (IDA) for larger data centers to support increased cross connects and horizontal cabling. Close coordination with the facility's electronic equipment engineer is required to determine networking requirements and needs for these specific areas.\n\n5. **Cabling and Topology**: Underground pathways should be concrete encased to provide incoming services to the facility. Aerial pathways should comply with the space planning documents outlined in the applicable Service-specific governing document. For Army projects, refer to TM 5-691 Utility Systems Design Requirements for guidance.\n\n6. **Facility Physical Security**: Facility physical security requirements should be included in the electronic equipment engineering requirements document. This includes systems to be commissioned, rack layouts, power density per rack, network list, network security requirements (Black/Red/Special Red), preliminary electrical distribution and sizing, preliminary mechanical system concept and sizing, preliminary fire protection systems (fire alarm, detection, suppression) concepts, and systems to be commissioned.\n\n7. **Backup Power and Generators**: Backup power and generators should be considered based on the facility Grade requirement determined by the mission. For Army projects, refer to TM 5-691 Utility Systems Design Requirements for guidance.\n\n8. **Plumbing**: Plumbing requirements should be included in the electronic equipment engineering requirements document.\n\n9. **Electrical Engineering**: Appropriate electrical distribution architecture must be implemented to meet the facility Grade requirement determined by the mission. This includes power density per rack unit, rack layouts, and preliminary electrical distribution and sizing.\n\n10. **Data Center Room Size**: Data center rooms and areas must be sized for the equipment and mission. This section outlines the architecture and product performance requirements of the telecommunications system.\n\n11. **Backbone C",
+    "orig_tokens": 29067,
+    "comp_tokens": 502,
+    "compression_ratio": 57.9,
+    "latency": 25.82,
+    "prompt_tokens": 860,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the antenna and RF system requirements?",
+    "answer": "Based on the provided context, the antenna and RF system requirements include:\n\n1. **Minimum Separation Distances**: These distances are specified in Table 2-1 of the context. For example, high-power transmitter stations require a separation of 25 miles (40 km) from very low frequency sources and 15 miles (24 km) from low frequency/high frequency sources. Specific requirements for each project are developed in the MESEP (Master Engineering Support Plan).\n\n2. **Direction Finder (DF) Stations**: The context specifies minimum separation distances for DF stations. For example, DF stations must not subtend a vertical angle of 1/4 mile (0.4 km) from elevated horizontal conductors at the base of the DF antenna.\n\n3. **RF Building and Antenna Separation**: The context specifies that the separation between the RF building and antennas should be no less than 300 feet (91 m). Additionally, the separation between the RF building and operations building should be no less than 1,500 feet (457 m).\n\n4. **Incandescent Lighting for Radio Systems**: The context recommends using incandescent lighting for radio systems that are easily influenced by EMI (Electromagnetic Interference). This is to minimize interference.\n\n5. **Electromagnetic Compatibility (EMC) Evaluation**: The context emphasizes the importance of EMC evaluation to ensure that the site is isolated from sources of interference and that structures within the site are properly dispersed.\n\n6. **Power Supply for Antenna Systems**: The context specifies that power to exterior antenna systems should be provided by underground cable trench with removable covers. Fluorescent and LED lighting can cause interference in radio systems, so these types of lighting should be avoided.\n\n7. **Control Link and Operations Building Separation**: The separation between the RF building and the operations building should be no less than 1,500 feet (457 m).\n\nThese requirements are critical for ensuring effective communication systems and minimizing interference, which is essential for maintaining secure and reliable operations.",
+    "orig_tokens": 29067,
+    "comp_tokens": 933,
+    "compression_ratio": 31.2,
+    "latency": 22.67,
+    "prompt_tokens": 1647,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the testing and acceptance requirements for C5ISR facilities?",
+    "answer": "Based on the provided context, the testing and acceptance requirements for C5ISR facilities are quite stringent and involve multiple aspects. Here are the key points:\n\n1. **Facility Grading**: Facilities must be at least Grade 3, concurrently maintainable. They can be designed to Grade 2 (redundant component) or Grade 4 (fault-tolerant) based on mission requirements. The decision to design at Grade 2 or 4 must be made during the planning/DD1391 development phase. The CTR must validate the facility grade, and justification for grades other than Grade 3 must be captured in planning documents.\n\n2. **Physical Security and Antiterrorism**: C5ISR facilities must adhere to UFC 4-010-01, assuming they are inhabited buildings. Additional protective design requirements must be established in accordance with UFC 4-020-01. Non-mission space and users should be minimized and limited to the space and users required to execute the C5ISR mission.\n\n3. **Resilience and Redundancy**: Systems must be reliable and provide both resilience and redundancy. This is specified in Table 1-1 of UFC 4-141-03. The Designer of Record (DOR) must incorporate Systems Manual (SM) requirements into construction documents via UFGS 01 91 00.15.\n\n4. **Clear Areas**: Establish a minimum clear area around the facility and supporting structures, free of all obstacles, topographical features, and vegetation exceeding 8 inches.\n\n5. **Commissioning**: For Army facilities, provide Systems Manual (SM) for all C5ISR facilities in accordance with ER 1110-345-723 and ER 25-345-1.\n\n6. **Staff Training**: Training of systems must cover the project system Sequence of Operations.\n\nThese requirements ensure that C5ISR facilities are not only mission-critical but also secure, resilient, and maintainable. The specific infrastructure grading (Grading 2 or 4) and the associated testing and acceptance procedures are critical to meeting these stringent requirements.",
+    "orig_tokens": 29067,
+    "comp_tokens": 833,
+    "compression_ratio": 34.9,
+    "latency": 23.44,
+    "prompt_tokens": 1308,
+    "router": {
+      "doc_type": "c5isr",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the design standards for military unaccompanied housing?",
+    "answer": "Based on the provided context, the design standards for military unaccompanied housing (UH) include specific space requirements and amenity standards. Here are the key points:\n\n### Space Requirements:\n1. **Bedroom**: 170 Net Square Feet (NSF) for a 1-bedroom unit and 72 NSF per resident for a 2-4 bedroom unit.\n2. **Closet**: 12 NSF per resident.\n3. **Bathroom**: 35 NSF.\n4. **Living Room**: 70 NSF per resident for a 1-bedroom unit and 140 NSF for a 2-4 bedroom unit.\n5. **Kitchenette**: 40 NSF for a 1-bedroom unit and 45 NSF for a 2-4 bedroom unit.\n6. **Laundry**: 1 laundry unit for every 15 residents.\n7. **Community Kitchen**: 1 kitchen per every 150 residents.\n8. **Multipurpose Space**: A minimum of 8 NSF per resident.\n9. **Parking**: 70% of total bed spaces.\n\n### Amenities:\n- **Community Activity Space and/or Community Passive Space**: Must be provided on the first floor if included.\n- **ABA Compliant Door Opening System**: Required for Air Force projects that include these spaces.\n- **Multipurpose Space**: Can include communal areas such as common laundries, communal kitchens, and areas around CQ desks.\n- **Community Kitchen**: 1 kitchen per every 150 residents.\n- **Laundry**: 1 laundry unit for every 15 residents.\n- **Parking**: 70% of total bed spaces.\n\n### Additional Standards:\n- **Habitability Standards**: Must comply with the NDAA for Fiscal Year 2024, which established uniform minimum habitability standards for covered military unaccompanied housing.\n- **Design Standards**: Must follow the current version of applicable MilDep policies and criteria, such as DAFI 32-6000 for Air Force projects and OPNAVINST 11010.20 for Navy projects.\n\nThese standards ensure that military unaccompanied housing units are efficient, comfortable, and meet the needs of service members.",
+    "orig_tokens": 5836,
+    "comp_tokens": 982,
+    "compression_ratio": 5.9,
+    "latency": 25.05,
+    "prompt_tokens": 1945,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the room size and layout requirements?",
+    "answer": "Based on the provided context, the room size and layout requirements for DoD housing are as follows:\n\n### Room Size Requirements:\n- **Bedroom**: The minimum size for a bedroom is 118 Net Square Feet (NSF) for personnel at or above E7-E9, and 135 NSF for personnel at or above E5-E6. For personnel at or above WO and E1-E4, the minimum size is 72 NSF.\n- **Living Room**: The minimum size for a living room is 70 NSF per resident in a private unit, and 140 NSF in a shared unit.\n- **Kitchenette**: The minimum size for a kitchenette is 40 NSF, and for a community kitchen, it is 45 NSF.\n\n### Layout Requirements:\n- **Bedroom**: Must be private and can be shared with not more than one other person.\n- **Living Room**: Can be private or shared, with a minimum of 72 NSF in a shared unit without a living room.\n- **Kitchen**: Must have a sink, refrigerator, oven, cooktop, and storage cabinets.\n- **Laundry**: In-room laundry facilities are required, with one laundry station for every 15 residents. Community laundry facilities are required for every 150 residents.\n- **Multipurpose Space**: Must have a minimum of 8 NSF per resident.\n- **Parking**: Must provide standard parking spaces for 70% of the resident capacity.\n\n### Additional Notes:\n- **Efficiency Units**: These units combine living room and bedroom, kitchenette, bathroom, and closet.\n- **Kitchenette in Facilities Built Prior to 2014**: Must have a microwave, refrigerator, and sink.\n- **Community Kitchen**: Required for every 150 residents.\n- **Multipurpose Space**: Must be a minimum of 8 NSF per resident.\n- **Parking**: Must provide standard parking spaces for 70% of the resident capacity.\n\nThese requirements ensure that the housing units are both functional and provide adequate privacy and space for personnel.",
+    "orig_tokens": 5836,
+    "comp_tokens": 729,
+    "compression_ratio": 8.0,
+    "latency": 22.27,
+    "prompt_tokens": 1223,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the bathroom and toilet facility requirements?",
+    "answer": "Based on the context provided, the bathroom and toilet facility requirements are as follows:\n\n- **Bathroom**: Must have a minimum of a shower and a toilet.\n- **Toilet**: Located at the main entry level, a minimum of one unisex, ABA accessible restroom is required. If there is no sink in the member's unit, a community kitchen with a sink must be available.\n\nThe context also mentions that for public restrooms, shutoff valves at all fixtures, hose bibs on exterior walls, floor drains in janitor closets, laundry rooms, and public restrooms, and conduit systems with pull strings and outlet boxes for monitoring systems are required. Additionally, for kitchens, a sink located in the unit, separate from the bathroom, storage cabinets, and countertop space are required.",
+    "orig_tokens": 5836,
+    "comp_tokens": 763,
+    "compression_ratio": 7.6,
+    "latency": 9.43,
+    "prompt_tokens": 1285,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the common area and amenity requirements?",
+    "answer": "Based on the provided context, the common area and amenity requirements for DoD housing are as follows:\n\n### Common Area Requirements:\n1. **Entrance**: Must be provided.\n2. **Laundry**: Must be provided.\n3. **Bulk Storage**: Must be provided.\n4. **Utility Space**: Must be provided.\n5. **Circulation Space**: Must be provided.\n6. **Multipurpose Space**: Must be provided. A minimum of 8 NSF per resident is required.\n7. **Vending Areas**: Must be provided.\n8. **Public Toilets**: Must be provided. A minimum of one unisex, ABA accessible restroom is required.\n9. **Supply Storage Rooms**: Must be provided.\n10. **Recycling Collection Space**: Must be provided.\n11. **Administration Area**: Must be provided.\n12. **Community Kitchen**: Must be provided. A minimum of a sink, a refrigerator, an oven and cooktop (or stove), storage cabinet, and countertops for food preparation is required.\n13. **Community Kitchenette**: Must be provided. A minimum of a microwave, a refrigerator, and a sink located in the unit, separate from the kitchen, is required for facilities built prior to 2014.\n\n### Amenities:\n1. **Kitchens**: Must have a sink with hot and cold water, a microwave, a refrigerator, countertop space, storage cabinets, and a cooktop (or stove).\n2. **Laundry**: Must be provided.\n3. **Vending Areas**: Must be provided.\n4. **Multipurpose Space**: Must be provided. A minimum of 8 NSF per resident is required.\n5. **Public Toilets**: Must be provided. A minimum of one unisex, ABA accessible restroom is required.\n6. **Recycling Collection Space**: Must be provided.\n7. **Administration Area**: Must be provided.\n8. **Community Kitchen**: Must be provided. A minimum of a sink, a refrigerator, an oven and cooktop (or stove), storage cabinet, and countertops for food preparation is required.\n9. **Community Kitchenette**: Must be provided. A minimum of a microwave, a refrigerator, and a sink located in the unit, separate from the kitchen, is required for facilities built prior to 2014.\n\n### Specific Space Requirements:\n- **Bedroom**: Minimum of 118 NSF for personnel at pay grades 01 and above, WO, and E7",
+    "orig_tokens": 5836,
+    "comp_tokens": 653,
+    "compression_ratio": 8.9,
+    "latency": 26.19,
+    "prompt_tokens": 1131,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the kitchen and dining facility requirements?",
+    "answer": "Based on the provided context, the kitchen and dining facility requirements are as follows:\n\n1. **Kitchen Requirements:**\n   - **Minimum Space:** A kitchen or community kitchen must have at a minimum a sink, a refrigerator, an oven and cooktop (or stove), storage cabinet, and countertop space for food preparation.\n   - **Type of Kitchen:**\n     - **Kitchenette (Facilities built prior to 2014):** Must have at a minimum a microwave, a refrigerator, and a sink located in the unit, separate from the bathroom.\n     - **Kitchenette (Facilities built in 2014 or later):** Must have at a minimum a microwave, a refrigerator, a sink located in the unit, separate from the bathroom, storage cabinets, and countertop space.\n\n2. **Dining Facility Requirements:**\n   - The context does not explicitly mention dining facilities, but it does specify requirements for kitchens and laundry spaces. Therefore, dining facilities would typically be part of the kitchen or community kitchen space, ensuring that there is a designated area for meal preparation and dining.\n\n3. **Space Requirements:**\n   - **Kitchenette (Facilities built prior to 2014):** Must have a minimum of 40 NSF.\n   - **Kitchenette (Facilities built in 2014 or later):** Must have a minimum of 45 NSF.\n   - **Kitchen (Community Kitchen):** Must have a minimum of 40 NSF.\n\n4. **Amenity Standards:**\n   - **Sink:** Must have hot and cold water.\n   - **Refrigerator:** Must be included in the kitchenette or community kitchen.\n   - **Oven and Cooktop:** Must be included in the kitchenette or community kitchen.\n   - **Storage Cabinet and Countertop Space:** Must be included in the kitchenette or community kitchen.\n   - **Microwave:** Must be included in the kitchenette or community kitchen.\n   - **Sink:** Must be separate from the bathroom in the kitchenette or community kitchen.\n   - **Storage Cabinets and Countertop Space:** Must be included in the kitchenette or community kitchen.\n   - **Sink:** Must be separate from the bathroom in the kitchenette or community kitchen.\n   - **Microwave:** Must be included in the kitchenette or community kitchen.\n   - **Refrigerator:** Must be included in the kitchenette or community kitchen.\n   - **Countertop Space:** Must",
+    "orig_tokens": 5836,
+    "comp_tokens": 776,
+    "compression_ratio": 7.5,
+    "latency": 26.69,
+    "prompt_tokens": 1299,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the HVAC and mechanical system requirements?",
+    "answer": "Based on the provided context, the HVAC and mechanical system requirements include:\n\n1. **Class A2L Refrigerants**: HVAC systems using Class A2L (flammable) refrigerants must keep all refrigerant lines and containment vessels (such as heat exchangers) exterior to the occupied spaces.\n\n2. **Ventilation and Moisture Mitigation**: Consideration should be given to all components of natural and mechanical ventilation to provide a system that is adequately sized and easily maintained to avoid excessive indoor moisture, mold growth, and poor indoor air quality. Bathroom exhaust fans must be interlocked with the light switch or run in continuous operation.\n\n3. **System Design**: Systems should be designed to use MERV 11 filters, and if not designed for MERV 11 filters, post-construction systems should use MERV 8 filters. Fan noise should adhere to ASHRAE guidelines.\n\n4. **Monitoring Systems**: Conduit systems should be provided with pull strings and outlet boxes to accommodate later installation of a monitoring system as part of all new construction. This system should include all common areas such as hallways, lobbies, lounges, classrooms/special use rooms, common kitchens, game rooms, laundry rooms, vending areas, stairwells (interior and exterior), elevators, entrances and exits, building exterior, and additional areas/facilities adjacent to the UH facility.\n\n5. **Ventilation Systems**: Systems should be designed to run continuously or be automatically connected with a humidity sensor, and fan noise should adhere to ASHRAE guidelines.\n\n6. **Lighting and Blackout Curtains**: Lighting systems should be controlled by the user and can be controlled by the user. Blackout curtains should be functional to limit exterior light infiltration.\n\n7. **Parking**: 70% of total bed spaces should be provided for parking.\n\nThese requirements ensure that the HVAC and mechanical systems are efficient, maintainable, and meet the standards for indoor air quality and safety.",
+    "orig_tokens": 5836,
+    "comp_tokens": 836,
+    "compression_ratio": 7.0,
+    "latency": 21.3,
+    "prompt_tokens": 1397,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the laundry facility requirements?",
+    "answer": "Based on the provided context, the laundry facility requirements for DoD housing include:\n\n1. **Laundry Space per Resident**: The context does not explicitly state the laundry space per resident, but it does mention the laundry for every 15 residents. This implies that the laundry space should be designed to accommodate 15 residents per laundry station.\n\n2. **Laundry Stations**: The context suggests that there should be a laundry station for every 15 residents. This aligns with the requirement for a community kitchen per every 150 residents, as laundry facilities are often integrated into kitchen spaces.\n\n3. **Laundry Facilities**: Laundry facilities should include washers and dryers. The context mentions that in-room laundry or community laundry for every 15 residents is required.\n\n4. **Laundry Amenities**: The laundry area should include necessary amenities such as washers and dryers, and possibly additional equipment like ironing boards, hangers, and storage cabinets.\n\n5. **Laundry Space per Unit**: Given the context, the laundry space per unit should be designed to accommodate the laundry needs of 15 residents. This would typically be a significant area, possibly a room or a dedicated area within the building.\n\n6. **Laundry Area Layout**: The laundry area should be well-organized and accessible. It should include a designated area for sorting and storing laundry, a separate area for washing and drying, and possibly a storage area for linens and other laundry items.\n\n7. **Laundry Area Design**: The laundry area should be designed to meet the privacy standards required for the unit type. For example, if the unit is a 1-bedroom unit, the laundry area should be designed to meet the 170 NSF requirement for a bedroom.\n\n8. **Laundry Area Accessibility**: The laundry area should be accessible to all residents, including those with mobility issues, and should comply with accessibility standards.\n\nIn summary, the laundry facility requirements for DoD housing should include a laundry station for every 15 residents, with washers and dryers, and should be designed to accommodate the laundry needs of 15 residents per station, meeting the necessary space and accessibility standards.",
+    "orig_tokens": 5836,
+    "comp_tokens": 845,
+    "compression_ratio": 6.9,
+    "latency": 23.43,
+    "prompt_tokens": 1459,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the storage and closet space requirements?",
+    "answer": "Based on the provided context from the DoD Design Standards for Unaccompanied Housing, the storage and closet space requirements are as follows:\n\n- **Closet Space**: The minimum requirement is 12 Net Square Feet (NSF) per resident. This applies to both 1-bedroom and 2-4 bedroom units.\n\n- **Storage Space**: The context does not explicitly mention storage space requirements. However, it does specify kitchenette and laundry space requirements, which are typically used for storage purposes. For kitchenettes, the minimum space is 40 NSF, and for laundry, it is 40 NSF per resident for 1-bedroom units and 45 NSF per resident for 2-4 bedroom units.\n\nThese standards ensure that residents have sufficient space for their personal belongings and necessities, promoting a comfortable living environment.",
+    "orig_tokens": 5836,
+    "comp_tokens": 703,
+    "compression_ratio": 8.3,
+    "latency": 9.69,
+    "prompt_tokens": 1206,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the accessibility and ADA compliance requirements?",
+    "answer": "Based on the provided context, the accessibility and ADA compliance requirements for DoD housing design are as follows:\n\n1. **Main Building Entrance and Emergency Egress**: The main building entrance on the ground level and at least one emergency egress must be designed in accordance with Architectural Barriers Act (ABA) requirements. This includes clearances and door accesses in the building main entry/vestibule being used by visitors.\n\n2. **Handicapped Accessible Facilities**: At least one unisex, ABA accessible restroom must be provided. Additionally, a handicapped accessible drinking fountain should be included.\n\n3. **Multipurpose Space**: If a Charge of Quarters (CQ) Desk is part of the project, an ABA compliant counter for visitors should be provided. Multipurpose spaces, such as common laundries, communal kitchens, and areas around the CQ desk, should also include any communal areas that meet ABA standards.\n\n4. **Security and Monitoring**: The MilDep requirements specify locations for electronic locks and mechanical key/tumbler locks. This requirement supersedes UFC 4-021-02, Electronic Security Systems, specifically for Permanent Party Unaccompanied Housing.\n\n5. **Habitability Standards**: The standards set forth in Table A-1 Inspection Parameters apply to all PP UH located on military installations under the Secretary\u2019s jurisdiction. Table A-1 Inspection Parameters include structural soundness, door locks, and monitoring capabilities. MilDep guidance makes installation personnel responsible for monitoring these parameters.\n\n6. **Minimum Configuration and Privacy Standards**: All MilDeps must follow the minimum configuration and privacy standards for permanent party personnel. These standards vary by pay grade and include minimum Net Square Footage (NSF) requirements for bedrooms, living rooms, bathrooms, kitchens, and closets.\n\n7. **Security and Lighting**: Functional exterior and interior locks and lighting should be provided. These requirements apply both post-construction and after major renovations before residents move in.\n\n8. **Parking**: 70% of total bed spaces should be provided for parking.\n\n9. **Doors and Windows**: Functional locks on exterior and interior doors and windows should be provided. These requirements apply both post-construction and after major renovations before residents move in.\n\n10. **Community Activity and Passive Spaces**: For Air Force projects that include a Community Activity Space and/or Community Passive Space on the first floor, an ABA compliant door opening system is required. No additional accommodations are necessary to comply with ABA standards.\n\nThese requirements ensure that DoD",
+    "orig_tokens": 5836,
+    "comp_tokens": 960,
+    "compression_ratio": 6.1,
+    "latency": 27.17,
+    "prompt_tokens": 1749,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the IT and communications infrastructure requirements?",
+    "answer": "Based on the provided context, the IT and communications infrastructure requirements for DoD housing facilities include:\n\n1. **Permanent Conduit Raceway System**: A permanently installed conduit raceway system is required to support future needs of telecommunication systems. This ensures flexibility for future upgrades and expansions.\n\n2. **Data Outlets**: At least one data outlet is provided for each bedroom and one for each living room. These outlets are designed to be flexible and easily accessible for furniture, ensuring that residents can easily connect their devices.\n\n3. **Wireless Internet Service**: Most UH facilities will receive wireless internet service from a contracted provider. Adequate equipment space is provided to meet the needs of this service, ensuring that residents can access the internet without limitations.\n\n4. **Wi-Fi Wireless Access Points**: Infrastructure for Wi-Fi wireless access points is provided, including boxes, conduit with pull strings, cable trays, and cabinets. These components must conform to applicable criteria, ensuring reliable and secure wireless connectivity.\n\n5. **Cable Television (CATV)**: Cable television infrastructure is provided, including boxes, conduit with pull strings, cable trays, and cabinets. This ensures that residents have access to cable television services.\n\n6. **Intrusion Detection/Monitoring System (IDS)**: Infrastructure for Intrusion Detection/Monitoring (IDS) systems is provided, including conduit with pull strings and boxes. This ensures that the facility is equipped to monitor and detect potential security threats.\n\n7. **Video Surveillance System (VSS)**: Infrastructure for Video Surveillance System (VSS) is provided, including conduit with pull strings and boxes. This ensures that the facility is equipped with surveillance capabilities to monitor and secure the area.\n\nThese requirements are designed to ensure that DoD housing facilities are equipped with robust and flexible IT and communications infrastructure, supporting both current and future needs.",
+    "orig_tokens": 5836,
+    "comp_tokens": 550,
+    "compression_ratio": 10.6,
+    "latency": 19.12,
+    "prompt_tokens": 976,
+    "router": {
+      "doc_type": "housing",
+      "complexity": "moderate",
+      "chunk_size": 5,
+      "top_k": 10,
+      "max_tokens": 512
+    }
+  }
+]

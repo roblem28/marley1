@@ -1,0 +1,1486 @@
+[
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the metering and monitoring requirements?",
+    "expanded_query": "What are the metering and monitoring requirements? CT PT SCADA energy management",
+    "answer_mode": "partial_support",
+    "family_override_applied": "metering",
+    "family_name": "metering",
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": false,
+      "missing": [
+        "numeric value with unit",
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "final_answer": "The retained text specifies: Telecommunications Systems \u2013 Identify space required for. It does not provide a complete metering requirement set in the retained sections.",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "metering_partial_support",
+    "clipped_lines_rejected": null,
+    "chosen_evidence_text": [
+      "1-6 CYBERSECURITY.",
+      "All facility-related control systems (including systems separate from a utility monitoring",
+      "and control system) must be planned, designed, acquired, executed, and maintained in",
+      "accordance with UFC 4-010-06, and as required by individual Service Implementation",
+      "2-2 SITE EXTERIOR POWER DISTRIBUTION SYSTEMS..",
+      "Provide the site utility distribution system that is compatible with the existing system and",
+      "comply with UFC 3-550-01.",
+      "feeder, the designer of record must coordinate with the government authority and",
+      "3-2.1 Basis of Design.",
+      "Document design decisions throughout the design process."
+    ],
+    "coverage_targets": "monitoring-specific",
+    "orig_tokens": 22013,
+    "evidence_tokens": 471,
+    "compression_ratio": 46.7,
+    "top_sections": [
+      {
+        "index": 7,
+        "header": "1-6 CYBERSECURITY.",
+        "dense": 0.3201,
+        "sparse": 0.9753,
+        "rerank": -5.6619
+      },
+      {
+        "index": 23,
+        "header": "2-2 SITE EXTERIOR POWER DISTRIBUTION SYSTEMS..",
+        "dense": 0.3617,
+        "sparse": 1.0,
+        "rerank": -7.7269
+      },
+      {
+        "index": 50,
+        "header": "3-2.1 Basis of Design.",
+        "dense": 0.3668,
+        "sparse": 0.6153,
+        "rerank": -8.2785
+      },
+      {
+        "index": 98,
+        "header": "3-3.11 Power One-Line/Riser Diagrams.",
+        "dense": 0.3357,
+        "sparse": 0.8436,
+        "rerank": -8.8469
+      },
+      {
+        "index": 51,
+        "header": "3-2.2 Electrical Calculations \u2013 Overview.",
+        "dense": 0.453,
+        "sparse": 0.6546,
+        "rerank": -8.8879
+      },
+      {
+        "index": 103,
+        "header": "3-3.16 Schedules and Elevations.",
+        "dense": 0.4331,
+        "sparse": 0.5676,
+        "rerank": -9.065
+      },
+      {
+        "index": 79,
+        "header": "3-2.17 Renewable Energy System Calculations.",
+        "dense": 0.3219,
+        "sparse": 0.3034,
+        "rerank": -10.0011
+      },
+      {
+        "index": 88,
+        "header": "3-3.2.5.1 Required Information.",
+        "dense": 0.3886,
+        "sparse": 0.6336,
+        "rerank": -10.0621
+      },
+      {
+        "index": 11,
+        "header": "2-1 GENERAL.",
+        "dense": 0.3658,
+        "sparse": 0.6819,
+        "rerank": -10.3226
+      },
+      {
+        "index": 90,
+        "header": "3-3.3 Demolition Plans.",
+        "dense": 0.2894,
+        "sparse": 0.8144,
+        "rerank": -10.3528
+      }
+    ],
+    "router": {
+      "doc_type": "electrical",
+      "top_k": 10,
+      "max_tokens": 160
+    }
+  },
+  {
+    "doc": "ufc_electrical",
+    "query": "What are the requirements for renewable energy integration?",
+    "expanded_query": "What are the requirements for renewable energy integration? IEEE 1547 PV photovoltaic solar wind",
+    "answer_mode": "requirement_list",
+    "family_override_applied": null,
+    "family_name": null,
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": false,
+      "missing": [
+        "numeric value with unit",
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "final_answer": "Comply with UFC 3-540-08.\nComply with UFC 3-440-01.\n\u2022 Refer to UFC 3-540-01 for additional load analysis requirements,\n\u2022 Provide sizing calculations in accordance with UFC 3-520-01,",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "requirement_list_capped",
+    "clipped_lines_rejected": [
+      "incorporate the requirements of criteria under development in accordance with Section",
+      "3-2.3 Load Analysis.",
+      "calculations on NFPA 70 and use load information provided in",
+      "calculations exceeding these requirements must be specifically",
+      "UFC 3-501-01",
+      "section entitled \u201cStationary Batteries and Battery Chargers\u201d.",
+      "ASHRAE 90.1 calculations:",
+      "the ASHRAE 90.1 automatic receptacle control criteria, identify as a",
+      "NFPA criteria.",
+      "load has a maximum demand load of 9,000W.",
+      "UFC 3-501-01",
+      "design approach taken to comply with ASHRAE 90.1.",
+      "section entitled \u201cStationary Batteries and Battery Chargers\u201d.",
+      "systems (microgrids) in accordance with the criteria provided in Section 3-",
+      "Section 3-2.3.1.g.",
+      "equipment to provide a minimum of approximately 15% combination of",
+      "UFC 3-501-01",
+      "APPENDIX E REFERENCES",
+      "DEPARTMENT OF DEFENSE",
+      "UFC 1-200-01, DoD Building Code",
+      "UFC 3-520-01, Interior Electrical Systems",
+      "UFC 3-550-04: Installation Microgrid Design",
+      "UFC 3-501-01",
+      "UFC 3-570-01, Cathodic Protection",
+      "UFC 4-021-02, Electronic Security Systems",
+      "UFC 3-501-01",
+      "UFC 3-501-01",
+      "NFPA 70, National Electrical Code",
+      "structures, sewage pump stations, and fueling facilities in accordance with the general",
+      "requirements of NFPA 70:",
+      "general requirements of NFPA 70:",
+      "accordance with the general requirements of IEEE C2 except utilize the",
+      "UFC 3-501-01",
+      "UFC 3-501-01",
+      "Describe modifications, if required,",
+      "Refer to NSTISSI",
+      "UFC 3-501-01",
+      "equipment in accordance with Section 2-1.8.",
+      "disciplines, and provide required connections, either empty conduits or power wiring as",
+      "required.",
+      "UFC 3-501-01",
+      "software tools; hand calculations are typically only acceptable for minor modifications to",
+      "if specific software tools are required for the analyses.",
+      "software, they must also be provided in either ETAP, SKM or EasyPower so that they",
+      "UFC 3-501-01",
+      "calculations shall verify with the Navy which software package they are using at that",
+      "ASHRAE 90.1 calculations.",
+      "UFC 3-501-01",
+      "3-3.5 Power Plans."
+    ],
+    "chosen_evidence_text": [
+      "3-2.17 Renewable Energy System Calculations.",
+      "Provide calculations for renewable energy system project requirements.",
+      "incorporate the requirements of criteria under development in accordance with Section",
+      "\u2022 IEEE Std 1547 interface compliance.",
+      "2-2.8 Renewable Energy Systems.",
+      "Comply with UFC 3-540-08.",
+      "2-3.8 Renewable Energy Systems.",
+      "Comply with UFC 3-440-01.",
+      "3-2.3 Load Analysis.",
+      "Preliminary Basis of Design."
+    ],
+    "coverage_targets": null,
+    "orig_tokens": 22013,
+    "evidence_tokens": 1079,
+    "compression_ratio": 20.4,
+    "top_sections": [
+      {
+        "index": 79,
+        "header": "3-2.17 Renewable Energy System Calculations.",
+        "dense": 0.5476,
+        "sparse": 1.0,
+        "rerank": 3.298
+      },
+      {
+        "index": 31,
+        "header": "2-2.8 Renewable Energy Systems.",
+        "dense": 0.53,
+        "sparse": 0.72,
+        "rerank": -2.9021
+      },
+      {
+        "index": 40,
+        "header": "2-3.8 Renewable Energy Systems.",
+        "dense": 0.5151,
+        "sparse": 0.72,
+        "rerank": -3.0579
+      },
+      {
+        "index": 52,
+        "header": "3-2.3 Load Analysis.",
+        "dense": 0.327,
+        "sparse": 0.4269,
+        "rerank": -5.2284
+      },
+      {
+        "index": 111,
+        "header": "APPENDIX E REFERENCES",
+        "dense": 0.2791,
+        "sparse": 0.4856,
+        "rerank": -6.2802
+      },
+      {
+        "index": 17,
+        "header": "2-1.6 Energy Efficiency and Sustainable Design.",
+        "dense": 0.2853,
+        "sparse": 0.3093,
+        "rerank": -7.4085
+      },
+      {
+        "index": 22,
+        "header": "2-1.11 NFPA 70 (NEC) / IEEE C2 (NESC) Design Interface Points.",
+        "dense": 0.3217,
+        "sparse": 0.3159,
+        "rerank": -9.3076
+      },
+      {
+        "index": 50,
+        "header": "3-2.1 Basis of Design.",
+        "dense": 0.3773,
+        "sparse": 0.3268,
+        "rerank": -9.9105
+      },
+      {
+        "index": 51,
+        "header": "3-2.2 Electrical Calculations \u2013 Overview.",
+        "dense": 0.3571,
+        "sparse": 0.4063,
+        "rerank": -9.9633
+      },
+      {
+        "index": 92,
+        "header": "3-3.5 Power Plans.",
+        "dense": 0.3333,
+        "sparse": 0.4351,
+        "rerank": -10.0021
+      }
+    ],
+    "router": {
+      "doc_type": "electrical",
+      "top_k": 10,
+      "max_tokens": 160
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the progressive collapse prevention requirements?",
+    "expanded_query": "What are the progressive collapse prevention requirements? UFC 4-023-03 alternate load path redundancy tie force",
+    "answer_mode": "governing_reference",
+    "family_override_applied": null,
+    "family_name": null,
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "final_answer": "When required, apply UFC 4-023-03, Design of Buildings to Resist Progressive",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "single_governing_line",
+    "clipped_lines_rejected": [
+      "2.5.1 \u2013 Applicability [Replacement]",
+      "are capable of resisting the effects of progressive collapse according to UFC 4-",
+      "2.5.2 \u2013 Load Combinations [Deletion]",
+      "2.5.3 \u2013 Stability Requirements [Deletion]",
+      "present the same requirements with more clarity. One exception is Item i in",
+      "UFC 3-301-01",
+      "objective greater than that specified in Table 2-1 in RP10, refer to ASCE 41-17",
+      "Section 2.2.2.",
+      "and possessions can be determined using the ASCE Hazard Tool",
+      "The ASCE Hazard Tool",
+      "UFC 3-301-01",
+      "Table 4-1(a) Structural Performance Objectives1,2",
+      "i Unacceptable risk exposure CP in BSE-1E CP in BSE-1E CP in BSE-1E",
+      "UFC 3-301-01",
+      "UFC 3-301-01",
+      "Table 4-1(b) Nonstructural Performance Objectives1,2,3",
+      "Addition",
+      "i Unacceptable risk exposure Not required Not required Not required Not required Not required Not required",
+      "UFC 3-301-01",
+      "sion, the agency may supplement the initial scope with evaluation considering the \u2018LS\u2019 performance level at the BSE-2E or BSE-2N seismic hazard level",
+      "UFC 3-301-01",
+      "STRUCTURES IN RISK CATEGORY IV",
+      "essential (Table 2-2).",
+      "and Retrofit of Existing Buildings (herein-after referred to simply as ASCE 41-17).",
+      "as the BSE-1N earthquake, adopting the terminology used in ASCE 41-17.",
+      "UFC 3-301-01",
+      "the S - and S - values of ASCE 7-22, by risk coefficients C (ASCE 7-22 Figure 22-",
+      "adopted in ASCE 41-17 as well.",
+      "consistent with Table 4.1(b) of this UFC, RP10 Table 2.2 and ASCE 41-17 Table 2.3.",
+      "must be performed by an independent team of Registered Design Professionals in the",
+      "extreme cyclic loads. In addition to a final review, a Design Review Panel should be",
+      "UFC 3-301-01",
+      "listed in Section X.1 of Resource Paper 2 of FEMA P-750, NEHRP Recommended",
+      "Exception:",
+      "replace 2024 IBC Table 1604.5.",
+      "design of nonstructural components must be determined in accordance with the criteria",
+      "used in ASCE 7-22.",
+      "UFC 3-301-01",
+      "earthquake-generated forces are not considered, ASCE 7-22 Section 2.3 applies.",
+      "combinations 6 and 7, must be replaced by Equations B-1 and B-2 of this UFC.",
+      "building design by listing required modifications for specific 2024 IBC sections.",
+      "requirements for applying the ASCE 7-22 structural and nonstructural component",
+      "provisions to conventional DoD building design by listing required modifications",
+      "for specific ASCE 7-22 sections. The ASCE 7-22 sections that are adopted by",
+      "provisions of Chapter 7 and Appendix B apply as they are written in ASCE 7-22.",
+      "acquisition, addition to, and relocation of existing buildings. For seismic",
+      "UFC 3-301-01",
+      "presented in the form of modifications to Chapters 11, 12, and 13 of ASCE 7.",
+      "earthquake recovery role, the 2024 IBC/ASCE 7-22 requires higher design lateral",
+      "While the 2024 IBC/ASCE 7-22",
+      "components in this UFC are supplemented by guidance provided in this",
+      "UFC 3-301-01",
+      "in ASCE 7-22 Section 13.2.2 on certification of mechanical and electrical",
+      "This appendix contains Table E-1,",
+      "which replaces Table 1607.1 of the 2024 IBC and includes additional occupancy",
+      "on thermoplastic materials for replacement of timber bridges including",
+      "B-6 DEAD LOADS.",
+      "UFC 3-301-01",
+      "wherever Table 1607.1 is referenced, it must be replaced by Table E-1 of this UFC.",
+      "UFC 3-301-01",
+      "procedures in this Appendix minimizes the need for SDC use, but the SDC is required",
+      "Section 21.2.3.",
+      "shall be permitted to be determined in accordance with Section 11.4.5.2, with",
+      "and at 1-second period (S ) must be determined as 2/3 of S and S , respectively.",
+      "UFC 3-301-01",
+      "accordance with Section B-16 within the prescribed performance objectives of Section",
+      "mechanical, and electrical component requirements of Section B-22.",
+      "must be assumed to occur along any horizontal direction of a structure.",
+      "resistance must be provided.",
+      "factor, I , used in Section B-22, must be the value specified in Sections B-22.4.4.",
+      "UFC 3-301-01",
+      "defined in ASCE 7-22 as follows: A fault determined to be active by the Authority Having",
+      "generally be used to comply with the 2024 IBC and Chapter 2 of this UFC.",
+      "alternate procedure, a nonlinear structural analysis must be performed.",
+      "with ASCE 7-22 Section 11.4.6. Application of the NSP needs to comply with the",
+      "UFC 3-301-01",
+      "associated spectral accelerations must be as specified herein (MCE and BSE-",
+      "system and its connections must be evaluated for their adequacy to provide",
+      "a. Replace references to ASCE 41-06 w/Supplement 1 with ASCE/SEI 41-17.",
+      "b. Replace references to Section 3.3.3 of ASCE 41-06 w/Supplement 1 with",
+      "c. Replace references to Section 3.3.3.3.2 of ASCE 41-06 w/Supplement 1 with",
+      "d. Replace reference to Equation 3-16 of ASCE/SEI 41-06 w/Supplement 1 with",
+      "of Section B-16.1 or Section B-16.2. For the NDP, MCE ground motions must",
+      "be determined using procedures prescribed in ASCE 7-22 Section 16.2.",
+      "UFC 3-301-01",
+      "of Section B-16.1 or Section B-16.2. For the NDP, BSE-1N ground motions must",
+      "be determined using procedures prescribed in ASCE 7-22 Section 16.2.",
+      "The redundancy coefficient, \u03c1, must",
+      "analysis at the peak (maximum base shear) of the NSP pushover curve must be",
+      "ground motion records must be used in place of the quantity E .",
+      "UFC 3-301-01",
+      "required to provide the building with an ability to resist collapse when ground motion-",
+      "acceptance criteria contained in ASCE 41-17 must be used to demonstrate acceptable",
+      "performance (see ASCE 41-17 Table 2-3).",
+      "developed by the designer and approved by the design review panel (see Section B-",
+      "demonstrate acceptable performance (see ASCE 41-17 Table 2-3).",
+      "design review panel (see Section B-1.2)."
+    ],
+    "chosen_evidence_text": [
+      "1-8.2 Progressive Collapse Analysis and Design.",
+      "When required, apply UFC 4-023-03, Design of Buildings to Resist Progressive",
+      "3-2.3 Section 2.5 - LOAD COMBINATIONS FOR EXTRAORDINARY EVENTS.",
+      "2.5.1 \u2013 Applicability [Replacement]",
+      "When required, strength and stability must be checked to ensure that structures",
+      "are capable of resisting the effects of progressive collapse according to UFC 4-",
+      "2.5.2 \u2013 Load Combinations [Deletion]",
+      "Delete this section in its entirety.",
+      "2.5.3 \u2013 Stability Requirements [Deletion]",
+      "Delete this section in its entirety."
+    ],
+    "coverage_targets": null,
+    "orig_tokens": 62574,
+    "evidence_tokens": 2294,
+    "compression_ratio": 27.3,
+    "top_sections": [
+      {
+        "index": 9,
+        "header": "1-8.2 Progressive Collapse Analysis and Design.",
+        "dense": 0.573,
+        "sparse": 1.0,
+        "rerank": 4.1627
+      },
+      {
+        "index": 66,
+        "header": "3-2.3 Section 2.5 - LOAD COMBINATIONS FOR EXTRAORDINARY EVENTS.",
+        "dense": 0.4392,
+        "sparse": 0.8237,
+        "rerank": 1.825
+      },
+      {
+        "index": 180,
+        "header": "Table 2-2",
+        "dense": 0.3932,
+        "sparse": 0.899,
+        "rerank": -3.0105
+      },
+      {
+        "index": 99,
+        "header": "4-2.2 Performance Objectives for Evaluation and Retrofit using ASCE 41-17.",
+        "dense": 0.3798,
+        "sparse": 0.318,
+        "rerank": -3.0459
+      },
+      {
+        "index": 181,
+        "header": "Table 2-2",
+        "dense": 0.2794,
+        "sparse": 0.453,
+        "rerank": -8.3333
+      },
+      {
+        "index": 159,
+        "header": "APPENDIX B ALTERNATE DESIGN PROCEDURE FOR BUILDINGS AND OTHER",
+        "dense": 0.3151,
+        "sparse": 0.2562,
+        "rerank": -9.1546
+      },
+      {
+        "index": 5,
+        "header": "1-6 OVERVIEW OF THIS UFC.",
+        "dense": 0.2818,
+        "sparse": 0.2878,
+        "rerank": -9.7705
+      },
+      {
+        "index": 691,
+        "header": "Table 2-1",
+        "dense": 0.3977,
+        "sparse": 0.3383,
+        "rerank": -9.8178
+      },
+      {
+        "index": 925,
+        "header": "Table 2-2",
+        "dense": 0.3502,
+        "sparse": 0.357,
+        "rerank": -10.1554
+      },
+      {
+        "index": 161,
+        "header": "7-22 is less than 40 psf, the effective snow load is permitted to be taken as zero.",
+        "dense": 0.2276,
+        "sparse": 0.1864,
+        "rerank": -10.3945
+      }
+    ],
+    "router": {
+      "doc_type": "structural",
+      "top_k": 10,
+      "max_tokens": 64
+    }
+  },
+  {
+    "doc": "ufc_structural",
+    "query": "What are the blast resistance requirements?",
+    "expanded_query": "What are the blast resistance requirements? UFC 4-010-01 antiterrorism explosion protective design",
+    "answer_mode": "governing_reference",
+    "family_override_applied": null,
+    "family_name": null,
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "final_answer": "Not specified in the retrieved governing sections.",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "blast_clean_abstention",
+    "clipped_lines_rejected": [
+      "COMPONENTS",
+      "2024 IBC Section 1613",
+      "references Chapter 13 of ASCE 7-22. Because ASCE 7-22 is the primary source of",
+      "design requirements for these components, this Appendix cites ASCE 7-22 provisions",
+      "UFC 3-301-01",
+      "Table 13.5-1.",
+      "must review architectural (as well as mechanical and electrical) component anchorage",
+      "structural engineer must also identify installed architectural (as well as mechanical and",
+      "UFC 3-301-01",
+      "unbraced columns in the system) must be considered in structural design.",
+      "UFC 3-301-01",
+      "The structural engineer must",
+      "design forces and frame deflections that must be accommodated by the panels and",
+      "UFC 3-301-01",
+      "addressed in Section 13.2 of TMS 402, while the design of adhered veneer is",
+      "addressed in Section 13.3 of the same document.",
+      "SECTION A-A",
+      "UFC 3-301-01",
+      "in ASCE 7-22 Table 12.12-1.",
+      "earthquake loading in accordance with ACI 355.2, Qualification of Post-Installed",
+      "UFC 3-301-01",
+      "tification per ASCE 7-22 Section13.2.3, where shake table",
+      "testing provides the basis for certification, testing must be",
+      "UFC 3-301-01",
+      "UFC 3-301-01",
+      "NFPA 13.",
+      "minimum value set forth by ASCE 7-22 Equation 13.3-3. Forces based on ASCE 7-22",
+      "UFC 3-301-01",
+      "UFC 3-301-01",
+      "second (ASCE 7-22-Section 11.2 definition for Component, rigid). ASCE 7-16 Table",
+      "accordance with ASCE 7-22 Equation 13.3-1, where W is the weight of the pipes, their",
+      "result in rigid pipes having a maximum period of vibration of 0.06 seconds, is given in",
+      "UFC 3-301-01",
+      "Table C-1",
+      "UFC 3-301-01",
+      "Table C-2",
+      "UFC 3-301-01",
+      "Table C-3",
+      "equivalent static lateral force may be computed using ASCE 7-22 Equation 13.3-1, with",
+      "be required.",
+      "be required.",
+      "UFC 3-301-01",
+      "maximum displacement due to F , but not less than 4 in.",
+      "of Chapter 3 of this UFC, and ASCE 7-22 Chapter 15.",
+      "be considered to be a nonbuilding structure (see ASCE 7-22 Chapter 15).",
+      "in Section C-3.2.2 of this UFC.",
+      "designed for the equivalent static lateral force defined in ASCE 7-22 Section 13.3.1",
+      "using the and values in ASCE 7-22 Table 13.6-1.",
+      "UFC 3-301-01",
+      "guy cables to a minimum of 10 percent of stack seismic forces, F .",
+      "accordance with ASCE 7-22 Section 13.6.11.",
+      "UFC 3-301-01",
+      "UFC 3-301-01",
+      "requirements, a retainer plate is not required for the bottom of the car.",
+      "spreader bracket, which is not required to be tied to a building structure, should be",
+      "spreader brackets are required for tie brackets spaced greater than 14 ft (4.3 m).",
+      "UFC 3-301-01",
+      "UFC 3-301-01",
+      "UFC 3-301-01",
+      "consider their amplified response in the vertical direction, in addition to horizontal",
+      "UFC 3-301-01",
+      "UFC 3-301-01",
+      "[Supplement]",
+      "must be either derived using ICC-ES AC156 or developed from a study based on",
+      "for each axis must be generated from the time histories defined in Section 2-15.2",
+      "UFC 3-301-01",
+      "of UFC 3-301-02, and be peak broadened by 15%.",
+      "spectra per Section 2-17.4.4 of UFC 3-301-02 must be used to determine",
+      "motions, demand RRS, test plan, and test results must be reviewed",
+      "professionals must have documented experience in the appropriate disciplines,",
+      "Manual [Addition]",
+      "must be maintained in a file identified as \u201cEquipment Seismic Certification",
+      "UFC 3-301-01",
+      "to be certified is required to bear permanent marking or nameplates constructed",
+      "Nameplates must be",
+      "equipment/component is seismically certified. Modification or replacement must",
+      "number in accordance with the drawings/specifications and the O&M manuals.",
+      "UFC 3-301-01",
+      "section properties.",
+      "must be used. Seismic separations must be at least 125% of the",
+      "separation required by ASCE 7-16.",
+      "Structural Members. [Addition]",
+      "[Addition]",
+      "building design by listing required modifications for specific 2024 IBC sections.",
+      "requirements for applying the ASCE 7-22 structural and nonstructural component",
+      "provisions to conventional DoD building design by listing required modifications",
+      "for specific ASCE 7-22 sections. The ASCE 7-22 sections that are adopted by",
+      "provisions of Chapter 7 and Appendix B apply as they are written in ASCE 7-22.",
+      "acquisition, addition to, and relocation of existing buildings. For seismic",
+      "UFC 3-301-01",
+      "presented in the form of modifications to Chapters 11, 12, and 13 of ASCE 7.",
+      "earthquake recovery role, the 2024 IBC/ASCE 7-22 requires higher design lateral",
+      "While the 2024 IBC/ASCE 7-22",
+      "components in this UFC are supplemented by guidance provided in this",
+      "UFC 3-301-01",
+      "in ASCE 7-22 Section 13.2.2 on certification of mechanical and electrical",
+      "This appendix contains Table E-1,",
+      "which replaces Table 1607.1 of the 2024 IBC and includes additional occupancy",
+      "on thermoplastic materials for replacement of timber bridges including"
+    ],
+    "chosen_evidence_text": [
+      "APPENDIX C GUIDANCE FOR SEISMIC DESIGN OF NONSTRUCTURAL",
+      "COMPONENTS",
+      "RC IV buildings, are required to remain operational following a design earthquake (BSE-",
+      "2024 IBC Section 1613, as modified by Chapter 2 of this UFC, governs the seismic",
+      "2024 IBC Section 1613",
+      "references Chapter 13 of ASCE 7-22. Because ASCE 7-22 is the primary source of",
+      "design requirements for these components, this Appendix cites ASCE 7-22 provisions",
+      "Section 1705.13.6 of UFC 3-301-01 requires that an initial walk-down inspection of new",
+      "UFC 3-301-01",
+      "In addition to initial walk-down inspections performed at building commissioning,"
+    ],
+    "coverage_targets": null,
+    "orig_tokens": 62574,
+    "evidence_tokens": 1752,
+    "compression_ratio": 35.7,
+    "top_sections": [
+      {
+        "index": 163,
+        "header": "APPENDIX C GUIDANCE FOR SEISMIC DESIGN OF NONSTRUCTURAL",
+        "dense": 0.287,
+        "sparse": 0.4449,
+        "rerank": -8.0004
+      },
+      {
+        "index": 84,
+        "header": "3-7.2 Section 13.2 - GENERAL DESIGN REQUIREMENTS.",
+        "dense": 0.3073,
+        "sparse": 0.2386,
+        "rerank": -8.3128
+      },
+      {
+        "index": 974,
+        "header": "Table 2-2",
+        "dense": 0.4122,
+        "sparse": 0.753,
+        "rerank": -9.0003
+      },
+      {
+        "index": 145,
+        "header": "7-2.1 Section 12.1 \u2013 STRUCTURAL DESIGN BASIS.",
+        "dense": 0.2706,
+        "sparse": 0.5065,
+        "rerank": -9.0788
+      },
+      {
+        "index": 480,
+        "header": "Table 3-1",
+        "dense": 0.3171,
+        "sparse": 0.6261,
+        "rerank": -9.3734
+      },
+      {
+        "index": 5,
+        "header": "1-6 OVERVIEW OF THIS UFC.",
+        "dense": 0.2848,
+        "sparse": 0.6353,
+        "rerank": -9.5361
+      },
+      {
+        "index": 860,
+        "header": "Table 7-1",
+        "dense": 0.3428,
+        "sparse": 0.6385,
+        "rerank": -9.639
+      },
+      {
+        "index": 517,
+        "header": "Table 3-1",
+        "dense": 0.3211,
+        "sparse": 0.6141,
+        "rerank": -9.6728
+      },
+      {
+        "index": 9,
+        "header": "1-8.2 Progressive Collapse Analysis and Design.",
+        "dense": 0.1846,
+        "sparse": 0.0,
+        "rerank": -9.7386
+      },
+      {
+        "index": 861,
+        "header": "Table 7-1",
+        "dense": 0.3405,
+        "sparse": 0.6141,
+        "rerank": -9.9586
+      }
+    ],
+    "router": {
+      "doc_type": "structural",
+      "top_k": 10,
+      "max_tokens": 64
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the cybersecurity requirements for microgrid systems?",
+    "expanded_query": "What are the cybersecurity requirements for microgrid systems? NIST RMF UFC 4-010-06 risk management framework",
+    "answer_mode": "requirement_list",
+    "family_override_applied": null,
+    "family_name": null,
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": false,
+      "missing": [
+        "numeric value with unit",
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "final_answer": "Designers must refer to UFC 4-010-06 for all microgrid designs as the primary resource\nDesigner of Record must coordinate with the relevant service-specific authorities and\nAll installation microgrids must include the following elements: energy\nThe design must include strategies to assure that a cyber attack on the grid does not",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "requirement_list_capped",
+    "clipped_lines_rejected": [
+      "accreditation authority (UFC 4-010-06 is the primary resource for planning",
+      "UFC 3-550-04",
+      "UFC 3-550-04",
+      "2-2 PERFORMANCE REQUIREMENTS.",
+      "APPENDIX C CYBERSECURITY FOR MICROGRIDS",
+      "UFC 3-550-04",
+      "UFC 3-550-04",
+      "APPENDIX A MICROGRID BACKGROUND INFORMATION",
+      "must be renewable by fiscal year 2025 and each year thereafter (note the goal is an",
+      "designers must estimate load with sufficient confidence process using available",
+      "UFC 3-550-04",
+      "UFC 3-550-04",
+      "UFC 3-550-04",
+      "1-9 CYBERSECURITY.",
+      "and control system) must be planned, designed, acquired, executed, and maintained in",
+      "accordance with UFC 4-010-06, and as required by individual Service Implementation",
+      "information grids must receive an interim or full authorization to operate/test prior to",
+      "connection in accordance with UFC 4-010-06 and as required by individual Service",
+      "microgrid design tools (see Table 4-1) to produce a techno-economic analysis of",
+      "UFC 3-550-04",
+      "6-1.3 Microgrid Formation.",
+      "no utility reference, the resources must be able to define their own reference frequency",
+      "required for black start should be fitted with UPS (this is particularly applicable to",
+      "side is energized with stable voltage, it switches back to its normal position to allow the",
+      "microgrids, and AFCEC Energy Directorate (AFCEC/CN) must coordinate on all third"
+    ],
+    "chosen_evidence_text": [
+      "4-2.1.11 for further details on each element.",
+      "\u2022 Defining system boundary (based on stakeholders and mission",
+      "accreditation authority (UFC 4-010-06 is the primary resource for planning",
+      "UFC 3-550-04",
+      "2-2.3 Cybersecurity and Risk Management Framework.",
+      "Designers must refer to UFC 4-010-06 for all microgrid designs as the primary resource",
+      "Designer of Record must coordinate with the relevant service-specific authorities and",
+      "UFC 3-550-04",
+      "2-2 PERFORMANCE REQUIREMENTS.",
+      "Agency policy, mission needs, and installation requirements should inform the"
+    ],
+    "coverage_targets": null,
+    "orig_tokens": 19471,
+    "evidence_tokens": 434,
+    "compression_ratio": 44.9,
+    "top_sections": [
+      {
+        "index": 47,
+        "header": "4-2.1.11 for further details on each element.",
+        "dense": 0.6778,
+        "sparse": 0.7076,
+        "rerank": 4.8999
+      },
+      {
+        "index": 26,
+        "header": "2-2.3 Cybersecurity and Risk Management Framework.",
+        "dense": 0.6766,
+        "sparse": 1.0,
+        "rerank": 4.5375
+      },
+      {
+        "index": 19,
+        "header": "2-2 PERFORMANCE REQUIREMENTS.",
+        "dense": 0.5689,
+        "sparse": 0.7919,
+        "rerank": 4.5161
+      },
+      {
+        "index": 98,
+        "header": "APPENDIX C CYBERSECURITY FOR MICROGRIDS",
+        "dense": 0.7497,
+        "sparse": 0.8533,
+        "rerank": 4.3056
+      },
+      {
+        "index": 96,
+        "header": "APPENDIX A MICROGRID BACKGROUND INFORMATION",
+        "dense": 0.6297,
+        "sparse": 0.8252,
+        "rerank": 3.2469
+      },
+      {
+        "index": 27,
+        "header": "2-2.4 Utility Management Control System (UMCS) Integration.",
+        "dense": 0.4183,
+        "sparse": 0.278,
+        "rerank": 1.3639
+      },
+      {
+        "index": 8,
+        "header": "1-9 CYBERSECURITY.",
+        "dense": 0.5687,
+        "sparse": 0.0,
+        "rerank": -0.0393
+      },
+      {
+        "index": 50,
+        "header": "4-2.1.3 Power System Modeling and Microgrid Design Modeling.",
+        "dense": 0.5109,
+        "sparse": 0.6281,
+        "rerank": -0.2031
+      },
+      {
+        "index": 83,
+        "header": "6-1.3 Microgrid Formation.",
+        "dense": 0.4774,
+        "sparse": 0.4402,
+        "rerank": -0.5218
+      },
+      {
+        "index": 41,
+        "header": "4-1 MICROGRID PERFORMANCE-BASED PLANNING AND DESIGN.",
+        "dense": 0.4413,
+        "sparse": 0.6373,
+        "rerank": -1.662
+      }
+    ],
+    "router": {
+      "doc_type": "microgrid",
+      "top_k": 10,
+      "max_tokens": 160
+    }
+  },
+  {
+    "doc": "ufc_microgrid",
+    "query": "What are the islanding requirements for military microgrids?",
+    "expanded_query": "What are the islanding requirements for military microgrids? PCC black start grid disconnect off-grid soft transition",
+    "answer_mode": "requirement_list",
+    "family_override_applied": "islanding",
+    "family_name": "islanding",
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": false,
+      "missing": [
+        "numeric value with unit",
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "final_answer": "3-1 OFF-GRID SYSTEM ENDURANCE.\n3-4 RESTORATION TIME AND SOFT TRANSITION.\n2-1 MINIMUM DESIGN REQUIREMENTS.\nThe microgrid system is responsible for transitioning to islanded power following a",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "islanding_behavioral",
+    "clipped_lines_rejected": null,
+    "chosen_evidence_text": [
+      "6-2.2 Commercial Utility Relations.",
+      "Establishing a microgrid can significantly change the business relationship between the",
+      "UFC 3-550-04",
+      "There are limits on the amount of power that must be provided by",
+      "All networked devices and systems must be in compliance with IEEE 1547 Chapter 8",
+      "Inverter based devices must comply with UL 1741.",
+      "Special design attention must be given to cases requiring accommodation of the",
+      "UFC 3-550-04",
+      "3-4 RESTORATION TIME AND SOFT TRANSITION.",
+      "The microgrid system is responsible for transitioning to islanded power following a"
+    ],
+    "coverage_targets": "behavioral",
+    "orig_tokens": 19471,
+    "evidence_tokens": 430,
+    "compression_ratio": 45.3,
+    "top_sections": [
+      {
+        "index": 92,
+        "header": "6-2.2 Commercial Utility Relations.",
+        "dense": 0.5566,
+        "sparse": 0.5754,
+        "rerank": 3.4101
+      },
+      {
+        "index": 32,
+        "header": "3-4 RESTORATION TIME AND SOFT TRANSITION.",
+        "dense": 0.5673,
+        "sparse": 0.0917,
+        "rerank": 3.2772
+      },
+      {
+        "index": 29,
+        "header": "3-1 OFF-GRID SYSTEM ENDURANCE.",
+        "dense": 0.4984,
+        "sparse": 1.0,
+        "rerank": 2.8807
+      },
+      {
+        "index": 19,
+        "header": "2-2 PERFORMANCE REQUIREMENTS.",
+        "dense": 0.5824,
+        "sparse": 0.5715,
+        "rerank": 2.6759
+      },
+      {
+        "index": 80,
+        "header": "6-1 STATES OF OPERATION.",
+        "dense": 0.5289,
+        "sparse": 0.546,
+        "rerank": 2.1205
+      },
+      {
+        "index": 55,
+        "header": "4-2.1.6.2 Thermal and Non-Electrical Loads.",
+        "dense": 0.6189,
+        "sparse": 0.5098,
+        "rerank": 1.7884
+      },
+      {
+        "index": 91,
+        "header": "6-2.1 Utility Interconnection and Secure Islanding.",
+        "dense": 0.6611,
+        "sparse": 0.2534,
+        "rerank": 1.6563
+      },
+      {
+        "index": 18,
+        "header": "2-1 MINIMUM DESIGN REQUIREMENTS.",
+        "dense": 0.6027,
+        "sparse": 0.2561,
+        "rerank": 1.6001
+      },
+      {
+        "index": 0,
+        "header": "1-1 GENERAL.",
+        "dense": 0.634,
+        "sparse": 0.0176,
+        "rerank": 1.0905
+      },
+      {
+        "index": 44,
+        "header": "4-1.3 Methods of Procurement.",
+        "dense": 0.6407,
+        "sparse": 0.4024,
+        "rerank": -0.122
+      }
+    ],
+    "router": {
+      "doc_type": "microgrid",
+      "top_k": 10,
+      "max_tokens": 160
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the power and grounding requirements for C5ISR systems?",
+    "expanded_query": "What are the power and grounding requirements for C5ISR systems? UPS bonding distribution earth electrode electrical equipotential ground ring ground rod switchgear transformer",
+    "answer_mode": "requirement_list",
+    "family_override_applied": "c5isr_power_grounding",
+    "family_name": "c5isr_power_grounding",
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": false,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [
+        "table data"
+      ],
+      "coverage": "supported"
+    },
+    "final_answer": "Power: 2-6 BLACK START SYSTEMS CAPABILITIES. Black Start capability as defined by National Renewable Energy Laboratory: 3-6.11 Backup Power and Generators.\nGrounding and Bonding: 3-7.8 Grounding and Bonding. Provide in accordance with NFPA 70, TIA-607-D, and MIL-STD-188-124B. Provide grounding in accordance with Motorola R56 for",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "c5isr_aspect_split",
+    "clipped_lines_rejected": null,
+    "chosen_evidence_text": [
+      "3-7 ELECTRICAL ENGINEERING.",
+      "The core UFCs define the minimums for electrical systems.",
+      "the scope of this document by the end users, then the most stringent requirement must",
+      "distribution architecture must be implemented to meet the facility Grade requirement",
+      "For Army projects, refer to TM 5-691 Utility Systems Design",
+      "Refer to MESEP for more stringent and specific",
+      "4-1.2.5 Systems Manual Requirements.",
+      "The Designer of Record (DOR) must incorporate the SM requirements into the",
+      "For Army only: Provide Systems Manual (SM) for all C5ISR facilities in accordance with",
+      "3-6.2.1 C5ISR Space Temperatures."
+    ],
+    "coverage_targets": null,
+    "orig_tokens": 28100,
+    "evidence_tokens": 750,
+    "compression_ratio": 37.5,
+    "top_sections": [
+      {
+        "index": 120,
+        "header": "3-7 ELECTRICAL ENGINEERING.",
+        "dense": 0.6755,
+        "sparse": 0.9351,
+        "rerank": 4.5641
+      },
+      {
+        "index": 220,
+        "header": "4-1.2.5 Systems Manual Requirements.",
+        "dense": 0.4846,
+        "sparse": 0.4847,
+        "rerank": 3.9127
+      },
+      {
+        "index": 77,
+        "header": "3-6.2.1 C5ISR Space Temperatures.",
+        "dense": 0.4759,
+        "sparse": 0.6184,
+        "rerank": 3.7052
+      },
+      {
+        "index": 38,
+        "header": "3-1.1 C5ISR Facilities Enhancements.",
+        "dense": 0.5016,
+        "sparse": 0.4953,
+        "rerank": 2.7
+      },
+      {
+        "index": 36,
+        "header": "2-6 BLACK START SYSTEMS CAPABILITIES.",
+        "dense": 0.5254,
+        "sparse": 0.5454,
+        "rerank": 2.6024
+      },
+      {
+        "index": 158,
+        "header": "3-7.8 Grounding and Bonding.",
+        "dense": 0.4527,
+        "sparse": 1.0,
+        "rerank": -2.6733
+      },
+      {
+        "index": 223,
+        "header": "4-2.2 Direct Current (DC) Power Systems.",
+        "dense": 0.4405,
+        "sparse": 0.6759,
+        "rerank": -4.2668
+      },
+      {
+        "index": 230,
+        "header": "APPENDIX C REFERENCES",
+        "dense": 0.4046,
+        "sparse": 0.5858,
+        "rerank": -4.4873
+      },
+      {
+        "index": 222,
+        "header": "4-2.1 400 Hz Power.",
+        "dense": 0.4723,
+        "sparse": 0.5965,
+        "rerank": -4.6089
+      },
+      {
+        "index": 113,
+        "header": "3-6.11 Backup Power and Generators.",
+        "dense": 0.4185,
+        "sparse": 0.3629,
+        "rerank": -6.0461
+      }
+    ],
+    "router": {
+      "doc_type": "c5isr",
+      "top_k": 10,
+      "max_tokens": 160
+    }
+  },
+  {
+    "doc": "ufc_c5isr_facilities",
+    "query": "What are the antenna and RF system requirements?",
+    "expanded_query": "What are the antenna and RF system requirements? EMC electromagnetic isolation radio frequency separation",
+    "answer_mode": "requirement_list",
+    "family_override_applied": "antenna_rf",
+    "family_name": "antenna_rf",
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "final_answer": "Antenna systems: Size cable entry ports into facilities as required based on quantity and size.\nRF isolation / separation: [TABLE] Table 2-1 (Minimum Separation Distances for Receiver Sites) | Facility: Control Link Facilities | Source of Interference: Separation between RF building and antennas | Minimum Distance: Max distance 300 feet (91 m) [TABLE] Table 2-1 (Minimum Separation Distances for Receiver Sites) | Source of Interference: Separation between RF building and operations building | Minimum Distance: Max distance 1,500 feet (457 m)",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "antenna_rf_aspect_split",
+    "clipped_lines_rejected": null,
+    "chosen_evidence_text": [
+      "4-2.5 Antenna Systems.",
+      "Size cable entry ports into facilities as required based on quantity and size.",
+      "must be provided and sized according to the cables to enter the entry port.",
+      "2-5.6 Isolation.",
+      "Optimum radio communications depend largely on the site's isolation from sources of",
+      "Table 2-1.",
+      "Specific requirements for each project, including variations required by",
+      "Table 2-1 Minimum Separation Distances for Receiver Sites",
+      "Habitable areas (beyond limits of restriction) 1 mile (1.6 km)",
+      "UFC 4-141-03"
+    ],
+    "coverage_targets": "2-aspect",
+    "orig_tokens": 28100,
+    "evidence_tokens": 395,
+    "compression_ratio": 71.1,
+    "top_sections": [
+      {
+        "index": 226,
+        "header": "4-2.5 Antenna Systems.",
+        "dense": 0.5986,
+        "sparse": 0.6482,
+        "rerank": 0.512
+      },
+      {
+        "index": 34,
+        "header": "2-5.6 Isolation.",
+        "dense": 0.4841,
+        "sparse": 0.7475,
+        "rerank": -1.5223
+      },
+      {
+        "index": 505,
+        "header": "Table 2-1",
+        "dense": 0.5352,
+        "sparse": 0.6354,
+        "rerank": -3.1669
+      },
+      {
+        "index": 45,
+        "header": "3-2.3.2.2 Roofs.",
+        "dense": 0.432,
+        "sparse": 1.0,
+        "rerank": -6.151
+      },
+      {
+        "index": 506,
+        "header": "Table 2-1",
+        "dense": 0.4716,
+        "sparse": 0.6573,
+        "rerank": -6.5316
+      },
+      {
+        "index": 33,
+        "header": "2-5.5 Electromagnetic Compatibility (EMC) Evaluation.",
+        "dense": 0.4148,
+        "sparse": 0.1184,
+        "rerank": -7.8917
+      },
+      {
+        "index": 183,
+        "header": "3-7.16.1 Grade 1 Telecommunications System.",
+        "dense": 0.4703,
+        "sparse": 0.0,
+        "rerank": -7.9975
+      },
+      {
+        "index": 86,
+        "header": "3-6.5 HVAC System Design.",
+        "dense": 0.2995,
+        "sparse": 0.4317,
+        "rerank": -8.3467
+      },
+      {
+        "index": 186,
+        "header": "3-7.16.4 Grade 4 Telecommunications System.",
+        "dense": 0.3657,
+        "sparse": 0.1925,
+        "rerank": -8.919
+      },
+      {
+        "index": 184,
+        "header": "3-7.16.2 Grade 2 Telecommunications System.",
+        "dense": 0.3042,
+        "sparse": 0.211,
+        "rerank": -9.0098
+      }
+    ],
+    "router": {
+      "doc_type": "c5isr",
+      "top_k": 10,
+      "max_tokens": 160
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the laundry facility requirements?",
+    "expanded_query": "What are the laundry facility requirements? dryer laundry room washer",
+    "answer_mode": "numeric_lookup",
+    "family_override_applied": null,
+    "family_name": null,
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "final_answer": "[TABLE] Table 2-1 (. Requirements. Note 1. in the units are) | Laundry | In-room (washer/Dryer) or community (1 washer/2 dryers for every 15 residents)\n[TABLE] Table 2-1 (. Requirements. Note 1. in the units are) | Condition | Laundry | Operational in accordance with UFC 1-200-01 General Building Requirements. | - Upon assignment, - In response to complaints, - IAW each Military Department\u2019s procedures for inspection. | Routine (can be mitigated through other means).",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "purified_row",
+    "clipped_lines_rejected": [
+      "3-14 PLUMBING.",
+      "4-1 MINIMUM REQUIREMENTS.",
+      "Table 4-1 Minimum Requirements Matrix",
+      "Table 4-1 Minimum Requirements Matrix",
+      "(See Note 7)",
+      "(See Note 8)",
+      "also required to have one community kitchen per building.",
+      "UFC 4-721-01",
+      "UFC 4-721-01",
+      "and with a minimum of 72 NSF for each person, bathroom shared with not",
+      "other and a minimum of 90 NSF for each person, bathroom shared with not",
+      "with a sink must be available.",
+      "UFC 4-721-01",
+      "2-1 PLANNING CONSIDERATIONS.",
+      "footage is different for every project depending upon the bed spaces required as well as"
+    ],
+    "chosen_evidence_text": [
+      "[TABLE] Table 2-1 (. Requirements. Note 1. in the units are) | Laundry | In-room (washer/Dryer) or community (1 washer/2 dryers for every 15 residents)",
+      "[TABLE] Table 2-1 (. Requirements. Note 1. in the units are) | Condition | Laundry | Operational in accordance with UFC 1-200-01 General Building Requirements. | - Upon assignment, - In response to complaints, - IAW each Military Department\u2019s procedures for inspection. | Routine (can be mitigated through other means).",
+      "3-14 PLUMBING.",
+      "In addition to the requirements of UFC 3-420-01, Plumbing Systems provide the",
+      "\u2022 Provide hose bibs on exterior walls of each building at 100-foot intervals;",
+      "4-1 MINIMUM REQUIREMENTS.",
+      "This Chapter provides the minimum requirements for UH Construction Standards for",
+      "Table 4-1 Minimum Requirements Matrix",
+      "Table 4-1 Minimum Requirements Matrix",
+      "(See Note 2) (See Note 3) (See Note 4)"
+    ],
+    "coverage_targets": null,
+    "orig_tokens": 5508,
+    "evidence_tokens": 580,
+    "compression_ratio": 9.5,
+    "top_sections": [
+      {
+        "index": 73,
+        "header": "Table 2-1",
+        "dense": 0.6765,
+        "sparse": 0.7817,
+        "rerank": 3.2839
+      },
+      {
+        "index": 90,
+        "header": "Table 2-1",
+        "dense": 0.6226,
+        "sparse": 0.6331,
+        "rerank": 1.0015
+      },
+      {
+        "index": 28,
+        "header": "3-14 PLUMBING.",
+        "dense": 0.5568,
+        "sparse": 0.6802,
+        "rerank": -0.711
+      },
+      {
+        "index": 43,
+        "header": "4-1 MINIMUM REQUIREMENTS.",
+        "dense": 0.5923,
+        "sparse": 0.4217,
+        "rerank": -3.1876
+      },
+      {
+        "index": 56,
+        "header": "Table 2-1",
+        "dense": 0.5115,
+        "sparse": 0.6798,
+        "rerank": -3.3322
+      },
+      {
+        "index": 9,
+        "header": "2-3.1 Building Common Areas.",
+        "dense": 0.376,
+        "sparse": 0.6804,
+        "rerank": -5.3416
+      },
+      {
+        "index": 104,
+        "header": "Table 2-1",
+        "dense": 0.5295,
+        "sparse": 1.0,
+        "rerank": -6.0204
+      },
+      {
+        "index": 84,
+        "header": "Table 2-1",
+        "dense": 0.4201,
+        "sparse": 0.5957,
+        "rerank": -6.2798
+      },
+      {
+        "index": 8,
+        "header": "2-2 MINIMUM CONFIGURATION AND PRIVACY STANDARDS.",
+        "dense": 0.4656,
+        "sparse": 0.4651,
+        "rerank": -7.2452
+      },
+      {
+        "index": 7,
+        "header": "2-1 PLANNING CONSIDERATIONS.",
+        "dense": 0.35,
+        "sparse": 0.6534,
+        "rerank": -7.2661
+      }
+    ],
+    "router": {
+      "doc_type": "housing",
+      "top_k": 10,
+      "max_tokens": 80
+    }
+  },
+  {
+    "doc": "ufc_unaccompanied_housing",
+    "query": "What are the storage and closet space requirements?",
+    "expanded_query": "What are the storage and closet space requirements? NSF room matrix wardrobe",
+    "answer_mode": "numeric_lookup",
+    "family_override_applied": "closet_storage",
+    "family_name": "closet_storage",
+    "used_deterministic": true,
+    "used_llm": false,
+    "fat_man_called": false,
+    "fat_man_available": false,
+    "fallback_mode_used": null,
+    "final_answerability": {
+      "has_governing_ref": true,
+      "has_table_row": true,
+      "has_requirement": true,
+      "has_numeric": true,
+      "missing": [],
+      "coverage": "supported"
+    },
+    "final_answer": "[TABLE] Table 2-1 (. Requirements. Note 1. in the units are) | Closet | 12 NSF | 12 NSF per resident\n[TABLE] Table 2-1 (. Requirements. Note 1. in the units are) | Room Type / Unit Type: 2. Individual Service Member Efficiency Unit: Combination living room and bedroom, kitchenette, bathroom, and closet. Closet, bathroom and kitchenette NSFs to be part of overall bedroom/living room NSF.",
+    "pre_verify_answer": null,
+    "deterministic_stop_reason": "closet_purified_row",
+    "clipped_lines_rejected": null,
+    "chosen_evidence_text": [
+      "4-1 MINIMUM REQUIREMENTS.",
+      "This Chapter provides the minimum requirements for UH Construction Standards for",
+      "Table 4-1 Minimum Requirements Matrix",
+      "Table 4-1 Minimum Requirements Matrix",
+      "(See Note 2) (See Note 3) (See Note 4)",
+      "Bathroom (See Note 5) 35 NSF",
+      "Kitchenette (See Note 6) 40 NSF 40 NSF 45 NSF",
+      "(See Note 7)",
+      "A minimum of 8 NSF per resident",
+      "(See Note 8)"
+    ],
+    "coverage_targets": null,
+    "orig_tokens": 5508,
+    "evidence_tokens": 544,
+    "compression_ratio": 10.1,
+    "top_sections": [
+      {
+        "index": 43,
+        "header": "4-1 MINIMUM REQUIREMENTS.",
+        "dense": 0.5135,
+        "sparse": 0.7968,
+        "rerank": -1.0957
+      },
+      {
+        "index": 83,
+        "header": "Table 2-1",
+        "dense": 0.4121,
+        "sparse": 0.6972,
+        "rerank": -1.8859
+      },
+      {
+        "index": 69,
+        "header": "Table 2-1",
+        "dense": 0.485,
+        "sparse": 0.6669,
+        "rerank": -1.9517
+      },
+      {
+        "index": 79,
+        "header": "Table 2-1",
+        "dense": 0.425,
+        "sparse": 0.3126,
+        "rerank": -2.5385
+      },
+      {
+        "index": 36,
+        "header": "3-22 GENERAL SPACE REQUIREMENTS FOR UH FACILITIES.",
+        "dense": 0.4751,
+        "sparse": 0.4541,
+        "rerank": -2.6221
+      },
+      {
+        "index": 56,
+        "header": "Table 2-1",
+        "dense": 0.4503,
+        "sparse": 0.7222,
+        "rerank": -3.3291
+      },
+      {
+        "index": 9,
+        "header": "2-3.1 Building Common Areas.",
+        "dense": 0.501,
+        "sparse": 1.0,
+        "rerank": -3.8397
+      },
+      {
+        "index": 85,
+        "header": "Table 2-1",
+        "dense": 0.4486,
+        "sparse": 0.6061,
+        "rerank": -5.0891
+      },
+      {
+        "index": 118,
+        "header": "Table 2-1",
+        "dense": 0.4735,
+        "sparse": 0.572,
+        "rerank": -5.1156
+      },
+      {
+        "index": 8,
+        "header": "2-2 MINIMUM CONFIGURATION AND PRIVACY STANDARDS.",
+        "dense": 0.4687,
+        "sparse": 0.5694,
+        "rerank": -5.2638
+      }
+    ],
+    "router": {
+      "doc_type": "housing",
+      "top_k": 10,
+      "max_tokens": 80
+    }
+  }
+]
