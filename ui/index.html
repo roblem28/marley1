@@ -313,7 +313,7 @@ function addMessage(role, text, typing=false) {
   return div;
 }
 
-async function askModel(text) {
+async function askModel(text, onToken) {
   const url = FAT_MAN();
   const res = await fetch(url, {
     method: 'POST',
@@ -324,11 +324,29 @@ async function askModel(text) {
         {role: 'system', content: 'You are Marley1, a compact edge AI assistant running on a Raspberry Pi 5 and NVIDIA Jetson Orin Nano. You are direct, terse, and technical. No fluff. No disclaimers. You are not Claude. You are Marley1.'},
         {role: 'user', content: text}
       ],
-      max_tokens: 500
+      max_tokens: 500,
+      stream: true
     })
   });
-  const data = await res.json();
-  return data.choices[0].message.content;
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let full = '';
+  while (true) {
+    const {done, value} = await reader.read();
+    if (done) break;
+    const chunk = decoder.decode(value);
+    const lines = chunk.split('\n');
+    for (const line of lines) {
+      if (!line.startsWith('data: ')) continue;
+      const data = line.slice(6);
+      if (data === '[DONE]') break;
+      try {
+        const token = JSON.parse(data).choices[0].delta.content;
+        if (token) { full += token; if (onToken) onToken(token); }
+      } catch(e) {}
+    }
+  }
+  return full;
 }
 
 function speakText(text) {
@@ -350,9 +368,13 @@ async function handleQuery(text) {
   const typingEl = addMessage('model', '', true);
   setStatus('thinking...');
   try {
-    const response = await askModel(text);
-    typingEl.querySelector('.msg-bubble').textContent = response;
+    const bubble = typingEl.querySelector('.msg-bubble');
+    bubble.textContent = '';
     typingEl.classList.remove('typing');
+    const response = await askModel(text, token => {
+      bubble.textContent += token;
+      messages.scrollTop = messages.scrollHeight;
+    });
     setStatus('ready');
     speakText(response);
   } catch(e) {
