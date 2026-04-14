@@ -68,26 +68,38 @@ def split_chunks(text, size=CHUNK_SIZE, step=CHUNK_STEP):
 # ---------------------------------------------------------------------------
 # Load a single PDF into the store
 # ---------------------------------------------------------------------------
+EMBD_CACHE = os.path.expanduser("~/marley1/compression/.cache/embeddings")
+
 def load_pdf(path):
     fname = os.path.basename(path)
     t0 = time.time()
     print(f"[daemon] loading {fname}...", flush=True)
     try:
-        text   = extract_pdf(path)
-        chunks = split_chunks(text)
-        if not chunks:
-            raise ValueError("no chunks extracted")
-        embeddings = model.encode(chunks, batch_size=64, show_progress_bar=False)
-        embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
+        cache_file = os.path.join(EMBD_CACHE, fname.replace(".pdf", ".npz"))
+        if os.path.exists(cache_file):
+            data = np.load(cache_file, allow_pickle=True)
+            embeddings = data["embeddings"]
+            chunks = list(data["chunks"])
+            tokens_est = sum(len(c.split()) for c in chunks)
+            elapsed = time.time() - t0
+            print(f"[daemon] {fname}: {len(chunks)} chunks from cache, {elapsed:.2f}s", flush=True)
+        else:
+            text   = extract_pdf(path)
+            chunks = split_chunks(text)
+            if not chunks:
+                raise ValueError("no chunks extracted")
+            embeddings = model.encode(chunks, batch_size=64, show_progress_bar=False)
+            embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
+            tokens_est = len(text.split())
+            elapsed = time.time() - t0
+            print(f"[daemon] {fname}: {len(chunks)} chunks embedded, {elapsed:.1f}s", flush=True)
         with store_lock:
             doc_store[fname] = {
                 "chunks":     chunks,
                 "embeddings": embeddings,
-                "tokens_est": len(text.split()),
+                "tokens_est": tokens_est,
                 "loaded_at":  time.time()
             }
-        elapsed = time.time() - t0
-        print(f"[daemon] {fname}: {len(chunks)} chunks, {len(text.split())} tokens, {elapsed:.1f}s", flush=True)
         return True
     except Exception as e:
         print(f"[daemon] ERROR loading {fname}: {e}", flush=True)
