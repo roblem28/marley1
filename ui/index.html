@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marley1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap');
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --border: #222222;
+    --green: #00ff88;
+    --green-dim: #00ff8844;
+    --text: #e8e8e8;
+    --text-dim: #666666;
+    --user-bg: #1a1a1a;
+    --model-bg: #0f1f17;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  header {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--green);
+    letter-spacing: -0.5px;
+  }
+
+  .status {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse 2s infinite;
+  }
+
+  .dot.off { background: #444; animation: none; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  #messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    scroll-behavior: smooth;
+  }
+
+  #messages::-webkit-scrollbar { width: 4px; }
+  #messages::-webkit-scrollbar-track { background: transparent; }
+  #messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .msg {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 80%;
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .msg.user { align-self: flex-end; }
+  .msg.model { align-self: flex-start; }
+
+  .msg-label {
+    font-size: 10px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 4px;
+  }
+
+  .msg.user .msg-label { text-align: right; color: var(--green); }
+
+  .msg-bubble {
+    padding: 12px 16px;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 1.7;
+    border: 1px solid var(--border);
+  }
+
+  .msg.user .msg-bubble {
+    background: var(--user-bg);
+    border-color: #2a2a2a;
+  }
+
+  .msg.model .msg-bubble {
+    background: var(--model-bg);
+    border-color: var(--green-dim);
+    border-left: 2px solid var(--green);
+  }
+
+  .typing .msg-bubble::after {
+    content: '▋';
+    animation: blink 0.8s infinite;
+    color: var(--green);
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 16px 24px;
+    flex-shrink: 0;
+    background: var(--surface);
+  }
+
+  .input-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+  }
+
+  #textInput {
+    flex: 1;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 2px;
+    resize: none;
+    min-height: 42px;
+    max-height: 120px;
+    outline: none;
+    transition: border-color 0.2s;
+    line-height: 1.5;
+  }
+
+  #textInput:focus { border-color: var(--green); }
+  #textInput::placeholder { color: var(--text-dim); }
+
+  .btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    padding: 10px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .btn:hover { border-color: var(--green); color: var(--green); }
+
+  .btn.primary {
+    border-color: var(--green);
+    color: var(--green);
+  }
+
+  .btn.primary:hover {
+    background: var(--green);
+    color: var(--bg);
+  }
+
+  .btn.recording {
+    border-color: #ff4444;
+    color: #ff4444;
+    animation: recordPulse 1s infinite;
+  }
+
+  @keyframes recordPulse {
+    0%, 100% { border-color: #ff4444; }
+    50% { border-color: #ff444466; }
+  }
+
+  .hint {
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .fat-man-url {
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-left: auto;
+  }
+
+  #urlInput {
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    width: 240px;
+    outline: none;
+  }
+
+  #urlInput:focus { color: var(--green); }
+
+  .empty-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-dim);
+  }
+
+  .empty-state .big { font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 800; color: #1a1a1a; }
+  .empty-state .sub { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MARLEY1</div>
+  <div class="fat-man-url">
+    FAT MAN: <input id="urlInput" value="http://100.97.87.86:8080/v1/chat/completions" />
+  </div>
+  <div class="status">
+    <div class="dot" id="statusDot"></div>
+    <span id="statusText">ready</span>
+  </div>
+</header>
+
+<div id="messages">
+  <div class="empty-state" id="emptyState">
+    <div class="big">M1</div>
+    <div class="sub">type or speak to begin</div>
+  </div>
+</div>
+
+<footer>
+  <div class="input-row">
+    <textarea id="textInput" placeholder="type a message..." rows="1"></textarea>
+    <button class="btn primary" id="sendBtn" onclick="sendText()">send</button>
+    <button class="btn" id="voiceBtn" onclick="toggleVoice()">🎤 speak</button>
+  </div>
+  <div class="hint">Enter to send &nbsp;·&nbsp; Shift+Enter for newline &nbsp;·&nbsp; mic requires browser permission</div>
+</footer>
+
+<script>
+const FAT_MAN = () => document.getElementById('urlInput').value.trim();
+let mediaRecorder = null;
+let audioChunks = [];
+let isRecording = false;
+let synth = null;
+
+const messages = document.getElementById('messages');
+const statusDot = document.getElementById('statusDot');
+const statusText = document.getElementById('statusText');
+const voiceBtn = document.getElementById('voiceBtn');
+const emptyState = document.getElementById('emptyState');
+
+function setStatus(text, active=true) {
+  statusText.textContent = text;
+  statusDot.className = 'dot' + (active ? '' : ' off');
+}
+
+function addMessage(role, text, typing=false) {
+  if (emptyState) emptyState.style.display = 'none';
+  const div = document.createElement('div');
+  div.className = `msg ${role}${typing ? ' typing' : ''}`;
+  div.innerHTML = `
+    <div class="msg-label">${role === 'user' ? 'you' : 'marley1'}</div>
+    <div class="msg-bubble">${text}</div>
+  `;
+  messages.appendChild(div);
+  messages.scrollTop = messages.scrollHeight;
+  return div;
+}
+
+async function askModel(text) {
+  const url = FAT_MAN();
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      model: 'qwen',
+      messages: [
+        {role: 'system', content: 'You are Marley1, a compact edge AI assistant running on a Raspberry Pi 5 and NVIDIA Jetson Orin Nano. You are direct, terse, and technical. No fluff. No disclaimers. You are not Claude. You are Marley1.'},
+        {role: 'user', content: text}
+      ],
+      max_tokens: 500
+    })
+  });
+  const data = await res.json();
+  return data.choices[0].message.content;
+}
+
+function speakText(text) {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.rate = 1.0;
+    utt.pitch = 1.0;
+    const voices = window.speechSynthesis.getVoices();
+    const preferred = voices.find(v => v.lang === 'en-US' && v.name.includes('Google')) || voices[0];
+    if (preferred) utt.voice = preferred;
+    window.speechSynthesis.speak(utt);
+  }
+}
+
+async function handleQuery(text) {
+  if (!text.trim()) return;
+  addMessage('user', text);
+  const typingEl = addMessage('model', '', true);
+  setStatus('thinking...');
+  try {
+    const response = await askModel(text);
+    typingEl.querySelector('.msg-bubble').textContent = response;
+    typingEl.classList.remove('typing');
+    setStatus('ready');
+    speakText(response);
+  } catch(e) {
+    typingEl.querySelector('.msg-bubble').textContent = `Error: ${e.message}`;
+    typingEl.classList.remove('typing');
+    setStatus('error', false);
+  }
+}
+
+function sendText() {
+  const input = document.getElementById('textInput');
+  const text = input.value.trim();
+  input.value = '';
+  input.style.height = 'auto';
+  if (text) handleQuery(text);
+}
+
+document.getElementById('textInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendText();
+  }
+});
+
+document.getElementById('textInput').addEventListener('input', function() {
+  this.style.height = 'auto';
+  this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+});
+
+async function toggleVoice() {
+  if (isRecording) {
+    mediaRecorder.stop();
+    return;
+  }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({audio: true});
+    audioChunks = [];
+    mediaRecorder = new MediaRecorder(stream);
+    mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+    mediaRecorder.onstop = async () => {
+      isRecording = false;
+      voiceBtn.textContent = '🎤 speak';
+      voiceBtn.className = 'btn';
+      setStatus('transcribing...');
+      const blob = new Blob(audioChunks, {type: 'audio/webm'});
+      const formData = new FormData();
+      formData.append('file', blob, 'audio.webm');
+      // Browser-side: use Web Speech API for transcription
+      stream.getTracks().forEach(t => t.stop());
+      setStatus('ready');
+    };
+    // Use Web Speech API for live transcription
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+      const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SR();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.onresult = e => {
+        const text = e.results[0][0].transcript;
+        handleQuery(text);
+      };
+      recognition.onerror = () => setStatus('mic error', false);
+      recognition.onend = () => {
+        isRecording = false;
+        voiceBtn.textContent = '🎤 speak';
+        voiceBtn.className = 'btn';
+        setStatus('ready');
+      };
+      recognition.start();
+      isRecording = true;
+      voiceBtn.textContent = '⏹ stop';
+      voiceBtn.className = 'btn recording';
+      setStatus('listening...');
+    } else {
+      alert('Speech recognition not supported in this browser. Use Chrome.');
+      stream.getTracks().forEach(t => t.stop());
+    }
+  } catch(e) {
+    setStatus('mic denied', false);
+    alert('Mic access denied.');
+  }
+}
+
+window.speechSynthesis.onvoiceschanged = () => {};
+</script>
+</body>
+</html>

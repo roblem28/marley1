@@ -16,9 +16,19 @@ def word_count(text):
     return len(text.split())
 
 def extract_pdf(path):
+    import hashlib
+    cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache", "text")
+    os.makedirs(cache_dir, exist_ok=True)
+    key = hashlib.md5((path + str(os.path.getmtime(path))).encode()).hexdigest()
+    cache_file = os.path.join(cache_dir, key + ".txt")
+    if os.path.exists(cache_file):
+        with open(cache_file, "r") as f:
+            return f.read()
     pdf = pdfplumber.open(path)
     text = "\n".join(p.extract_text() or "" for p in pdf.pages)
     pdf.close()
+    with open(cache_file, "w") as f:
+        f.write(text)
     return text
 
 def chat(messages, system=None, max_tokens=512, temp=0.1):
@@ -70,10 +80,23 @@ def run(pdf_path, query):
         return None, {"error": "fatman_down"}
 
     t0 = time.perf_counter()
-    rf = RelevanceFilter()
-    chunks = rf.chunk(full_text, chunk_size=decisions["chunk_size"])
-    kept_indices, similarities = rf.filter(chunks, query, top_k=decisions["top_k"])
-    filtered_text = " ".join(chunks[int(i)] for i in kept_indices)
+    # Try daemon first (fast path)
+    try:
+        import urllib.request, json as _json
+        pdf_name = os.path.basename(pdf_path)
+        req_body = _json.dumps({"pdf": pdf_name, "query": query, "top_k": min(decisions["top_k"], 5)}).encode()
+        req = urllib.request.Request("http://localhost:8091/filter",
+              data=req_body, headers={"Content-Type": "application/json"})
+        resp = urllib.request.urlopen(req, timeout=5)
+        daemon_result = _json.loads(resp.read())
+        filtered_text = daemon_result["context"]
+        print(f"  Daemon filter: {daemon_result['elapsed']:.3f}s ({daemon_result['n_chunks']} chunks)")
+    except Exception as _e:
+        print(f"  Daemon unavailable ({_e}), falling back to local filter")
+        rf = RelevanceFilter()
+        chunks = rf.chunk(full_text, chunk_size=decisions["chunk_size"])
+        kept_indices, similarities = rf.filter(chunks, query, top_k=decisions["top_k"])
+        filtered_text = " ".join(chunks[int(i)] for i in kept_indices)
     t_filter = time.perf_counter() - t0
     comp_tokens = word_count(filtered_text)
     ratio = round(orig_tokens / comp_tokens, 1) if comp_tokens else 0
