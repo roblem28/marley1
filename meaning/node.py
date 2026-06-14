@@ -13,6 +13,13 @@ Receiver env (serve):
     MEANING_PORT         listen port (default 8082)
     MEANING_LLAMA_URL    llama-server used for rendering (Little Boy :8081, Fat Man :8080)
     MEANING_INBOX        append-log of accepted renders
+
+Send env:
+    SEND_V2=1            opt into packet schema v0.2 (two-channel verbatim/renderable);
+                         default unset -> v0.1, so existing senders are unchanged.
+
+The receiver dispatches on packet.mp ("0.1" -> render, "0.2" -> render_v2), so a
+v0.2-aware node and a v0.1-only node interoperate over the same :8082 endpoint.
 """
 import sys, os, json, datetime, requests
 
@@ -23,8 +30,12 @@ INBOX = os.path.expanduser(os.environ.get("MEANING_INBOX", "~/meaninglayer/inbox
 
 
 def send(text, src_lang="en"):
-    pkt = mp.sign(mp.encode(text, src_lang))
-    print(f"node identity (from): {pkt['from']}")
+    # SEND_V2=1 opts into v0.2; default path is byte-identical to before.
+    if os.environ.get("SEND_V2") == "1":
+        pkt = mp.sign(mp.encode_v2(text, src_lang))
+    else:
+        pkt = mp.sign(mp.encode(text, src_lang))
+    print(f"node identity (from): {pkt['from']}  mp={pkt['mp']}")
     s = mp.sizes(text, pkt)
     print("--- byte sizes ---")
     print(f"raw text     : {s['raw_text']}")
@@ -52,7 +63,8 @@ def serve():
         if not mp.verify(pkt, mp._peers().get(pkt.get("from", ""))):
             print(f"REJECTED {pkt.get('id')}: bad or unknown signature", flush=True)
             return jsonify({"ok": False, "error": "verification failed"}), 400
-        out = mp.render(pkt, lang)
+        # version-gate on packet.mp: v0.1 stays exactly as before, v0.2 uses the two-channel render
+        out = mp.render_v2(pkt, lang) if pkt.get("mp") == mp.MP_VERSION_V2 else mp.render(pkt, lang)
         ts = datetime.datetime.now(datetime.timezone.utc).isoformat()
         print(f"\n{out}\n", flush=True)
         with open(INBOX, "a") as f:
