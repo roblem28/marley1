@@ -3,9 +3,16 @@
 
 Usage:
     node.py send "english text" [src_lang]   # sender: encode + sign + POST to peer
-    node.py serve                            # receiver: Flask :8082 verify + render
+    node.py serve                            # receiver: Flask verify + render
 
 Decoupled from marley_server.py by design: this is a standalone message type.
+
+Receiver env (serve):
+    MEANING_RENDER_LANG  target render language + prefix set (default "es";
+                         "es" -> [ALERTA]/[INFO]/[RUTINA], "en" -> [ALERT]/[INFO]/[ROUTINE])
+    MEANING_PORT         listen port (default 8082)
+    MEANING_LLAMA_URL    llama-server used for rendering (Little Boy :8081, Fat Man :8080)
+    MEANING_INBOX        append-log of accepted renders
 """
 import sys, os, json, datetime, requests
 
@@ -34,6 +41,8 @@ def send(text, src_lang="en"):
 
 def serve():
     from flask import Flask, request, jsonify
+    lang = os.environ.get("MEANING_RENDER_LANG", "es")   # es=Little Boy, en=Fat Man reverse leg
+    port = int(os.environ.get("MEANING_PORT", "8082"))
     app = Flask(__name__)
 
     @app.post("/packet")
@@ -43,14 +52,15 @@ def serve():
         if not mp.verify(pkt, mp._peers().get(pkt.get("from", ""))):
             print(f"REJECTED {pkt.get('id')}: bad or unknown signature", flush=True)
             return jsonify({"ok": False, "error": "verification failed"}), 400
-        es = mp.render(pkt, "es")
+        out = mp.render(pkt, lang)
         ts = datetime.datetime.now(datetime.timezone.utc).isoformat()
-        print(f"\n{es}\n", flush=True)
+        print(f"\n{out}\n", flush=True)
         with open(INBOX, "a") as f:
-            f.write(f"{ts}\t{pkt['id']}\t{es}\n")
-        return jsonify({"ok": True, "es": es})
+            f.write(f"{ts}\t{pkt['id']}\t{out}\n")
+        # "render"/"lang" are the canonical keys; "es" kept for backward-compat with old clients.
+        return jsonify({"ok": True, "lang": lang, "render": out, "es": out})
 
-    app.run(host="0.0.0.0", port=8082)
+    app.run(host="0.0.0.0", port=port)
 
 
 if __name__ == "__main__":

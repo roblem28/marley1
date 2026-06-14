@@ -27,8 +27,25 @@ USE_ABBREV = False
 ABBREV_PATH = os.path.expanduser("~/marley1/compression/abbrev.py")
 
 MP_VERSION = "0.1"
-PREFIX = {"emergency": "[ALERTA]", "info": "[INFO]", "routine": "[RUTINA]"}
+# Priority prefixes per render language. Spanish is the original v0.1 set; English is the
+# symmetric reverse-leg equivalent (emergency->ALERT, info->INFO, routine->ROUTINE).
+PREFIXES = {
+    "es": {"emergency": "[ALERTA]", "info": "[INFO]", "routine": "[RUTINA]"},
+    "en": {"emergency": "[ALERT]", "info": "[INFO]", "routine": "[ROUTINE]"},
+}
+PREFIX = PREFIXES["es"]  # back-compat: bare PREFIX keeps the original Spanish set
 LANG_NAME = {"es": "espanol", "en": "english", "fr": "francais"}
+
+# Render system prompt per target language. The Spanish text is unchanged from v0.1;
+# English is added so a node can render the meaning core back to English (reverse leg).
+RENDER_SYS = {
+    "es": ("Eres un traductor semantico. A partir del nucleo semantico dado, "
+           "escribe UN parrafo corto en {lang} natural que preserve la intencion "
+           "y la prioridad del mensaje. Devuelve solo el parrafo, sin notas ni etiquetas."),
+    "en": ("You are a semantic translator. From the given semantic core, write ONE "
+           "short paragraph in natural {lang} that preserves the intent and priority "
+           "of the message. Return only the paragraph, with no notes or labels."),
+}
 
 SCHEMA = {
     "type": "object",
@@ -151,19 +168,22 @@ def verify(packet, peer_pubkey=None):
 
 
 def render(packet, target_lang="es"):
-    """Render packet.sem into one short natural-language paragraph, priority-prefixed."""
+    """Render packet.sem into one short natural-language paragraph, priority-prefixed.
+
+    target_lang selects both the prose language and the priority-prefix set:
+    es -> [ALERTA]/[INFO]/[RUTINA], en -> [ALERT]/[INFO]/[ROUTINE].
+    """
     sem = packet["sem"]
     lang = LANG_NAME.get(target_lang, target_lang)
-    sysmsg = (f"Eres un traductor semantico. A partir del nucleo semantico dado, "
-              f"escribe UN parrafo corto en {lang} natural que preserve la intencion "
-              f"y la prioridad del mensaje. Devuelve solo el parrafo, sin notas ni etiquetas.")
+    sysmsg = RENDER_SYS.get(target_lang, RENDER_SYS["es"]).format(lang=lang)
     user = (f"intent={packet['intent']} pri={packet['pri']}\n"
             f"summary: {sem['summary']}\n"
             f"entities: {', '.join(sem.get('entities', []))}\n"
             f"actions: {', '.join(sem.get('actions', []))}")
-    es = _llm([{"role": "system", "content": sysmsg}, {"role": "user", "content": user}],
-              temperature=0.3, max_tokens=256).strip()
-    return f"{PREFIX.get(packet['pri'], '[INFO]')} {es}"
+    out = _llm([{"role": "system", "content": sysmsg}, {"role": "user", "content": user}],
+               temperature=0.3, max_tokens=256).strip()
+    pfx = PREFIXES.get(target_lang, PREFIX)
+    return f"{pfx.get(packet['pri'], '[INFO]')} {out}"
 
 
 def sizes(text, packet):
