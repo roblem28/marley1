@@ -1,0 +1,174 @@
+#!/usr/bin/env python3
+"""Marley1 meaning/ -- MTP v0.1 "meaning packet" message type + ed25519 node identity.
+
+Public API:
+    encode(text, src_lang="en") -> dict      # LLM semantic extraction -> unsigned packet
+    sign(packet) -> dict                      # attach ed25519 signature (node identity)
+    verify(packet, peer_pubkey) -> bool       # verify sig against pinned peer pubkey
+    render(packet, target_lang="es") -> str   # natural-language render, priority-prefixed
+
+Node identity (the trust primitive) reuses the existing demo material -- never regenerated:
+    key   : ~/.meaninglayer/key          (hex-encoded 32-byte ed25519 seed; never committed)
+    peers : ~/.meaninglayer/peers.json   ({fingerprint: pubkey_hex})
+"""
+import os, json, uuid, gzip, hashlib, datetime, importlib.util, requests
+from nacl import signing, encoding
+from nacl.exceptions import BadSignatureError
+
+# --- config (env-overridable) -------------------------------------------------
+LLAMA_URL = os.environ.get("MEANING_LLAMA_URL", "http://127.0.0.1:8080/v1/chat/completions")
+PEER_URL = os.environ.get("MEANING_PEER_URL", "http://100.110.181.128:8082/packet")
+KEYFILE = os.path.expanduser(os.environ.get("MEANING_KEY", "~/.meaninglayer/key"))
+PEERSFILE = os.path.expanduser(os.environ.get("MEANING_PEERS", "~/.meaninglayer/peers.json"))
+
+# task 3 seam: route sem.summary through ~/marley1/compression/abbrev.py when True.
+# Leave OFF -- this is only the wiring, not the optimization.
+USE_ABBREV = False
+ABBREV_PATH = os.path.expanduser("~/marley1/compression/abbrev.py")
+
+MP_VERSION = "0.1"
+PREFIX = {"emergency": "[ALERTA]", "info": "[INFO]", "routine": "[RUTINA]"}
+LANG_NAME = {"es": "espanol", "en": "english", "fr": "francais"}
+
+SCHEMA = {
+    "type": "object",
+    "properties": {
+        "summary": {"type": "string"},
+        "entities": {"type": "array", "items": {"type": "string"}},
+        "actions": {"type": "array", "items": {"type": "string"}},
+        "intent": {"type": "string",
+                   "enum": ["alert", "question", "instruction", "observation", "discussion"]},
+        "pri": {"type": "string", "enum": ["emergency", "info", "routine"]},
+    },
+    "required": ["summary", "entities", "actions", "intent", "pri"],
+}
+
+SYS_EXTRACT = ("You extract the semantic core of a message. Return JSON only. "
+               "summary: terse English gist of the meaning. "
+               "entities: key nouns/places/objects mentioned. "
+               "actions: required actions as short imperatives. "
+               "intent: alert|question|instruction|observation|discussion. "
+               "pri: emergency = an urgent threat to safety or property, or a hard "
+               "deadline demanding immediate action (storms, hazards, evacuations, "
+               "'by 3pm', protect/secure equipment); info = noteworthy update needing "
+               "no immediate action; routine = mundane, low-stakes. "
+               "When a message warns of danger AND requires timely protective action, "
+               "use emergency.")
+
+
+# --- identity / peers ---------------------------------------------------------
+def _identity():
+    """Load (never create) the ed25519 node identity signing key."""
+    if not os.path.exists(KEYFILE):
+        raise FileNotFoundError(f"node identity key missing: {KEYFILE}")
+    seed = open(KEYFILE, "rb").read().strip()
+    return signing.SigningKey(seed, encoder=encoding.HexEncoder)
+
+
+def fingerprint(pubkey_bytes):
+    return hashlib.sha256(pubkey_bytes).hexdigest()[:16]
+
+
+def node_fingerprint():
+    return fingerprint(_identity().verify_key.encode())
+
+
+def _peers():
+    return json.load(open(PEERSFILE)) if os.path.exists(PEERSFILE) else {}
+
+
+# --- LLM helper ---------------------------------------------------------------
+def _llm(messages, temperature=0, max_tokens=512, response_format=None):
+    body = {"messages": messages, "temperature": temperature, "max_tokens": max_tokens}
+    if response_format:
+        body["response_format"] = response_format
+    r = requests.post(LLAMA_URL, json=body, timeout=180)
+    r.raise_for_status()
+    return r.json()["choices"][0]["message"]["content"]
+
+
+def _maybe_abbrev(summary):
+    """Task 3 seam: compress sem.summary via abbrev.py if enabled & importable, else LLM summary."""
+    if not USE_ABBREV:
+        return summary
+    try:
+        spec = importlib.util.spec_from_file_location("abbrev", ABBREV_PATH)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod.ConstructionCompressor().compress(summary)
+    except Exception:
+        return summary  # fall back to the LLM summary on any failure
+
+
+# --- canonical signing payload ------------------------------------------------
+def canon(intent, pri, sem):
+    """Canonical bytes the sender signs and the receiver verifies."""
+    return json.dumps({"intent": intent, "pri": pri, "sem": sem},
+                      sort_keys=True, separators=(",", ":")).encode()
+
+
+# --- public API ---------------------------------------------------------------
+def encode(text, src_lang="en"):
+    """English text -> unsigned MTP v0.1 packet (semantic core via local LLM)."""
+    e = json.loads(_llm(
+        [{"role": "system", "content": SYS_EXTRACT}, {"role": "user", "content": text}],
+        response_format={"type": "json_schema",
+                         "json_schema": {"name": "sem", "strict": True, "schema": SCHEMA}}))
+    sem = {"summary": _maybe_abbrev(e["summary"]),
+           "entities": e["entities"], "actions": e["actions"]}
+    return {
+        "mp": MP_VERSION,
+        "id": str(uuid.uuid4()),
+        "from": node_fingerprint(),
+        "sig": "",
+        "ts": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "intent": e["intent"],
+        "pri": e["pri"],
+        "src_lang": src_lang,
+        "sem": sem,
+    }
+
+
+def sign(packet):
+    """Attach an ed25519 signature using this node's identity key."""
+    sk = _identity()
+    packet["sig"] = sk.sign(canon(packet["intent"], packet["pri"], packet["sem"])).signature.hex()
+    return packet
+
+
+def verify(packet, peer_pubkey=None):
+    """Verify the packet signature. peer_pubkey: hex string, or None to look up via peers.json."""
+    pub_hex = peer_pubkey or _peers().get(packet.get("from", ""))
+    if not pub_hex:
+        return False
+    try:
+        vk = signing.VerifyKey(pub_hex, encoder=encoding.HexEncoder)
+        vk.verify(canon(packet["intent"], packet["pri"], packet["sem"]),
+                  bytes.fromhex(packet["sig"]))
+        return True
+    except (BadSignatureError, ValueError):
+        return False
+
+
+def render(packet, target_lang="es"):
+    """Render packet.sem into one short natural-language paragraph, priority-prefixed."""
+    sem = packet["sem"]
+    lang = LANG_NAME.get(target_lang, target_lang)
+    sysmsg = (f"Eres un traductor semantico. A partir del nucleo semantico dado, "
+              f"escribe UN parrafo corto en {lang} natural que preserve la intencion "
+              f"y la prioridad del mensaje. Devuelve solo el parrafo, sin notas ni etiquetas.")
+    user = (f"intent={packet['intent']} pri={packet['pri']}\n"
+            f"summary: {sem['summary']}\n"
+            f"entities: {', '.join(sem.get('entities', []))}\n"
+            f"actions: {', '.join(sem.get('actions', []))}")
+    es = _llm([{"role": "system", "content": sysmsg}, {"role": "user", "content": user}],
+              temperature=0.3, max_tokens=256).strip()
+    return f"{PREFIX.get(packet['pri'], '[INFO]')} {es}"
+
+
+def sizes(text, packet):
+    """Byte accounting: raw text, gzip(text), packet JSON, gzip(packet)."""
+    raw = text.encode()
+    pj = json.dumps(packet, separators=(",", ":")).encode()
+    return {"raw_text": len(raw), "gzip_text": len(gzip.compress(raw)),
+            "packet_json": len(pj), "gzip_packet": len(gzip.compress(pj))}

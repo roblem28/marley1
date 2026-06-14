@@ -22,3 +22,7 @@ benchmarks/
 compression/answers*/
 compression/answers/
 compression/.cache/embeddings/*.npz
+
+# meaning/: never commit node identity keys
+.meaninglayer/
+*.pem
