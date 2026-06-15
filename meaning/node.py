@@ -18,10 +18,19 @@ Send env:
     SEND_V2=1            opt into packet schema v0.2 (two-channel verbatim/renderable);
                          default unset -> v0.1, so existing senders are unchanged.
 
+Respond env (serve):
+    RESPOND_MODE=1       the node ANSWERS as Marley: on an inbound packet it understands
+                         the message, generates a reply with its local LLM, and sends that
+                         reply BACK to the original sender (rendered in the sender's
+                         language). Default off -> the node only re-renders, as before.
+
 The receiver dispatches on packet.mp ("0.1" -> render, "0.2" -> render_v2), so a
 v0.2-aware node and a v0.1-only node interoperate over the same :8082 endpoint.
+
+Loopback guard: a reply packet carries "in_reply_to" = the original packet id. Respond
+mode ignores any packet that already carries it, so replies never trigger replies.
 """
-import sys, os, json, datetime, requests
+import sys, os, json, datetime, threading, requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import packet as mp  # noqa: E402
@@ -50,11 +59,40 @@ def send(text, src_lang="en"):
     print(r.text)
 
 
+def _respond(pkt, lang):
+    """Marley answers: understand the inbound message, generate a reply, sign it, and send
+    it BACK to the original sender's receiver (rendered there in the sender's language).
+
+    Runs in a background thread so the inbound POST is ack'd immediately. The reply packet
+    is tagged in_reply_to so it can never itself trigger a reply (loopback guard)."""
+    sender = pkt.get("from", "")
+    try:
+        addr = mp.reply_addr(sender)
+        if not addr:
+            print(f"RESPOND: no return address for {sender}; dropping reply", flush=True)
+            return
+        message = mp.render_for_node(pkt, lang)                 # inbound -> node's language, untagged
+        reply_text = mp.marley_reply(message, sender=sender, lang=lang)
+        reply = mp.sign(mp.encode(reply_text, src_lang=lang))   # NEW signed packet (reuse encode/sign)
+        reply["in_reply_to"] = pkt["id"]                        # loopback tag (outside canon; sig intact)
+        ts = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        print(f"\nMARLEY REPLY -> {sender} @ {addr}\n  {reply_text}\n", flush=True)
+        with open(INBOX, "a") as f:
+            f.write(f"{ts}\t{reply['id']}\tREPLY(in_reply_to={pkt['id']})\t{reply_text}\n")
+        r = requests.post(addr, data=json.dumps(reply, separators=(",", ":")),
+                          headers={"Content-Type": "application/json"}, timeout=180)
+        print(f"RESPOND: delivered reply, sender receiver status {r.status_code}", flush=True)
+    except Exception as e:
+        print(f"RESPOND: failed for {sender}: {e}", flush=True)
+
+
 def serve():
     from flask import Flask, request, jsonify
     lang = os.environ.get("MEANING_RENDER_LANG", "es")   # es=Little Boy, en=Fat Man reverse leg
     port = int(os.environ.get("MEANING_PORT", "8082"))
+    respond_mode = os.environ.get("RESPOND_MODE") == "1"
     app = Flask(__name__)
+    print(f"meaning/ receiver up: lang={lang} respond_mode={respond_mode}", flush=True)
 
     @app.post("/packet")
     def _packet():
@@ -69,10 +107,19 @@ def serve():
         print(f"\n{out}\n", flush=True)
         with open(INBOX, "a") as f:
             f.write(f"{ts}\t{pkt['id']}\t{out}\n")
+        # respond mode: answer as Marley, but NEVER reply to a reply (loopback guard)
+        is_reply = "in_reply_to" in pkt
+        responding = respond_mode and not is_reply
+        if respond_mode and is_reply:
+            print(f"loop-guard: {pkt.get('id')} is a reply (in_reply_to={pkt['in_reply_to']}); "
+                  f"not answering", flush=True)
+        if responding:
+            threading.Thread(target=_respond, args=(pkt, lang), daemon=True).start()
         # "render"/"lang" are the canonical keys; "es" kept for backward-compat with old clients.
-        return jsonify({"ok": True, "lang": lang, "render": out, "es": out})
+        return jsonify({"ok": True, "lang": lang, "render": out, "es": out,
+                        "responding": responding, "is_reply": is_reply})
 
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, threaded=True)
 
 
 if __name__ == "__main__":

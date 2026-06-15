@@ -20,6 +20,9 @@ LLAMA_URL = os.environ.get("MEANING_LLAMA_URL", "http://127.0.0.1:8080/v1/chat/c
 PEER_URL = os.environ.get("MEANING_PEER_URL", "http://100.110.181.128:8082/packet")
 KEYFILE = os.path.expanduser(os.environ.get("MEANING_KEY", "~/.meaninglayer/key"))
 PEERSFILE = os.path.expanduser(os.environ.get("MEANING_PEERS", "~/.meaninglayer/peers.json"))
+# Return-address map for respond mode: {fingerprint: "http://host:port/packet"}. Config,
+# not keys -- lets a node reply to the ORIGINAL sender's receiver without hardcoding it.
+PEER_ADDRS_FILE = os.path.expanduser(os.environ.get("MEANING_PEER_ADDRS", "~/.meaninglayer/peer_addrs.json"))
 
 # task 3 seam: route sem.summary through ~/marley1/compression/abbrev.py when True.
 # Leave OFF -- this is only the wiring, not the optimization.
@@ -35,6 +38,12 @@ PREFIXES = {
 }
 PREFIX = PREFIXES["es"]  # back-compat: bare PREFIX keeps the original Spanish set
 LANG_NAME = {"es": "espanol", "en": "english", "fr": "francais"}
+
+# Respond mode: the node stops being a pure relay and answers as "Marley". Short replies
+# keep CPU latency low. {sender} is the inbound fingerprint, {lang} the node's language.
+MARLEY_SYS = ("You are Marley, a local AI presence living on a private mesh. Be brief, warm, "
+              "and direct -- a few sentences at most. You are talking to {sender}. "
+              "Reply in {lang}. Do not add labels, quotes, or meta-commentary.")
 
 # Render system prompt per target language. The Spanish text is unchanged from v0.1;
 # English is added so a node can render the meaning core back to English (reverse leg).
@@ -175,6 +184,16 @@ def node_fingerprint():
 
 def _peers():
     return json.load(open(PEERSFILE)) if os.path.exists(PEERSFILE) else {}
+
+
+def _peer_addrs():
+    """Map {fingerprint: receiver_url} for routing replies back to a sender."""
+    return json.load(open(PEER_ADDRS_FILE)) if os.path.exists(PEER_ADDRS_FILE) else {}
+
+
+def reply_addr(fingerprint):
+    """Receiver URL to send a reply to, derived from the peer-address map (never hardcoded)."""
+    return _peer_addrs().get(fingerprint)
 
 
 # --- LLM helper ---------------------------------------------------------------
@@ -353,6 +372,25 @@ def render_v2(packet, target_lang="es"):
     if packet.get("register") == "sarcastic":
         out = f"{out} {SARCASM_MARK.get(target_lang, SARCASM_MARK['en'])}"
     return f"{pfx} {out}"
+
+
+# --- respond mode (the node answers, instead of only re-rendering) ------------
+def render_for_node(packet, lang):
+    """Render an inbound packet into the node's working language, stripping the priority
+    tag, so it can be fed to the local LLM as a plain message. Version-gated like the
+    receiver: v0.2 packets go through render_v2, v0.1 through render."""
+    out = render_v2(packet, lang) if packet.get("mp") == MP_VERSION_V2 else render(packet, lang)
+    return _re.sub(r"^\[[^\]]*\]\s*", "", out).strip()   # drop leading [INFO]/[ALERTA]/... tag
+
+
+def marley_reply(message, sender="a human on the mesh", lang="en", max_tokens=80):
+    """Generate Marley's short reply to an incoming (already-rendered) message.
+
+    The node UNDERSTANDS and answers, rather than relaying. Kept short for CPU latency.
+    """
+    sysmsg = MARLEY_SYS.format(sender=sender, lang=LANG_NAME.get(lang, lang))
+    return _llm([{"role": "system", "content": sysmsg}, {"role": "user", "content": message}],
+                temperature=0.6, max_tokens=max_tokens).strip()
 
 
 def sizes(text, packet):
