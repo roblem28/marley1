@@ -98,3 +98,25 @@ WantedBy=multi-user.target
 
 Manage with `sudo systemctl {status,restart,stop} meaning-render`. To revert Little Boy to a
 plain relay, drop the `RESPOND_MODE=1` line and `daemon-reload` + `restart`.
+
+## Per-user language profiles + advisory locale (identity stays key-based)
+
+Each node has `~/.meaninglayer/profile.json` (local config, **gitignored, no keys**):
+`{display_name, language (BCP-47: en/es/pt-BR/ja/de/...), locale_label, spoofed}`.
+
+- The **receiver renders every inbound packet into ITS OWN `profile.language`** automatically
+  (`MEANING_RENDER_LANG` is only a fallback). Set a node profile to `pt-BR` and it receives
+  everything in Portuguese with zero code change.
+- Outbound packets carry an advisory `origin` block `{src_lang, locale_label, display_name,
+  spoofed}`. Like `in_reply_to`, it lives **OUTSIDE the signed canonical payload**, so editing
+  or spoofing it never changes/breaks the signature and never implies trust.
+
+**CRITICAL — identity vs locale:** identity = the ed25519 key (signed, verified, **trusted**;
+proves WHO). locale/language = advisory hint (**unsigned, freely spoofable**; says only what
+language to render). `verify()` checks ONLY the signature over `canon`, which does NOT include
+`origin`. A spoofed locale can pose as any language but grants ZERO trust; an impostor that
+fakes a fingerprint + locale is still rejected because the signature wont match the pinned
+pubkey.
+
+Testing: `SPOOF_LOCALE=<lang> SPOOF_LABEL="<place>" node.py send "..."` overrides the origin
+block per-message (sets `spoofed=true`) without touching identity.

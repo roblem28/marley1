@@ -24,6 +24,18 @@ PEERSFILE = os.path.expanduser(os.environ.get("MEANING_PEERS", "~/.meaninglayer/
 # not keys -- lets a node reply to the ORIGINAL sender's receiver without hardcoding it.
 PEER_ADDRS_FILE = os.path.expanduser(os.environ.get("MEANING_PEER_ADDRS", "~/.meaninglayer/peer_addrs.json"))
 
+# ============================================================================
+# IDENTITY vs LOCALE -- a deliberate, load-bearing separation:
+#   * IDENTITY  = the ed25519 key. Signed (canon/canon_v2), verified, TRUSTED. Proves WHO.
+#   * LOCALE    = the per-user profile below + the advisory `origin` block on a packet.
+#                 NEVER signed as a trust claim, freely editable / spoofable for testing.
+#                 Says only WHAT LANGUAGE to render -- it grants ZERO trust.
+# A spoofed locale can never escalate trust: verify() only ever checks the signature over
+# the canonical payload, which does NOT include `origin`. See make_origin()/attach_origin().
+# ============================================================================
+PROFILE_FILE = os.path.expanduser(os.environ.get("MEANING_PROFILE", "~/.meaninglayer/profile.json"))
+DEFAULT_PROFILE = {"display_name": "anon", "language": "en", "locale_label": "", "spoofed": False}
+
 # task 3 seam: route sem.summary through ~/marley1/compression/abbrev.py when True.
 # Leave OFF -- this is only the wiring, not the optimization.
 USE_ABBREV = False
@@ -35,9 +47,16 @@ MP_VERSION = "0.1"
 PREFIXES = {
     "es": {"emergency": "[ALERTA]", "info": "[INFO]", "routine": "[RUTINA]"},
     "en": {"emergency": "[ALERT]", "info": "[INFO]", "routine": "[ROUTINE]"},
+    "pt-BR": {"emergency": "[ALERTA]", "info": "[INFO]", "routine": "[ROTINA]"},
+    "ja": {"emergency": "[警報]", "info": "[情報]", "routine": "[通常]"},
+    "de": {"emergency": "[ALARM]", "info": "[INFO]", "routine": "[ROUTINE]"},
 }
 PREFIX = PREFIXES["es"]  # back-compat: bare PREFIX keeps the original Spanish set
-LANG_NAME = {"es": "espanol", "en": "english", "fr": "francais"}
+# Language display names fed to the render prompt. Unknown BCP-47 tags fall back to the tag
+# itself (the LLM is multilingual), so a new profile.language needs no code change.
+LANG_NAME = {"es": "espanol", "en": "english", "fr": "francais",
+             "pt-BR": "portugues do Brasil", "pt": "portugues",
+             "ja": "Japanese (日本語)", "de": "German (Deutsch)"}
 
 # Respond mode: the node stops being a pure relay and answers as "Marley". Short replies
 # keep CPU latency low. {sender} is the inbound fingerprint, {lang} the node's language.
@@ -196,6 +215,48 @@ def reply_addr(fingerprint):
     return _peer_addrs().get(fingerprint)
 
 
+# --- per-user language profile + advisory origin block (NOT a trust claim) ----
+def profile():
+    """The node's advisory language profile: {display_name, language, locale_label, spoofed}.
+
+    This is a HINT, not identity. It is read from ~/.meaninglayer/profile.json (local config,
+    gitignored, no keys) and is freely editable. Trust is the ed25519 key alone -- editing
+    this file changes only what language a node declares/renders, never who it is."""
+    p = dict(DEFAULT_PROFILE)
+    if os.path.exists(PROFILE_FILE):
+        try:
+            p.update(json.load(open(PROFILE_FILE)))
+        except Exception:
+            pass  # a malformed profile must never break signing/verification
+    return p
+
+
+def make_origin(spoof_lang=None, spoof_label=None):
+    """Build the advisory origin block from the profile, optionally SPOOFED for testing.
+
+    Spoofing overrides language + locale_label (and flips spoofed=true) but leaves
+    display_name and -- crucially -- the signature untouched. A spoofed locale lets one node
+    pose as a sender from any country/language WITHOUT changing identity or gaining trust."""
+    p = profile()
+    spoofed = bool(spoof_lang or spoof_label) or bool(p.get("spoofed"))
+    return {
+        "src_lang": spoof_lang or p.get("language", "en"),
+        "locale_label": spoof_label if spoof_label is not None else p.get("locale_label", ""),
+        "display_name": p.get("display_name", "anon"),
+        "spoofed": spoofed,
+    }
+
+
+def attach_origin(packet, spoof_lang=None, spoof_label=None):
+    """Attach the advisory origin block OUTSIDE the signed canonical payload.
+
+    Like in_reply_to, `origin` is NOT part of canon()/canon_v2(), so attaching or spoofing it
+    NEVER changes or breaks the signature and NEVER implies trust. The receiver reads it only
+    as a language hint; it decides what to render from ITS OWN profile, not from this block."""
+    packet["origin"] = make_origin(spoof_lang, spoof_label)
+    return packet
+
+
 # --- LLM helper ---------------------------------------------------------------
 def _llm(messages, temperature=0, max_tokens=512, response_format=None):
     body = {"messages": messages, "temperature": temperature, "max_tokens": max_tokens}
@@ -303,7 +364,7 @@ def render(packet, target_lang="es"):
             f"actions: {', '.join(sem.get('actions', []))}")
     out = _llm([{"role": "system", "content": sysmsg}, {"role": "user", "content": user}],
                temperature=0.3, max_tokens=256).strip()
-    pfx = PREFIXES.get(target_lang, PREFIX)
+    pfx = PREFIXES.get(target_lang, PREFIXES["en"])   # neutral English tags for unlisted langs
     return f"{pfx.get(packet['pri'], '[INFO]')} {out}"
 
 
@@ -368,7 +429,7 @@ def render_v2(packet, target_lang="es"):
     framed = _llm([{"role": "system", "content": sysmsg}, {"role": "user", "content": summary}],
                   temperature=0.2, max_tokens=256).strip()
     out = _substitute(framed, packet["verbatim"]).strip()
-    pfx = PREFIXES.get(target_lang, PREFIX).get(packet["pri"], "[INFO]")
+    pfx = PREFIXES.get(target_lang, PREFIXES["en"]).get(packet["pri"], "[INFO]")
     if packet.get("register") == "sarcastic":
         out = f"{out} {SARCASM_MARK.get(target_lang, SARCASM_MARK['en'])}"
     return f"{pfx} {out}"
