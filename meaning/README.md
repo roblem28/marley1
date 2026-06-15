@@ -65,3 +65,36 @@ LLM summary.
 
 Promoted from the standalone demo (`mp_encode.py` / `mp_render.py`, kept alongside as `*.bak`).
 Reuses the same keys and pinned peers — **no re-pinning, no new identities**.
+
+## Deployment — always-on Marley presence (Little Boy)
+
+The receiver runs as the **system** service `meaning-render.service`, which lives **only in
+`/etc/systemd/system/` (NOT tracked in this repo)**, per the node's existing convention.
+`RESPOND_MODE=1` is set in the unit, so the systemd-managed receiver IS the Marley presence:
+it verifies, renders, and then answers, surviving reboot (`enabled`, `Restart=on-failure`).
+
+Final unit contents (documented here since the file is `/etc`-only):
+
+```ini
+[Unit]
+Description=Meaning Layer render (meaning/ node.py serve :8082) -- Marley respond presence
+After=network-online.target meaning-llama.service
+Wants=network-online.target
+
+[Service]
+User=marley1
+WorkingDirectory=/home/marley1/marley1/meaning
+Environment=MEANING_LLAMA_URL=http://127.0.0.1:8081/v1/chat/completions
+Environment=MEANING_INBOX=/home/marley1/meaninglayer/inbox.log
+Environment=MEANING_RENDER_LANG=es
+Environment=RESPOND_MODE=1
+ExecStart=/usr/bin/python3 /home/marley1/marley1/meaning/node.py serve
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Manage with `sudo systemctl {status,restart,stop} meaning-render`. To revert Little Boy to a
+plain relay, drop the `RESPOND_MODE=1` line and `daemon-reload` + `restart`.
