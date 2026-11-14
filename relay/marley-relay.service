@@ -1,0 +1,16 @@
+[Unit]
+Description=Marley One GPT-Claude relay
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/marley1
+ExecStart=/usr/bin/python3 -u %h/marley1/relay/marley_relay.py watch
+Restart=on-failure
+RestartSec=30
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

@@ -21,3 +21,9 @@ backups/
 benchmarks/
 compression/answers*/
 compression/answers/
+
+# Relay credentials and private conversation data
+.env
+.env.*
+relay.json
+conversations/
